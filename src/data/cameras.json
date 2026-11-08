@@ -1,0 +1,110 @@
+[
+ {
+  "id": "vegvesen-0329002_1",
+  "name": "E18 Hjortnes (towards sentrum)",
+  "lat": 59.91114,
+  "lon": 10.7041645,
+  "imageUrl": "https://kamera.atlas.vegvesen.no/api/images/0329002_1",
+  "distanceM": 1624,
+  "sources": [
+   {
+    "label": "Statens vegvesen CCTV (DATEX 3.1 via OGC API)",
+    "url": "https://ogckart-sn1.atlas.vegvesen.no/ogc/features/v1/collections/datex_3_1:CctvSimple/items?f=json&limit=2000&bbox=10.55,59.84,10.95,60.0"
+   },
+   {
+    "label": "Statens vegvesen road cameras, NLOD 2.0",
+    "url": "https://data.norge.no/nlod/en/2.0"
+   }
+  ]
+ },
+ {
+  "id": "vegvesen-0329034_1",
+  "name": "R150 Ullevål (towards Tåsen)",
+  "lat": 59.94821,
+  "lon": 10.726195,
+  "imageUrl": "https://kamera.atlas.vegvesen.no/api/images/0329034_1",
+  "distanceM": 3834,
+  "sources": [
+   {
+    "label": "Statens vegvesen CCTV (DATEX 3.1 via OGC API)",
+    "url": "https://ogckart-sn1.atlas.vegvesen.no/ogc/features/v1/collections/datex_3_1:CctvSimple/items?f=json&limit=2000&bbox=10.55,59.84,10.95,60.0"
+   },
+   {
+    "label": "Statens vegvesen road cameras, NLOD 2.0",
+    "url": "https://data.norge.no/nlod/en/2.0"
+   }
+  ]
+ },
+ {
+  "id": "vegvesen-0329031_1",
+  "name": "E6 Sandstuveien",
+  "lat": 59.887856,
+  "lon": 10.807426,
+  "imageUrl": "https://kamera.atlas.vegvesen.no/api/images/0329031_1",
+  "distanceM": 5071,
+  "sources": [
+   {
+    "label": "Statens vegvesen CCTV (DATEX 3.1 via OGC API)",
+    "url": "https://ogckart-sn1.atlas.vegvesen.no/ogc/features/v1/collections/datex_3_1:CctvSimple/items?f=json&limit=2000&bbox=10.55,59.84,10.95,60.0"
+   },
+   {
+    "label": "Statens vegvesen road cameras, NLOD 2.0",
+    "url": "https://data.norge.no/nlod/en/2.0"
+   }
+  ]
+ },
+ {
+  "id": "vegvesen-0329003_1",
+  "name": "R4 Linderud (towards Gjelleråsen)",
+  "lat": 59.943844,
+  "lon": 10.834632,
+  "imageUrl": "https://kamera.atlas.vegvesen.no/api/images/0329003_1",
+  "distanceM": 6581,
+  "sources": [
+   {
+    "label": "Statens vegvesen CCTV (DATEX 3.1 via OGC API)",
+    "url": "https://ogckart-sn1.atlas.vegvesen.no/ogc/features/v1/collections/datex_3_1:CctvSimple/items?f=json&limit=2000&bbox=10.55,59.84,10.95,60.0"
+   },
+   {
+    "label": "Statens vegvesen road cameras, NLOD 2.0",
+    "url": "https://data.norge.no/nlod/en/2.0"
+   }
+  ]
+ },
+ {
+  "id": "vegvesen-0329007_1",
+  "name": "E18 Fiskevollbukta (towards Oslo sentrum)",
+  "lat": 59.841663,
+  "lon": 10.77669,
+  "imageUrl": "https://kamera.atlas.vegvesen.no/api/images/0329007_1",
+  "distanceM": 8397,
+  "sources": [
+   {
+    "label": "Statens vegvesen CCTV (DATEX 3.1 via OGC API)",
+    "url": "https://ogckart-sn1.atlas.vegvesen.no/ogc/features/v1/collections/datex_3_1:CctvSimple/items?f=json&limit=2000&bbox=10.55,59.84,10.95,60.0"
+   },
+   {
+    "label": "Statens vegvesen road cameras, NLOD 2.0",
+    "url": "https://data.norge.no/nlod/en/2.0"
+   }
+  ]
+ },
+ {
+  "id": "vegvesen-0329004_1",
+  "name": "E6 Furuset (towards Alnabru)",
+  "lat": 59.939404,
+  "lon": 10.900307,
+  "imageUrl": "https://kamera.atlas.vegvesen.no/api/images/0329004_1",
+  "distanceM": 9757,
+  "sources": [
+   {
+    "label": "Statens vegvesen CCTV (DATEX 3.1 via OGC API)",
+    "url": "https://ogckart-sn1.atlas.vegvesen.no/ogc/features/v1/collections/datex_3_1:CctvSimple/items?f=json&limit=2000&bbox=10.55,59.84,10.95,60.0"
+   },
+   {
+    "label": "Statens vegvesen road cameras, NLOD 2.0",
+    "url": "https://data.norge.no/nlod/en/2.0"
+   }
+  ]
+ }
+]

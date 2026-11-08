@@ -56,7 +56,7 @@ export default function ForecastView({ hours, errors, history, historyNote }: { 
             <div className="ak-key"><span><i />Likely</span><span><i className="band" />P10 to P90</span></div>
           </div>
           <div className="ak-panel-body">
-            <ForecastChart data={dh.map((h) => ({ label: hh(h.time), p10: h.p10, p50: h.p50, p90: h.p90 }))} nowLabel={pick ? hh(pick.time) : undefined} />
+            <ForecastChart data={dh.map((h) => ({ label: hh(h.time), p10: h.p10, p50: h.p50, p90: h.p90 }))} nowLabel={pick ? hh(pick.time) : undefined} markerText="Selected" />
             <div style={{ display: "flex", flexWrap: "wrap", gap: 4, marginTop: 12 }}>
               {open.map((h) => (
                 <button key={h.time} className="ak-btn" style={{ height: 26, padding: "0 8px", fontSize: 12, ...(pick?.time === h.time ? { background: "var(--od-ink)", color: "var(--od-on-ink)", borderColor: "var(--od-ink)" } : {}) }} onClick={() => setSel(h.time)}>{hh(h.time)}</button>
