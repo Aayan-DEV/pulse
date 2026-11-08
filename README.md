@@ -10,7 +10,7 @@ Built in 48 hours at Oslo Sprint 2026 on a real store: **Burger King Klingenberg
 
 ## Why
 
-- A Burger King owner near Aker Brygge told us his hardest problem is planning around what happens near the store: trains that stop, events, weather, and knowing why a good day was good.
+- A Burger King owner near Aker Brygge told us his hardest problem is planning around what happens near the store: trains that stop working, events, weather, and knowing why a good day was good.
 - At Domino's I lived the other side. There was no forecast, so when a rush hit, staff were called in at short notice for a few hours.
 - Fast food margins are thin and staff is the biggest cost a store controls. Being wrong in either direction costs money or a stressed crew.
 
