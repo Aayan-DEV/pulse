@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   LayoutGrid, Map, TrendingUp, Search, Users, CalendarDays, TrainFront,
-  Gauge, BookOpen, Database, Sun, Moon, Radar,
+  Gauge, BookOpen, Database, Sun, Moon, Radar, Bot, FlaskConical,
 } from "lucide-react";
 
 const NAV: { group: string; items: { href: string; label: string; icon: React.ElementType }[] }[] = [
@@ -14,6 +14,7 @@ const NAV: { group: string; items: { href: string; label: string; icon: React.El
     { href: "/map", label: "Live map", icon: Map },
     { href: "/forecast", label: "Forecast", icon: TrendingUp },
     { href: "/why", label: "Why it spiked", icon: Search },
+    { href: "/what-if", label: "What if", icon: FlaskConical },
   ]},
   { group: "People", items: [
     { href: "/staffing", label: "Staffing", icon: Users },
@@ -21,6 +22,7 @@ const NAV: { group: string; items: { href: string; label: string; icon: React.El
   { group: "Signals", items: [
     { href: "/events", label: "Events", icon: CalendarDays },
     { href: "/transit", label: "Trains and trams", icon: TrainFront },
+    { href: "/agents", label: "Agents", icon: Bot },
     { href: "/sources", label: "Data sources", icon: Database },
   ]},
   { group: "Model", items: [

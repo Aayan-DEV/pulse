@@ -276,3 +276,7 @@ a.ak-row:hover, button.ak-row:hover { background: var(--od-surface); }
   .ak-head { flex-direction: column; align-items: flex-start; }
   .map-side { width: auto; right: 16px; top: auto; height: 40%; }
 }
+
+.spin { animation: ak-spin 1s linear infinite; }
+@keyframes ak-spin { to { transform: rotate(360deg); } }
+.ak-btn:disabled { opacity: .6; cursor: default; }
