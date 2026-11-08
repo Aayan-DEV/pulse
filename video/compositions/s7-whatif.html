@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
+        @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+        #root { position: absolute; inset: 0; overflow: hidden; }
+        .s7-ground { position: absolute; inset: 0; background: #f6f5f2; }
+        .s7-win { position: absolute; left: 173px; top: 36px; width: 1574px; height: 885px; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.14); }
+        .s7-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+        .s7-cam video { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+        .s7-live { position: absolute; left: 173px; top: 966px; display: flex; align-items: center; gap: 14px; font-family: "Geist", sans-serif; font-weight: 500; font-size: 30px; color: #a32d1d; }
+        .s7-live i { width: 16px; height: 16px; border-radius: 50%; background: #a32d1d; display: block; }
+        .s7-cap { position: absolute; left: 0; right: 0; top: 948px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 68px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s7-cap .w { display: inline-block; }
+        .s7-cap .s7-hot { color: #d9622b; }
+      </style>
+      <div id="root" data-composition-id="s7-whatif" data-width="1920" data-height="1080">
+        <div class="s7-ground"></div>
+        <div id="s7-win" class="s7-win">
+          <div id="s7-cam" class="s7-cam" data-layout-allow-overflow>
+            <video id="s7-vid" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="11" muted playsinline></video>
+          </div>
+        </div>
+        <div id="s7-live" class="s7-live"><i id="s7-dot"></i>Live demo</div>
+        <div id="s7-cap1" class="s7-cap"><span class="w">What</span> <span class="w">if</span> <span class="w">the</span> <span class="w s7-hot">T-bane</span> <span class="w">closes?</span></div>
+        <div id="s7-cap2" class="s7-cap"><span class="w">The</span> <span class="w">model</span> <span class="w s7-hot">reruns</span> <span class="w">on</span> <span class="w">the</span> <span class="w">spot</span></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const K = 1574 / 1920;
+          const cam = (cx, cy, s) => { const k = K * s; let x = 787 - cx * k, y = 442.5 - cy * k; x = Math.min(0, Math.max(1574 - 1920 * k, x)); y = Math.min(0, Math.max(885 - 1080 * k, y)); return { x: x, y: y, scale: k }; };
+          const caption = (sel, t, out) => {
+            tl.fromTo(sel, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, t);
+            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, t + 0.03);
+            if (out != null) tl.to(sel, { opacity: 0, y: -10, duration: 0.25, ease: "power3.in" }, out);
+          };
+          tl.set("#s7-cam", cam(960, 540, 1), 0);
+          tl.fromTo("#s7-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0);
+          tl.fromTo("#s7-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.3);
+          tl.fromTo("#s7-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 15, yoyo: true }, 0.3);
+          caption("#s7-cap1", 0.3, 4.9);
+          // Push in on the scenario tiles and the result cards.
+          tl.to("#s7-cam", { ...cam(1100, 620, 1.22), duration: 1.0, ease: "power2.inOut" }, 0.6);
+          caption("#s7-cap2", 5.1, null);
+          tl.to("#s7-cam", { ...cam(1100, 760, 1.22), duration: 0.8, ease: "power2.inOut" }, 6.6);
+          tl.to("#s7-cam", { ...cam(960, 540, 1), duration: 0.9, ease: "power2.inOut" }, 9.6);
+          window.__timelines["s7-whatif"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

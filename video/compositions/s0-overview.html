@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
+        @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+        #root { position: absolute; inset: 0; overflow: hidden; }
+        .s0-ground { position: absolute; inset: 0; background: #f6f5f2; }
+        .s0-cam { position: absolute; left: 0; top: 0; width: 1600px; height: 1077px; transform-origin: 0 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.12); background: #fff; }
+        .s0-layer { position: absolute; inset: 0; }
+        #s0-sharp { clip-path: inset(-40px -40px -40px -40px round 10px); }
+        #s0-base { filter: blur(0px); }
+        .s0-layer img { display: block; width: 1600px; height: 1077px; }
+        .s0-veil { position: absolute; inset: 0; background: #f6f5f2; opacity: 0; }
+        .s0-ring { position: absolute; border: 3px solid #d9622b; border-radius: 10px; opacity: 0; }
+        .s0-cap { position: absolute; left: 64px; bottom: 64px; padding: 18px 34px 22px; border-radius: 8px; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.16); font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 76px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s0-cap .w { display: inline-block; }
+        .s0-cap .s0-hot { color: #d9622b; }
+      </style>
+
+      <div id="root" data-composition-id="s0-overview" data-width="1920" data-height="1080">
+        <div id="s0-ground" class="s0-ground"></div>
+        <div id="s0-cam" class="s0-cam" data-layout-allow-overflow>
+          <div id="s0-base" class="s0-layer"><img src="assets/shots/overview.png" alt="" /></div>
+          <div id="s0-veil" class="s0-veil"></div>
+          <div id="s0-sharp" class="s0-layer"><img src="assets/shots/overview.png" alt="" /></div>
+          <div id="s0-ring" class="s0-ring"></div>
+        </div>
+        <div id="s0-cap1" class="s0-cap"><span class="w">Everything</span> <span class="w">around</span> <span class="w s0-hot">one</span> <span class="w s0-hot">store</span></div>
+        <div id="s0-cap2" class="s0-cap"><span class="w">And</span> <span class="w">why</span> <span class="w">today</span> <span class="w">is</span> <span class="w s0-hot">different</span></div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const W = 1600, H = 1077;
+          const camEl = "#s0-cam", base = "#s0-base", veil = "#s0-veil", sharp = "#s0-sharp", ring = "#s0-ring";
+          const cam = (cx, cy, s) => ({ x: 960 - cx * s, y: 500 - cy * s, scale: s });
+          const clip = (b, q = 8) => `inset(${b[1] - q}px ${W - b[0] - b[2] - q}px ${H - b[1] - b[3] - q}px ${b[0] - q}px round 10px)`;
+          const FULL = "inset(-40px -40px -40px -40px round 10px)";
+          const focus = (t, b, d = 0.6) => {
+            tl.to(sharp, { clipPath: clip(b), duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(7px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0.5, duration: d, ease: "power2.out" }, t);
+          };
+          const clear = (t, d = 0.6) => {
+            tl.to(sharp, { clipPath: FULL, duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(0px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0, duration: d, ease: "power2.out" }, t);
+          };
+          const ringAt = (t, b, q = 8) => {
+            tl.set(ring, { left: b[0] - q, top: b[1] - q, width: b[2] + 2 * q, height: b[3] + 2 * q }, t);
+            tl.fromTo(ring, { opacity: 0, scale: 1.05 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.out", immediateRender: false }, t);
+          };
+          const caption = (sel, t, out) => {
+            tl.fromTo(sel, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, t);
+            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, t + 0.03);
+            if (out != null) tl.to(sel, { opacity: 0, y: -12, duration: 0.25, ease: "power3.in" }, out);
+          };
+
+          // Panel boxes on the Overview page (CSS px).
+          const SIGNALS = [261, 275, 1314, 102];
+          const WHY = [261, 750, 648, 278];
+          const FIT = { x: 216, y: 39, scale: 0.93 };
+
+          // The whole Overview dashboard rises into view.
+          tl.fromTo("#s0-ground", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0);
+          tl.fromTo(camEl, { ...FIT, y: 260, opacity: 0 }, { ...FIT, opacity: 1, duration: 0.6, ease: "power3.out" }, 0);
+          caption("#s0-cap1", 0.4, 2.9);
+          // The live signals: trains, weather, events, busyness.
+          focus(1.3, SIGNALS);
+          tl.to(camEl, { ...cam(918, 326, 1.3), duration: 0.8, ease: "power2.inOut" }, 1.3);
+          ringAt(1.8, SIGNALS);
+          // Why today is different.
+          tl.to(ring, { opacity: 0, duration: 0.15 }, 3.0);
+          focus(3.0, WHY);
+          tl.to(camEl, { ...cam(585, 889, 1.45), duration: 0.8, ease: "power2.inOut" }, 3.0);
+          ringAt(3.5, WHY);
+          caption("#s0-cap2", 3.1, null);
+          window.__timelines["s0-overview"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -14,22 +14,22 @@
         .s2-line .w { display: inline-block; }
         .s2-old { position: absolute; left: 160px; top: 150px; font-family: "Geist", sans-serif; font-weight: 500; font-size: 40px; color: rgba(253, 234, 231, 0.78); letter-spacing: 0; }
         .s2-list { position: absolute; left: 160px; top: 270px; display: flex; flex-direction: column; gap: 36px; }
-        .s2-item { display: flex; align-items: center; gap: 40px; font-family: "Perfectly Nineties", serif; font-size: 136px; line-height: 1; color: #fdeae7; }
+        .s2-item { display: flex; align-items: center; gap: 40px; font-family: "Perfectly Nineties", serif; font-size: 120px; line-height: 1; color: #fdeae7; }
         .s2-item svg { width: 104px; height: 104px; flex: none; color: #fdeae7; }
       </style>
 
       <div id="root" data-composition-id="s2-tension" data-width="1920" data-height="1080">
         <div id="s2-flood" class="s2-flood"></div>
-        <h2 id="s2-a" class="s2-line"><span class="w">Days</span> <span class="w">like</span> <span class="w">this</span> <span class="w">break</span> <span class="w">the</span> <span class="w">plan.</span></h2>
-        <div id="s2-old" class="s2-old">The old way</div>
+        <h2 id="s2-a" class="s2-line"><span class="w">A</span> <span class="w">rush</span> <span class="w">hits.</span> <span class="w">Nobody</span> <span class="w">saw</span> <span class="w">it</span> <span class="w">coming.</span></h2>
+        <div id="s2-old" class="s2-old">Before Pulse</div>
         <div class="s2-list">
           <div id="s2-i1" class="s2-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.870"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <span>Emergency calls</span>
+            <span>Crew called in last minute</span>
           </div>
           <div id="s2-i2" class="s2-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
-            <span>Empty fryers</span>
+            <span>Long queues</span>
           </div>
           <div id="s2-i3" class="s2-item">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.480 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
@@ -41,13 +41,13 @@
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          // The ringed shutdown row grows into the whole frame.
-          tl.fromTo("#s2-flood", { clipPath: "inset(435px 328px 516px 327px round 10px)" }, { clipPath: "inset(0px 0px 0px 0px round 0px)", duration: 0.6, ease: "expo.inOut" }, 0);
-          tl.fromTo("#s2-a .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out", stagger: 0.06 }, 0.4);
-          tl.to("#s2-a", { opacity: 0, y: -40, duration: 0.25, ease: "power3.in" }, 2.0);
-          tl.fromTo("#s2-old", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power4.out" }, 2.15);
+          // Open on a full red frame.
+          tl.fromTo("#s2-flood", { opacity: 1 }, { opacity: 1, duration: 0.1 }, 0);
+          tl.fromTo("#s2-a .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out", stagger: 0.06 }, 0);
+          tl.to("#s2-a", { opacity: 0, y: -40, duration: 0.25, ease: "power3.in" }, 2.6);
+          tl.fromTo("#s2-old", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power4.out" }, 2.75);
           // Quick stacking cuts: each problem lands on its own beat.
-          [["#s2-i1", 2.25], ["#s2-i2", 2.75], ["#s2-i3", 3.25]].forEach(function (p) {
+          [["#s2-i1", 2.85], ["#s2-i2", 3.35], ["#s2-i3", 3.85]].forEach(function (p) {
             tl.fromTo(p[0], { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.3, ease: "power4.out" }, p[1]);
           });
           window.__timelines["s2-tension"] = tl;
