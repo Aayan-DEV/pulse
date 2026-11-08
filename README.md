@@ -31,7 +31,7 @@ Built in 48 hours at Oslo Sprint 2026 on a real store: **Burger King Klingenberg
 
 ## Demo film and pitch
 
-- **Demo film (65 s):** [docs/demo/pulse-demo.mp4](docs/demo/pulse-demo.mp4). Before and after, the main dashboards, and two real recordings of the running app (a simulated rush on the Shift screen, and the What if page rerunning the model).
+- **Demo film (30 s):** [docs/demo/pulse-demo.mp4](docs/demo/pulse-demo.mp4). Before and after, a quick run through every dashboard (map included) with detail cards, and two real recordings of the running app (a simulated rush on the Shift screen, and the What if page rerunning the model). Music: "Inspiring Advertising - Upbeat Summer Corporate" by Rafael Krux (filmmusic.io), licensed CC BY 4.0.
 - **Pitch deck:** [docs/pitch/pulse-pitch.pdf](docs/pitch/pulse-pitch.pdf).
 - `video/` is the demo film, built with [HyperFrames](https://hyperframes.heygen.com) (HTML rendered to video). Run `npx hyperframes preview` inside `video/` to open it.
 - `docs/pitch/` holds the deck source (`deck.html`) and its print script.

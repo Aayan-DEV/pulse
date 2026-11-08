@@ -23,21 +23,6 @@
 
       <div id="root" data-composition-id="s8-end" data-width="1920" data-height="1080">
         <div class="s8-bg"></div>
-        <div id="s8-label" class="s8-label">With Pulse</div>
-        <div id="s8-list" class="s8-list">
-          <div id="s8-i1" class="s8-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            <span>Crew planned a week ahead</span>
-          </div>
-          <div id="s8-i2" class="s8-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
-            <span>Rush flagged before the queue</span>
-          </div>
-          <div id="s8-i3" class="s8-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            <span>Every spike explained</span>
-          </div>
-        </div>
         <div id="s8-brand" class="s8-end" data-layout-allow-overflow>
           <div class="s8-mark">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -59,19 +44,13 @@
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          [["#s8-i1", 0.15], ["#s8-i2", 0.55], ["#s8-i3", 0.95]].forEach(function (p) {
-            tl.fromTo(p[0], { opacity: 0, x: -60, filter: "blur(6px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, p[1]);
-          });
-          tl.fromTo("#s8-label", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3, ease: "power4.out" }, 0.05);
-          tl.to("#s8-label", { opacity: 0, duration: 0.25 }, 3.0);
-          tl.to(["#s8-i1", "#s8-i2", "#s8-i3"], { opacity: 0, y: -50, duration: 0.3, ease: "power3.in", stagger: 0.05 }, 3.0);
           // The mark draws in on the impact, then the name holds.
-          tl.fromTo("#s8-brand", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 3.35);
-          tl.fromTo("#s8-brand .s8-mark path, #s8-brand .s8-mark circle", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDasharray: 1, strokeDashoffset: 0, duration: 0.8, ease: "power2.out", stagger: 0.05 }, 3.4);
-          tl.fromTo("#s8-brand .s8-mark", { scale: 0.6, rotation: -40 }, { scale: 1, rotation: 0, duration: 0.9, ease: "expo.out" }, 3.4);
-          tl.fromTo("#s8-name", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 3.9);
-          tl.fromTo("#s8-place", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 4.2);
-          tl.fromTo("#s8-brand", { scale: 1 }, { scale: 1.035, duration: 4.4, ease: "sine.inOut" }, 4.2);
+          tl.fromTo("#s8-brand", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 0.1);
+          tl.fromTo("#s8-brand .s8-mark path, #s8-brand .s8-mark circle", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDasharray: 1, strokeDashoffset: 0, duration: 0.8, ease: "power2.out", stagger: 0.05 }, 0.15);
+          tl.fromTo("#s8-brand .s8-mark", { scale: 0.6, rotation: -40 }, { scale: 1, rotation: 0, duration: 0.9, ease: "expo.out" }, 0.15);
+          tl.fromTo("#s8-name", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 0.65);
+          tl.fromTo("#s8-place", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 0.95);
+          tl.fromTo("#s8-brand", { scale: 1 }, { scale: 1.035, duration: 3.2, ease: "sine.inOut" }, 0.95);
           window.__timelines["s8-end"] = tl;
         })();
       </script>

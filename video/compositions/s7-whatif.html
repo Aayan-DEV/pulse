@@ -23,7 +23,7 @@
         <div class="s7-ground"></div>
         <div id="s7-win" class="s7-win">
           <div id="s7-cam" class="s7-cam" data-layout-allow-overflow>
-            <video id="s7-vid" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="11" muted playsinline></video>
+            <video id="s7-vid" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="5.2" data-media-start="0.8" muted playsinline></video>
           </div>
         </div>
         <div id="s7-live" class="s7-live"><i id="s7-dot"></i>Live demo</div>
@@ -43,13 +43,12 @@
           tl.set("#s7-cam", cam(960, 540, 1), 0);
           tl.fromTo("#s7-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0);
           tl.fromTo("#s7-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.3);
-          tl.fromTo("#s7-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 15, yoyo: true }, 0.3);
-          caption("#s7-cap1", 0.3, 4.9);
+          tl.fromTo("#s7-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 7, yoyo: true }, 0.3);
+          caption("#s7-cap1", 0.2, 2.6);
           // Push in on the scenario tiles and the result cards.
-          tl.to("#s7-cam", { ...cam(1100, 620, 1.22), duration: 1.0, ease: "power2.inOut" }, 0.6);
-          caption("#s7-cap2", 5.1, null);
-          tl.to("#s7-cam", { ...cam(1100, 760, 1.22), duration: 0.8, ease: "power2.inOut" }, 6.6);
-          tl.to("#s7-cam", { ...cam(960, 540, 1), duration: 0.9, ease: "power2.inOut" }, 9.6);
+          tl.to("#s7-cam", { ...cam(1100, 620, 1.22), duration: 0.8, ease: "power2.inOut" }, 0.3);
+          caption("#s7-cap2", 2.8, null);
+          tl.to("#s7-cam", { ...cam(1100, 760, 1.22), duration: 0.8, ease: "power2.inOut" }, 2.7);
           window.__timelines["s7-whatif"] = tl;
         })();
       </script>

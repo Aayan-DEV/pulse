@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
+        @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+        #root { position: absolute; inset: 0; overflow: hidden; }
+        .s9-ground { position: absolute; inset: 0; background: #f6f5f2; }
+        .s9-stage { position: absolute; inset: 0; }
+        .s9-win { position: absolute; left: 160px; top: 40px; width: 1600px; height: 1000px; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 24px 60px rgba(20, 19, 16, 0.18); opacity: 0; }
+        .s9-win img { position: absolute; left: 0; top: 0; width: 1600px; display: block; }
+        .s9-cap { position: absolute; left: 64px; bottom: 64px; padding: 16px 30px 20px; border-radius: 8px; background: #0a0a0a; color: #fff; font-family: "Perfectly Nineties", serif; font-size: 64px; line-height: 1; white-space: nowrap; opacity: 0; }
+        .s9-card { position: absolute; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 24px 60px rgba(20, 19, 16, 0.22); opacity: 0; }
+        .s9-card img { display: block; width: 100%; height: 100%; }
+        .s9-line { position: absolute; left: 0; right: 0; top: 948px; text-align: center; font-family: "Perfectly Nineties", serif; font-size: 68px; line-height: 1; color: #0a0a0a; opacity: 0; }
+        .s9-line .s9-hot { color: #d9622b; }
+      </style>
+      <div id="root" data-composition-id="s9-tour" data-width="1920" data-height="1080">
+        <div class="s9-ground"></div>
+        <div id="s9-stage" class="s9-stage">
+          <div id="s9-w0" class="s9-win"><img id="s9-i0" src="assets/shots/overview.png" alt="" style="height:1077px" /></div>
+          <div id="s9-w1" class="s9-win"><img id="s9-i1" src="assets/shots/map.png" alt="" style="height:1000px" /></div>
+          <div id="s9-w2" class="s9-win"><img id="s9-i2" src="assets/shots/forecast.png" alt="" style="height:1000px" /></div>
+          <div id="s9-w3" class="s9-win"><img id="s9-i3" src="assets/shots/staffing.png" alt="" style="height:1598px" /></div>
+          <div id="s9-w4" class="s9-win"><img id="s9-i4" src="assets/shots/transit.png" alt="" style="height:1886px" /></div>
+          <div id="s9-w5" class="s9-win"><img id="s9-i5" src="assets/shots/whatif.png" alt="" style="height:1640px" /></div>
+        </div>
+        <div id="s9-c0" class="s9-cap">Overview</div>
+        <div id="s9-c1" class="s9-cap">Live map</div>
+        <div id="s9-c2" class="s9-cap">Forecast, 7 days</div>
+        <div id="s9-c3" class="s9-cap">Staffing</div>
+        <div id="s9-c4" class="s9-cap">Trains and trams</div>
+        <div id="s9-c5" class="s9-cap">What if</div>
+        <div id="s9-k0" class="s9-card" style="left: 368px; top: 120px; width: 1184px; height: 312px;"><img src="assets/cards/crew.png" alt="" /></div>
+        <div id="s9-k1" class="s9-card" style="left: 110px; top: 500px; width: 867px; height: 347px;"><img src="assets/cards/hours.png" alt="" /></div>
+        <div id="s9-k2" class="s9-card" style="left: 1030px; top: 505px; width: 778px; height: 334px;"><img src="assets/cards/why.png" alt="" /></div>
+        <div id="s9-line" class="s9-line">Every number, <span class="s9-hot">with its reason</span></div>
+      </div>
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          const N = 6, STEP = 0.9;
+          const drift = [40, 0, 0, 160, 220, 180];
+          for (let i = 0; i < N; i++) {
+            const t = i * STEP, w = "#s9-w" + i, c = "#s9-c" + i;
+            tl.fromTo(w, { opacity: 1, x: i === 0 ? 0 : 1920, scale: i === 0 ? 0.94 : 1 }, { opacity: 1, x: 0, scale: 1, duration: i === 0 ? 0.4 : 0.32, ease: "power3.out", immediateRender: false }, t);
+            tl.fromTo("#s9-i" + i, { y: 0 }, { y: -drift[i], duration: STEP + 0.4, ease: "sine.inOut", immediateRender: false }, t);
+            tl.fromTo(c, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.22, ease: "power3.out", immediateRender: false }, t + 0.1);
+            if (i < N - 1) {
+              tl.to(w, { scale: 0.94, opacity: 0, duration: 0.32, ease: "power2.in" }, t + STEP);
+              tl.to(c, { opacity: 0, duration: 0.12 }, t + STEP);
+            }
+          }
+          // Detail cards over the blurred last screen.
+          const T = N * STEP;
+          tl.to("#s9-stage", { filter: "blur(10px)", opacity: 0.45, duration: 0.4, ease: "power2.out" }, T);
+          tl.to("#s9-c5", { opacity: 0, duration: 0.15 }, T);
+          ["#s9-k0", "#s9-k1", "#s9-k2"].forEach(function (k, j) {
+            tl.fromTo(k, { opacity: 0, y: 60, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, T + 0.2 + j * 0.25);
+          });
+          tl.fromTo("#s9-line", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, T + 0.7);
+          tl.to(["#s9-k0", "#s9-k1", "#s9-k2"], { y: -10, duration: 1.6, ease: "sine.inOut" }, T + 0.9);
+          window.__timelines["s9-tour"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>
