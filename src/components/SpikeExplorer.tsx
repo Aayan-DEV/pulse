@@ -32,7 +32,7 @@ export default function SpikeExplorer({ spikes }: { spikes: Spike[] }) {
   return (
     <div className="ak-grid ak-grid--2-1" style={{ gridTemplateColumns: "minmax(0,1fr) minmax(0,2fr)" }}>
       <section className="ak-panel">
-        <div className="ak-panel-head"><div><h2 className="ak-h">Spike days</h2><p className="ak-note">Biggest excess first</p></div></div>
+        <div className="ak-panel-head"><div><h2 className="ak-h">Spike days</h2></div></div>
         <div style={{ maxHeight: 640, overflowY: "auto" }}>
           {spikes.map((x, k) => (
             <button key={x.date} onClick={() => setI(k)} className="ak-row"
@@ -46,28 +46,27 @@ export default function SpikeExplorer({ spikes }: { spikes: Spike[] }) {
       <div>
         <section className="ak-panel">
           <div className="ak-panel-head">
-            <div><h2 className="ak-h">{dayLabel(s.date)}</h2>
-              <p className="ak-note">{s.actual.toLocaleString("en")} orders against a likely top of {Math.round(s.p90).toLocaleString("en")}: <b>{Math.round(s.excessTransactions).toLocaleString("en")} extra</b> over {s.spikeHours} hours.</p></div>
+            <div><h2 className="ak-h">{dayLabel(s.date)}: +{Math.round(s.excessTransactions).toLocaleString("en")} extra orders</h2>
+              <p className="ak-note">Most likely: <b>{s.candidates[0]?.title ?? "unknown"}</b></p></div>
+            <div className="ak-key"><span><i />Expected</span><span><i className="band" />Likely range</span><span><i className="ink" />Sold</span></div>
           </div>
           <div className="ak-panel-body">
-            <p className="ak-note" style={{ margin: "0 0 8px" }}>Shaded band runs from likely (P50) to the top of the range (P90). Ink line is what happened.</p>
             <ForecastChart height={220} data={s.hours.map((h) => ({ label: hh(h.time), p10: h.p10 ?? h.p50, p50: h.p50, p90: h.p90, actual: h.actual }))} />
           </div>
         </section>
         <section className="ak-panel">
-          <div className="ak-panel-head"><div><h2 className="ak-h">Likely causes, ranked</h2><p className="ak-note">Score = learned impact of that kind of cause × how close × how well the timing fits</p></div></div>
-          {s.candidates.map((c, k) => (
-            <div key={c.id} className="ak-row" style={{ gridTemplateColumns: "24px minmax(0,1fr) 140px 52px" }}>
+          <div className="ak-panel-head"><div><h2 className="ak-h">Likely causes</h2></div></div>
+          {s.candidates.slice(0, 3).map((c, k) => (
+            <div key={c.id} className="ak-row" style={{ gridTemplateColumns: "24px minmax(0,1fr) 140px" }} title={`Score ${c.score.toFixed(1)}: learned impact × closeness × timing`}>
               <div className="faint num">{k + 1}</div>
               <div>
                 <div className="ak-row-title">{c.kind === "unexplained" ? <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><HelpCircle style={{ width: 14, height: 14 }} />{c.title}</span> : c.title}</div>
-                <div className="ak-row-why">{c.kind}{c.category ? ` · ${c.category}` : ""}{c.distanceKm != null ? ` · ${c.distanceKm.toFixed(2)} km away` : ""}</div>
+                {c.distanceKm != null && <div className="ak-row-why">{c.distanceKm < 1 ? `${Math.round(c.distanceKm * 1000)} m away` : `${c.distanceKm.toFixed(1)} km away`}</div>}
               </div>
               <div className="ak-bar-track"><div className={`ak-bar-fill${c.kind === "unexplained" ? " neg" : ""}`} style={{ width: `${(100 * c.score) / max}%` }} /></div>
-              <div className="ak-row-n" style={{ fontSize: 13 }}>{c.score.toFixed(1)}</div>
             </div>
           ))}
-          {truth && <p className="ak-panel-foot">Ground truth from the simulator: <b>{truth}</b>. Shown only to score the finder.</p>}
+          {truth && <p className="ak-panel-foot">Real cause (simulator): <b>{truth}</b></p>}
         </section>
       </div>
     </div>

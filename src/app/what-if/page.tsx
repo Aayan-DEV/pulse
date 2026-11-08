@@ -8,8 +8,8 @@ export const dynamic = "force-dynamic";
 export default function WhatIfPage() {
   return (
     <main className="adm-content">
-      <PageHead crumb="Store / What if" title="What if" icon={FlaskConical}
-        finding={<>Add an event or switch on a scenario and the <b>real model</b> runs again with those inputs. Everything is compared with the normal forecast for the same day.</>} />
+      <PageHead crumb="Plan / What if" title="What if" icon={FlaskConical}
+        finding={<>Tap a scenario. See what changes.</>} />
       <WhatIf venues={VENUES} />
     </main>
   );

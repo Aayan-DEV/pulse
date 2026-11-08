@@ -23,7 +23,6 @@ const SCEN = [
   { k: "xmasMarket", label: "Christmas market", icon: TreePine },
 ] as const;
 type Flags = Record<(typeof SCEN)[number]["k"], boolean>;
-const ZOOM = ["Hour", "Day", "Week", "Month"] as const;
 
 const n0 = (v: number) => Math.round(v).toLocaleString("en").replace(/,/g, " ");
 const sign = (v: number) => `${v >= 0 ? "+" : "−"}${n0(Math.abs(v))}`;
@@ -47,7 +46,6 @@ export default function WhatIf({ venues }: { venues: Venue[] }) {
   const [att, setAtt] = useState(11000);
   const [start, setStart] = useState(19);
   const [dur, setDur] = useState(3);
-  const [zoom, setZoom] = useState<(typeof ZOOM)[number]>("Hour");
   const [res, setRes] = useState<WhatIfResult | null>(null);
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
@@ -69,7 +67,7 @@ export default function WhatIf({ venues }: { venues: Venue[] }) {
     return () => clearTimeout(t);
   }, [day, flags, evOn, type, venue, att, start, dur, venues]);
 
-  const rows = !res ? [] : zoom === "Hour" ? res.hourly : zoom === "Day" ? res.daily : zoom === "Week" ? res.weekly : res.month;
+  const rows = res ? res.hourly.filter((r) => r.base > 0 || r.p50 > 0) : []; // open hours only
   const chart = rows.map((r) => ({ ...r, lo: r.p10, band: Math.max(0, r.p90 - r.p10) }));
   const k = res?.kpis;
   const v = venues.find((x) => x.key === venue)!;
@@ -130,12 +128,10 @@ export default function WhatIf({ venues }: { venues: Venue[] }) {
         <div className="ak-grid ak-grid--2-1" style={{ marginTop: 16 }}>
           <section className="ak-panel">
             <div className="ak-panel-head">
-              <div><h2 className="ak-h">Forecast: normal vs this scenario</h2>
-                <p className="ak-note">{zoom === "Hour" ? `Each hour of ${res.dayLabel}, straight from the model.` : zoom === "Day" ? "Each of the next 7 days, adding up the hourly forecast." : zoom === "Week" ? "Next 4 weeks, adding up the hourly forecast." : "Each of the next 28 days, adding up the hourly forecast."}</p></div>
-              <div className="ak-seg">{ZOOM.map((z) => <button key={z} aria-pressed={zoom === z} onClick={() => setZoom(z)}>{z}</button>)}</div>
+              <div><h2 className="ak-h">Orders per hour</h2></div>
+              <div className="ak-key"><span><i className="ink" style={{ height: 1 }} />Normal</span><span><i />With scenario</span><span><i className="band" />Likely range</span></div>
             </div>
             <div className="ak-panel-body">
-              <div className="ak-key" style={{ marginBottom: 8 }}><span><i className="ink" style={{ height: 1 }} />Normal</span><span><i />Scenario</span><span><i className="band" />P10 to P90</span></div>
               <div className="ak-chart" style={{ height: 300 }}>
                 <ResponsiveContainer>
                   <ComposedChart data={chart} margin={{ top: 6, right: 8, bottom: 0, left: -10 }}>
@@ -154,12 +150,11 @@ export default function WhatIf({ venues }: { venues: Venue[] }) {
                   </ComposedChart>
                 </ResponsiveContainer>
               </div>
-              {res.notes.map((x) => <p key={x} className="ak-note" style={{ marginTop: 6 }}>{x}</p>)}
             </div>
           </section>
 
           <section className="ak-panel">
-            <div className="ak-panel-head"><div><h2 className="ak-h">Why it changes</h2><p className="ak-note">Model drivers, scenario minus normal, over the day</p></div></div>
+            <div className="ak-panel-head"><div><h2 className="ak-h">Why</h2></div></div>
             {res.why.length ? res.why.map((w) => (
               <div key={w.group} className="wi-why"><b className={w.delta < 0 ? "is-bad" : ""}>{sign(w.delta)}</b><span>{w.text.replace(/^[+−]\d[\d ]* orders /, "orders ")}</span></div>
             )) : <div className="ak-empty">No change from the normal forecast.</div>}
@@ -167,7 +162,7 @@ export default function WhatIf({ venues }: { venues: Venue[] }) {
         </div>
 
         <section className="ak-panel" style={{ marginTop: 16 }}>
-          <div className="ak-panel-head"><div><h2 className="ak-h">What needs to change</h2><p className="ak-note">For {res.dayLabel}, compared with the normal plan</p></div></div>
+          <div className="ak-panel-head"><div><h2 className="ak-h">To do</h2></div></div>
           <div className="wi-todo">
             <div className="wi-todo-row"><Users /><div><b>Cashiers</b>
               <span>{res.perHour.filter((p) => p.dFront).length ? res.perHour.filter((p) => p.dFront).map((p) => `${p.label} ${sign(p.dFront)}`).join(" · ") : "No change"}</span></div></div>
@@ -175,11 +170,10 @@ export default function WhatIf({ venues }: { venues: Venue[] }) {
               <span>{res.perHour.filter((p) => p.dKitchen).length ? res.perHour.filter((p) => p.dKitchen).map((p) => `${p.label} ${sign(p.dKitchen)}`).join(" · ") : "No change"}</span></div></div>
             <div className="wi-todo-row"><CalendarClock /><div><b>Shifts</b>
               <span>{Math.round(res.shifts.personHours) === 0 ? "No change" : res.shifts.personHours > 0 ? `Add about ${res.shifts.add} shift${res.shifts.add === 1 ? "" : "s"} of 6 h (${n0(res.shifts.personHours)} staff-hours)` : `About ${n0(-res.shifts.personHours)} staff-hours fewer: shorten or move ${Math.abs(res.shifts.add)} shift${Math.abs(res.shifts.add) === 1 ? "" : "s"}`}</span></div></div>
-            <div className="wi-todo-row"><Package /><div><b>Stock to order</b>
+            <div className="wi-todo-row" title="Assumed per order: 1.15 patties, 0.85 fries, 1.1 buns, 0.9 drinks. Not BK recipe data."><Package /><div><b>Stock to order</b>
               <span>{res.stock.every((s) => s.delta === 0) ? "No change" : res.stock.map((s) => `${s.item} ${sign(s.delta)} ${s.unit}`).join(" · ")}</span>
-              <small>Assumed per order: 1.15 patties, 0.85 fries, 1.1 buns, 0.9 drinks. Not BK recipe data.</small></div></div>
+              </div></div>
           </div>
-          <p className="ak-panel-foot">Staff from the same Erlang C rules as the Staffing page; wage cost = staff-hours × NOK 215.29 adult minimum wage.</p>
         </section>
       </>)}
       {!res && !err && <div className="ak-empty" style={{ marginTop: 16 }}>Running the model…</div>}
