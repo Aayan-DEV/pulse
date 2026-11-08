@@ -1,8 +1,45 @@
-# Pulse Oslo
+# Pulse
 
-Why a store sells when it sells. Pulse forecasts orders per hour for **Burger King Klingenberg** (Klingenberggata 5, by Nationaltheatret, Oslo), explains every hour by its causes, finds the cause of past spikes, and turns the forecast into a legal staff schedule.
+**Know the rush before it hits.**
 
-No login. Light and dark mode. Built on the Eto Admin design system.
+Pulse watches the area around one fast food store and tells the manager, hour by hour, how busy the store will be, how many people the shift needs, and why. It reads local events, trains and disruptions, weather, holidays and more, in real time.
+
+Built in 48 hours at Oslo Sprint 2026 on a real store: **Burger King Klingenberggata 5**, by Nationaltheatret in Oslo. Nothing in the method is tied to Oslo. Any store with an address can get the same local picture.
+
+![Overview](docs/screens/employer-overview.png)
+
+## Why
+
+- A Burger King owner near Aker Brygge told us his hardest problem is planning around what happens near the store: trains that stop, events, weather, and knowing why a good day was good.
+- At Domino's I lived the other side. There was no forecast, so when a rush hit, staff were called in at short notice for a few hours.
+- Fast food margins are thin and staff is the biggest cost a store controls. Being wrong in either direction costs money or a stressed crew.
+
+## What it does
+
+1. **Forecast:** orders for every hour of the next 7 days, with a likely range (P10 to P90) and the reasons behind each hour.
+2. **Staffing:** turns the forecast into crew per hour (Erlang C) and a legal shift plan under the Norwegian Working Environment Act.
+3. **Live shift view:** compares sales so far with the forecast and raises an alarm early when a rush is building, so the manager can call help in time.
+4. **Why it spiked:** finds days above the likely range and ranks the causes. An AI agent researches each spike, and crew notes are added to the record.
+5. **What if:** switch on a train closure, heavy snow, a cruise day or an event and the real model reruns.
+6. **Live map:** the store, live trains and buses, nearby places, events and road cameras.
+
+| Forecast | Staffing |
+|---|---|
+| ![Forecast](docs/screens/employer-forecast.png) | ![Staffing](docs/screens/employer-staffing.png) |
+| **Live shift (rush demo)** | **Trains and trams** |
+| ![Shift](docs/screens/shift-rush-demo.png) | ![Transit](docs/screens/transit-employer.png) |
+
+## Demo film and pitch
+
+- `video/` is the demo film, built with [HyperFrames](https://hyperframes.heygen.com) (HTML rendered to video). Run `npx hyperframes preview` inside `video/` to open it.
+- `docs/pitch/` holds the pitch deck.
+
+## Stack
+
+- Next.js 15, React 19, Tailwind 4, Recharts, MapLibre.
+- LightGBM quantile models trained in Python, exported and run in TypeScript (parity tested).
+- Gemini on Vertex AI for the agents (event scout, camera watcher, staffing overseer, spike research).
+- Data: MET Norway (Locationforecast and Frost), Entur (Journey Planner, vehicles, SIRI-ET history on BigQuery), context.dev for venue programmes, Statens vegvesen road cameras, Norwegian holidays.
 
 ## Run it
 
@@ -97,5 +134,5 @@ model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs
 
 ## Notes
 
-- The Perfectly Nineties font is copied from Eto for this demo. Check its licence before any public release.
-- Rotate the context.dev key after the demo, because it was shared in chat.
+- The Perfectly Nineties display font is not in this repository because of its licence. Without it, titles fall back to a system serif. Add your own copy at `public/fonts/perfectlynineties.otf` if you hold a licence.
+- No keys are in this repository. Secrets live only in `.env.local`, which is git-ignored.

@@ -42,3 +42,7 @@ next-env.d.ts
 _eto-ref/
 model/.venv/
 agent-runs/
+
+# Commercial font (licence not for redistribution); keep local only
+public/fonts/perfectlynineties.otf
+video/assets/fonts/PerfectlyNineties.otf
