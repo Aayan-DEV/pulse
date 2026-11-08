@@ -1,0 +1,1022 @@
+[
+ {
+  "id": "bk-klingenberg",
+  "name": "Burger King Klingenberg",
+  "category": "competitor",
+  "lat": 59.91389,
+  "lon": 10.73277,
+  "distanceM": 0,
+  "note": "The store itself (category set to competitor so it groups with QSR; filter by id).",
+  "sources": [
+   {
+    "label": "Brønnøysundregistrene: org 981909100 BURGER KING AVD 5031 KLINGENBERG",
+    "url": "https://data.brreg.no/enhetsregisteret/oppslag/underenheter/981909100"
+   },
+   {
+    "label": "OpenStreetMap: Burger King Klingenberggata (node 383991805)",
+    "url": "https://www.openstreetmap.org/node/383991805"
+   }
+  ]
+ },
+ {
+  "id": "cluster-klingenberg-bars",
+  "name": "Klingenberggata / Stortingsgata bars",
+  "category": "nightlife",
+  "lat": 59.913812,
+  "lon": 10.733027,
+  "distanceM": 17,
+  "note": "Pubs on the store's block (Dr. Jekyll's, The Old Irish Pub, The Lannisters, Raadhuset Bar, Bar Boman).",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 10604787203: Dr. Jekyll's Pub (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10604787203"
+   },
+   {
+    "label": "OpenStreetMap node 12797437936: The Old Irish Pub (ODbL)",
+    "url": "https://www.openstreetmap.org/node/12797437936"
+   },
+   {
+    "label": "OpenStreetMap node 12797437935: The Lannisters (ODbL)",
+    "url": "https://www.openstreetmap.org/node/12797437935"
+   },
+   {
+    "label": "OpenStreetMap node 10604866005: Raadhuset Bar (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10604866005"
+   },
+   {
+    "label": "OpenStreetMap node 6341292393: Bar Boman (ODbL)",
+    "url": "https://www.openstreetmap.org/node/6341292393"
+   }
+  ]
+ },
+ {
+  "id": "cinema-saga-kino",
+  "name": "Saga kino",
+  "category": "cinema",
+  "lat": 59.914122,
+  "lon": 10.732463,
+  "distanceM": 31,
+  "note": "Large central cinema 100 m north.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 25416925 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/25416925"
+   }
+  ]
+ },
+ {
+  "id": "venue-chat-noir",
+  "name": "Chat Noir",
+  "category": "venue",
+  "lat": 59.913728,
+  "lon": 10.732298,
+  "distanceM": 32,
+  "note": "Revue theatre on Klingenberggata, next door to the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 34693408 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/34693408"
+   }
+  ]
+ },
+ {
+  "id": "competitor-banh-mi-xo",
+  "name": "Banh Mi Xo",
+  "category": "competitor",
+  "lat": 59.913623,
+  "lon": 10.733301,
+  "distanceM": 42,
+  "note": "Quick-service, same block.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 10604787204 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10604787204"
+   }
+  ]
+ },
+ {
+  "id": "cinema-klingenberg-kino",
+  "name": "Klingenberg kino",
+  "category": "cinema",
+  "lat": 59.913468,
+  "lon": 10.732893,
+  "distanceM": 47,
+  "note": "Odeon/Oslo Kino cinema in the same block; screenings end into the store's evening peak.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 25416924 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/25416924"
+   }
+  ]
+ },
+ {
+  "id": "hotel-hotel-continental",
+  "name": "Hotel Continental",
+  "category": "hotel",
+  "lat": 59.91409,
+  "lon": 10.733521,
+  "distanceM": 47,
+  "note": "Hotel across Stortingsgata from Nationaltheatret.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1884293696 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1884293696"
+   }
+  ]
+ },
+ {
+  "id": "competitor-mcdonald-s-klingenberggata",
+  "name": "McDonald's Klingenberggata",
+  "category": "competitor",
+  "lat": 59.913656,
+  "lon": 10.733493,
+  "distanceM": 48,
+  "note": "Direct competitor directly opposite the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1884335181 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1884335181"
+   }
+  ]
+ },
+ {
+  "id": "competitor-smoothie-xchange",
+  "name": "Smoothie Xchange",
+  "category": "competitor",
+  "lat": 59.913295,
+  "lon": 10.732756,
+  "distanceM": 66,
+  "note": "Quick-service, same block.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 3441434865 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/3441434865"
+   }
+  ]
+ },
+ {
+  "id": "transit-nationaltheatret-tram-stop",
+  "name": "Nationaltheatret tram stop",
+  "category": "transit",
+  "lat": 59.914615,
+  "lon": 10.732888,
+  "distanceM": 81,
+  "note": "Trams 11, 12, 13, 17, 18, 19 stop outside the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1334861613 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1334861613"
+   }
+  ]
+ },
+ {
+  "id": "venue-nationaltheatret-theatre",
+  "name": "Nationaltheatret (theatre)",
+  "category": "venue",
+  "lat": 59.914366,
+  "lon": 10.734254,
+  "distanceM": 98,
+  "note": "National theatre; evening shows release audiences next to the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 4368869 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/4368869"
+   }
+  ]
+ },
+ {
+  "id": "competitor-upper-crust-nationaltheatret",
+  "name": "Upper Crust (Nationaltheatret)",
+  "category": "competitor",
+  "lat": 59.914738,
+  "lon": 10.730323,
+  "distanceM": 166,
+  "note": "Station quick-service food.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 10013717804 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10013717804"
+   }
+  ]
+ },
+ {
+  "id": "hotel-hotel-christiania-teater",
+  "name": "Hotel Christiania Teater",
+  "category": "hotel",
+  "lat": 59.913542,
+  "lon": 10.735917,
+  "distanceM": 180,
+  "note": "Hotel on Stortingsgata.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 441543677 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/441543677"
+   }
+  ]
+ },
+ {
+  "id": "venue-oslo-konserthus",
+  "name": "Oslo Konserthus",
+  "category": "venue",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "distanceM": 189,
+  "note": "Concert hall in Vika; evening concerts.",
+  "sources": [
+   {
+    "label": "OpenStreetMap relation 14166523 (ODbL)",
+    "url": "https://www.openstreetmap.org/relation/14166523"
+   }
+  ]
+ },
+ {
+  "id": "transit-nationaltheatret-station-train-t-bane",
+  "name": "Nationaltheatret station (train + T-bane)",
+  "category": "transit",
+  "lat": 59.915579,
+  "lon": 10.731927,
+  "distanceM": 194,
+  "note": "Second-busiest rail station in Norway after Oslo S; T-bane lines 1-5; exits face the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 5218231660 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/5218231660"
+   }
+  ]
+ },
+ {
+  "id": "landmark-oslo-radhus-city-hall",
+  "name": "Oslo rådhus (City Hall)",
+  "category": "landmark",
+  "lat": 59.912049,
+  "lon": 10.733692,
+  "distanceM": 211,
+  "note": "Nobel Peace Prize ceremony on 10 December; tourist magnet.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 24900009 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/24900009"
+   }
+  ]
+ },
+ {
+  "id": "cinema-vika-kino",
+  "name": "Vika kino",
+  "category": "cinema",
+  "lat": 59.913388,
+  "lon": 10.72853,
+  "distanceM": 243,
+  "note": "Cinema in Vika.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 25416923 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/25416923"
+   }
+  ]
+ },
+ {
+  "id": "market-spikersuppa",
+  "name": "Spikersuppa",
+  "category": "market",
+  "lat": 59.913839,
+  "lon": 10.73721,
+  "distanceM": 248,
+  "note": "Jul i Vinterland Christmas market and ice rink each November to New Year, 250 m away.",
+  "sources": [
+   {
+    "label": "OpenStreetMap relation 11158886 (ODbL)",
+    "url": "https://www.openstreetmap.org/relation/11158886"
+   }
+  ]
+ },
+ {
+  "id": "hotel-scandic-victoria",
+  "name": "Scandic Victoria",
+  "category": "hotel",
+  "lat": 59.912596,
+  "lon": 10.736948,
+  "distanceM": 274,
+  "note": "Hotel by Rosenkrantz gate.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1884426647 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1884426647"
+   }
+  ]
+ },
+ {
+  "id": "hotel-thon-hotel-cecil",
+  "name": "Thon Hotel Cecil",
+  "category": "hotel",
+  "lat": 59.912837,
+  "lon": 10.737375,
+  "distanceM": 282,
+  "note": "Hotel by Stortinget.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 441543679 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/441543679"
+   }
+  ]
+ },
+ {
+  "id": "museum-nobel-peace-center",
+  "name": "Nobel Peace Center",
+  "category": "museum",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "distanceM": 286,
+  "note": "Museum on Rådhusplassen; start of the torchlight procession since 2024.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 8046314379 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/8046314379"
+   }
+  ]
+ },
+ {
+  "id": "landmark-radhusplassen",
+  "name": "Rådhusplassen",
+  "category": "landmark",
+  "lat": 59.911221,
+  "lon": 10.732942,
+  "distanceM": 297,
+  "note": "City Hall square: Oslo Marathon start/finish, New Year events, outdoor concerts.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 1062404152 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/1062404152"
+   }
+  ]
+ },
+ {
+  "id": "competitor-texburger-universitetsgata",
+  "name": "Texburger Universitetsgata",
+  "category": "competitor",
+  "lat": 59.91549,
+  "lon": 10.737453,
+  "distanceM": 316,
+  "note": "Burger competitor north of Karl Johan.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 5865563902 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/5865563902"
+   }
+  ]
+ },
+ {
+  "id": "museum-nasjonalmuseet-national-museum",
+  "name": "Nasjonalmuseet (National Museum)",
+  "category": "museum",
+  "lat": 59.911608,
+  "lon": 10.728821,
+  "distanceM": 336,
+  "note": "Largest art museum in the Nordics; school groups and tourists.",
+  "sources": [
+   {
+    "label": "OpenStreetMap relation 13920125 (ODbL)",
+    "url": "https://www.openstreetmap.org/relation/13920125"
+   }
+  ]
+ },
+ {
+  "id": "museum-ibsenmuseet",
+  "name": "Ibsenmuseet",
+  "category": "museum",
+  "lat": 59.915031,
+  "lon": 10.727046,
+  "distanceM": 343,
+  "note": "Museum by the Palace park.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 90768996 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/90768996"
+   }
+  ]
+ },
+ {
+  "id": "transit-aker-brygge-tram-stop",
+  "name": "Aker brygge tram stop",
+  "category": "transit",
+  "lat": 59.911058,
+  "lon": 10.729975,
+  "distanceM": 351,
+  "note": "Tram stop serving the Aker Brygge office and dining cluster.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1365825662 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1365825662"
+   }
+  ]
+ },
+ {
+  "id": "museum-historisk-museum",
+  "name": "Historisk museum",
+  "category": "museum",
+  "lat": 59.916783,
+  "lon": 10.73554,
+  "distanceM": 357,
+  "note": "University museum by Karl Johan; school visits.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 31106820 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/31106820"
+   }
+  ]
+ },
+ {
+  "id": "venue-det-norske-teatret",
+  "name": "Det Norske Teatret",
+  "category": "venue",
+  "lat": 59.915219,
+  "lon": 10.738625,
+  "distanceM": 358,
+  "note": "Theatre on Kristian IVs gate; evening audiences.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 34693409 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/34693409"
+   }
+  ]
+ },
+ {
+  "id": "cluster-rosenkrantz-bars",
+  "name": "Rosenkrantz gate bar cluster",
+  "category": "nightlife",
+  "lat": 59.91524,
+  "lon": 10.738815,
+  "distanceM": 369,
+  "note": "Pubs and clubs (Lawo, Last Train, John's Bar, Mulligan's, Justisen, Herr Nilsen, Per på Hjørnet): Friday and Saturday late-night foot traffic.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 10933957569: Lawo (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10933957569"
+   },
+   {
+    "label": "OpenStreetMap node 10933957567: Last Train (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10933957567"
+   },
+   {
+    "label": "OpenStreetMap node 10933957570: John's Bar (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10933957570"
+   },
+   {
+    "label": "OpenStreetMap node 10933877464: Mulligan’s (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10933877464"
+   },
+   {
+    "label": "OpenStreetMap node 12749752010: Justisen (ODbL)",
+    "url": "https://www.openstreetmap.org/node/12749752010"
+   },
+   {
+    "label": "OpenStreetMap node 2844681715: Herr Nilsen (ODbL)",
+    "url": "https://www.openstreetmap.org/node/2844681715"
+   },
+   {
+    "label": "OpenStreetMap node 4340314385: Per på Hjørnet (ODbL)",
+    "url": "https://www.openstreetmap.org/node/4340314385"
+   },
+   {
+    "label": "OpenStreetMap node 10933877463: Bristol pub (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10933877463"
+   },
+   {
+    "label": "OpenStreetMap node 10933877465: Eilefs landhandleri (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10933877465"
+   }
+  ]
+ },
+ {
+  "id": "hotel-grand-hotel",
+  "name": "Grand Hotel",
+  "category": "hotel",
+  "lat": 59.913733,
+  "lon": 10.739478,
+  "distanceM": 374,
+  "note": "Nobel laureate's hotel; torchlight procession ends here.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 307505492 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/307505492"
+   }
+  ]
+ },
+ {
+  "id": "transit-kontraskjaeret-tram-stop",
+  "name": "Kontraskjæret tram stop",
+  "category": "transit",
+  "lat": 59.910891,
+  "lon": 10.73587,
+  "distanceM": 376,
+  "note": "Tram stop by Rådhusplassen and Akershus fortress.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1365825667 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1365825667"
+   }
+  ]
+ },
+ {
+  "id": "venue-oslo-nye-teater-hovedscenen",
+  "name": "Oslo Nye Teater (Hovedscenen)",
+  "category": "venue",
+  "lat": 59.914414,
+  "lon": 10.739797,
+  "distanceM": 396,
+  "note": "Theatre near Karl Johan; evening audiences.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 2452107757 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/2452107757"
+   }
+  ]
+ },
+ {
+  "id": "school-ruselokka-skole",
+  "name": "Ruseløkka skole",
+  "category": "school",
+  "lat": 59.913236,
+  "lon": 10.72557,
+  "distanceM": 408,
+  "note": "Primary school 450 m west.",
+  "capacity": 611,
+  "sources": [
+   {
+    "label": "OpenStreetMap way 1062588873 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/1062588873"
+   }
+  ]
+ },
+ {
+  "id": "hotel-hotel-bristol",
+  "name": "Hotel Bristol",
+  "category": "hotel",
+  "lat": 59.915162,
+  "lon": 10.739712,
+  "distanceM": 412,
+  "note": "Hotel by Rosenkrantz gate.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1929813126 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1929813126"
+   }
+  ]
+ },
+ {
+  "id": "landmark-stortinget-parliament",
+  "name": "Stortinget (Parliament)",
+  "category": "landmark",
+  "lat": 59.913006,
+  "lon": 10.740113,
+  "distanceM": 421,
+  "note": "Demonstrations at Eidsvolls plass and the Parliament.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 29132806 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/29132806"
+   }
+  ]
+ },
+ {
+  "id": "school-otto-treider-private-gymnas",
+  "name": "Otto Treider private gymnas",
+  "category": "school",
+  "lat": 59.911209,
+  "lon": 10.738378,
+  "distanceM": 432,
+  "note": "Upper secondary school by Rådhusplassen.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 5830068507 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/5830068507"
+   }
+  ]
+ },
+ {
+  "id": "hotel-scandic-karl-johan",
+  "name": "Scandic Karl Johan",
+  "category": "hotel",
+  "lat": 59.914167,
+  "lon": 10.740803,
+  "distanceM": 449,
+  "note": "Hotel on Karl Johan.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 5015490124 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/5015490124"
+   }
+  ]
+ },
+ {
+  "id": "competitor-digg-burger",
+  "name": "Digg Burger",
+  "category": "competitor",
+  "lat": 59.914853,
+  "lon": 10.740626,
+  "distanceM": 451,
+  "note": "Burger competitor in Rosenkrantz gate.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 2785549699 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/2785549699"
+   }
+  ]
+ },
+ {
+  "id": "school-wang-videregaende-skole",
+  "name": "Wang videregående skole",
+  "category": "school",
+  "lat": 59.914746,
+  "lon": 10.724413,
+  "distanceM": 475,
+  "note": "Upper secondary school near the Palace park.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 2824231278 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/2824231278"
+   }
+  ]
+ },
+ {
+  "id": "landmark-det-kongelige-slott-royal-palace",
+  "name": "Det kongelige slott (Royal Palace)",
+  "category": "landmark",
+  "lat": 59.917193,
+  "lon": 10.727236,
+  "distanceM": 480,
+  "note": "17 May children's parade ends here; changing of the guard draws tourists.",
+  "sources": [
+   {
+    "label": "OpenStreetMap relation 12267199 (ODbL)",
+    "url": "https://www.openstreetmap.org/relation/12267199"
+   }
+  ]
+ },
+ {
+  "id": "school-vika-videregaende-skole",
+  "name": "Vika videregående skole",
+  "category": "school",
+  "lat": 59.913011,
+  "lon": 10.724217,
+  "distanceM": 487,
+  "note": "Upper secondary school in Vika.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 7944170092 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/7944170092"
+   }
+  ]
+ },
+ {
+  "id": "competitor-subway-karl-johan",
+  "name": "Subway (Karl Johan)",
+  "category": "competitor",
+  "lat": 59.913732,
+  "lon": 10.741768,
+  "distanceM": 502,
+  "note": "Quick-service near Stortinget.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 3090736997 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/3090736997"
+   }
+  ]
+ },
+ {
+  "id": "hotel-radisson-blu-scandinavia-hotel",
+  "name": "Radisson Blu Scandinavia Hotel",
+  "category": "hotel",
+  "lat": 59.918446,
+  "lon": 10.734108,
+  "distanceM": 512,
+  "note": "Large hotel at Holbergs plass.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 33730394 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/33730394"
+   }
+  ]
+ },
+ {
+  "id": "competitor-max-burgers-egertorget",
+  "name": "Max Burgers (Egertorget)",
+  "category": "competitor",
+  "lat": 59.912701,
+  "lon": 10.741744,
+  "distanceM": 517,
+  "note": "Burger competitor on Karl Johan.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 315233909 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/315233909"
+   }
+  ]
+ },
+ {
+  "id": "cluster-aker-brygge",
+  "name": "Aker Brygge office, dining and bar cluster",
+  "category": "office",
+  "lat": 59.910116,
+  "lon": 10.727135,
+  "distanceM": 524,
+  "note": "Waterfront offices, shops, restaurants and bars 500 m south-west; lunch and after-work traffic.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 92647224: Aker Brygge Shopping (ODbL)",
+    "url": "https://www.openstreetmap.org/way/92647224"
+   },
+   {
+    "label": "OpenStreetMap node 25468555: Beer Palace (ODbL)",
+    "url": "https://www.openstreetmap.org/node/25468555"
+   },
+   {
+    "label": "OpenStreetMap node 392057333: Lekter'n (ODbL)",
+    "url": "https://www.openstreetmap.org/node/392057333"
+   },
+   {
+    "label": "OpenStreetMap node 8089727217: Brygga Bar (ODbL)",
+    "url": "https://www.openstreetmap.org/node/8089727217"
+   },
+   {
+    "label": "OpenStreetMap node 11105786805: 3KT (ODbL)",
+    "url": "https://www.openstreetmap.org/node/11105786805"
+   },
+   {
+    "label": "OpenStreetMap node 10013753418: Winther Aker Brygge (ODbL)",
+    "url": "https://www.openstreetmap.org/node/10013753418"
+   }
+  ]
+ },
+ {
+  "id": "hotel-thon-hotel-vika-atrium",
+  "name": "Thon Hotel Vika Atrium",
+  "category": "hotel",
+  "lat": 59.91116,
+  "lon": 10.724113,
+  "distanceM": 570,
+  "note": "Business and conference hotel in Vika.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 392058686 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/392058686"
+   }
+  ]
+ },
+ {
+  "id": "competitor-mcdonald-s-solli",
+  "name": "McDonald's (Solli)",
+  "category": "competitor",
+  "lat": 59.915071,
+  "lon": 10.722518,
+  "distanceM": 586,
+  "note": "McDonald's west of the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 13040179115 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/13040179115"
+   }
+  ]
+ },
+ {
+  "id": "transit-stortinget-t-bane-station",
+  "name": "Stortinget T-bane station",
+  "category": "transit",
+  "lat": 59.913566,
+  "lon": 10.743342,
+  "distanceM": 590,
+  "note": "Next metro station east; Karl Johan and Stortinget crowds.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 5218231673 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/5218231673"
+   }
+  ]
+ },
+ {
+  "id": "school-oslo-handelsgymnasium",
+  "name": "Oslo Handelsgymnasium",
+  "category": "school",
+  "lat": 59.913836,
+  "lon": 10.720121,
+  "distanceM": 705,
+  "note": "Upper secondary school at Solli.",
+  "capacity": 45,
+  "sources": [
+   {
+    "label": "OpenStreetMap way 870640504 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/870640504"
+   }
+  ]
+ },
+ {
+  "id": "landmark-akershus-festning",
+  "name": "Akershus festning",
+  "category": "landmark",
+  "lat": 59.9076,
+  "lon": 10.737263,
+  "distanceM": 743,
+  "note": "Fortress by the cruise quays; tourist route to the centre.",
+  "sources": [
+   {
+    "label": "OpenStreetMap relation 12391390 (ODbL)",
+    "url": "https://www.openstreetmap.org/relation/12391390"
+   }
+  ]
+ },
+ {
+  "id": "hotel-sommerro",
+  "name": "Sommerro",
+  "category": "hotel",
+  "lat": 59.915336,
+  "lon": 10.719646,
+  "distanceM": 749,
+  "note": "Hotel at Solli plass.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 88639599 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/88639599"
+   }
+  ]
+ },
+ {
+  "id": "port-sondre-akershuskai-cruise-quay",
+  "name": "Søndre Akershuskai cruise quay",
+  "category": "port",
+  "lat": 59.906512,
+  "lon": 10.735033,
+  "distanceM": 830,
+  "note": "Cruise berth below Akershus fortress, closest to the store.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 865170294 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/865170294"
+   }
+  ]
+ },
+ {
+  "id": "cinema-cinemateket",
+  "name": "Cinemateket",
+  "category": "cinema",
+  "lat": 59.909533,
+  "lon": 10.745719,
+  "distanceM": 869,
+  "note": "Film institute cinema.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 2555016576 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/2555016576"
+   }
+  ]
+ },
+ {
+  "id": "school-oslo-katedralskole",
+  "name": "Oslo katedralskole",
+  "category": "school",
+  "lat": 59.921071,
+  "lon": 10.741077,
+  "distanceM": 923,
+  "note": "Upper secondary school north of the centre.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 870940069 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/870940069"
+   }
+  ]
+ },
+ {
+  "id": "hotel-the-thief",
+  "name": "The Thief",
+  "category": "hotel",
+  "lat": 59.907613,
+  "lon": 10.72098,
+  "distanceM": 959,
+  "note": "Hotel at Tjuvholmen.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1960919882 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1960919882"
+   }
+  ]
+ },
+ {
+  "id": "museum-astrup-fearnley-museet",
+  "name": "Astrup Fearnley Museet",
+  "category": "museum",
+  "lat": 59.906925,
+  "lon": 10.721938,
+  "distanceM": 982,
+  "note": "Art museum at Tjuvholmen past Aker Brygge.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1931359713 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1931359713"
+   }
+  ]
+ },
+ {
+  "id": "school-uranienborg-skole",
+  "name": "Uranienborg skole",
+  "category": "school",
+  "lat": 59.920074,
+  "lon": 10.718765,
+  "distanceM": 1040,
+  "note": "Primary school.",
+  "capacity": 812,
+  "sources": [
+   {
+    "label": "OpenStreetMap way 870639372 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/870639372"
+   }
+  ]
+ },
+ {
+  "id": "competitor-burger-king-oslo-s",
+  "name": "Burger King (Oslo S)",
+  "category": "competitor",
+  "lat": 59.911234,
+  "lon": 10.752962,
+  "distanceM": 1164,
+  "note": "Same brand at Oslo S; absorbs station traffic.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 3132099333 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/3132099333"
+   }
+  ]
+ },
+ {
+  "id": "transit-oslo-s-oslo-central-station",
+  "name": "Oslo S (Oslo Central Station)",
+  "category": "transit",
+  "lat": 59.911025,
+  "lon": 10.753138,
+  "distanceM": 1179,
+  "note": "Rail bottleneck: faults at Oslo S or in the Oslo tunnel stop trains at Nationaltheatret.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 660921 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/660921"
+   }
+  ]
+ },
+ {
+  "id": "port-revierkaia-cruise-quay",
+  "name": "Revierkaia cruise quay",
+  "category": "port",
+  "lat": 59.905148,
+  "lon": 10.746116,
+  "distanceM": 1224,
+  "note": "Cruise berth; passengers walk via Akershus and Rådhusplassen.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 865183365 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/865183365"
+   }
+  ]
+ },
+ {
+  "id": "venue-oslo-spektrum",
+  "name": "Oslo Spektrum",
+  "category": "venue",
+  "lat": 59.912987,
+  "lon": 10.75472,
+  "distanceM": 1228,
+  "note": "Main indoor arena (concerts, Nobel Peace Prize Concert); 1.2 km east.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 10568134 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/10568134"
+   }
+  ]
+ },
+ {
+  "id": "port-vippetangen-oslo-vippetangen-terminal",
+  "name": "Vippetangen (Oslo Vippetangen terminal)",
+  "category": "port",
+  "lat": 59.903698,
+  "lon": 10.743741,
+  "distanceM": 1288,
+  "note": "Cruise and ferry berth at the tip of Akershus.",
+  "sources": [
+   {
+    "label": "OpenStreetMap node 1448786168 (ODbL)",
+    "url": "https://www.openstreetmap.org/node/1448786168"
+   }
+  ]
+ },
+ {
+  "id": "port-color-line-terminal-hjortneskaia",
+  "name": "Color Line Terminal (Hjortneskaia)",
+  "category": "port",
+  "lat": 59.90884,
+  "lon": 10.71012,
+  "distanceM": 1382,
+  "note": "Kiel ferry terminal west of Aker Brygge.",
+  "sources": [
+   {
+    "label": "OpenStreetMap way 24667689 (ODbL)",
+    "url": "https://www.openstreetmap.org/way/24667689"
+   }
+  ]
+ }
+]

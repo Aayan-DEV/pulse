@@ -133,6 +133,9 @@ a { color: inherit; }
 .ak-seg button { height: 26px; padding: 0 10px; border: 0; border-radius: 3px; background: transparent; cursor: pointer; font: 400 13px/26px var(--od-body); color: var(--od-muted); white-space: nowrap; }
 .ak-seg button:hover { color: var(--od-ink); }
 .ak-seg button[aria-pressed="true"] { background: var(--od-ink); color: var(--od-on-ink); }
+.ak-seg a { display: inline-block; height: 26px; padding: 0 10px; border-radius: 3px; font: 400 13px/26px var(--od-body); color: var(--od-muted); text-decoration: none; white-space: nowrap; }
+.ak-seg a:hover { color: var(--od-ink); }
+.ak-seg a[aria-current="true"] { background: var(--od-ink); color: var(--od-on-ink); }
 .ak-btn { display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px solid var(--od-line); border-radius: var(--od-r); background: var(--od-bg); color: var(--od-ink); font: 400 13px var(--od-body); cursor: pointer; white-space: nowrap; text-decoration: none; }
 .ak-btn:hover { border-color: var(--od-ring); }
 .ak-btn svg { width: 15px; height: 15px; flex: none; }

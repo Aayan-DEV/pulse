@@ -89,12 +89,13 @@ ok(sched.coverage.every((c) => c.crewPlanned + 1e-9 >= c.crewRequired && c.manag
   "ILP coverage >= requirement in every hour (crew and manager)");
 ok(sched.solves.every((s) => s.feasible), "every day's ILP plan covers the day");
 const slowest = Math.max(...sched.solves.map((s) => s.ms));
-ok(slowest < 1000, `each ILP solve < 1 s (slowest ${slowest} ms; whole week incl. roster ${Math.round(ms)} ms)`);
+ok(slowest < 200, `each day-and-role solve < 200 ms (slowest ${slowest} ms; whole week incl. roster ${Math.round(ms)} ms)`);
 const restKinds = new Set(["dailyRest", "weeklyRest", "dailyHours", "weeklyHours", "youthNight", "nightShiftLength", "role", "shiftLength"]);
 const legal = sched.violations.filter((v) => restKinds.has(v.kind));
 ok(legal.length === 0, `no rest or working-time violations in the assigned roster (${legal.length})`);
 ok(sched.cost.unfilledShifts === 0 && sched.violations.length === 0, `all ${sched.cost.shiftCount} shifts filled, 0 violations of any kind`);
 ok(sched.coverage.every((c) => c.crewAssigned + 1e-9 >= c.crewRequired), "assigned roster covers every hour");
+console.log(`      solves: ${sched.solves.map((x) => `${x.businessDate.slice(5)} ${x.role} ${x.method}${x.optimal ? " optimal" : ""} ${x.paidHours}/${x.lowerBound} ${x.ms}ms`).join("; ")}`);
 const gap = sched.solves.reduce((a, s) => a + s.paidHours - s.lowerBound, 0);
 ok(gap >= -1e-6, `paid hours ${sched.cost.plannedPaidHours} >= LP lower bound ${(sched.cost.plannedPaidHours - gap).toFixed(1)} (gap ${gap.toFixed(1)} h, ${(100 * gap / sched.cost.plannedPaidHours).toFixed(1)} %)`);
 const youthShifts = sched.shifts.filter((s) => roster.find((e) => e.id === s.employeeId)?.ageGroup !== "adult" && s.employeeId);

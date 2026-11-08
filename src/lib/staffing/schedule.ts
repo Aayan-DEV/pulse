@@ -39,7 +39,7 @@ export type CoverageHour = {
   managerAssigned: number;
 };
 
-export type DaySolve = { businessDate: string; role: Role; variables: number; ms: number; paidHours: number; lowerBound: number; method: "ilp" | "lp-repair"; feasible: boolean };
+export type DaySolve = { businessDate: string; role: Role; variables: number; ms: number; paidHours: number; lowerBound: number; optimal: boolean; method: "ilp" | "lp-repair"; feasible: boolean };
 
 export type ScheduleResult = {
   shifts: AssignedShift[];
@@ -86,15 +86,16 @@ export type DaySolution = {
   paid: number;          // objective of the plan used
   lowerBound: number;    // LP relaxation; paid - lowerBound is the worst-case gap to optimal
   method: "ilp" | "lp-repair";
+  optimal: boolean;      // true = proven optimal (bound reached or search finished); false = feasible, gap <= paid - lowerBound
   feasible: boolean;     // every hour covered
   variables: number;
   ms: number;
 };
 
-export function solveDay(firstHour: number, req: number[], rules: Rules, timeoutMs = 600): DaySolution {
+export function solveDay(firstHour: number, req: number[], rules: Rules, timeoutMs = 100): DaySolution {
   const t0 = performance.now();
   const lastHour = firstHour + req.length - 1;
-  if (req.every((r) => r <= 0)) return { picks: [], paid: 0, lowerBound: 0, method: "ilp", feasible: true, variables: 0, ms: 0 };
+  if (req.every((r) => r <= 0)) return { picks: [], paid: 0, lowerBound: 0, optimal: true, method: "ilp", feasible: true, variables: 0, ms: 0 };
   const cands = candidateShifts(firstHour, lastHour, rules);
   const constraints: Record<string, { min: number }> = {};
   req.forEach((r, i) => { if (r > 0) constraints[`h${firstHour + i}`] = { min: r }; });
@@ -112,9 +113,7 @@ export function solveDay(firstHour: number, req: number[], rules: Rules, timeout
   // LP relaxation: a lower bound on paid hours and the start point of the repair heuristic.
   const lp = solver.Solve({ optimize: "paid", opType: "min", constraints, variables });
   const lowerBound = Number(lp.result);
-  // Branch and bound with a time cap; javascript-lp-solver returns its best integer solution so far.
-  const res = solver.Solve({ optimize: "paid", opType: "min", constraints, variables, ints, options: { timeout: timeoutMs } });
-  const read = (r: typeof res, round: (x: number) => number) => {
+  const read = (r: typeof lp, round: (x: number) => number) => {
     const out: { c: Candidate; n: number }[] = [];
     cands.forEach((c, j) => {
       const n = round(Number(r[`x${j}`] ?? 0));
@@ -169,16 +168,49 @@ export function solveDay(firstHour: number, req: number[], rules: Rules, timeout
         }
       }
     }
+    // Improve: swap a picked shift for a cheaper candidate whenever coverage still holds.
+    let improved = true;
+    for (let pass = 0; improved && pass < 50; pass++) {
+      improved = false;
+      for (let j = 0; j < cands.length; j++) {
+        if (n[j] === 0) continue;
+        for (let k = 0; k < cands.length; k++) {
+          if (paidOf(cands[k]) >= paidOf(cands[j]) - 1e-9) continue;
+          let ok = true;
+          for (let i = 0; i < req.length && ok; i++) {
+            const h = firstHour + i;
+            if (cov[i] - coverageOf(cands[j], h, rules.breakHours) + coverageOf(cands[k], h, rules.breakHours) + 1e-9 < req[i]) ok = false;
+          }
+          if (!ok) continue;
+          for (let i = 0; i < req.length; i++) {
+            const h = firstHour + i;
+            cov[i] += coverageOf(cands[k], h, rules.breakHours) - coverageOf(cands[j], h, rules.breakHours);
+          }
+          n[j]--; n[k]++; improved = true;
+          break;
+        }
+      }
+    }
     return cands.map((c, j) => ({ c, n: n[j] })).filter((p) => p.n > 0);
   };
 
-  let picks = res.feasible ? read(res, (x) => Math.round(x)) : [];
-  let method: "ilp" | "lp-repair" = "ilp";
-  if (!res.feasible || !covers(picks)) picks = [];
-  const fix = repair();
-  if (picks.length === 0 || cost(fix) < cost(picks) - 1e-9) { picks = fix; method = "lp-repair"; }
+  // Paid hours come in half-hour steps, so no integer plan can beat this.
+  const integerBound = Math.ceil(lowerBound * 2 - 1e-6) / 2;
+  let picks = repair();
+  let method: "ilp" | "lp-repair" = "lp-repair";
+  let optimal = cost(picks) <= integerBound + 1e-9;
+  if (!optimal && timeoutMs > 0) {
+    // Branch and bound with a time cap; javascript-lp-solver returns its best integer solution so far.
+    const tb = performance.now();
+    const res = solver.Solve({ optimize: "paid", opType: "min", constraints, variables, ints, options: { timeout: timeoutMs } });
+    const finished = performance.now() - tb < timeoutMs * 0.95;
+    const ilp = res.feasible ? read(res, (x) => Math.round(x)) : [];
+    if (ilp.length > 0 && covers(ilp) && cost(ilp) < cost(picks) - 1e-9) { picks = ilp; method = "ilp"; }
+    if (finished && res.feasible) optimal = true; // search finished: its result is the integer optimum
+    if (cost(picks) <= integerBound + 1e-9) optimal = true;
+  }
   const paid = cost(picks);
-  return { picks, paid, lowerBound, method, feasible: covers(picks), variables: cands.length, ms: performance.now() - t0 };
+  return { picks, paid, lowerBound, optimal, method, feasible: covers(picks), variables: cands.length, ms: performance.now() - t0 };
 }
 
 export function buildSchedule(
@@ -208,7 +240,7 @@ export function buildSchedule(
     for (const r of rows) { reqCrew[r.hour - first] = r.front + r.kitchen; reqMgr[r.hour - first] = r.manager; }
     for (const [role, req] of [["manager", reqMgr], ["crew", reqCrew]] as const) {
       const sol = solveDay(first, req, rules);
-      solves.push({ businessDate: date, role, variables: sol.variables, ms: Math.round(sol.ms), paidHours: sol.paid, lowerBound: Math.round(sol.lowerBound * 100) / 100, method: sol.method, feasible: sol.feasible });
+      solves.push({ businessDate: date, role, variables: sol.variables, ms: Math.round(sol.ms), paidHours: sol.paid, lowerBound: Math.round(sol.lowerBound * 100) / 100, optimal: sol.optimal, method: sol.method, feasible: sol.feasible });
       plannedPaid += sol.paid;
       for (const p of sol.picks) {
         for (let k = 0; k < p.n; k++) {

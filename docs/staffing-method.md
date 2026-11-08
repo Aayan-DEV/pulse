@@ -108,17 +108,25 @@ Candidate shifts:
 - A shift with more than 3 h between 21:00 and 06:00 is at most 8 h (stricter than the 4-week average in AML § 10-11 (6)).
 - Breaks are unpaid. This is an assumption: it holds only if staff can leave the workplace (§ 10-9 (1)). For legal limits the engine always counts the full span, break included, so the limits hold either way.
 
-Solver:
-- `javascript-lp-solver` 0.4.24 runs branch and bound with a 600 ms cap per day and role.
-- The LP relaxation (the same problem with fractional shifts allowed) gives a lower bound on paid hours.
-- If branch and bound runs out of time, a repair heuristic takes over. It starts from the rounded-down LP solution, adds the shift that covers the most missing hours per paid hour, then removes shifts that are no longer needed. The engine keeps whichever plan is cheaper.
-- Each day reports its method and its gap to the bound.
+Solver, per day and role:
+- Solve the LP relaxation (the same problem with fractional shifts allowed). Its value is a lower bound on paid hours. Paid hours come in half-hour steps, so the bound is rounded up to the next 0.5.
+- Repair heuristic (about 1 ms):
+  - Start from the LP solution rounded down.
+  - Add the shift that covers the most missing hours per paid hour until every hour is covered.
+  - Drop shifts that are no longer needed.
+  - Swap any shift for a cheaper candidate while coverage still holds.
+- If the heuristic already meets the bound, it is proven optimal and the solve stops.
+- Otherwise `javascript-lp-solver` 0.4.24 runs branch and bound for at most 100 ms, and the engine keeps the cheaper plan.
+- Each solve reports `method` ("ilp" or "lp-repair"), `optimal`, `paidHours` and `lowerBound`.
+  - `optimal: true` means either the bound was met or branch and bound finished inside the cap.
+  - Otherwise the plan is feasible and at most `paidHours - lowerBound` hours from optimal.
 
-Synthetic week result:
+Synthetic week result (P50):
 - 145 shifts.
-- 799 paid hours against an LP bound of 782 (2.1 % gap).
+- 798 paid hours against an LP bound of 782 (2.0 % gap at most).
+- 6 of 14 solves are proven optimal.
 - Every hour is covered.
-- The slowest single solve takes about 600 ms.
+- The slowest solve takes 105 ms, and the whole week including the roster takes about 1.0 s.
 
 ## 6. Roster: greedy assignment under Norwegian law
 

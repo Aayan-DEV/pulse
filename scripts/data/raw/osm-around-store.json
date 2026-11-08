@@ -1,0 +1,7972 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-08T08:20:36Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 660921,
+  "lat": 59.9110251,
+  "lon": 10.7531379,
+  "tags": {
+    "alt_name": "Oslo Sentralstasjon",
+    "internet_access": "wlan",
+    "name": "Oslo S",
+    "name:de": "Oslo Hauptbahnhof",
+    "name:en": "Oslo Central Station",
+    "name:et": "Oslo keskraudteejaam",
+    "name:fi": "Oslon keskusrautatieasema",
+    "name:fr": "Gare centrale d'Oslo",
+    "name:ja": "オスロ中央駅",
+    "name:no": "Oslo S",
+    "name:pt": "Estação Central de Oslo",
+    "name:zh": "奥斯陆站",
+    "network": "Vy;Flytoget;Go-Ahead;SJ;Snälltåget",
+    "official_name": "Oslo sentralstasjon",
+    "operator": "Bane NOR",
+    "owner": "Bane NOR",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:traffic_mode": "mixed",
+    "ref": "03010010",
+    "route_ref": "300;400;440;450;460;500;550;560;FT;R01;R20;R21;R41",
+    "start_date": "1854-09-01",
+    "toilets": "yes",
+    "toilets:access": "yes",
+    "toilets:fee": "yes",
+    "toilets:wheelchair": "yes",
+    "uic_ref": "7600001",
+    "wheelchair": "yes",
+    "wikidata": "Q1410317",
+    "wikipedia": "no:Oslo Sentralstasjon"
+  }
+},
+{
+  "type": "node",
+  "id": 25416923,
+  "lat": 59.9133880,
+  "lon": 10.7285300,
+  "tags": {
+    "amenity": "cinema",
+    "check_date": "2026-01-18",
+    "email": "post@kinovictoria.no",
+    "facebook": "http://www.facebook.com/KinoVictoria",
+    "name": "Vika kino",
+    "opening_hours": "Mo-Fr 11:30-22:00; Sa,Su,PH 12:30-22:00",
+    "operator": "Oslo Kino",
+    "start_date": "2013-12-13",
+    "website": "https://kinovictoria.no",
+    "wikidata": "Q12009749",
+    "wikimedia_commons": "Category:Kino Victoria Oslo"
+  }
+},
+{
+  "type": "node",
+  "id": 25416924,
+  "lat": 59.9134680,
+  "lon": 10.7328930,
+  "tags": {
+    "amenity": "cinema",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "name": "Klingenberg kino",
+    "opening_hours": "Mo-Su 11:30-21:00",
+    "website": "https://www.nfkino.no/kino/klingenberg",
+    "wheelchair": "limited",
+    "wikidata": "Q11981166",
+    "wikimedia_commons": "Category:Klingenberg kino"
+  }
+},
+{
+  "type": "node",
+  "id": 25416925,
+  "lat": 59.9141220,
+  "lon": 10.7324630,
+  "tags": {
+    "amenity": "cinema",
+    "check_date": "2022-12-19",
+    "name": "Saga Kino",
+    "name:en": "Saga Cinema",
+    "name:no": "Saga Kino",
+    "opening_hours": "Mo-Sa 09:30-21:30; Su 10:30-21:30",
+    "website": "https://www.nfkino.no/kino/saga",
+    "wheelchair": "yes",
+    "wikidata": "Q11999074",
+    "wikimedia_commons": "Category:Saga kino"
+  }
+},
+{
+  "type": "node",
+  "id": 25417713,
+  "lat": 59.9108606,
+  "lon": 10.7358470,
+  "tags": {
+    "name": "Kontraskjæret",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 25468555,
+  "lat": 59.9105204,
+  "lon": 10.7261726,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-12-23",
+    "email": "post@beerpalace.no",
+    "name": "Beer Palace",
+    "opening_hours": "Su-Mo 15:00-01:30; Tu-Fr 15:00-03:30; Sa 13:00-03:30",
+    "phone": "+4722837155",
+    "website": "https://beerpalace.no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 25509087,
+  "lat": 59.9154140,
+  "lon": 10.7425750,
+  "tags": {
+    "amenity": "pub",
+    "email": "post@stopp-pressen.net",
+    "indoor_seating": "yes",
+    "name": "Stopp Pressen",
+    "outdoor_seating": "yes",
+    "phone": "+47 22414990",
+    "website": "http://www.stopp-pressen.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 25715271,
+  "lat": 59.9182220,
+  "lon": 10.7397121,
+  "tags": {
+    "check_date": "2026-04-18",
+    "name": "Scandic St. Olavs plass",
+    "tourism": "hotel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 28380722,
+  "lat": 59.9186550,
+  "lon": 10.7099610,
+  "tags": {
+    "amenity": "cinema",
+    "name": "Frogner kino",
+    "wikidata": "Q14449028"
+  }
+},
+{
+  "type": "node",
+  "id": 33730394,
+  "lat": 59.9184460,
+  "lon": 10.7341080,
+  "tags": {
+    "brand": "Radisson Blu",
+    "brand:wikidata": "Q7281341",
+    "brand:wikipedia": "en:Radisson Blu",
+    "internet_access": "wlan",
+    "name": "Radisson Blu Scandinavia Hotel, Oslo",
+    "start_date": "1975",
+    "tourism": "hotel",
+    "website": "https://www.radissonblu.com/scandinaviahotel-oslo",
+    "wheelchair": "yes",
+    "wikidata": "Q4573522",
+    "wikimedia_commons": "Category:Radisson SAS Hotel Scandinavia, Oslo",
+    "wikipedia": "en:Radisson Blu Scandinavia Hotel, Oslo"
+  }
+},
+{
+  "type": "node",
+  "id": 33730399,
+  "lat": 59.9189740,
+  "lon": 10.7338220,
+  "tags": {
+    "amenity": "pub",
+    "name": "Ophelia",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 34693408,
+  "lat": 59.9137282,
+  "lon": 10.7322982,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2025-02-02",
+    "name": "Chat Noir",
+    "website": "https://chatnoir.no",
+    "wikidata": "Q2961487",
+    "wikimedia_commons": "Category:Chat Noir",
+    "wikipedia": "en:Chat Noir"
+  }
+},
+{
+  "type": "node",
+  "id": 34693409,
+  "lat": 59.9152186,
+  "lon": 10.7386249,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2026-03-12",
+    "name": "Det Norske Teatret",
+    "phone": "+47 22424344",
+    "website": "https://www.detnorsketeatret.no/",
+    "wheelchair": "yes",
+    "wikidata": "Q1201058",
+    "wikipedia": "en:Det Norske Teatret"
+  }
+},
+{
+  "type": "node",
+  "id": 34693422,
+  "lat": 59.9098649,
+  "lon": 10.7405698,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-10-19",
+    "food": "yes",
+    "name": "Dubliner",
+    "opening_hours": "Monday: 15:00 - 00:00;Tuesday-Friday: 12:00 - 03:00;Saturday: 13:00 - 03:00;Sunday: 13:00 - 00:00",
+    "website": "https://www.dubliner.no/",
+    "wheelchair": "limited",
+    "wheelchair:description": "Small step at entrance and inside. No HC WC."
+  }
+},
+{
+  "type": "node",
+  "id": 60608792,
+  "lat": 59.9170780,
+  "lon": 10.7441080,
+  "tags": {
+    "amenity": "pub",
+    "name": "Trafalgar Sportsbar"
+  }
+},
+{
+  "type": "node",
+  "id": 60753744,
+  "lat": 59.9170003,
+  "lon": 10.7420746,
+  "tags": {
+    "check_date": "2025-03-28",
+    "name": "MediInn Hotel Oslo",
+    "rooms": "122",
+    "tourism": "hotel",
+    "website": "https://www.compass-group.no/helse-og-omsorg/vare-sentre-og-hotell/mediinn-hotel-oslo/"
+  }
+},
+{
+  "type": "node",
+  "id": 270315261,
+  "lat": 59.9078030,
+  "lon": 10.7357620,
+  "tags": {
+    "fee": "yes",
+    "museum": "local",
+    "name": "Norges hjemmefrontmuseum",
+    "name:de": "Norwegisches Heimatfront-Museum",
+    "name:en": "Norway's Resistance Museum",
+    "name:fr": "Musée norvégien de la résistance",
+    "name:no": "Norges hjemmefrontmuseum",
+    "name:ru": "Музей движения Сопротивления",
+    "opening_hours": "Sep-Apr: Mo-Su 10:00-16:00; May-Aug: Mo-Su 10:00-17:00",
+    "tourism": "museum",
+    "website": "https://kultur.forsvaret.no/museer/norges-hjemmefrontmuseum",
+    "wikidata": "Q1781522",
+    "wikimedia_commons": "Category:Norges Hjemmefrontmuseum",
+    "wikipedia": "en:Norway's Resistance Museum"
+  }
+},
+{
+  "type": "node",
+  "id": 270988736,
+  "lat": 59.9109206,
+  "lon": 10.7280129,
+  "tags": {
+    "amenity": "taxi",
+    "name": "Aker Brygge"
+  }
+},
+{
+  "type": "node",
+  "id": 286017265,
+  "lat": 59.9189910,
+  "lon": 10.7532550,
+  "tags": {
+    "amenity": "school",
+    "email": "postmottak.elvebakken.vgs@osloskolen.no",
+    "fee": "no",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Elvebakken videregående skole",
+    "operator": "Oslo kommune",
+    "operator:type": "public",
+    "phone": "+47 23 46 73 00",
+    "ref:NO:orgnr": "974590999",
+    "ref:udir_nsr": "974590999",
+    "website": "https://elvebakken.vgs.no",
+    "wikidata": "Q11967266",
+    "wikimedia_commons": "Category:Elvebakken videregående skole"
+  }
+},
+{
+  "type": "node",
+  "id": 288416026,
+  "lat": 59.9123665,
+  "lon": 10.7447916,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2026-05-19",
+    "name": "Svanen Cocktailbar",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.svanenoslo.no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 289394625,
+  "lat": 59.9098282,
+  "lon": 10.7087912,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "cargo": "passengers;vehicle",
+    "ferry": "yes",
+    "name": "Kiel - Oslo - Kiel",
+    "operator": "Colorline",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 292129984,
+  "lat": 59.9024740,
+  "lon": 10.7436210,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Oslo Ferry Terminal",
+    "name:no": "Oslo Fergeterminalen",
+    "phone": "+4721621340",
+    "public_transport": "station",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 294016047,
+  "lat": 59.9196410,
+  "lon": 10.7344080,
+  "tags": {
+    "brand": "Scandic",
+    "check_date": "2026-06-10",
+    "email": "holberg@scandichotels.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Scandic Holberg",
+    "phone": "+47 23157200",
+    "smoking": "no",
+    "tourism": "hotel",
+    "website": "https://www.scandichotels.no/hotell/norge/oslo/scandic-holberg"
+  }
+},
+{
+  "type": "node",
+  "id": 307504199,
+  "lat": 59.9179070,
+  "lon": 10.7349390,
+  "tags": {
+    "check_date": "2024-09-28",
+    "email": "europa@thonhotels.no",
+    "fax": "+47 23256363",
+    "name": "Thon Hotel Europa",
+    "parking": "no",
+    "phone": "+47 23256300",
+    "rooms": "168",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/land/norge/oslo/thon-hotel-europa/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 307505492,
+  "lat": 59.9137334,
+  "lon": 10.7394776,
+  "tags": {
+    "contact:email": "grand@grand.no",
+    "contact:facebook": "http://www.facebook.com/pages/Grand-Hotel-Oslo/117026268335791",
+    "contact:fax": "+47 23212100",
+    "contact:phone": "+47 23212000",
+    "contact:website": "http://www.grand.no/",
+    "internet_access": "wlan",
+    "name": "Grand Hotel",
+    "opening_hours": "24/7",
+    "toilets": "yes",
+    "tourism": "hotel",
+    "wheelchair": "limited",
+    "wikidata": "Q1542588",
+    "wikimedia_commons": "Category:Grand Hotel, Oslo",
+    "wikipedia": "no:Grand Hotel (Oslo)"
+  }
+},
+{
+  "type": "node",
+  "id": 311268459,
+  "lat": 59.9094670,
+  "lon": 10.7408580,
+  "tags": {
+    "name": "Att Kvadraturen",
+    "tourism": "hotel",
+    "website": "https://www.attstays.com/no/kvadraturen"
+  }
+},
+{
+  "type": "node",
+  "id": 315230165,
+  "lat": 59.9117780,
+  "lon": 10.7465180,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-07-07",
+    "indoor_seating": "yes",
+    "name": "Sir Winston",
+    "outdoor_seating": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "smoking": "outside",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 315230168,
+  "lat": 59.9141161,
+  "lon": 10.7381596,
+  "tags": {
+    "amenity": "pub",
+    "indoor_seating": "yes",
+    "name": "The Scotsman",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 315233909,
+  "lat": 59.9127010,
+  "lon": 10.7417440,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Max",
+    "brand:wikidata": "Q1912172",
+    "check_date": "2026-04-30",
+    "check_date:diet:gluten_free": "2026-04-30",
+    "cuisine": "burger",
+    "diet:gluten_free": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Max",
+    "opening_hours": "Mo-We 09:00-02:00, Th-Su 09:00-05:00",
+    "operator": "MAX",
+    "outdoor_seating": "pedestrian_zone",
+    "phone": "+47 21 02 96 60",
+    "takeaway": "yes",
+    "website": "http://www.maxhamburger.no/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 315233913,
+  "lat": 59.9141000,
+  "lon": 10.7382270,
+  "tags": {
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Brødrene Bergh",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 325064284,
+  "lat": 59.9173752,
+  "lon": 10.7091982,
+  "tags": {
+    "amenity": "cinema",
+    "check_date": "2023-06-10",
+    "name": "Gimle Kino",
+    "wheelchair": "yes",
+    "wikidata": "Q11971985"
+  }
+},
+{
+  "type": "node",
+  "id": 325636287,
+  "lat": 59.9185430,
+  "lon": 10.7167887,
+  "tags": {
+    "amenity": "school",
+    "email": "postmottak.hartvig-nissen.vgs@osloskolen.no",
+    "fee": "no",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Hartvig Nissens skole",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "phone": "+47 23464800",
+    "ref:NO:orgnr": "974590891",
+    "ref:udir_nsr": "974590891",
+    "website": "https://hartvig-nissen.vgs.no",
+    "wikidata": "Q3276962",
+    "wikimedia_commons": "Category:Hartvig Nissens skole",
+    "wikipedia": "en:Hartvig Nissen School"
+  }
+},
+{
+  "type": "node",
+  "id": 325637818,
+  "lat": 59.9168920,
+  "lon": 10.7179990,
+  "tags": {
+    "amenity": "school",
+    "email": "lycee@rcassin.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Lycée francais René Cassin d'Oslo, videregående skole",
+    "operator": "Association du Lycée Français Rene Cassin d'Oslo",
+    "operator:type": "private",
+    "phone": "+47 22925120",
+    "ref:NO:orgnr": "975051293",
+    "ref:udir_nsr": "975051293",
+    "website": "https://rcassin.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 335964683,
+  "lat": 59.9195259,
+  "lon": 10.7087120,
+  "tags": {
+    "name": "Elisenberg",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 338424208,
+  "lat": 59.9200080,
+  "lon": 10.7180341,
+  "tags": {
+    "name": "Briskeby",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 338425780,
+  "lat": 59.9148392,
+  "lon": 10.7190149,
+  "tags": {
+    "name": "Solli",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q7558364"
+  }
+},
+{
+  "type": "node",
+  "id": 358485760,
+  "lat": 59.9105550,
+  "lon": 10.7236740,
+  "tags": {
+    "amenity": "pub",
+    "email": "ilbarbera@hotmail.com",
+    "name": "https://sorai-online.com/e/372742/il-barbera?c=osl",
+    "opening_hours": "Mo-We 16:00-01:00; Th 16:00-03:00; Fr 14:00-03:00; Sa-Su 16:00-03:00",
+    "phone": "+47 21668440",
+    "website": "http://www.ilbarbera.no/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 358485761,
+  "lat": 59.9102940,
+  "lon": 10.7247580,
+  "tags": {
+    "amenity": "cinema",
+    "name": "Felix konferansesenter",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 376571925,
+  "lat": 59.9156730,
+  "lon": 10.7405000,
+  "tags": {
+    "access": "customers",
+    "amenity": "parking",
+    "check_date": "2022-12-25",
+    "email": "stefan@thonhotels.no",
+    "fax": "+47 23315555",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "layer": "-1",
+    "name": "Thon Hotel Rosenkrantz",
+    "operator": "Thon Hotels",
+    "parking": "underground",
+    "phone": "+47 23315500",
+    "rooms": "150",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/land/norge/oslo/thon-hotel-stefan/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 376577902,
+  "lat": 59.9119370,
+  "lon": 10.7492140,
+  "tags": {
+    "brand": "Scandic Hotels",
+    "brand:wikidata": "Q129391",
+    "check_date": "2026-09-01",
+    "internet_access": "yes",
+    "name": "Scandic Oslo City",
+    "tourism": "hotel",
+    "website": "https://www.scandichotels.no/hotell/norge/oslo/scandic-oslo-city",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 383991805,
+  "lat": 59.9136222,
+  "lon": 10.7322505,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Klingenberg",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "check_date": "2026-08-14",
+    "cuisine": "burger",
+    "name": "Burger King",
+    "opening_hours": "Mo-Th 10:00-24:00, Fr,Sa 10:00-04:00, Su 11:00-24:00",
+    "payment:cards": "yes",
+    "payment:coins": "\"NOK only\"",
+    "payment:notes": "yes",
+    "takeaway": "yes",
+    "website": "https://www.burgerking.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 383996262,
+  "lat": 59.9204240,
+  "lon": 10.7334520,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "delivery": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "highchair": "no",
+    "indoor_seating": "yes",
+    "kids_area": "no",
+    "mapillary": "835327770516696",
+    "name": "Bislett Kebab House",
+    "outdoor_seating": "no",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "phone": "+4722468044",
+    "reservation": "no",
+    "service:electricity": "ask",
+    "smoking": "no",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "toilets:access": "yes",
+    "toilets:fee": "no",
+    "website": "https://www.bislettkebabhouse.no",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 392057333,
+  "lat": 59.9095120,
+  "lon": 10.7278460,
+  "tags": {
+    "amenity": "pub",
+    "name": "Lekter'n",
+    "panoramax": "8af41e4f-4a53-4c71-9095-1d2b8bc6c8c4",
+    "phone": "+4721523231",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 392058686,
+  "lat": 59.9111600,
+  "lon": 10.7241130,
+  "tags": {
+    "name": "Thon Hotel Vika Atrium",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 441543677,
+  "lat": 59.9135420,
+  "lon": 10.7359174,
+  "tags": {
+    "check_date": "2026-06-28",
+    "name": "Hotel Christiania Teater",
+    "tourism": "hotel",
+    "website": "https://christianiateater.com",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 441543679,
+  "lat": 59.9128370,
+  "lon": 10.7373750,
+  "tags": {
+    "email": "cecil@thonhotels.no",
+    "fax": "+47 23314850",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Thon Hotel Cecil",
+    "operator": "Thon Hotels",
+    "parking": "underground",
+    "phone": "+47 23314800",
+    "rooms": "111",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/land/norge/oslo/thon-hotel-cecil/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 451006430,
+  "lat": 59.9110363,
+  "lon": 10.7300165,
+  "tags": {
+    "alt_name": "Vestbaneplassen",
+    "name": "Aker brygge",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 475861368,
+  "lat": 59.9175930,
+  "lon": 10.7580350,
+  "tags": {
+    "breakfast": "yes",
+    "check_date": "2025-06-23",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Anker Hotel",
+    "rooms": "296",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://anker-hotel.no/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 667383136,
+  "lat": 59.9111483,
+  "lon": 10.7407086,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Radisson RED Oslo City Centre, A Verified Net Zero Hotel",
+    "tourism": "hotel",
+    "website": "https://radissonhotels.com"
+  }
+},
+{
+  "type": "node",
+  "id": 667447334,
+  "lat": 59.9103470,
+  "lon": 10.7472430,
+  "tags": {
+    "brand": "Citybox",
+    "check_date": "2026-07-24",
+    "email": "oslo@cityboxhotels.com",
+    "internet_access": "yes",
+    "name": "Citybox Oslo",
+    "operator": "Citybox",
+    "phone": "+4721420480",
+    "rooms": "341",
+    "tourism": "hotel",
+    "website": "https://cityboxhotels.com/hotels/oslo/citybox-oslo"
+  }
+},
+{
+  "type": "node",
+  "id": 679406857,
+  "lat": 59.9133630,
+  "lon": 10.7528010,
+  "tags": {
+    "check_date": "2024-08-10",
+    "name": "Thon Hotel Terminus",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 703646951,
+  "lat": 59.9018382,
+  "lon": 10.7408316,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Vippetangen",
+    "public_transport": "station"
+  }
+},
+{
+  "type": "node",
+  "id": 768167844,
+  "lat": 59.9168097,
+  "lon": 10.7373244,
+  "tags": {
+    "name": "Tullinløkka",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 775343329,
+  "lat": 59.9208398,
+  "lon": 10.7332316,
+  "tags": {
+    "bus": "yes",
+    "name": "Frydenlund",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 796538916,
+  "lat": 59.9115273,
+  "lon": 10.7500753,
+  "tags": {
+    "name": "Jernbanetorget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 797615478,
+  "lat": 59.9146335,
+  "lon": 10.7329294,
+  "tags": {
+    "name": "Nationaltheatret",
+    "name:de": "Nationaltheater",
+    "name:en": "National Theatre",
+    "name:no": "Nationaltheateret",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 836596664,
+  "lat": 59.9111520,
+  "lon": 10.7467970,
+  "tags": {
+    "air_conditioning": "no",
+    "check_date": "2026-09-25",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Thon Hotel Astoria",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/land/norge/oslo/thon-hotel-astoria/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 842924350,
+  "lat": 59.9093690,
+  "lon": 10.7474280,
+  "tags": {
+    "check_date": "2026-09-25",
+    "email": "co.borsparken@choice.no",
+    "name": "Comfort Hotel Boersparken",
+    "phone": "+4722471717",
+    "tourism": "hotel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 855363455,
+  "lat": 59.9087590,
+  "lon": 10.7402270,
+  "tags": {
+    "email": "info@nasjonalmuseet.no",
+    "fax": "+47 21982093",
+    "fee": "yes",
+    "name": "Nasjonalmuseet - Arkitektur",
+    "name:en": "The National Museum – Architecture",
+    "name:fr": "Musée national - Architecture",
+    "name:no": "Nasjonalmuseet - Arkitektur",
+    "opening_hours": "Tu-We 11:00-17:00; Th 11:00-19:00; Fr 11:00-17:00; Sa-Su 12:00-17:00",
+    "operator": "Nasjonalmuseet for kunst, arkitektur og design",
+    "phone": "+47 21982000",
+    "tourism": "museum",
+    "website": "https://www.nasjonalmuseet.no/besok/visningssteder/nasjonalmuseet_arkitektur/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 860579095,
+  "lat": 59.9141041,
+  "lon": 10.7469809,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-27",
+    "cuisine": "kebab",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "name": "New Beirut Kebab",
+    "opening_hours": "Su-We 10:00-24:00, Th-Sa 10:00-04:00",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 864946066,
+  "lat": 59.9143950,
+  "lon": 10.7418960,
+  "tags": {
+    "name": "P-Hotels Oslo",
+    "phone": "+47 80046835",
+    "tourism": "hotel",
+    "website": "https://p-hotels.no/photels/english/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 931907584,
+  "lat": 59.9253176,
+  "lon": 10.7225571,
+  "tags": {
+    "check_date": "2025-08-21",
+    "internet_access": "wlan",
+    "name": "Thon Hotel Gyldenløve",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/norge/oslo/thon-hotel-gyldenlove/",
+    "wheelchair": "yes",
+    "wikidata": "Q62024413"
+  }
+},
+{
+  "type": "node",
+  "id": 973857863,
+  "lat": 59.9185360,
+  "lon": 10.7321280,
+  "tags": {
+    "check_date": "2025-09-02",
+    "name": "Thon Hotel Slottsparken",
+    "tourism": "hotel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 973872552,
+  "lat": 59.9229511,
+  "lon": 10.7223842,
+  "tags": {
+    "name": "Ellingsens Pensjonat",
+    "tourism": "hotel",
+    "website": "https://www.ellingsenspensjonat.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 1100442073,
+  "lat": 59.9117967,
+  "lon": 10.7416781,
+  "tags": {
+    "name": "Øvre Slottsgate",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1100442088,
+  "lat": 59.9105322,
+  "lon": 10.7469691,
+  "tags": {
+    "name": "Dronningens gate",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "S",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1179215821,
+  "lat": 59.9187026,
+  "lon": 10.7345756,
+  "tags": {
+    "name": "Holbergs plass",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "B",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1179215842,
+  "lat": 59.9187011,
+  "lon": 10.7345181,
+  "tags": {
+    "name": "Holbergs plass",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "A",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1180687348,
+  "lat": 59.9148660,
+  "lon": 10.7189665,
+  "tags": {
+    "name": "Solli",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1180721064,
+  "lat": 59.9168125,
+  "lon": 10.7372039,
+  "tags": {
+    "name": "Tullinløkka",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1239355613,
+  "lat": 59.9225434,
+  "lon": 10.7265196,
+  "tags": {
+    "name": "Homansbyen",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1239355675,
+  "lat": 59.9225509,
+  "lon": 10.7265760,
+  "tags": {
+    "name": "Homansbyen",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1239648855,
+  "lat": 59.9215759,
+  "lon": 10.7301901,
+  "tags": {
+    "name": "Welhavens gate",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1334092948,
+  "lat": 59.9259832,
+  "lon": 10.7310556,
+  "tags": {
+    "name": "Bislett",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "A",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1334861613,
+  "lat": 59.9146152,
+  "lon": 10.7328882,
+  "tags": {
+    "name": "Nationaltheatret",
+    "name:de": "Nationaltheater",
+    "name:en": "National Theatre",
+    "name:no": "Nationaltheateret",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1346356198,
+  "lat": 59.9259776,
+  "lon": 10.7311149,
+  "tags": {
+    "name": "Bislett",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "B",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1363026029,
+  "lat": 59.9112850,
+  "lon": 10.7411740,
+  "tags": {
+    "brand": "First Hotels",
+    "brand:wikidata": "Q11969007",
+    "check_date": "2024-06-12",
+    "name": "First Hotel Millennium",
+    "tourism": "hotel",
+    "website": "https://www.firsthotels.com/hotels/norway/oslo/first-hotel-millennium/",
+    "website:da": "https://www.firsthotels.dk/hoteller/norge/oslo/first-hotel-millennium/",
+    "website:en": "https://www.firsthotels.com/hotels/norway/oslo/first-hotel-millennium/",
+    "website:no": "https://www.firsthotels.no/hoteller/norge/oslo/first-hotel-millennium/",
+    "website:sv": "https://www.firsthotels.se/hotell/norge/oslo/first-hotel-millennium/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 1365825662,
+  "lat": 59.9110576,
+  "lon": 10.7299748,
+  "tags": {
+    "alt_name": "Vestbaneplassen",
+    "name": "Aker brygge",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1365825667,
+  "lat": 59.9108905,
+  "lon": 10.7358699,
+  "tags": {
+    "name": "Kontraskjæret",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1365825674,
+  "lat": 59.9127268,
+  "lon": 10.7244446,
+  "tags": {
+    "name": "Ruseløkka",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "old_name": "Vikatorvet",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1365825675,
+  "lat": 59.9129870,
+  "lon": 10.7238014,
+  "tags": {
+    "name": "Ruseløkka",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "old_name": "Vikatorvet",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305734,
+  "lat": 59.9200266,
+  "lon": 10.7180930,
+  "tags": {
+    "name": "Briskeby",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305738,
+  "lat": 59.9194618,
+  "lon": 10.7087379,
+  "tags": {
+    "name": "Elisenberg",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wikidata": "Q5361695"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305742,
+  "lat": 59.9155298,
+  "lon": 10.7211364,
+  "tags": {
+    "name": "Inkognitogata",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305746,
+  "lat": 59.9160946,
+  "lon": 10.7212052,
+  "tags": {
+    "name": "Inkognitogata",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305752,
+  "lat": 59.9178870,
+  "lon": 10.7123148,
+  "tags": {
+    "name": "Lille Frogner allé",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305755,
+  "lat": 59.9163554,
+  "lon": 10.7148711,
+  "tags": {
+    "name": "Niels Juels gate",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305761,
+  "lat": 59.9163327,
+  "lon": 10.7153906,
+  "tags": {
+    "name": "Niels Juels gate",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305764,
+  "lat": 59.9189500,
+  "lon": 10.7201900,
+  "tags": {
+    "name": "Riddervolds plass",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305768,
+  "lat": 59.9189772,
+  "lon": 10.7201941,
+  "tags": {
+    "name": "Riddervolds plass",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305773,
+  "lat": 59.9241019,
+  "lon": 10.7237780,
+  "tags": {
+    "name": "Rosenborg",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1385305775,
+  "lat": 59.9241940,
+  "lon": 10.7238037,
+  "tags": {
+    "name": "Rosenborg",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1437766224,
+  "lat": 59.9147106,
+  "lon": 10.7403548,
+  "tags": {
+    "check_date": "2026-08-14",
+    "name": "Hotell Bondeheimen",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.bondeheimen.com",
+    "wheelchair": "yes",
+    "wikidata": "Q11975892",
+    "wikimedia_commons": "Category:Bøndernes hus"
+  }
+},
+{
+  "type": "node",
+  "id": 1448786168,
+  "lat": 59.9036979,
+  "lon": 10.7437407,
+  "tags": {
+    "amenity": "ferry_terminal",
+    "cargo": "passengers;vehicle",
+    "ferry": "yes",
+    "name": "Oslo Vippetangen",
+    "panoramax": "7ac0dbb7-cfc1-4755-bb95-61b4a6230819",
+    "public_transport": "station",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1463064778,
+  "lat": 59.9178733,
+  "lon": 10.7122544,
+  "tags": {
+    "name": "Lille Frogner allé",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1620215548,
+  "lat": 59.9142067,
+  "lon": 10.7577145,
+  "tags": {
+    "amenity": "school",
+    "name": "NISS - Norsk Institutt for Scene og Studio"
+  }
+},
+{
+  "type": "node",
+  "id": 1694634845,
+  "lat": 59.9222489,
+  "lon": 10.7510382,
+  "tags": {
+    "brand": "Scandic Hotel",
+    "check_date": "2025-07-22",
+    "name": "Scandic Hotel",
+    "tourism": "hotel",
+    "website": "https://www.scandichotels.no/hotell/norge/oslo/scandic-vulkan",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1694639938,
+  "lat": 59.9216130,
+  "lon": 10.7523480,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2025-07-07",
+    "email": "info@dansenshus.com",
+    "fax": "+47 23709401",
+    "name": "Dansens Hus",
+    "phone": "+47 23709400",
+    "website": "https://www.dansenshus.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1759965004,
+  "lat": 59.9134270,
+  "lon": 10.7431953,
+  "tags": {
+    "name": "Stortinget",
+    "network": "Ruter",
+    "operator": "Sporveien T-banen",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "1",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1759965009,
+  "lat": 59.9134588,
+  "lon": 10.7432059,
+  "tags": {
+    "name": "Stortinget",
+    "network": "Ruter",
+    "operator": "Sporveien T-banen",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "2",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1759998965,
+  "lat": 59.9115419,
+  "lon": 10.7500125,
+  "tags": {
+    "name": "Jernbanetorget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1760039998,
+  "lat": 59.9122688,
+  "lon": 10.7498752,
+  "tags": {
+    "name": "Jernbanetorget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "E",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1760040032,
+  "lat": 59.9122966,
+  "lon": 10.7499034,
+  "tags": {
+    "name": "Jernbanetorget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "F",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1769606907,
+  "lat": 59.9183334,
+  "lon": 10.7405743,
+  "tags": {
+    "amenity": "bar",
+    "name": "Bar Babylon",
+    "website": "https://www.barbabylon.no"
+  }
+},
+{
+  "type": "node",
+  "id": 1769606908,
+  "lat": 59.9187015,
+  "lon": 10.7401277,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-08-03",
+    "check_date:diet:vegetarian": "2026-08-03",
+    "check_date:opening_hours": "2026-07-21",
+    "cuisine": "kebab",
+    "diet:vegetarian": "yes",
+    "name": "Sonny's kebab",
+    "opening_hours": "Mo-Th 10:00-24:00; Fr 10:00-18:00+; Sa 11:00-18:00+; Su 11:00-24:00"
+  }
+},
+{
+  "type": "node",
+  "id": 1769606911,
+  "lat": 59.9184288,
+  "lon": 10.7402632,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Casa Bella"
+  }
+},
+{
+  "type": "node",
+  "id": 1770689864,
+  "lat": 59.9103888,
+  "lon": 10.7241108,
+  "tags": {
+    "access": "yes",
+    "amenity": "charging_station",
+    "bicycle": "no",
+    "capacity": "8",
+    "name": "Aker Brygge p-hus",
+    "opening_hours": "24/7",
+    "operator": "EuroPark AS",
+    "operator:wikidata": "Q5411568",
+    "operator:wikipedia": "no:EuroPark",
+    "parking:fee": "yes",
+    "ref:nobil": "121",
+    "socket:type2": "8",
+    "socket:type2:output": "22 kW"
+  }
+},
+{
+  "type": "node",
+  "id": 1884293696,
+  "lat": 59.9140900,
+  "lon": 10.7335210,
+  "tags": {
+    "check_date": "2026-07-24",
+    "contact:email": "booking@hotelcontinental.no",
+    "contact:facebook": "http://www.facebook.com/pages/Hotel-Continental-Oslo/125985297420072",
+    "contact:fax": "+47 22824065",
+    "contact:phone": "+47 22824000",
+    "contact:website": "http://www.hotelcontinental.no/",
+    "name": "Hotel Continental",
+    "tourism": "hotel",
+    "wheelchair": "yes",
+    "wikidata": "Q5911400",
+    "wikimedia_commons": "Category:Hotel Continental, Oslo",
+    "wikipedia": "no:Hotel Continental"
+  }
+},
+{
+  "type": "node",
+  "id": 1884335181,
+  "lat": 59.9136556,
+  "lon": 10.7334928,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Klingenberggaten",
+    "brand": "McDonald's",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "en:McDonald's",
+    "check_date": "2026-08-14",
+    "cuisine": "burger",
+    "internet_access": "wlan",
+    "name": "McDonald's",
+    "opening_hours": "Mo-Th 08:00-23:30, Fr 08:00-04:00, Sa 09:00-04:00, Su 09:00-23:30",
+    "phone": "+47 22420930",
+    "ref:mcdn": "3",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1884362795,
+  "lat": 59.9143770,
+  "lon": 10.7412730,
+  "tags": {
+    "brand": "Scandic Hotels",
+    "brand:wikidata": "Q129391",
+    "check_date": "2026-08-11",
+    "internet_access": "wlan",
+    "name": "Scandic Grensen",
+    "opening_hours": "24/7",
+    "operator": "Scandic Hotels",
+    "parking": "yes",
+    "tourism": "hotel",
+    "website": "https://www.scandichotels.com/hotels/norway/oslo/scandic-grensen"
+  }
+},
+{
+  "type": "node",
+  "id": 1884392333,
+  "lat": 59.9144990,
+  "lon": 10.7408400,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-08-11",
+    "name": "Bohemen",
+    "opening_hours": "Mo-Th 14:00-00:30; Fr 14:00-02:00; Sa 13:00-02:00; Su 14:00-23:30",
+    "phone": "+47 22416266",
+    "website": "https://www.bohemen.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 1884426647,
+  "lat": 59.9125960,
+  "lon": 10.7369480,
+  "tags": {
+    "brand": "Scandic Hotels",
+    "brand:wikidata": "Q129391",
+    "check_date:internet_access": "2022-06-28",
+    "contact:email": "rica.victoria.hotel.oslo@rica.no",
+    "contact:facebook": "http://www.facebook.com/RicaVictoriaHotelOslo",
+    "contact:fax": "+47 24147001",
+    "contact:phone": "+47 24147000",
+    "internet_access": "wlan",
+    "name": "Scandic Victoria",
+    "opening_hours": "24/7",
+    "operator": "Rica Hotels",
+    "parking": "yes",
+    "smoking": "no",
+    "tourism": "hotel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1894342616,
+  "lat": 59.9129384,
+  "lon": 10.7454353,
+  "tags": {
+    "name": "Stortorvet",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1929813126,
+  "lat": 59.9151620,
+  "lon": 10.7397120,
+  "tags": {
+    "check_date": "2026-08-14",
+    "email": "post@bristol.no",
+    "fax": "+47 22826001",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Hotel Bristol",
+    "operator": "Thon Hotels",
+    "parking": "underground",
+    "phone": "+47 22826000",
+    "rooms": "251",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/land/norge/oslo/bristol/",
+    "wheelchair": "yes",
+    "wikidata": "Q5911300",
+    "wikimedia_commons": "Category:Hotel Bristol (Oslo)",
+    "wikipedia": "en:Hotel Bristol (Oslo)"
+  }
+},
+{
+  "type": "node",
+  "id": 1931359713,
+  "lat": 59.9069250,
+  "lon": 10.7219380,
+  "tags": {
+    "architect": "Renzo Piano",
+    "contact:email": "info@fearnleys.no",
+    "contact:facebook": "http://www.facebook.com/astrupfearnley",
+    "contact:phone": "+47 22936060",
+    "contact:twitter": "astrupfearnley",
+    "contact:website": "http://afmuseet.no",
+    "description": "A privately owned museum, which presents temporary exhibitions of international art. First opened in 1993 in Dronningensgtate 4.",
+    "fee": "yes",
+    "image": "https://photos.app.goo.gl/ELBZAAeGCHp9biR3A",
+    "mapillary": "1656623781711717; 1413822166532422; 1664910704219698; 1747241965881581; 1104352785088356; 24132810596335858",
+    "museum": "art",
+    "name": "Astrup Fearnley Museet",
+    "name:en": "Astrup Fearnley Museum",
+    "opening_hours": "Tu-We 12:00-17:00; Th 12:00-19:00; Fr 12:00-17:00; Sa-Su 11:00-17:00",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "start_date": "2012-09-29",
+    "subject:wikidata": "Q128115",
+    "tourism": "museum",
+    "url": "https://youtu.be/v6jaWJhlPRg?si=3bc1usW1rUBkvAPu",
+    "wheelchair": "yes",
+    "wikidata": "Q761048",
+    "wikimedia_commons": "Category:Astrup Fearnley Museum of Modern Art",
+    "wikipedia": "no:Astrup Fearnley Museet"
+  }
+},
+{
+  "type": "node",
+  "id": 1952953019,
+  "lat": 59.9142622,
+  "lon": 10.7427521,
+  "tags": {
+    "bicycle": "no",
+    "name": "Stortinget - Akersgata",
+    "public_transport": "entrance",
+    "railway": "subway_entrance",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1952975809,
+  "lat": 59.9128129,
+  "lon": 10.7417943,
+  "tags": {
+    "bicycle": "no",
+    "check_date:wheelchair": "2026-10-16",
+    "name": "Stortinget - Egertorget",
+    "public_transport": "entrance",
+    "railway": "subway_entrance",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1952975812,
+  "lat": 59.9142640,
+  "lon": 10.7421884,
+  "tags": {
+    "bicycle": "no",
+    "name": "Stortinget",
+    "public_transport": "entrance",
+    "railway": "subway_entrance",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1953003795,
+  "lat": 59.9122865,
+  "lon": 10.7416769,
+  "tags": {
+    "bicycle": "yes",
+    "name": "Stortinget",
+    "public_transport": "entrance",
+    "railway": "subway_entrance",
+    "subway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1960919882,
+  "lat": 59.9076130,
+  "lon": 10.7209800,
+  "tags": {
+    "architect": "Mellbye arkitekter",
+    "email": "info@thethief.com",
+    "fax": "+47 24004099",
+    "name": "THE THIEF",
+    "phone": "+47 24004000",
+    "rooms": "119",
+    "stars": "5",
+    "start_date": "2013",
+    "tourism": "hotel",
+    "website": "https://thethief.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1975668823,
+  "lat": 59.9112550,
+  "lon": 10.7359040,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-04-07",
+    "email": "tordenskiold.drift@gmail.com",
+    "name": "Tordenskiold",
+    "opening_hours": "Tu-We 15:00-01:00; Th-Sa 15:00-03:00",
+    "phone": "+47 22428688",
+    "website": "http://tordenskiold.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 1988631732,
+  "lat": 59.9143690,
+  "lon": 10.7187470,
+  "tags": {
+    "amenity": "nightclub",
+    "email": "post@clubnox.no",
+    "facebook": "https://www.facebook.com/NoxOslo",
+    "min_age": "20",
+    "name": "Nox",
+    "opening_hours": "We-Sa 23:00-03:00",
+    "website": "https://clubnox.no"
+  }
+},
+{
+  "type": "node",
+  "id": 2036733124,
+  "lat": 59.9154765,
+  "lon": 10.7517805,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2025-07-29",
+    "email": "post@rockefeller.no",
+    "fax": "+47 22110469",
+    "name": "Sentrum Scene",
+    "phone": "+47 22203232",
+    "website": "https://www.rockefeller.no/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2045479619,
+  "lat": 59.9151140,
+  "lon": 10.7399560,
+  "tags": {
+    "amenity": "bar",
+    "name": "Bristol Bar",
+    "opening_hours": "Mo-Th 16:00-01:30; Fr 16:00-02:30; Sa 13:00-02:30",
+    "website": "https://www.thonhotels.no/hoteller/land/norge/oslo/bristol/mat-og-drikke/bristol-bar/"
+  }
+},
+{
+  "type": "node",
+  "id": 2045497212,
+  "lat": 59.9212475,
+  "lon": 10.7272045,
+  "tags": {
+    "alt_name": "Mabou Café & Bar",
+    "amenity": "nightclub",
+    "check_date": "2026-10-05",
+    "check_date:opening_hours": "2026-10-05",
+    "facebook": "http://www.facebook.com/pages/Mabou-Cafe-Mabou-As/181928325166967",
+    "name": "Mabou",
+    "opening_hours:signed": "no",
+    "phone": "+47 22564590",
+    "website": "https://www.instagram.com/mabou.oslo/"
+  }
+},
+{
+  "type": "node",
+  "id": 2125314713,
+  "lat": 59.9147640,
+  "lon": 10.7477100,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-04-11",
+    "check_date:opening_hours": "2025-04-11",
+    "name": "Kjøkken og Bar",
+    "opening_hours": "Mo-Th 10:00-24:00, Fr 10:00-03:30, Sa 11:00-03:30, Su 12:00-23:00",
+    "website": "https://www.kjbr.no"
+  }
+},
+{
+  "type": "node",
+  "id": 2192390537,
+  "lat": 59.9215120,
+  "lon": 10.7322120,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab;gyros;fast_food",
+    "drive_through": "no",
+    "name": "Balkan Pizza & Kebab House",
+    "opening_hours": "Mo-Th 11:00-23:00, Fr-Sa 11:00-23:30, Su 12:00-23:00",
+    "phone": "+47 22 59 95 22",
+    "website": "https://www.balkan.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 2192394366,
+  "lat": 59.9201800,
+  "lon": 10.7346190,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "name": "Kebabbiten",
+    "website": "https://www.kebabbiten.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 2284940358,
+  "lat": 59.9143070,
+  "lon": 10.7204340,
+  "tags": {
+    "amenity": "bar",
+    "fax": "+47 23131142",
+    "name": "Palace Grill",
+    "opening_hours": "Mo-Sa 15:00-03:00; Su 15:00-01:00",
+    "phone": "+47 23131140",
+    "website": "https://palacegrill.no/baren_1/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2301344702,
+  "lat": 59.9151851,
+  "lon": 10.7413005,
+  "tags": {
+    "name": "Tinghuset",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2408917756,
+  "lat": 59.9096160,
+  "lon": 10.7403190,
+  "tags": {
+    "amenity": "pub",
+    "fetish:bdsm": "yes",
+    "fetish:bears": "yes",
+    "fetish:leather": "yes",
+    "fetish:rubber": "yes",
+    "fetish:uniform": "yes",
+    "floor": "0",
+    "lgbtq:men": "only",
+    "min_age": "18",
+    "name": "SLM Oslo",
+    "smoking": "isolated",
+    "smoking:note": "No smoking indoors or on the street. Smoking area in back yard",
+    "smoking:outside": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2444321769,
+  "lat": 59.9186710,
+  "lon": 10.7451740,
+  "tags": {
+    "amenity": "school",
+    "capacity": "508",
+    "email": "post@stsunniva.no",
+    "fee": "yes",
+    "grades": "1-10",
+    "isced:level": "1;2",
+    "name": "St. Sunniva skole",
+    "operator": "St Sunniva skole",
+    "operator:type": "private",
+    "phone": "+47 23 29 25 00",
+    "ref:NO:orgnr": "974117088",
+    "ref:udir_nsr": "974117088",
+    "website": "https://stsunniva.no/",
+    "wikidata": "Q12002564",
+    "wikimedia_commons": "Category:St. Sunniva skole (Oslo)",
+    "wikipedia": "en:St Sunniva School"
+  }
+},
+{
+  "type": "node",
+  "id": 2452107755,
+  "lat": 59.9145400,
+  "lon": 10.7434550,
+  "tags": {
+    "amenity": "theatre",
+    "name": "Oslo Nye Centralteatret",
+    "operator": "Oslo Nye Teater AS",
+    "wheelchair": "yes",
+    "wikidata": "Q4570219"
+  }
+},
+{
+  "type": "node",
+  "id": 2452107757,
+  "lat": 59.9144140,
+  "lon": 10.7397970,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2026-08-14",
+    "name": "Oslo Nye Hovedscenen",
+    "operator": "Oslo Nye Teater AS",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2454616590,
+  "lat": 59.9127985,
+  "lon": 10.7111635,
+  "tags": {
+    "name": "Skillebekk",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes",
+    "wikidata": "Q7535201"
+  }
+},
+{
+  "type": "node",
+  "id": 2454616591,
+  "lat": 59.9128254,
+  "lon": 10.7111673,
+  "tags": {
+    "name": "Skillebekk",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2555016576,
+  "lat": 59.9095330,
+  "lon": 10.7457190,
+  "tags": {
+    "amenity": "cinema",
+    "name": "Cinemateket",
+    "opening_hours": "Mo 09:00-15:30; Tu-Fr 09:00-21:00; Sa 12:00-17:00; Su 13:00-21:00",
+    "operator": "Norsk Filminstitutt",
+    "website": "https://www.cinemateket.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 2576683410,
+  "lat": 59.9133220,
+  "lon": 10.7286400,
+  "tags": {
+    "amenity": "bar",
+    "email": "Charlie@clubmango.no",
+    "name": "Club Mango",
+    "phone": "+47 22830761",
+    "twitter": "@club_mango",
+    "website": "http://www.clubmango.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 2616073831,
+  "lat": 59.9180540,
+  "lon": 10.7426780,
+  "tags": {
+    "amenity": "school",
+    "email": "kathinka.grom@byskolen.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Oslo By steinerskole",
+    "operator": "Oslo By steinerskole",
+    "operator:type": "private",
+    "phone": "+47 22 86 84 60",
+    "ref:NO:orgnr": "981089065",
+    "ref:udir_nsr": "981089065",
+    "website": "https://oslobysteinerskole.no",
+    "wikidata": "Q19384865"
+  }
+},
+{
+  "type": "node",
+  "id": 2667403841,
+  "lat": 59.9135232,
+  "lon": 10.7349018,
+  "tags": {
+    "amenity": "pub",
+    "brewery": "Beavertown Bloody 'Ell;To Øl Wit or Witout;Rådanäs California Common;Amundsen DePeach Mode;BBP - Delta IPA;Amundsen Stor Raudur",
+    "internet_access": "yes",
+    "microbrewery": "yes",
+    "name": "Amundsen Bryggeri og Spiseri",
+    "outdoor_seating": "yes",
+    "website": "https://www.amundsenbryggeri.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 2727063246,
+  "lat": 59.9151798,
+  "lon": 10.7412434,
+  "tags": {
+    "name": "Tinghuset",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2759495502,
+  "lat": 59.9139172,
+  "lon": 10.7440489,
+  "tags": {
+    "name": "Stortinget",
+    "network": "Ruter",
+    "operator": "Sporveien T-banen",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "4",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2785332973,
+  "lat": 59.9136586,
+  "lon": 10.7090479,
+  "tags": {
+    "email": "home.gabelshus@strawberry.no",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Home Hotel Gabelshus",
+    "not:brand:wikidata": "Q135249100",
+    "phone": "+47 23 27 65 00",
+    "rooms": "111",
+    "tourism": "hotel",
+    "website": "https://www.strawberry.no/hotell/norge/oslo/home-hotel-gabelshus/"
+  }
+},
+{
+  "type": "node",
+  "id": 2785549699,
+  "lat": 59.9148530,
+  "lon": 10.7406260,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-04-12",
+    "name": "Digg Burger",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 2785549850,
+  "lat": 59.9152542,
+  "lon": 10.7446471,
+  "tags": {
+    "fee": "no",
+    "museum": "history;local",
+    "name": "22. juli-senteret",
+    "opening_hours": "Th-Su 11:00-16:00",
+    "subject:wikidata": "Q79967",
+    "tourism": "museum",
+    "wheelchair": "yes",
+    "wikidata": "Q20669453",
+    "wikipedia": "no:22. juli-senteret"
+  }
+},
+{
+  "type": "node",
+  "id": 2785848162,
+  "lat": 59.9140450,
+  "lon": 10.7386260,
+  "tags": {
+    "air_conditioning": "yes",
+    "check_date": "2026-08-14",
+    "email": "service@karljohan.no",
+    "internet_access": "wlan",
+    "name": "Karl Johan hotell",
+    "phone": "+47 23 16 17 00",
+    "tourism": "hotel",
+    "website": "https://karljohanhotel.com/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2785849016,
+  "lat": 59.9123124,
+  "lon": 10.7352408,
+  "tags": {
+    "amenity": "bar",
+    "name": "Heidi's Beer Bar",
+    "opening_hours": "Th-Sa 16:00-03:30"
+  }
+},
+{
+  "type": "node",
+  "id": 2785920548,
+  "lat": 59.9111475,
+  "lon": 10.7480379,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "cuisine": "sandwich",
+    "name": "Subway",
+    "opening_hours": "Mo-Sa 10:00-21:00; Su 11:00-19:00",
+    "takeaway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2785921067,
+  "lat": 59.9099470,
+  "lon": 10.7414060,
+  "tags": {
+    "email": "hello@k7hotel.com",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "K7 Hotel Oslo",
+    "old_name": "Saga Hotel Oslo Central",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+47 23 10 08 00",
+    "short_name": "K7",
+    "smoking": "outside",
+    "tourism": "hotel",
+    "website": "https://k7hotel.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 2823077015,
+  "lat": 59.9080737,
+  "lon": 10.7568603,
+  "tags": {
+    "name": "Bjørvika",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "B",
+    "source": "aproximation",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2823077016,
+  "lat": 59.9081017,
+  "lon": 10.7568871,
+  "tags": {
+    "name": "Bjørvika",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "C",
+    "source": "aproximation",
+    "tram": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2824231278,
+  "lat": 59.9147460,
+  "lon": 10.7244130,
+  "tags": {
+    "amenity": "school",
+    "email": "info@wang.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Wang videregående skole / Wang Toppidrett",
+    "operator": "Wang AS",
+    "operator:type": "private",
+    "phone": "+47 22 12 97 00",
+    "ref:NO:orgnr": "971816317",
+    "ref:udir_nsr": "971816317",
+    "website": "https://wang.no/",
+    "wikidata": "Q18759538",
+    "wikimedia_commons": "Category:Wang videregående skole"
+  }
+},
+{
+  "type": "node",
+  "id": 2844681715,
+  "lat": 59.9154230,
+  "lon": 10.7409579,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-04-12",
+    "indoor_seating": "yes",
+    "name": "Herr Nilsen",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2931015401,
+  "lat": 59.9109919,
+  "lon": 10.7446288,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-08-05",
+    "check_date:opening_hours": "2025-08-05",
+    "name": "Prince lunchbar",
+    "opening_hours": "Mo-Fr 08:00-20:00; Sa 10:00-20:00; Su 12:00-17:00"
+  }
+},
+{
+  "type": "node",
+  "id": 2999656840,
+  "lat": 59.9142980,
+  "lon": 10.7577930,
+  "tags": {
+    "amenity": "school",
+    "email": "post@norfag.no",
+    "image": "https://www.norfag.no/assets/img/Norges%20Fagakademi.jpg",
+    "level": "2_og_5",
+    "name": "Norges Fagakademi Oslo",
+    "operator": "Norges Fagakademi",
+    "operator:type": "private",
+    "phone": "+4769366200",
+    "website": "https://www.norfag.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 3090736996,
+  "lat": 59.9138458,
+  "lon": 10.7420496,
+  "tags": {
+    "check_date:wheelchair": "2024-08-08",
+    "name": "Stortinget",
+    "public_transport": "entrance",
+    "railway": "subway_entrance",
+    "subway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3090736997,
+  "lat": 59.9137317,
+  "lon": 10.7417682,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "brand:wikipedia": "en:Subway (restaurant)",
+    "check_date": "2026-08-14",
+    "cuisine": "sandwich",
+    "name": "Subway",
+    "opening_hours": "Mo-Fr 09:00-20:00; Sa 10:00-18:00",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3132099333,
+  "lat": 59.9112340,
+  "lon": 10.7529618,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "cuisine": "burger",
+    "delivery": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "yes",
+    "indoor_seating": "yes",
+    "level": "2",
+    "name": "Burger King",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "no",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3187193087,
+  "lat": 59.9131326,
+  "lon": 10.7424751,
+  "tags": {
+    "layer": "-2",
+    "name": "Stortinget",
+    "network": "Ruter",
+    "operator": "Sporveien T-banen",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "ref": "3",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3235098313,
+  "lat": 59.9133084,
+  "lon": 10.7290900,
+  "tags": {
+    "amenity": "theatre",
+    "check_date": "2026-01-18",
+    "name": "Oslo Konserthus",
+    "name:en": "Oslo Concert Hall",
+    "opening_hours": "Mo-Sa 11:00-14:00",
+    "website": "https://oslokonserthus.no"
+  }
+},
+{
+  "type": "node",
+  "id": 3397094878,
+  "lat": 59.9124062,
+  "lon": 10.7589167,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "name": "Shawarma House",
+    "opening_hours": "Mo-Fr 10:00-24:00, Sa 10:00-01:00, Su 10:00-24:00",
+    "phone": "+47 22 17 40 46",
+    "source": "http://www.gronlandstorg.no/",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3441434847,
+  "lat": 59.9105996,
+  "lon": 10.7286515,
+  "tags": {
+    "amenity": "cafe",
+    "branch": "Aker Brygge",
+    "brand": "Espresso House",
+    "brand:wikidata": "Q10489162",
+    "brand:wikipedia": "en:Espresso House",
+    "check_date": "2026-06-28",
+    "cuisine": "coffee_shop",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Espresso House Aker Brygge",
+    "opening_hours": "Mo-Tu 07:00-21:00, Fr 07:00-22:00, Sa 08:00-22:00, Su 08:00-21:00",
+    "outdoor_seating": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "phone": "+47 45940625",
+    "ref:espressohouse": "614",
+    "smoking": "no",
+    "takeaway": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://no.espressohouse.com/coffee-shops/aker-brygge/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3441434853,
+  "lat": 59.9103980,
+  "lon": 10.7284750,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "asian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Asia Aker Brygge",
+    "opening_hours": "Mo-Tu 11:00-22:00; We 11:00-23:00; Th 12:00-00:00; Fr 11:00-00:00; Sa 12:30-00:00; Su 13:00-21:00",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "yes",
+    "website": "https://asiaakerbrygge.no/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3441434865,
+  "lat": 59.9132947,
+  "lon": 10.7327558,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Klingenberg",
+    "cuisine": "juice",
+    "drive_through": "no",
+    "name": "Smoothie Xchange",
+    "opening_hours": "Mo-Fr 07:30-19:00; Sa-Su 10:00-18:00",
+    "website": "https://smoothiexchange.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 3527824649,
+  "lat": 59.9152530,
+  "lon": 10.7486390,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-07-05",
+    "name": "Politiker'n",
+    "website": "http://politikern.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 3549515893,
+  "lat": 59.9098550,
+  "lon": 10.7406880,
+  "tags": {
+    "amenity": "pub",
+    "name": "The Whisky Bar"
+  }
+},
+{
+  "type": "node",
+  "id": 3566976493,
+  "lat": 59.9106410,
+  "lon": 10.7507000,
+  "tags": {
+    "check_date": "2026-08-07",
+    "name": "Comfort Hotel Grand Central",
+    "operator": "Nordic Choice Hotels",
+    "phone": "+47 800 13 633",
+    "tourism": "hotel",
+    "website": "https://www.nordicchoicehotels.no/comfort/comfort-hotel-grand-central/"
+  }
+},
+{
+  "type": "node",
+  "id": 3609217299,
+  "lat": 59.9032613,
+  "lon": 10.7412496,
+  "tags": {
+    "bus": "yes",
+    "name": "Vippetangen",
+    "network": "Ruter",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3712490725,
+  "lat": 59.9228260,
+  "lon": 10.7203230,
+  "tags": {
+    "brand": "Saga Hotel",
+    "check_date": "2025-05-03",
+    "email": "post.oslo@sagahotels.no",
+    "internet_access": "wlan",
+    "name": "Saga Hotel Oslo",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+47 22 55 44 90",
+    "smoking": "outside",
+    "stars": "4",
+    "tourism": "hotel",
+    "website": "https://sagahoteloslo.no/saga-hotel/"
+  }
+},
+{
+  "type": "node",
+  "id": 3725960004,
+  "lat": 59.9135420,
+  "lon": 10.7496487,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Storgata",
+    "brand": "McDonald's",
+    "brand:wikidata": "Q38076",
+    "brand:wikipedia": "en:McDonald's",
+    "check_date": "2026-07-25",
+    "check_date:opening_hours": "2026-07-25",
+    "cuisine": "burger",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "McDonald's Storgata",
+    "opening_hours": "Mo-Su 07:00-04:00",
+    "outdoor_seating": "no",
+    "phone": "+47 22473110",
+    "ref:mcdn": "2",
+    "takeaway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3965801259,
+  "lat": 59.9168530,
+  "lon": 10.7149290,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "mexican",
+    "delivery": "no",
+    "drive_through": "no",
+    "internet_access": "wlan",
+    "name": "El Camino",
+    "outdoor_seating": "yes",
+    "smoking": "outside",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4131364916,
+  "lat": 59.9177567,
+  "lon": 10.7365472,
+  "tags": {
+    "air_conditioning": "no",
+    "check_date": "2025-08-05",
+    "contact:phone": "+47 415 36508",
+    "contact:website": "https://smarthotel.no/no/oslo",
+    "internet_access": "wlan",
+    "name": "Smarthotel Oslo",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4185468590,
+  "lat": 59.9193326,
+  "lon": 10.7517878,
+  "tags": {
+    "name": "Vestbredden",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 4219438419,
+  "lat": 59.9181160,
+  "lon": 10.7437500,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-09-06",
+    "check_date:opening_hours": "2026-09-06",
+    "cuisine": "sushi",
+    "name": "Mimi Sushi",
+    "opening_hours": "Mo-Fr 13:00-21:00; Sa,Su 13:00-21:00",
+    "phone": "+4722466045",
+    "smoking": "no",
+    "takeaway": "yes",
+    "website": "https://www.mimisushi.no/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4340314385,
+  "lat": 59.9154040,
+  "lon": 10.7407526,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-04-12",
+    "indoor_seating": "yes",
+    "name": "Per på Hjørnet",
+    "outdoor_seating": "yes",
+    "wikidata": "Q112731879",
+    "wikipedia": "no:Per på Hjørnet (restaurant)"
+  }
+},
+{
+  "type": "node",
+  "id": 4486492994,
+  "lat": 59.9141746,
+  "lon": 10.7483395,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-03-31",
+    "check_date:opening_hours": "2025-03-31",
+    "cuisine": "coffee_shop;cake;sandwich;tea",
+    "diet:vegan": "no",
+    "diet:vegetarian": "yes",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Café Sør",
+    "opening_hours": "Mo-Su 10:00-03:00",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "no",
+    "website": "https://www.cafesor.no/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4569056090,
+  "lat": 59.9154732,
+  "lon": 10.7555983,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-10-01",
+    "check_date:opening_hours": "2026-10-01",
+    "name": "Marmaris",
+    "opening_hours": "Mo-Fr 13:00-03:00, Sa,Su 13:00-03:00",
+    "smoking": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4637376887,
+  "lat": 59.9142808,
+  "lon": 10.7504213,
+  "tags": {
+    "amenity": "theatre",
+    "name": "Folketeatret",
+    "wikidata": "Q5464537",
+    "wikimedia_commons": "Category:Folketeatret (Oslo)",
+    "wikipedia": "en:Folketeateret, Oslo"
+  }
+},
+{
+  "type": "node",
+  "id": 4703406041,
+  "lat": 59.9118213,
+  "lon": 10.7416968,
+  "tags": {
+    "name": "Øvre Slottsgate",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4703406046,
+  "lat": 59.9105074,
+  "lon": 10.7469383,
+  "tags": {
+    "name": "Dronningens gate",
+    "network": "Ruter",
+    "operator": "Sporveien Trikken",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "ref": "T",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4736654304,
+  "lat": 59.9117035,
+  "lon": 10.7454904,
+  "tags": {
+    "covered": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Comfort Hotel Karl Johan",
+    "outdoor_seating:breakfast": "patio",
+    "outdoor_seating:breakfast:description:en": "From the breakfast room you walk down half a floor to the restaurant in the patio",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 4736684797,
+  "lat": 59.9165583,
+  "lon": 10.7522701,
+  "tags": {
+    "air_conditioning": "yes",
+    "amenity": "fast_food",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "check_date": "2026-09-18",
+    "check_date:diet:vegetarian": "2026-09-18",
+    "cuisine": "burger",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "name": "Burger King",
+    "opening_hours": "Mo-Th 10:00-23:00, Fr 10:00-03:30, Su 12:00-23:00, Sa 12:00-03:30",
+    "outdoor_seating": "sidewalk",
+    "takeaway": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4738519186,
+  "lat": 59.9139807,
+  "lon": 10.7505941,
+  "tags": {
+    "alt_name": "Clarion Collection Hotel Folketeateret",
+    "brand": "@HOME",
+    "brand:wikidata": "Q135249100",
+    "check_date": "2025-02-14",
+    "name": "Home Hotel Folketeateret",
+    "official_name": "@HOME by Best Western",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.strawberry.no/hotell/norge/oslo/home-hotel-folketeateret/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4754833651,
+  "lat": 59.9169718,
+  "lon": 10.7534384,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-08-11",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "email": "post@falafelnjuice.no",
+    "mobile": "+4797313197",
+    "name": "Falafel n' Juice",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4754833656,
+  "lat": 59.9172644,
+  "lon": 10.7535691,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2023-05-20",
+    "cuisine": "kebab;pizza",
+    "name": "Mediterranean grill"
+  }
+},
+{
+  "type": "node",
+  "id": 4880461779,
+  "lat": 59.9134268,
+  "lon": 10.7506131,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Burger King",
+    "brand:wikidata": "Q177054",
+    "brand:wikipedia": "en:Burger King",
+    "check_date": "2026-07-01",
+    "check_date:opening_hours": "2025-05-08",
+    "contact:website": "https://burgerking.no/restaurants/oslostgt",
+    "cuisine": "burger",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "name": "Burger King",
+    "opening_hours": "Mo-Th 10:00-22:00; Fr-Sa 10:00-04:00; Su 13:00-20:00",
+    "opening_hours:signed": "no",
+    "takeaway": "yes",
+    "website": "https://burgerking.no/",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 4958723297,
+  "lat": 59.9145580,
+  "lon": 10.7473280,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2023-07-11",
+    "indoor": "yes",
+    "leisure": "miniature_golf",
+    "name": "Oslo Camping",
+    "opening_hours": "Mo-Tu 12:00-23:00, We-Th 12:00-24:00, Fr 13:00-01:30 open, Sa 01:30-03:00 open \"when Skogen is open\", Sa 12:00-01:30, Su 01:30-03:00 open \"when Skogen is open\", Su 12:00-22:00",
+    "opening_hours:note": "20-year age limit after 19:00 every day",
+    "toilets:wheelchair": "no",
+    "website": "https://www.campingen.no/oslo",
+    "wheelchair": "no",
+    "wheelchair:description": "Mini golf and stairs"
+  }
+},
+{
+  "type": "node",
+  "id": 4991277452,
+  "lat": 59.9151824,
+  "lon": 10.7404713,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-04-12",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "RØØR-GJEST",
+    "name": "RØØR",
+    "opening_hours": "Su-Th 15:00-01:00; Fr-Sa 13:00-03:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.roor.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 5015490124,
+  "lat": 59.9141673,
+  "lon": 10.7408032,
+  "tags": {
+    "brand": "Scandic Hotels",
+    "brand:wikidata": "Q129391",
+    "check_date": "2026-08-14",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "internet_access:ssid": "scandic_easy",
+    "name": "Scandic Karl Johan",
+    "rooms": "90",
+    "tourism": "hotel",
+    "website": "https://www.scandichotels.no/hotell/norge/oslo/scandic-karl-johan"
+  }
+},
+{
+  "type": "node",
+  "id": 5094785566,
+  "lat": 59.9139583,
+  "lon": 10.7548154,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-06",
+    "check_date:opening_hours": "2026-07-06",
+    "cuisine": "pizza",
+    "diet:vegetarian": "yes",
+    "name": "Verona pizza og kebab",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5094785588,
+  "lat": 59.9154725,
+  "lon": 10.7556190,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "email": "grytelokket.as@gmail.com",
+    "name": "Grytelokket",
+    "opening_hours": "Mo-Th 11:00-00:30, Fr,Sa 11:00-03:30, Su 12:00-24:00",
+    "smoking": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5115696063,
+  "lat": 59.9132300,
+  "lon": 10.7486510,
+  "tags": {
+    "amenity": "pub",
+    "indoor_seating": "yes",
+    "name": "Brygg",
+    "opening_hours": "Mo-Th 14:00-01:00, Fr,Sa 12:00-03:00, Su 15:00-23:00",
+    "outdoor_seating": "yes",
+    "website": "https://brygg.no/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5129429922,
+  "lat": 59.9233890,
+  "lon": 10.7408830,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "asian",
+    "indoor_seating": "yes",
+    "name": "Tunco",
+    "opening_hours": "Mo-Fr 11:30-22:00; Sa-Su 13:00-22:00",
+    "outdoor_seating": "no",
+    "phone": "+47 40098690",
+    "website": "https://www.tunco.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 5218231660,
+  "lat": 59.9155792,
+  "lon": 10.7319265,
+  "tags": {
+    "name": "Nationaltheatret",
+    "name:de": "Nationaltheater",
+    "name:en": "National Theatre",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien T-banen",
+    "operator:wikidata": "Q7107051",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q13218297"
+  }
+},
+{
+  "type": "node",
+  "id": 5218231668,
+  "lat": 59.9122056,
+  "lon": 10.7516900,
+  "tags": {
+    "name": "Jernbanetorget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien T-banen",
+    "operator:wikidata": "Q7107051",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q6514464"
+  }
+},
+{
+  "type": "node",
+  "id": 5218231673,
+  "lat": 59.9135655,
+  "lon": 10.7433418,
+  "tags": {
+    "name": "Stortinget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien T-banen",
+    "operator:wikidata": "Q7107051",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q6515974"
+  }
+},
+{
+  "type": "node",
+  "id": 5235692723,
+  "lat": 59.9119258,
+  "lon": 10.7572685,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-09-27",
+    "name": "BIT"
+  }
+},
+{
+  "type": "node",
+  "id": 5578308992,
+  "lat": 59.9154450,
+  "lon": 10.7373980,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Universitetsgata",
+    "brand": "Subway",
+    "brand:wikidata": "Q244457",
+    "brand:wikipedia": "en:Subway (restaurant)",
+    "check_date": "2023-05-28",
+    "cuisine": "sandwich",
+    "name": "Subway",
+    "takeaway": "yes",
+    "website": "https://restaurants.subway.com/norway/oslo/universitetsgata-20"
+  }
+},
+{
+  "type": "node",
+  "id": 5755249945,
+  "lat": 59.9211290,
+  "lon": 10.7305248,
+  "tags": {
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Welhavens Skjenkestue",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5770466512,
+  "lat": 59.9235100,
+  "lon": 10.7231770,
+  "tags": {
+    "amenity": "arts_centre",
+    "email": "info@france.no",
+    "name": "Institut Français",
+    "name:fr": "Institut Français de Norvège",
+    "operator": "Institut Français",
+    "phone": "+47 23 20 30 00"
+  }
+},
+{
+  "type": "node",
+  "id": 5830063853,
+  "lat": 59.9238360,
+  "lon": 10.7292280,
+  "tags": {
+    "amenity": "school",
+    "email": "kg@kg.vgs.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Kristelig gymnasium, videregående skole",
+    "operator": "Kristelig gymnasium AS",
+    "operator:type": "private",
+    "phone": "+47 23196440",
+    "ref:NO:orgnr": "974117797",
+    "ref:udir_nsr": "974117797",
+    "website": "https://kg.vgs.no/",
+    "wikidata": "Q4993014",
+    "wikimedia_commons": "Category:Kristelig Gymnasium",
+    "wikipedia": "en:Kristelig Gymnasium"
+  }
+},
+{
+  "type": "node",
+  "id": 5830063870,
+  "lat": 59.9249956,
+  "lon": 10.7261367,
+  "tags": {
+    "amenity": "school",
+    "capacity": "271",
+    "email": "sekretariat@deutsche-schule.no",
+    "fee": "yes",
+    "grades": "1-12",
+    "isced:level": "1;2;3",
+    "name": "Den Tysk-Norske skolen i Oslo, grunnskole Sporveisgata",
+    "operator": "Den Tysk-Norske skolen i Oslo",
+    "operator:type": "private",
+    "phone": "+47 22 93 12 20",
+    "ref:NO:orgnr": "973480634",
+    "ref:udir_nsr": "973480634",
+    "website": "https://deutscheschule.no"
+  }
+},
+{
+  "type": "node",
+  "id": 5830063876,
+  "lat": 59.9169860,
+  "lon": 10.7173770,
+  "tags": {
+    "amenity": "school",
+    "capacity": "444",
+    "email": "secretariat@lfo.no",
+    "fee": "yes",
+    "grades": "1-9",
+    "isced:level": "1;2",
+    "name": "Lycée français René Cassin d'Oslo",
+    "operator": "AEFE (Agence pour l'Enseignement Français à l'Étranger)",
+    "operator:type": "private",
+    "phone": "+47 22 92 51 20",
+    "ref:NO:orgnr": "976939190",
+    "ref:udir_nsr": "976939190",
+    "website": "https://lfo.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 5830063880,
+  "lat": 59.9238100,
+  "lon": 10.7295370,
+  "tags": {
+    "amenity": "school",
+    "capacity": "412",
+    "email": "kg@kg.vgs.no",
+    "fee": "yes",
+    "grades": "8-10",
+    "isced:level": "2",
+    "name": "Kristelig gymnasium, grunnskole",
+    "operator": "Kristelig gymnasium AS",
+    "operator:type": "private",
+    "phone": "+47 21551000",
+    "ref:NO:orgnr": "975013286",
+    "ref:udir_nsr": "975013286",
+    "website": "https://kg.vgs.no"
+  }
+},
+{
+  "type": "node",
+  "id": 5830068499,
+  "lat": 59.9241270,
+  "lon": 10.7325700,
+  "tags": {
+    "amenity": "school",
+    "email": "oslo@akademiet.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Akademiet Oslo",
+    "operator": "Akademiet Oslo AS",
+    "operator:type": "private",
+    "phone": "+47 22 46 69 00",
+    "ref:NO:orgnr": "887664102",
+    "ref:udir_nsr": "887664102",
+    "website": "https://akademiet.no/",
+    "wikidata": "Q11957097"
+  }
+},
+{
+  "type": "node",
+  "id": 5830068504,
+  "lat": 59.9186930,
+  "lon": 10.7433840,
+  "tags": {
+    "amenity": "school",
+    "email": "postmottak.edvardmunch@osloskolen.no",
+    "fee": "no",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Edvard Munch videregående skole",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "ref:NO:orgnr": "912001709",
+    "ref:udir_nsr": "912001709",
+    "website": "https://edvardmunch.vgs.no",
+    "wheelchair": "limited",
+    "wikidata": "Q17194556",
+    "wikimedia_commons": "Category:Edvard Munch videregående skole"
+  }
+},
+{
+  "type": "node",
+  "id": 5830068505,
+  "lat": 59.9235501,
+  "lon": 10.7318572,
+  "tags": {
+    "amenity": "school",
+    "email": "info@opg.vgs.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Oslo private gymnasium",
+    "operator": "Oslo private gymnasium AS",
+    "operator:type": "private",
+    "phone": "+47 22 83 73 02",
+    "ref:NO:orgnr": "972286389",
+    "ref:udir_nsr": "972286389",
+    "toilets:wheelchair": "no",
+    "wheelchair": "limited",
+    "wikidata": "Q19384847"
+  }
+},
+{
+  "type": "node",
+  "id": 5830068507,
+  "lat": 59.9112090,
+  "lon": 10.7383780,
+  "tags": {
+    "amenity": "school",
+    "email": "info@ottotreider.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Otto Treider private gymnas",
+    "operator": "Otto Treider private gymnas AS",
+    "operator:type": "private",
+    "phone": "+47 24 14 44 40",
+    "ref:NO:orgnr": "971816309",
+    "ref:udir_nsr": "971816309",
+    "website": "https://ottotreider.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 5865065935,
+  "lat": 59.9106862,
+  "lon": 10.7487686,
+  "tags": {
+    "check_date": "2026-07-31",
+    "internet_access": "wlan",
+    "name": "Comfort Hotel Xpress Central Station",
+    "operator": "Nordic Choice Hotels",
+    "tourism": "hotel",
+    "website": "https://www.nordicchoicehotels.no/hotell/norge/oslo/comfort-hotel-xpress-central-station/"
+  }
+},
+{
+  "type": "node",
+  "id": 5865563902,
+  "lat": 59.9154904,
+  "lon": 10.7374528,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-08-14",
+    "name": "Texburger Universitetsgata"
+  }
+},
+{
+  "type": "node",
+  "id": 5868561545,
+  "lat": 59.9122941,
+  "lon": 10.7191314,
+  "tags": {
+    "check_date": "2025-08-24",
+    "name": "Guldsmeden Hotel",
+    "tourism": "hotel",
+    "website": "https://guldsmedenhotels.com/hotel-oslo/"
+  }
+},
+{
+  "type": "node",
+  "id": 5938368410,
+  "lat": 59.9116080,
+  "lon": 10.7531440,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-09-25",
+    "level": "2",
+    "name": "SmoothieXchange",
+    "shop": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6083559611,
+  "lat": 59.9193320,
+  "lon": 10.7524618,
+  "tags": {
+    "amenity": "theatre",
+    "name": "Grusomhetens teater"
+  }
+},
+{
+  "type": "node",
+  "id": 6126672188,
+  "lat": 59.9139138,
+  "lon": 10.7413789,
+  "tags": {
+    "amenity": "dentist",
+    "healthcare": "dentist",
+    "name": "Stortinget tannklinikk",
+    "operator:type": "private",
+    "ref:hvakostertannlegen": "12591;231440",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6126673225,
+  "lat": 59.9106152,
+  "lon": 10.7272574,
+  "tags": {
+    "amenity": "dentist",
+    "brand": "Dentix",
+    "brand:wikidata": "Q30505320",
+    "check_date": "2025-12-23",
+    "healthcare": "dentist",
+    "name": "Oris Dental Aker Brygge",
+    "opening_hours": "Mo, We 08:00-20:00; Tu, Th-Fr 08:00-15:30",
+    "phone": "+47 22 83 82 00",
+    "ref:hvakostertannlegen": "139181",
+    "website": "https://orisdental.no/klinikker/aker-brygge"
+  }
+},
+{
+  "type": "node",
+  "id": 6211357716,
+  "lat": 59.9111511,
+  "lon": 10.7483428,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "asian;japanese;sushi",
+    "internet_access": "wlan",
+    "name": "Sushi City Wok",
+    "opening_hours": "Mo-Fr 11:00-22:00; Sa-Su 13:00-22:00",
+    "website": "https://sushicity.no"
+  }
+},
+{
+  "type": "node",
+  "id": 6235965895,
+  "lat": 59.9140173,
+  "lon": 10.7557581,
+  "tags": {
+    "check_date": "2025-06-26",
+    "name": "Thon Hotel Spectrum",
+    "phone": "+47 23362700",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/norge/oslo/thon-hotel-spectrum/"
+  }
+},
+{
+  "type": "node",
+  "id": 6341292393,
+  "lat": 59.9142075,
+  "lon": 10.7334254,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "indoor_seating": "yes",
+    "name": "Bar Boman",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6373811051,
+  "lat": 59.9034040,
+  "lon": 10.7404850,
+  "tags": {
+    "highway": "bus_stop",
+    "name": "Vippetangen",
+    "ref:nsrq": "7638"
+  }
+},
+{
+  "type": "node",
+  "id": 6373811056,
+  "lat": 59.9031860,
+  "lon": 10.7413970,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Vippetangen",
+    "ref:nsrq": "7639",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6474049827,
+  "lat": 59.9127980,
+  "lon": 10.7483236,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Domino's",
+    "brand:wikidata": "Q839466",
+    "cuisine": "pizza",
+    "indoor_seating": "yes",
+    "name": "Domino's",
+    "opening_hours": "Mo-Fr 10:00-24:00, Sa,Su 11:00-24:00",
+    "outdoor_seating": "no",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6482293612,
+  "lat": 59.9240780,
+  "lon": 10.7322200,
+  "tags": {
+    "amenity": "school",
+    "email": "bislett@akademiet.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Akademiet videregående skole Bislett",
+    "operator": "Akademiet vgs Bislett AS",
+    "operator:type": "private",
+    "phone": "+47 93 07 79 90",
+    "ref:NO:orgnr": "988938386",
+    "ref:udir_nsr": "988938386",
+    "website": "https://akademiet.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 6482755105,
+  "lat": 59.9116160,
+  "lon": 10.7362770,
+  "tags": {
+    "amenity": "school",
+    "check_date": "2026-06-28",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Bårdar Akademiet",
+    "operator": "Bårdar Akademiet AS",
+    "operator:type": "private",
+    "phone": "+47 22 20 90 10"
+  }
+},
+{
+  "type": "node",
+  "id": 6482755106,
+  "lat": 59.9177790,
+  "lon": 10.7373100,
+  "tags": {
+    "amenity": "school",
+    "contact:website": "https://fbo.no/",
+    "education": "school",
+    "email": "bibelskolen@filadelfia.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Filadelfia bibelskole",
+    "operator": "Filadelfia bibelskole",
+    "operator:type": "private",
+    "ref:NO:orgnr": "988421006",
+    "ref:udir_nsr": "988421006",
+    "religion": "christian"
+  }
+},
+{
+  "type": "node",
+  "id": 6564836685,
+  "lat": 59.9112950,
+  "lon": 10.7434540,
+  "tags": {
+    "amenity": "fast_food",
+    "contact:facebook": "https://www.facebook.com/kvadratsalat/",
+    "diet:gluten_free": "yes",
+    "diet:lacto_vegetarian": "yes",
+    "diet:lactose_free": "yes",
+    "diet:ovo_vegetarian": "yes",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Kvadrat salat",
+    "opening_hours": "Mo-Fr 10:00-18:00",
+    "phone": "+47 476 37 901",
+    "takeaway": "only"
+  }
+},
+{
+  "type": "node",
+  "id": 6593517790,
+  "lat": 59.9098172,
+  "lon": 10.7418568,
+  "tags": {
+    "fee": "no",
+    "museum": "local",
+    "name": "Kreftforeningens Vitensenter",
+    "subject:wikidata": "Q12078",
+    "toilets": "yes",
+    "tourism": "museum",
+    "website": "https://kreftforeningen.no/vitensenteret/",
+    "wheelchair": "designated"
+  }
+},
+{
+  "type": "node",
+  "id": 6593517793,
+  "lat": 59.9079824,
+  "lon": 10.7231890,
+  "tags": {
+    "name": "The Salmon Vitensenter",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 6593517795,
+  "lat": 59.9132799,
+  "lon": 10.7340478,
+  "tags": {
+    "fee": "yes",
+    "name": "The Viking Planet",
+    "opening_hours": "Mo-Fr 10:00-17:00; Sa,Su 10:00-18:00",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "website": "https://www.thevikingplanet.com/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6593517800,
+  "lat": 59.9096410,
+  "lon": 10.7434020,
+  "tags": {
+    "check_date": "2024-12-23",
+    "check_date:opening_hours": "2024-12-23",
+    "email": "post@minibottlegallery.com",
+    "fee": "yes",
+    "name": "Småflaskemuseet",
+    "name:en": "The Mini Bottle Gallery",
+    "name:no": "Småflaskemuseet",
+    "opening_hours": "Sa,Su 12:00-16:00",
+    "phone": "+47 23 35 79 60",
+    "subject:wikidata": "Q19381603",
+    "toilets": "yes",
+    "toilets:access": "customers",
+    "toilets:fee": "no",
+    "tourism": "museum",
+    "website": "https://www.minibottlegallery.com/?kategori=museum",
+    "wheelchair": "yes",
+    "wikidata": "Q12001586",
+    "wikimedia_commons": "Category:Småflaskemuseet"
+  }
+},
+{
+  "type": "node",
+  "id": 6593517801,
+  "lat": 59.9112029,
+  "lon": 10.7199527,
+  "tags": {
+    "name": "Norsk tryllemuseum",
+    "tourism": "museum",
+    "wikidata": "Q11992414"
+  }
+},
+{
+  "type": "node",
+  "id": 6593517802,
+  "lat": 59.9182871,
+  "lon": 10.7499149,
+  "tags": {
+    "fee": "no",
+    "name": "Oslo skolemuseum",
+    "tourism": "museum",
+    "website": "https://skolemuseum.osloskolen.no",
+    "wikidata": "Q113997590"
+  }
+},
+{
+  "type": "node",
+  "id": 6684083404,
+  "lat": 59.9123630,
+  "lon": 10.7479070,
+  "tags": {
+    "amenity": "fast_food",
+    "capacity": "30",
+    "check_date": "2025-07-07",
+    "cuisine": "kebab;falafel",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "email": "post@carmelgrill.no",
+    "indoor_seating": "yes",
+    "level": "0",
+    "name": "Carmel Grill",
+    "opening_hours": "Mo-Su 09:00-03:30",
+    "outdoor_seating": "yes",
+    "website": "http://carmelgrill.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 6684083405,
+  "lat": 59.9111680,
+  "lon": 10.7484022,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2024-05-11",
+    "cuisine": "kebab;falafel",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "name": "Dronningens kebab",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6767271832,
+  "lat": 59.9124161,
+  "lon": 10.7362027,
+  "tags": {
+    "check_date": "2026-05-01",
+    "email": "post@hotelverdandi.no",
+    "name": "Hotel Verdandi",
+    "opening_hours": "24/7",
+    "phone": "+4724149500",
+    "tourism": "hotel",
+    "website": "https://www.hotelverdandi.no"
+  }
+},
+{
+  "type": "node",
+  "id": 6770416197,
+  "lat": 59.9139607,
+  "lon": 10.7514124,
+  "tags": {
+    "name": "Storgata",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6770416199,
+  "lat": 59.9139313,
+  "lon": 10.7514471,
+  "tags": {
+    "name": "Storgata",
+    "network": "Ruter",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6780418993,
+  "lat": 59.9103260,
+  "lon": 10.7409450,
+  "tags": {
+    "email": "post@nobimu.no",
+    "fee": "yes",
+    "name": "Nordisk bibelmuseum",
+    "name:en": "Nordic Bible Museum",
+    "name:no": "Nordisk bibelmuseum",
+    "opening_hours": "Fr-Su 11:00-16:00; Tu-We 12:00-17:00; Th 11:00-18:00",
+    "phone": "+4740105777",
+    "tourism": "museum",
+    "website": "https://nobimu.no/",
+    "wikidata": "Q65234215"
+  }
+},
+{
+  "type": "node",
+  "id": 6817579801,
+  "lat": 59.9114708,
+  "lon": 10.7451841,
+  "tags": {
+    "bar": "no",
+    "internet_access": "wlan",
+    "name": "Bob W. ZSentralen",
+    "source": "local knowledge",
+    "tourism": "hotel",
+    "website": "https://bobw.co"
+  }
+},
+{
+  "type": "node",
+  "id": 6817579806,
+  "lat": 59.9118823,
+  "lon": 10.7515141,
+  "tags": {
+    "brand": "Scandic Hotels",
+    "brand:wikidata": "Q129391",
+    "level": "1",
+    "name": "Scandic Byporten",
+    "tourism": "hotel",
+    "website": "https://www.scandichotels.no/hotell/norge/oslo/scandic-byporten"
+  }
+},
+{
+  "type": "node",
+  "id": 6817579807,
+  "lat": 59.9107333,
+  "lon": 10.7496017,
+  "tags": {
+    "check_date": "2024-11-24",
+    "name": "Amerikalinjen",
+    "tourism": "hotel",
+    "website": "https://amerikalinjen.com/no/hjem/"
+  }
+},
+{
+  "type": "node",
+  "id": 6833199604,
+  "lat": 59.9121480,
+  "lon": 10.7364410,
+  "tags": {
+    "amenity": "nightclub",
+    "check_date": "2026-06-28",
+    "email": "mail@subscene.no",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "level": "0",
+    "name": "sub.scene",
+    "opening_hours": "Tu 16:00-21:00; Th 16:00-22:00; We,Fr 17:00-21:00",
+    "payment:coins": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:maestro": "yes",
+    "payment:notes": "yes",
+    "smoking": "outside",
+    "website": "https://www.subscene.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 7119960771,
+  "lat": 59.9117300,
+  "lon": 10.7453410,
+  "tags": {
+    "amenity": "pub",
+    "check_date:opening_hours": "2026-04-21",
+    "name": "Rodins Bistro & Bar",
+    "opening_hours": "Tu-Sa 16:00-21:00",
+    "opening_hours:signed": "no",
+    "website": "https://rodins.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 7157547000,
+  "lat": 59.9153702,
+  "lon": 10.7498056,
+  "tags": {
+    "amenity": "school",
+    "name": "Studieforbundet AOF Norge",
+    "note": "Education for adults",
+    "website": "https://www.aof.no"
+  }
+},
+{
+  "type": "node",
+  "id": 7166849985,
+  "lat": 59.9162201,
+  "lon": 10.7397517,
+  "tags": {
+    "amenity": "bar",
+    "internet_access": "wlan",
+    "name": "Makulator"
+  }
+},
+{
+  "type": "node",
+  "id": 7904813107,
+  "lat": 59.9120748,
+  "lon": 10.7520208,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "name": "Lett og God"
+  }
+},
+{
+  "type": "node",
+  "id": 7944118266,
+  "lat": 59.9245280,
+  "lon": 10.7312790,
+  "tags": {
+    "amenity": "school",
+    "check_date": "2026-07-25",
+    "fee": "yes",
+    "isced:level": "3",
+    "name": "Sonans Oslo",
+    "operator:type": "private"
+  }
+},
+{
+  "type": "node",
+  "id": 7944118283,
+  "lat": 59.9238251,
+  "lon": 10.7395056,
+  "tags": {
+    "amenity": "school",
+    "email": "post@tbbmi.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Troens Bevis Bibel og Misjons Institutt",
+    "operator": "Troens Bevis Bibel og Misjons Institutt",
+    "operator:type": "private",
+    "ref:NO:orgnr": "971833793",
+    "ref:udir_nsr": "971833793",
+    "website": "https://tbbmi.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 7944170085,
+  "lat": 59.9170510,
+  "lon": 10.7437610,
+  "tags": {
+    "amenity": "school",
+    "email": "post@prosjektskolen.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Prosjektskolen",
+    "operator": "Prosjektskolen AS",
+    "operator:type": "private",
+    "phone": "+47 22 11 48 90",
+    "ref:NO:orgnr": "987415371",
+    "ref:udir_nsr": "987415371",
+    "website": "https://prosjektskolen.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 7944170092,
+  "lat": 59.9130105,
+  "lon": 10.7242169,
+  "tags": {
+    "amenity": "school",
+    "email": "postmottak.vika.vgs@osloskolen.no",
+    "fee": "no",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Vika videregående skole",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "ref:NO:orgnr": "925607797",
+    "ref:udir_nsr": "925607797"
+  }
+},
+{
+  "type": "node",
+  "id": 7944170100,
+  "lat": 59.9197544,
+  "lon": 10.7525539,
+  "tags": {
+    "amenity": "school",
+    "email": "post@strykejernet.no",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Strykejernet kunstskole",
+    "operator": "Strykejernet kunstskole AS",
+    "operator:type": "private",
+    "phone": "+47 23 35 31 90",
+    "ref:NO:orgnr": "973449990",
+    "ref:udir_nsr": "973449990",
+    "website": "https://strykejernet.no"
+  }
+},
+{
+  "type": "node",
+  "id": 7984723389,
+  "lat": 59.9205010,
+  "lon": 10.7336530,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2024-11-16",
+    "cuisine": "middle_eastern;juice",
+    "diet:vegan": "only",
+    "indoor_seating": "yes",
+    "name": "Falafel n' Juice",
+    "opening_hours": "Mo-Fr 10:00-21:00; Sa 12:00-20:00",
+    "outdoor_seating": "no",
+    "website": "https://falafelnjuice.no"
+  }
+},
+{
+  "type": "node",
+  "id": 8046314379,
+  "lat": 59.9116120,
+  "lon": 10.7304000,
+  "tags": {
+    "check_date": "2026-09-23",
+    "fee": "yes",
+    "image": "https://photos.app.goo.gl/NM4bHEF3AFxsnnLj8",
+    "mapillary": "606274437440200; 1464920344953148; 750461824096525",
+    "mapillary:0": "1464920344953148",
+    "mapillary:1": "1478040179787893",
+    "museum": "nature;peace",
+    "name": "Nobels Fredssenter",
+    "name:de": "Nobel-Friedenszentrum",
+    "name:en": "Nobel Peace Center",
+    "name:es": "Centro Nobel de la Paz",
+    "name:fr": "Centre Nobel de la paix",
+    "name:ja": "ノーベル平和センター",
+    "name:ko": "노벨 평화센터",
+    "name:no": "Nobels Fredssenter",
+    "name:ru": "Нобелевский центр мира",
+    "opening_hours": "Jan 1 off; Jan 2‑6 Mo off; Jan 2‑6 Tu‑Su 11:00‑17:00; Jan 7‑May 31 Mo off; Jan 7‑May 31 Tu 11:00‑17:00; Jan 7‑May 31 We 11:00‑20:00; Jan 7‑May 31 Th‑Su 11:00‑17:00; May 1 11:00‑17:00; May 20 11:00‑13:00; Jun 1‑Aug 31 Mo‑Su 10:00‑18:00; May 17 off; Dec 9 o",
+    "panoramax": "d840de72-0f62-46a5-a620-536b1e29c39f",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "phone": "+47 48 30 10 00",
+    "subject:wikidata": "Q35637",
+    "toilets:wheelchair": "yes",
+    "tourism": "museum",
+    "website": "https://www.nobelpeacecenter.org",
+    "wheelchair": "yes",
+    "wikidata": "Q941120",
+    "wikimedia_commons": "Category:Nobel Peace Center",
+    "wikimedia_commons:0": "File:Nobel peace center - panoramio.jpg",
+    "wikipedia": "en:Nobel Peace Center"
+  }
+},
+{
+  "type": "node",
+  "id": 8064010479,
+  "lat": 59.9025000,
+  "lon": 10.7412417,
+  "tags": {
+    "name": "Vippetangen",
+    "natural": "cape",
+    "wikidata": "Q7933503",
+    "wikimedia_commons": "Category:Vippetangen",
+    "wikipedia": "en:Vippetangen"
+  }
+},
+{
+  "type": "node",
+  "id": 8075666435,
+  "lat": 59.9231800,
+  "lon": 10.7315620,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Domino's",
+    "brand:wikidata": "Q839466",
+    "brand:wikipedia": "en:Domino's Pizza",
+    "check_date": "2026-07-25",
+    "check_date:diet:vegetarian": "2026-07-25",
+    "cuisine": "pizza",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "internet_access": "wlan",
+    "name": "Domino's",
+    "opening_hours": "11:00-23:00",
+    "operator": "Domino's Pizza Norway AS",
+    "outdoor_seating": "no",
+    "payment:app": "yes",
+    "payment:apple_pay": "yes",
+    "payment:bankaxept": "yes",
+    "payment:cash": "yes",
+    "payment:google_pay": "yes",
+    "payment:mastercard": "yes",
+    "payment:mastercard_contactless": "yes",
+    "payment:mastercard_debit": "yes",
+    "payment:paypal": "yes",
+    "payment:visa": "yes",
+    "payment:visa_contactless": "yes",
+    "payment:visa_debit": "yes",
+    "payment:visa_electron": "yes",
+    "phone": "+47 23 50 33 30",
+    "takeaway": "yes",
+    "website": "https://www.dominos.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 8075696968,
+  "lat": 59.9226490,
+  "lon": 10.7318800,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "indoor_seating": "yes",
+    "name": "Bislett Kebab House",
+    "opening_hours": "Mo-We 10:00-01:00; Tu-Sa 10:00-04:00; Su 10:00-01:00",
+    "opening_hours:url": "https://bislettkebabhouse.no/finn-oss/",
+    "outdoor_seating": "no",
+    "phone": "+47 22 46 80 44",
+    "website": "https://www.bislettkebabhouse.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 8089727217,
+  "lat": 59.9079960,
+  "lon": 10.7260908,
+  "tags": {
+    "amenity": "bar",
+    "name": "Brygga Bar",
+    "opening_hours": "May-Aug Mo-Fr 15:00-23:00; Sa-Su 12:00-23:00; Sep-Apr We 16:00-23:00",
+    "website": "https://www.akerbrygge.no/servering/brygga-bar/"
+  }
+},
+{
+  "type": "node",
+  "id": 8089727264,
+  "lat": 59.9131740,
+  "lon": 10.7362850,
+  "tags": {
+    "amenity": "bar",
+    "email": "hei@brodogsirkus.com",
+    "name": "Brød & Sirkus",
+    "opening_hours": "Tu-Th 16:00-24:00; Fr-Sa 15:00-24:00; Su 17:00-24:00",
+    "phone": "+47 482 99 906",
+    "website": "https://brodogsirkus.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 8431977218,
+  "lat": 59.9170687,
+  "lon": 10.7583409,
+  "tags": {
+    "name": "Nybrua",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tactile_paving": "yes",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8431977219,
+  "lat": 59.9170848,
+  "lon": 10.7582931,
+  "tags": {
+    "name": "Nybrua",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tactile_paving": "yes",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 8655052233,
+  "lat": 59.9152970,
+  "lon": 10.7406240,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-04-12",
+    "indoor_seating": "yes",
+    "lgbtq": "primary",
+    "name": "London Pub",
+    "opening_hours": "Tu-Sa 22:00-03:30",
+    "outdoor_seating": "yes",
+    "website": "https://www.londonpub.no/",
+    "wikidata": "Q112701631",
+    "wikipedia": "no:London Pub"
+  }
+},
+{
+  "type": "node",
+  "id": 8936035283,
+  "lat": 59.9116290,
+  "lon": 10.7472980,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-07-07",
+    "indoor_seating": "yes",
+    "min_age": "20",
+    "name": "The Wild Rover",
+    "opening_hours": "Mo-Su 13:00-23:00",
+    "outdoor_seating": "yes",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 9010627923,
+  "lat": 59.9116700,
+  "lon": 10.7483160,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Arkaden",
+    "brand": "Big Bite",
+    "brand:wikidata": "Q11960977",
+    "brand:wikipedia": "no:Big Bite",
+    "cuisine": "sandwich",
+    "email": "arkadenoslo@bigbite.no",
+    "name": "Big Bite Arkaden",
+    "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-18:00",
+    "phone": "+47 400 34 349",
+    "ref:bigbite": "44",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9010627953,
+  "lat": 59.9126310,
+  "lon": 10.7524990,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Oslo City",
+    "brand": "Big Bite",
+    "brand:wikidata": "Q11960977",
+    "brand:wikipedia": "no:Big Bite",
+    "check_date:opening_hours": "2024-06-01",
+    "cuisine": "sandwich",
+    "drive_through": "no",
+    "email": "oslocity@bigbite.no",
+    "level": "1",
+    "name": "Big Bite Oslo City",
+    "opening_hours": "Mo-Fr 10:00-22:00; Sa 10:00-20:00",
+    "phone": "+47 41 35 52 27",
+    "ref:bigbite": "13300",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9025586611,
+  "lat": 59.9183060,
+  "lon": 10.7348270,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Pilestredet",
+    "brand": "Pizzabakeren",
+    "brand:wikidata": "Q11995777",
+    "brand:wikipedia": "en:Pizzabakeren",
+    "cuisine": "pizza",
+    "name": "Pizzabakeren Pilestredet",
+    "opening_hours": "Mo-Th 11:00-22:00; Fr 11:00-23:00; Sa 12:00-23:00; Su 12:00-22:00",
+    "phone": "+47 22181820",
+    "ref:pizzabakeren": "493"
+  }
+},
+{
+  "type": "node",
+  "id": 9054378818,
+  "lat": 59.9080675,
+  "lon": 10.7260671,
+  "tags": {
+    "email": "post@abmarina.no",
+    "name": "Marina Aker Brygge Havnekontor",
+    "office": "harbour_master",
+    "phone": "+47 22 83 19 90",
+    "website": "https://www.akerbrygge.no/marina/"
+  }
+},
+{
+  "type": "node",
+  "id": 9227303341,
+  "lat": 59.9159729,
+  "lon": 10.7507703,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "asian",
+    "diet:vegan": "yes",
+    "name": "Tunco"
+  }
+},
+{
+  "type": "node",
+  "id": 9359487713,
+  "lat": 59.9173203,
+  "lon": 10.7396597,
+  "tags": {
+    "amenity": "fast_food",
+    "bar": "yes",
+    "brewery": "Aass",
+    "check_date": "2026-09-06",
+    "check_date:opening_hours": "2026-09-06",
+    "cuisine": "pizza",
+    "delivery": "no",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Stykke Sentrum",
+    "opening_hours": "Tu-Th 11:00-21:00; Fr 11:00-23:00; Sa 14:00-23:00; Su 14:00-21:00",
+    "takeaway": "yes",
+    "toilets": "yes",
+    "website": "https://stykke.no"
+  }
+},
+{
+  "type": "node",
+  "id": 9397950222,
+  "lat": 59.9107562,
+  "lon": 10.7444108,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2024-05-21",
+    "cuisine": "asian;international",
+    "diet:vegan": "only",
+    "diet:vegetarian": "only",
+    "name": "Ostara bar",
+    "opening_hours": "We-Sa 17:00+",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "website": "https://www.ostarabar.no/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9549423817,
+  "lat": 59.9124689,
+  "lon": 10.7500425,
+  "tags": {
+    "brand": "Clarion",
+    "brand:wikidata": "Q10454567",
+    "check_date": "2025-05-12",
+    "name": "Clarion Hotel The Hub",
+    "name:ko": "로얄 크리스티아니아 호텔",
+    "name:no": "Clarion Hotel The Hub",
+    "old_name": "Clarion Hotel Royal Christiania",
+    "tourism": "hotel",
+    "website": "https://www.nordicchoicehotels.no/hotell/norge/oslo/clarion-hotel-the-hub/",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 9557812431,
+  "lat": 59.9111750,
+  "lon": 10.7420360,
+  "tags": {
+    "amenity": "nightclub",
+    "min_age": "23",
+    "name": "Faksen Bar",
+    "opening_hours": "Thu - Sat",
+    "smoking": "outside"
+  }
+},
+{
+  "type": "node",
+  "id": 9566497407,
+  "lat": 59.9269148,
+  "lon": 10.7349377,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "japanese",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Deli Sushi",
+    "opening_hours": "Tu-Sa 15:00-21:00; Su 14:00-21:00",
+    "phone": "+47 22 56 92 10",
+    "website": "https://delisushi.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 9726754410,
+  "lat": 59.9206095,
+  "lon": 10.7281598,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2025-11-09",
+    "check_date:opening_hours": "2025-11-09",
+    "indoor_seating": "yes",
+    "name": "Pokalen Parkveien",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "website": "https://pokalenpub.no/parkveien/"
+  }
+},
+{
+  "type": "node",
+  "id": 9790109876,
+  "lat": 59.9116841,
+  "lon": 10.7429174,
+  "tags": {
+    "amenity": "fast_food",
+    "drive_through": "no",
+    "level": "-1",
+    "name": "Fly Chicken",
+    "website": "https://www.flychicken.no/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9790113394,
+  "lat": 59.9117964,
+  "lon": 10.7430850,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "mexican",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "drive_through": "no",
+    "email": "bane@lostacos.no",
+    "level": "-1",
+    "name": "Los Tacos",
+    "opening_hours": "Mo-Fr 10:00-19:00; Sa 10:00-18:00",
+    "phone": "+47 41 37 77 41",
+    "website": "https://lostacos.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 9851317250,
+  "lat": 59.9166190,
+  "lon": 10.7383460,
+  "tags": {
+    "brand": "Clarion",
+    "brand:wikidata": "Q10454567",
+    "check_date": "2026-09-21",
+    "description": "Fika and evening meal included. This is a cash-free hotel.",
+    "name": "Clarion Collection Hotel Savoy",
+    "phone": "+4723354200",
+    "tourism": "hotel",
+    "website": "https://www.nordicchoicehotels.com/hotels/norway/oslo/clarion-collection-hotel-savoy/"
+  }
+},
+{
+  "type": "node",
+  "id": 9861814180,
+  "lat": 59.9031720,
+  "lon": 10.7430950,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "Vippetangen ferjeterminal",
+    "public_transport": "platform",
+    "ref:nsrq": "99583"
+  }
+},
+{
+  "type": "node",
+  "id": 10013717804,
+  "lat": 59.9147380,
+  "lon": 10.7303227,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Upper Crust",
+    "brand:wikidata": "Q7898585",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "cuisine": "sandwich",
+    "name": "Upper Crust",
+    "opening_hours": "Mo-Fr 07:00-19:00; Sa 10:00-19:00; Su 11:00-17:00",
+    "takeaway": "yes",
+    "website": "https://www.uppercrust-baguettes.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 10013753418,
+  "lat": 59.9108348,
+  "lon": 10.7274223,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2025-12-23",
+    "email": "siri@wintherakerbrygge.no",
+    "name": "Winther Aker Brygge",
+    "opening_hours": "Tu-Sa 11:30-22:00",
+    "phone": "+47 40896020",
+    "website": "https://wintherakerbrygge.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 10013760611,
+  "lat": 59.9103730,
+  "lon": 10.7263244,
+  "tags": {
+    "amenity": "bar",
+    "email": "hello@ohdearoslo.no",
+    "name": "Oh Dear",
+    "opening_hours": "Tu-Th 16:00-01:00; Fr 15:00-01:00; Sa-Su 13:00-01:00",
+    "phone": "+4792096763",
+    "website": "https://www.ohdearoslo.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 10013788402,
+  "lat": 59.9093839,
+  "lon": 10.7244216,
+  "tags": {
+    "amenity": "pub",
+    "name": "The Palm"
+  }
+},
+{
+  "type": "node",
+  "id": 10210511403,
+  "lat": 59.9133412,
+  "lon": 10.7319036,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Klingenberg",
+    "brand": "Lett",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "cuisine": "salad",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Lett",
+    "opening_hours": "Mo-Th 09:00-20:00; Fr 09:00-19:00; Sa 11:00-17:00; Su off",
+    "website": "https://lett.family/no/"
+  }
+},
+{
+  "type": "node",
+  "id": 10548855966,
+  "lat": 59.9140195,
+  "lon": 10.7480177,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-27",
+    "check_date:opening_hours": "2026-07-27",
+    "diet:vegetarian": "no",
+    "indoor_seating": "yes",
+    "name": "Fly Chicken",
+    "opening_hours": "Mo-Th 11:30-22:00, Fr,Sa 11:30-03:30, Su 13:00-21:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.flychicken.no/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10604787203,
+  "lat": 59.9136008,
+  "lon": 10.7331776,
+  "tags": {
+    "amenity": "pub",
+    "indoor_seating": "yes",
+    "name": "Dr. Jekyll's Pub",
+    "opening_hours": "Mo,Tu 16:00-24:00, We 16:00-01:00, Th-Sa 15:00-03:00, Su 16:00-24:00",
+    "outdoor_seating": "yes",
+    "website": "https://jekylls.no"
+  }
+},
+{
+  "type": "node",
+  "id": 10604787204,
+  "lat": 59.9136231,
+  "lon": 10.7333008,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date:opening_hours": "2026-10-04",
+    "contact:facebook": "https://www.facebook.com/banhmixooslo/",
+    "cuisine": "vietnamese",
+    "indoor_seating": "yes",
+    "name": "Banh Mi Xo",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes",
+    "website": "https://banhmixo.no"
+  }
+},
+{
+  "type": "node",
+  "id": 10604866005,
+  "lat": 59.9137102,
+  "lon": 10.7337979,
+  "tags": {
+    "amenity": "bar",
+    "name": "Raadhuset Bar",
+    "opening_hours": "Tu-Th 16:00-24:00, Fr 16:00-02:00, Sa 12:00-02:00, Su 12:00-18:00",
+    "website": "https://raadhusetoslo.no"
+  }
+},
+{
+  "type": "node",
+  "id": 10604902240,
+  "lat": 59.9132967,
+  "lon": 10.7370026,
+  "tags": {
+    "amenity": "bar",
+    "min_age": "20",
+    "name": "*ISM",
+    "website": "https://barism.no"
+  }
+},
+{
+  "type": "node",
+  "id": 10712150514,
+  "lat": 59.9194680,
+  "lon": 10.7481704,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2023-03-05",
+    "name": "Happy Sushi"
+  }
+},
+{
+  "type": "node",
+  "id": 10727602011,
+  "lat": 59.9150358,
+  "lon": 10.7217478,
+  "tags": {
+    "amenity": "nightclub",
+    "check_date": "2023-06-02",
+    "name": "IVY",
+    "website": "https://www.ivyoslo.no"
+  }
+},
+{
+  "type": "node",
+  "id": 10816258754,
+  "lat": 59.9223072,
+  "lon": 10.7523212,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-08",
+    "check_date:opening_hours": "2026-07-08",
+    "contact:instagram": "https://www.instagram.com/dougshamburger/",
+    "cuisine": "burger",
+    "diet:vegetarian": "yes",
+    "level": "0",
+    "name": "Doug's Hamburgers",
+    "opening_hours": "Mo-Su 11:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 10828931226,
+  "lat": 59.9097992,
+  "lon": 10.7237979,
+  "tags": {
+    "amenity": "kindergarten",
+    "brand": "Norlandia",
+    "capacity": "42",
+    "email": "ina.terese.nwami@norlandia.com",
+    "max_age": "5",
+    "name": "Norlandia Aker Brygge barnehage",
+    "operator": "Norlandia Aker Brygge barnehage AS",
+    "operator:type": "private",
+    "phone": "+47 99644884",
+    "ref:NO:orgnr": "927384973",
+    "ref:barnehage": "927384973",
+    "start_date": "2021-07-05",
+    "website": "https://norlandiabarnehagene.no/aker-brygge"
+  }
+},
+{
+  "type": "node",
+  "id": 10895594423,
+  "lat": 59.9150695,
+  "lon": 10.7287249,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2026-08-14",
+    "name": "Bar Bardot"
+  }
+},
+{
+  "type": "node",
+  "id": 10911462670,
+  "lat": 59.9171023,
+  "lon": 10.7532459,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-06-01",
+    "cuisine": "pizza;burger;kebab;grill",
+    "name": "Parthenon - Pizza & Grillbar",
+    "phone": "+47 22 20 97 17",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10933877463,
+  "lat": 59.9153473,
+  "lon": 10.7389289,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-08-14",
+    "indoor_seating": "yes",
+    "name": "Bristol pub",
+    "outdoor_seating": "yes",
+    "website": "https://hotelbristol.no/spise-pa-bristol/bristol-pub/"
+  }
+},
+{
+  "type": "node",
+  "id": 10933877464,
+  "lat": 59.9149516,
+  "lon": 10.7395508,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-08-14",
+    "contact:facebook": "https://www.facebook.com/MulligansOslo/",
+    "name": "Mulligan’s",
+    "opening_hours": "Th 15:00-00:30; Fr,Sa 15:00-03:30",
+    "theme": "irish",
+    "website": "https://mulliganspub.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 10933877465,
+  "lat": 59.9149559,
+  "lon": 10.7402933,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-08-14",
+    "contact:facebook": "https://www.facebook.com/eilefs/",
+    "indoor_seating": "yes",
+    "name": "Eilefs landhandleri",
+    "opening_hours": "Mo,Tu 15:00-24:00; We-Th 15:00-01:00; Fr,Sa 12:00-03:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.eilefs.no"
+  }
+},
+{
+  "type": "node",
+  "id": 10933957567,
+  "lat": 59.9148041,
+  "lon": 10.7366951,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-08-14",
+    "contact:facebook": "https://www.facebook.com/lasttrainoslo",
+    "email": "martin@lasttrain.no",
+    "name": "Last Train",
+    "website": "http://www.lasttrain.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 10933957569,
+  "lat": 59.9149186,
+  "lon": 10.7368002,
+  "tags": {
+    "amenity": "nightclub",
+    "check_date": "2023-05-28",
+    "contact:facebook": "https://www.facebook.com/lawooslo/",
+    "name": "Lawo",
+    "opening_hours": "Th-Sa 22:00-03:00",
+    "website": "https://www.lawooslo.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 10933957570,
+  "lat": 59.9149924,
+  "lon": 10.7368813,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2023-05-28",
+    "name": "John's Bar",
+    "website": "https://www.facebook.com/johnsbaroslo/"
+  }
+},
+{
+  "type": "node",
+  "id": 10947974232,
+  "lat": 59.9124767,
+  "lon": 10.7449814,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2023-06-03",
+    "name": "Stortorvet Kebab"
+  }
+},
+{
+  "type": "node",
+  "id": 10947976953,
+  "lat": 59.9152515,
+  "lon": 10.7170804,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2023-06-02",
+    "name": "Libertine vinbar"
+  }
+},
+{
+  "type": "node",
+  "id": 10947976954,
+  "lat": 59.9158369,
+  "lon": 10.7163436,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-04-12",
+    "name": "Flamme Burger"
+  }
+},
+{
+  "type": "node",
+  "id": 10951553574,
+  "lat": 59.9167462,
+  "lon": 10.7534733,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-07-30",
+    "name": "Döner Bros",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10969326102,
+  "lat": 59.9233840,
+  "lon": 10.7513001,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-04-15",
+    "level": "0",
+    "name": "Love Tea & Sushi"
+  }
+},
+{
+  "type": "node",
+  "id": 11071516106,
+  "lat": 59.9189301,
+  "lon": 10.7481915,
+  "tags": {
+    "amenity": "fast_food",
+    "branch": "Fredensborg",
+    "brand": "Jønk",
+    "contact:instagram": "https://www.instagram.com/jonkburger/",
+    "cuisine": "burger",
+    "indoor_seating": "yes",
+    "name": "Jønk",
+    "opening_hours": "Mo-Su 11:00-21:00",
+    "outdoor_seating": "no",
+    "website": "https://www.jonkburger.no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11105786805,
+  "lat": 59.9112431,
+  "lon": 10.7272532,
+  "tags": {
+    "amenity": "bar",
+    "name": "3KT"
+  }
+},
+{
+  "type": "node",
+  "id": 11279788398,
+  "lat": 59.9039703,
+  "lon": 10.7408913,
+  "tags": {
+    "bicycle": "yes",
+    "information": "guidepost",
+    "name": "Vippetangen",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 11279788399,
+  "lat": 59.9036645,
+  "lon": 10.7404963,
+  "tags": {
+    "bicycle": "yes",
+    "information": "guidepost",
+    "name": "Vippetangen",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 11279788400,
+  "lat": 59.9049213,
+  "lon": 10.7376272,
+  "tags": {
+    "bicycle": "yes",
+    "information": "guidepost",
+    "name": "Vippetangen",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 11279788411,
+  "lat": 59.9107553,
+  "lon": 10.7286474,
+  "tags": {
+    "bicycle": "yes",
+    "information": "guidepost",
+    "name": "Rådhusplassen",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 11281480727,
+  "lat": 59.9222187,
+  "lon": 10.7522904,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-08",
+    "check_date:opening_hours": "2026-07-08",
+    "cuisine": "korean",
+    "name": "Korndokki",
+    "opening_hours": "Mo-Su 11:00-20:00",
+    "website": "https://korndokki.no"
+  }
+},
+{
+  "type": "node",
+  "id": 11281480729,
+  "lat": 59.9221147,
+  "lon": 10.7522690,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-08",
+    "check_date:diet:vegan": "2026-07-08",
+    "check_date:diet:vegetarian": "2026-07-08",
+    "check_date:opening_hours": "2026-07-08",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "Simply Tasty",
+    "opening_hours": "Mo-Su 11:00-20:00",
+    "website": "https://www.facebook.com/simplytastymathallen/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11452132813,
+  "lat": 59.9108387,
+  "lon": 10.7528585,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "Upper Crust",
+    "brand:wikidata": "Q7898585",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "cuisine": "sandwich",
+    "level": "2",
+    "name": "Upper Crust",
+    "opening_hours": "Mo-Fr 06:30-21:00; Sa 07:30-19:00; Su 08:00-20:00",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11459920148,
+  "lat": 59.9106706,
+  "lon": 10.7530860,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-10-04",
+    "check_date:opening_hours": "2026-10-04",
+    "cuisine": "juice",
+    "level": "2",
+    "name": "Smoothie Xchange",
+    "opening_hours:signed": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11523039612,
+  "lat": 59.9135993,
+  "lon": 10.7452171,
+  "tags": {
+    "amenity": "bar",
+    "description": "https://gamla.no/gamla-konsert-scene",
+    "image": "https://www.facebook.com/photo/?fbid=1631749437140811&set=a.132611138866370",
+    "indoor_seating": "yes",
+    "min_age": "20/23",
+    "name": "Gamla Konsert og Scene",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11756641332,
+  "lat": 59.9196942,
+  "lon": 10.7433318,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-06-09",
+    "description": "[Vinbaren ...] har kun drop-in.  post@rettigapet.no eller DM til @rettigapet\nGAPET ligger i Wessels gate 2, med inngang fra Ullevålsveien vis a vis Vår Frelsers gravlund, mellom St Olavs kirken og Oslo Katedralskole.",
+    "email": "post@rettigapet.no",
+    "name": "Gapet",
+    "website": "http://rettigapet.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 11816185322,
+  "lat": 59.9221971,
+  "lon": 10.7245687,
+  "tags": {
+    "name": "The Sweet",
+    "tourism": "hotel",
+    "website": "https://theapartmentscompany.no/vare-apartments-i-oslo/josefinesgate/"
+  }
+},
+{
+  "type": "node",
+  "id": 11878591278,
+  "lat": 59.9098529,
+  "lon": 10.7414090,
+  "tags": {
+    "amenity": "bar",
+    "description": "A board game bar. 50kr for entrance",
+    "email": "post@spilloteket.no",
+    "level": "-1;0",
+    "min_age": "20",
+    "name": "Spilloteket",
+    "opening_hours": "Mo off; Tu-Th 16:00-23:00; Fr 16:00-01:00; Sa 14:00-01:00; Su 14:00-21:00",
+    "smoking": "no",
+    "website": "https://www.spilloteket.no",
+    "website:menu": "https://order.gastroplanner.no/s/spilloteket"
+  }
+},
+{
+  "type": "node",
+  "id": 11898690800,
+  "lat": 59.9211688,
+  "lon": 10.7273650,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-10-05",
+    "check_date:opening_hours": "2026-10-05",
+    "name": "PinPin Oslo",
+    "opening_hours:signed": "no",
+    "website": "https://www.pinpin.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 11898735802,
+  "lat": 59.9211002,
+  "lon": 10.7274841,
+  "tags": {
+    "amenity": "pub",
+    "check_date": "2026-10-05",
+    "check_date:opening_hours": "2026-10-05",
+    "name": "Paint N Sip",
+    "opening_hours:signed": "no",
+    "website": "https://www.paintnsip.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 11917435112,
+  "lat": 59.9105378,
+  "lon": 10.7262380,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-12-23",
+    "name": "Underbar"
+  }
+},
+{
+  "type": "node",
+  "id": 11919355556,
+  "lat": 59.9175124,
+  "lon": 10.7393976,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2026-07-21",
+    "check_date:opening_hours": "2026-07-21",
+    "name": "Trekanten",
+    "opening_hours": "Mo-We 11:00-21:00; Th 11:00-23:00; Fr 11:00-24:00; Sa 12:00-24:00; Su 13:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 11937375869,
+  "lat": 59.9153224,
+  "lon": 10.7410800,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "sausage",
+    "indoor_seating": "yes",
+    "name": "Fru Nilsen",
+    "opening_hours": "Tu-Th 11:00-23:00; Fr-Sa 11:00-03:00",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11968326147,
+  "lat": 59.9189377,
+  "lon": 10.7219416,
+  "tags": {
+    "amenity": "arts_centre",
+    "name": "Instituto Italiano De Cultura",
+    "name:no": "Det italienske kulturinstitutt i Oslo Norway"
+  }
+},
+{
+  "type": "node",
+  "id": 12023137809,
+  "lat": 59.9163909,
+  "lon": 10.7156803,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Kimm's grill"
+  }
+},
+{
+  "type": "node",
+  "id": 12036743706,
+  "lat": 59.9099542,
+  "lon": 10.7398402,
+  "tags": {
+    "amenity": "bar",
+    "name": "Skyggesiden Bar"
+  }
+},
+{
+  "type": "node",
+  "id": 12116692500,
+  "lat": 59.9170994,
+  "lon": 10.7382104,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2024-08-17",
+    "email": "hei@becco.no",
+    "name": "Becco",
+    "opening_hours": "Mo 16:00-22:00; Tu-Th 16:00-01:00; Fr-Sa 16:00-03:00; Su 16:00-22:00",
+    "outdoor_seating": "yes",
+    "source": "survey;local knowledge",
+    "website": "https://becco.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 12132039846,
+  "lat": 59.9111876,
+  "lon": 10.7292321,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Nasjonalmuseet kafé",
+    "opening_hours": "Tu-Su 10:00-20:00",
+    "website": "https://www.nasjonalmuseetkafe.no"
+  }
+},
+{
+  "type": "node",
+  "id": 12241354602,
+  "lat": 59.9150438,
+  "lon": 10.7481893,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2026-07-25",
+    "check_date:opening_hours": "2026-07-25",
+    "contact:instagram": "feberoslo",
+    "name": "Feber",
+    "opening_hours": "Mo-Su 15:00-03:00"
+  }
+},
+{
+  "type": "node",
+  "id": 12297208749,
+  "lat": 59.9151478,
+  "lon": 10.7170789,
+  "tags": {
+    "amenity": "bar",
+    "name": "Box Sports & Events"
+  }
+},
+{
+  "type": "node",
+  "id": 12331390101,
+  "lat": 59.9143419,
+  "lon": 10.7392184,
+  "tags": {
+    "fee": "yes",
+    "internet_access": "wlan",
+    "name": "Paradox Museum",
+    "opening_hours": "Mo-Tu, Th-Fr 11:00-19:00; Sa-Su 10:00-19:00",
+    "tourism": "museum",
+    "website": "https://www.paradoxmuseumoslo.com"
+  }
+},
+{
+  "type": "node",
+  "id": 12357910401,
+  "lat": 59.9221396,
+  "lon": 10.7257268,
+  "tags": {
+    "name": "TBS Gallery",
+    "opening_hours": "Tu-Sa 10:00-16:00; Su 12:00-16:00",
+    "phone": "+47 93 86 69 35",
+    "tourism": "museum",
+    "website": "https://tbsgallery.no"
+  }
+},
+{
+  "type": "node",
+  "id": 12560193252,
+  "lat": 59.9081820,
+  "lon": 10.7451358,
+  "tags": {
+    "brand": "Strawberry",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Home Hotel Bastion",
+    "phone": "+47 22 47 77 00",
+    "tourism": "hotel",
+    "website": "https://www.strawberry.no/hotell/norge/oslo/home-hotel-bastion/"
+  }
+},
+{
+  "type": "node",
+  "id": 12573774201,
+  "lat": 59.9092436,
+  "lon": 10.7268692,
+  "tags": {
+    "leisure": "sauna",
+    "name": "KOK Aker Brygge"
+  }
+},
+{
+  "type": "node",
+  "id": 12635984964,
+  "lat": 59.9182583,
+  "lon": 10.7396307,
+  "tags": {
+    "amenity": "theatre",
+    "name": "Edderkoppen scene",
+    "url": "https://edderkoppenscene.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 12636051470,
+  "lat": 59.9250530,
+  "lon": 10.7256752,
+  "tags": {
+    "amenity": "school",
+    "fee": "yes",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Den Tysk-Norske skolen i Oslo, videregående skole Sporveisgata",
+    "operator": "Den Tysk-Norske skolen i Oslo",
+    "operator:type": "private",
+    "ref:NO:orgnr": "930591882",
+    "ref:udir_nsr": "930591882"
+  }
+},
+{
+  "type": "node",
+  "id": 12726285075,
+  "lat": 59.9162156,
+  "lon": 10.7143292,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "pizza",
+    "name": "Massimo",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12737340301,
+  "lat": 59.9175991,
+  "lon": 10.7383494,
+  "tags": {
+    "amenity": "bar",
+    "check_date": "2025-05-03",
+    "indoor_seating": "yes",
+    "name": "Glasset Vinbar",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12749752010,
+  "lat": 59.9163635,
+  "lon": 10.7384768,
+  "tags": {
+    "amenity": "nightclub",
+    "check_date": "2025-04-12",
+    "name": "Justisen"
+  }
+},
+{
+  "type": "node",
+  "id": 12797437935,
+  "lat": 59.9138657,
+  "lon": 10.7324067,
+  "tags": {
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "The Lannisters",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12797437936,
+  "lat": 59.9136767,
+  "lon": 10.7323287,
+  "tags": {
+    "amenity": "pub",
+    "indoor_seating": "yes",
+    "name": "The Old Irish Pub",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12899047243,
+  "lat": 59.9248830,
+  "lon": 10.7425577,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-06-10",
+    "indoor_seating": "yes",
+    "name": "Gorgonzo Pizza",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12901874953,
+  "lat": 59.9249429,
+  "lon": 10.7426954,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-06-10",
+    "cuisine": "korean",
+    "indoor_seating": "no",
+    "name": "Hankki",
+    "outdoor_seating": "no",
+    "takeaway": "only",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12901874954,
+  "lat": 59.9250049,
+  "lon": 10.7428318,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-06-10",
+    "indoor_seating": "no",
+    "name": "Melboden Pizzeria",
+    "outdoor_seating": "no",
+    "takeaway": "only"
+  }
+},
+{
+  "type": "node",
+  "id": 12908955424,
+  "lat": 59.9074200,
+  "lon": 10.7480401,
+  "tags": {
+    "access": "customers",
+    "amenity": "ferry_terminal",
+    "contact:website": "https://www.norwaysbest.com/en/oslo/things-to-do/fjord-cruise-oslofjord/",
+    "ferry": "yes",
+    "man_made": "pier",
+    "name": "Langkaia Vision of the Fjord",
+    "network": "Oslofjord Sightseeing",
+    "operator": "The Fjords",
+    "public_transport": "station",
+    "quay": "yes",
+    "source": "field_survey",
+    "source:website": "https://www.visitnorway.com/listings/the-fjords%3A-oslofjord-harbour-sightseeing-cruise/207877/",
+    "tourism": "cruise",
+    "vessel": "Vision of The Fjords"
+  }
+},
+{
+  "type": "node",
+  "id": 12921217800,
+  "lat": 59.9223338,
+  "lon": 10.7521536,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-06-17",
+    "cuisine": "japanese",
+    "name": "Obento Box"
+  }
+},
+{
+  "type": "node",
+  "id": 12927973432,
+  "lat": 59.9221037,
+  "lon": 10.7520297,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-05-10",
+    "name": "Stange"
+  }
+},
+{
+  "type": "node",
+  "id": 12959461595,
+  "lat": 59.9223019,
+  "lon": 10.7519121,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-05-10",
+    "cuisine": "juice",
+    "name": "Refresh"
+  }
+},
+{
+  "type": "node",
+  "id": 12959461596,
+  "lat": 59.9222966,
+  "lon": 10.7518224,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-05-10",
+    "indoor_seating": "yes",
+    "name": "Hongs Bao Bao",
+    "outdoor_seating": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12967125814,
+  "lat": 59.9138151,
+  "lon": 10.7488272,
+  "tags": {
+    "amenity": "bar",
+    "indoor_seating": "yes",
+    "name": "Baba Bar",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12973406990,
+  "lat": 59.9128734,
+  "lon": 10.7415277,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-10-16",
+    "check_date:opening_hours": "2026-10-16",
+    "cuisine": "juice",
+    "indoor_seating": "yes",
+    "name": "Smoothiexhange",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12974485465,
+  "lat": 59.9119154,
+  "lon": 10.7349777,
+  "tags": {
+    "amenity": "bar",
+    "name": "Kiosken Bar",
+    "opening_hours": "Tu-Th 16:00-03:00, Fr 15:00-03:00, Sa 18:00-03:00, Su,Mo 20:00-03:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13040179115,
+  "lat": 59.9150708,
+  "lon": 10.7225180,
+  "tags": {
+    "amenity": "fast_food",
+    "brand": "McDonald's",
+    "brand:wikidata": "Q38076",
+    "check_date": "2025-07-31",
+    "cuisine": "burger",
+    "level": "0",
+    "name": "McDonald's",
+    "takeaway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13068378751,
+  "lat": 59.9150404,
+  "lon": 10.7369360,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "sandwich",
+    "name": "Ugly Duckling",
+    "opening_hours": "We-Fr 12:00-18:00, Sa 12:00-17:00 ,Su 12:00-18:00",
+    "phone": "+47 46663883",
+    "takeaway": "only",
+    "website": "https://www.udoslo.com"
+  }
+},
+{
+  "type": "node",
+  "id": 13082348969,
+  "lat": 59.9214874,
+  "lon": 10.7272609,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2025-08-19",
+    "indoor_seating": "yes",
+    "name": "Limón",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13090534213,
+  "lat": 59.9173048,
+  "lon": 10.7403041,
+  "tags": {
+    "amenity": "bar",
+    "name": "Chiruto San"
+  }
+},
+{
+  "type": "node",
+  "id": 13158028701,
+  "lat": 59.9127436,
+  "lon": 10.7352908,
+  "tags": {
+    "amenity": "bar",
+    "name": "Fridtjof"
+  }
+},
+{
+  "type": "node",
+  "id": 13175862476,
+  "lat": 59.9203854,
+  "lon": 10.7297482,
+  "tags": {
+    "amenity": "bar",
+    "name": "Las Palmas inn",
+    "opening_hours": "Fr-Sa 18:00-01:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13393277501,
+  "lat": 59.9178284,
+  "lon": 10.7184040,
+  "tags": {
+    "name": "Numa Oslo Hotel",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 13395291228,
+  "lat": 59.9125219,
+  "lon": 10.7451338,
+  "tags": {
+    "name": "Stortorvet",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "stop_position",
+    "railway": "tram_stop",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13397376242,
+  "lat": 59.9128662,
+  "lon": 10.7455170,
+  "tags": {
+    "name": "Stortorvet",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "operator": "Sporveien Trikken",
+    "operator:wikidata": "Q287668",
+    "public_transport": "station",
+    "tram": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13641108001,
+  "lat": 59.9112809,
+  "lon": 10.7469561,
+  "tags": {
+    "email": "hello@hobohotel.no",
+    "internet_access": "wlan",
+    "name": "Hobo Hotel",
+    "phone": "+47 21 95 33 00",
+    "tourism": "hotel",
+    "website": "https://hobohotel.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 13721182746,
+  "lat": 59.9203804,
+  "lon": 10.7297178,
+  "tags": {
+    "amenity": "bar",
+    "name": "Las Palmas inn",
+    "opening_hours": "We,Th 15:00-23:00; Fr,Sa 15:00-01:00",
+    "outdoor_seating": "yes",
+    "survey:date": "2026-04-10",
+    "tobacco": "no",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13812184275,
+  "lat": 59.9096335,
+  "lon": 10.7247911,
+  "tags": {
+    "emergency": "defibrillator",
+    "emergency:phone": "113",
+    "name": "SATS Yoga Aker Brygge",
+    "opening_hours": "Mo 08:00-21:30; Tu-Th 06:30-21:00; Fr 06:30-20:00; Sa 08:30-16:00; Su 10:00-16:30; PH open",
+    "ref:hjertestarterregister": "24207063C1337B4BE06322C8E80AA694"
+  }
+},
+{
+  "type": "node",
+  "id": 13812188489,
+  "lat": 59.9170031,
+  "lon": 10.7277524,
+  "tags": {
+    "access": "private",
+    "defibrillator:location": "Kontakt en av gardistene rundt Slottet eller ring Slottets vaktsentral på 22048880 (betjent hele døgnet)",
+    "emergency": "defibrillator",
+    "emergency:phone": "113",
+    "fixme": "Plassert av import på slottsplassen. Det er garantert feil. Kun flyttet inn i bygget. Ukjent plassering der.",
+    "indoor": "yes",
+    "level": "0",
+    "name": "Det kongelige slott",
+    "phone": "+47 22 04 88 80",
+    "ref:hjertestarterregister": "C4F398D53752513FE05322C8E80AF4B7"
+  }
+},
+{
+  "type": "node",
+  "id": 13812190695,
+  "lat": 59.9080417,
+  "lon": 10.7260627,
+  "tags": {
+    "defibrillator:location": "Resepsjonen til Havnekontoret til Aker Brygge Marina.",
+    "emergency": "defibrillator",
+    "emergency:phone": "113",
+    "name": "Aker Brygge Marina",
+    "opening_hours": "Mo-Su 08:30-20:00; PH off",
+    "ref:hjertestarterregister": "63728656C50A73AAE0533A866A0A97E6"
+  }
+},
+{
+  "type": "node",
+  "id": 13825538001,
+  "lat": 59.9216915,
+  "lon": 10.7321716,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-05-13",
+    "check_date:opening_hours": "2026-05-13",
+    "cuisine": "greek",
+    "name": "DR. Gyros",
+    "opening_hours": "Mo-Fr 11:00-23:00; Sa 12:00-23:00; Su 12:00-22:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13888585333,
+  "lat": 59.9139670,
+  "lon": 10.7485850,
+  "tags": {
+    "amenity": "bar",
+    "check_date:opening_hours": "2026-08-14",
+    "indoor_seating": "yes",
+    "name": "Angst",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13893717701,
+  "lat": 59.9193291,
+  "lon": 10.7510350,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "greek;kebab;pizza",
+    "name": "Marinosa Grill"
+  }
+},
+{
+  "type": "node",
+  "id": 13907593501,
+  "lat": 59.9226744,
+  "lon": 10.7510107,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "Helt Rå"
+  }
+},
+{
+  "type": "node",
+  "id": 13951392738,
+  "lat": 59.9137166,
+  "lon": 10.7487099,
+  "tags": {
+    "amenity": "bar",
+    "check_date:opening_hours": "2026-08-14",
+    "indoor_seating": "yes",
+    "name": "No stress",
+    "opening_hours:signed": "no",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14031969241,
+  "lat": 59.9153965,
+  "lon": 10.7352860,
+  "tags": {
+    "amenity": "bar",
+    "contact:facebook": "https://www.facebook.com/frokostkjellerenoslo",
+    "contact:instagram": "https://www.instagram.com/frokostkjelleren/",
+    "description": "Studentbar for jussen",
+    "min_age": "18",
+    "name": "Frokostkjelleren"
+  }
+},
+{
+  "type": "node",
+  "id": 14032017546,
+  "lat": 59.9192681,
+  "lon": 10.7096919,
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "name": "Vika videregående skole",
+    "website": "https://vika.vgs.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 14032017547,
+  "lat": 59.9192296,
+  "lon": 10.7096444,
+  "tags": {
+    "amenity": "school",
+    "education": "school",
+    "name": "Hersleb videregående skole",
+    "website": "https://hersleb.vgs.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 14085110276,
+  "lat": 59.9115185,
+  "lon": 10.7291032,
+  "tags": {
+    "defibrillator:location": "I Hovedinngang for publikum. Kontakt vertskap eller sikkerhetsvakter for å få hjertestarter.",
+    "emergency": "defibrillator",
+    "emergency:phone": "113",
+    "level": "1",
+    "name": "Nasjonalmuseet for kunst, arkitektur og design",
+    "opening_hours": "Tu-We 10:00-20:00; Th-Su 10:00-17:00; PH off",
+    "ref:hjertestarterregister": "15F683AB95252ECEE06322C8E80A21A7"
+  }
+},
+{
+  "type": "node",
+  "id": 14085110277,
+  "lat": 59.9121325,
+  "lon": 10.7283883,
+  "tags": {
+    "defibrillator:location": "Personalinngangen til Nasjonalmuseet. Baksiden, mot Via Vika. Ring på porttelefonen og en sikkerhetsvakt vil hjelpe.",
+    "emergency": "defibrillator",
+    "emergency:phone": "113",
+    "level": "2",
+    "name": "Nasjonalmuseet for kunst, arkitektur og design",
+    "ref:hjertestarterregister": "160CFA4C310D23F2E06322C8E80A0740"
+  }
+},
+{
+  "type": "node",
+  "id": 14085110278,
+  "lat": 59.9121965,
+  "lon": 10.7296292,
+  "tags": {
+    "defibrillator:location": "Biblioteksinngang. Inngang på høyre side av bygget når du har sjøsiden i ryggen. Kontakt bibliotekaren. Hjertestarteren er plassert under skranken til Bibliotekaren.",
+    "emergency": "defibrillator",
+    "emergency:phone": "113",
+    "name": "Nasjonalmuseet for kunst, arkitektur og design",
+    "opening_hours": "Mo-Tu 10:00-18:00; We 10:00-20:00; Th-Fr 10:00-18:00; PH off",
+    "ref:hjertestarterregister": "160CFA4C310E23F2E06322C8E80A0740"
+  }
+},
+{
+  "type": "node",
+  "id": 14138197760,
+  "lat": 59.9134763,
+  "lon": 10.7405914,
+  "tags": {
+    "amenity": "bar",
+    "name": "Tostrup Uteservering",
+    "outdoor_seating": "yes",
+    "seasonal": "summer",
+    "website": "https://tostruputeservering.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 14157769206,
+  "lat": 59.9026648,
+  "lon": 10.7415762,
+  "tags": {
+    "camera:direction": "264",
+    "camera:mount": "wall",
+    "camera:type": "fixed",
+    "contact:webcam": "https://www.oslohavn.no/webcam/vippetangen.jpg",
+    "man_made": "surveillance",
+    "name": "Vippetangen",
+    "operator": "Oslo Havn",
+    "operator:wikidata": "Q1542098",
+    "surveillance": "public",
+    "surveillance:type": "camera",
+    "surveillance:zone": "harbour",
+    "url": "https://www.oslohavn.no/no/meny/webkamera/"
+  }
+},
+{
+  "type": "node",
+  "id": 14200877601,
+  "lat": 59.9154518,
+  "lon": 10.7379426,
+  "tags": {
+    "addr:city": "Oslo",
+    "addr:housenumber": "12",
+    "addr:postcode": "0164",
+    "addr:street": "Kristian IVs gate",
+    "amenity": "bar",
+    "check_date": "2026-09-20",
+    "check_date:opening_hours": "2026-09-20",
+    "contact:email": "mail@rockin.no",
+    "facebook": "https://facebook.com/rockinoslo/?ref=bookmarks",
+    "instagram": "https://instagram.com/rock_in_oslo",
+    "music_genre": "Metal, Black Metal, Hard Rock",
+    "name": "Rock In",
+    "opening_hours": "Mo-Su 16:00-03:30",
+    "outdoor_seating": "no",
+    "security": "Trygg Oslo",
+    "website": "https://rockin.no/"
+  }
+},
+{
+  "type": "node",
+  "id": 14203401701,
+  "lat": 59.9118072,
+  "lon": 10.7314572,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "The sausage factory"
+  }
+},
+{
+  "type": "node",
+  "id": 14203403501,
+  "lat": 59.9118072,
+  "lon": 10.7314572,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "hot_dog",
+    "name": "The sausage factory"
+  }
+},
+{
+  "type": "node",
+  "id": 14284465273,
+  "lat": 59.9131102,
+  "lon": 10.7490914,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "burger",
+    "name": "88 street burger"
+  }
+},
+{
+  "type": "way",
+  "id": 4368869,
+  "center": {
+    "lat": 59.9143659,
+    "lon": 10.7342544
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building": "yes",
+    "check_date": "2026-05-02",
+    "description": "https://photos.app.goo.gl/aqHCgHTm4MmMsTD17",
+    "email": "salg@nationaltheatret.no",
+    "fax": "+47 22001699",
+    "height": "15",
+    "heritage": "yes",
+    "image": "https://photos.app.goo.gl/kTiwQg1ZHi2p97ZZ9",
+    "mapillary": "2991231607668590",
+    "name": "Nationaltheatret",
+    "name:de": "Nationaltheater",
+    "name:en": "National Theatre",
+    "name:ko": "국립극장",
+    "name:nl": "Nationaal Theater",
+    "note": "Tickets can be ordered on +47 81500811.",
+    "phone": "+47 22001400",
+    "ref:bygningsnr": "81410631",
+    "roof:height": "5",
+    "toilets:wheelchair": "yes",
+    "website": "https://www.nationaltheatret.no/",
+    "wheelchair": "yes",
+    "wikidata": "Q565382",
+    "wikimedia_commons": "Category:Nationaltheatret",
+    "wikipedia": "no:Nationaltheatret"
+  }
+},
+{
+  "type": "way",
+  "id": 8874969,
+  "center": {
+    "lat": 59.9095276,
+    "lon": 10.7533012
+  },
+  "tags": {
+    "bar": "yes",
+    "brand": "Thon Hotels",
+    "brand:wikidata": "Q7795923",
+    "breakfast": "yes",
+    "building": "hotel",
+    "check_in": "15:00",
+    "check_out": "12:00",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Thon Hotel Opera",
+    "opening_hours:reception": "24/7",
+    "phone": "+47 24 10 30 00",
+    "ref:bygningsnr": "81655472",
+    "restaurant": "yes",
+    "rooms": "480",
+    "smoking": "no",
+    "toilets:wheelchair": "yes",
+    "tourism": "hotel",
+    "website": "https://www.thonhotels.no/hoteller/norge/oslo/thon-hotel-opera/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 10568134,
+  "center": {
+    "lat": 59.9129872,
+    "lon": 10.7547197
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building": "construction",
+    "building:levels": "6",
+    "construction": "amenity",
+    "ele": "27.2",
+    "name": "Oslo Spektrum",
+    "name:ko": "오슬로 스페크트룸",
+    "operator": "SMG Europe",
+    "phone": "+47 22 052900",
+    "ref:bygningsnr": "81084491",
+    "roof:levels": "0",
+    "roof:shape": "flat",
+    "website": "https://www.oslospektrum.no",
+    "wheelchair": "yes",
+    "wikidata": "Q1508325",
+    "wikimedia_commons": "Category:Oslo Spektrum",
+    "wikipedia": "en:Oslo Spektrum"
+  }
+},
+{
+  "type": "way",
+  "id": 24667689,
+  "center": {
+    "lat": 59.9088400,
+    "lon": 10.7101196
+  },
+  "tags": {
+    "alt_name": "Color Line Terminal Oslo",
+    "amenity": "ferry_terminal",
+    "ferry": "yes",
+    "name": "Color Line Terminal",
+    "name:no": "Color Line-terminal",
+    "public_transport": "station",
+    "toilets:wheelchair": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 24900009,
+  "center": {
+    "lat": 59.9120494,
+    "lon": 10.7336915
+  },
+  "tags": {
+    "alt_name": "Rådhuset",
+    "amenity": "townhall",
+    "building": "public",
+    "building:colour": "#841F27",
+    "building:material": "brick",
+    "height": "66",
+    "image": "https://photos.app.goo.gl/EQ7ZJYLg1zNj8Y466",
+    "mapillary": "3458252394310574",
+    "name": "Oslo rådhus",
+    "name:en": "Oslo City Hall",
+    "opening_hours": "Mo-Su 09:00-16:00",
+    "ref": "0301",
+    "ref:bygningsnr": "80653808",
+    "start_date": "1950-05-15",
+    "toilets:wheelchair": "yes",
+    "tourism": "attraction",
+    "townhall:type": "city",
+    "website": "https://www.oslo.kommune.no/politikk-og-administrasjon/radhuset/",
+    "wheelchair": "yes",
+    "wikidata": "Q373850",
+    "wikimedia_commons": "Category:Oslo City Hall",
+    "wikipedia": "no:Oslo rådhus"
+  }
+},
+{
+  "type": "way",
+  "id": 27767749,
+  "center": {
+    "lat": 59.9137118,
+    "lon": 10.6983622
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "D",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767750,
+  "center": {
+    "lat": 59.9132906,
+    "lon": 10.6982370
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "B",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767751,
+  "center": {
+    "lat": 59.9130947,
+    "lon": 10.6988571
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "B",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767752,
+  "center": {
+    "lat": 59.9127427,
+    "lon": 10.6990207
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "A",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767754,
+  "center": {
+    "lat": 59.9124242,
+    "lon": 10.6993271
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "name": "Brygge 9",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767755,
+  "center": {
+    "lat": 59.9121839,
+    "lon": 10.6997540
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 8",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767756,
+  "center": {
+    "lat": 59.9119046,
+    "lon": 10.7001888
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 7",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767757,
+  "center": {
+    "lat": 59.9116240,
+    "lon": 10.7006082
+  },
+  "tags": {
+    "floating": "yes",
+    "foot": "permissive",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 6",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767758,
+  "center": {
+    "lat": 59.9113525,
+    "lon": 10.7010179
+  },
+  "tags": {
+    "foot": "permissive",
+    "man_made": "pier",
+    "name": "Brygge 5",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767759,
+  "center": {
+    "lat": 59.9111027,
+    "lon": 10.7015397
+  },
+  "tags": {
+    "floating": "yes",
+    "foot": "permissive",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 4",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767772,
+  "center": {
+    "lat": 59.9089198,
+    "lon": 10.6982332
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge J",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767774,
+  "center": {
+    "lat": 59.9078765,
+    "lon": 10.6970215
+  },
+  "tags": {
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Broen",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767777,
+  "center": {
+    "lat": 59.9097707,
+    "lon": 10.6954993
+  },
+  "tags": {
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge A",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767778,
+  "center": {
+    "lat": 59.9108003,
+    "lon": 10.6967754
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge G",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767779,
+  "center": {
+    "lat": 59.9104295,
+    "lon": 10.6968990
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge F",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767782,
+  "center": {
+    "lat": 59.9088978,
+    "lon": 10.6963836
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge C",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 27767783,
+  "center": {
+    "lat": 59.9085242,
+    "lon": 10.6961319
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge B",
+    "source": "yahoo",
+    "surface": "concrete",
+    "width": "3"
+  }
+},
+{
+  "type": "way",
+  "id": 29132806,
+  "center": {
+    "lat": 59.9130058,
+    "lon": 10.7401133
+  },
+  "tags": {
+    "building": "public",
+    "building:colour": "#d4cfc2",
+    "building:material": "brick",
+    "contact:phone": "+47 23 313050",
+    "contact:website": "https://www.stortinget.no/",
+    "government": "parliament",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Stortinget%2C_Oslo%2C_Norway_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "image:0": "https://photos.app.goo.gl/tNg3fWRxfBKS8Zur9",
+    "mapillary": "320495029431231",
+    "name": "Stortinget",
+    "name:da": "Stortinget",
+    "name:de": "Storting",
+    "name:en": "Storting",
+    "name:et": "Storting",
+    "name:ko": "국회의사당",
+    "name:nl": "Storting",
+    "name:nn": "Stortinget",
+    "name:no": "Stortinget",
+    "name:ps": "د ناروې پارلمان",
+    "name:ru": "Стортинг",
+    "name:sv": "Stortinget",
+    "office": "government",
+    "ref:bygningsnr": "80467435",
+    "wikidata": "Q109016",
+    "wikimedia_commons": "Category:Stortinget",
+    "wikipedia": "no:Stortinget"
+  }
+},
+{
+  "type": "way",
+  "id": 31106820,
+  "center": {
+    "lat": 59.9167830,
+    "lon": 10.7355402
+  },
+  "tags": {
+    "building": "civic",
+    "building:levels": "4",
+    "fee": "yes",
+    "heritage": "yes",
+    "name": "Historisk museum",
+    "name:de": "Historisches Museum",
+    "name:en": "Historical Museum",
+    "name:fr": "Musée d’histoire culturelle",
+    "opening_hours": "Tu-We, Fr-Su 11:00-16:00; Th 11:00-20:00",
+    "operator": "Universitetet i Oslo",
+    "ref:bygningsnr": "80486413",
+    "tourism": "museum",
+    "website": "https://www.khm.uio.no/",
+    "wikidata": "Q1405469",
+    "wikimedia_commons": "File:Museum of Cultural History 2024.jpg",
+    "wikimedia_commons:0": "File:Frederiks gate 3, Oslo 2024.jpg"
+  }
+},
+{
+  "type": "way",
+  "id": 44044595,
+  "center": {
+    "lat": 59.9181502,
+    "lon": 10.7544189
+  },
+  "tags": {
+    "alt_name": "Jakob kirke",
+    "amenity": "theatre",
+    "architect": "G.A.Bull",
+    "building": "church",
+    "capacity": "500",
+    "check_date": "2026-07-25",
+    "deanery": "Oslo Domprosti",
+    "denomination": "lutheran",
+    "diocese": "Oslo",
+    "height": "10",
+    "heritage": "yes",
+    "image": "https://www.kirkebyggdatabasen.no/KBDBweb/getPublicImage.aspx?vedleggId=3E93446A-6C93-400D-B74C-8A57CAFD61EC",
+    "image:0": "https://photos.app.goo.gl/ApCUW9J7rSZ1RmfDA",
+    "name": "Kulturkirken Jakob",
+    "note": "Fortidsminne",
+    "operator": "Kirkelig fellesråd i Oslo",
+    "parish": "Oslo Domkirke",
+    "phone": "+47 22993450",
+    "ref:bygningsnr": "80958919",
+    "start_date": "1880",
+    "website": "https://jakob.no/",
+    "wikidata": "Q1773529",
+    "wikimedia_commons": "Category:Kulturkirken Jakob",
+    "wikipedia": "en:Kulturkirken Jakob"
+  }
+},
+{
+  "type": "way",
+  "id": 54830211,
+  "center": {
+    "lat": 59.9045110,
+    "lon": 10.7408879
+  },
+  "tags": {
+    "alt_name": "Hovedarsenalet",
+    "building": "yes",
+    "building:levels": "4",
+    "check_date": "2025-11-28",
+    "fee": "yes",
+    "heritage": "yes",
+    "image": "https://photos.app.goo.gl/LdXvNsZ4xMN4RiWq6",
+    "internet_access": "no",
+    "museum": "military",
+    "name": "Forsvarsmuseet",
+    "name:de": "Verteidigungsmuseum",
+    "name:en": "Defence Musuem",
+    "name:no": "Forsvarsmuseet",
+    "opening_hours": "May-Aug: Mo-Su 10:00-17:00; Sep-Apr: Mo-Su 10:00-16:00",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "ref:bygningsnr": "81441081",
+    "subject:wikidata": "Q917374",
+    "tourism": "museum",
+    "website": "https://www.forsvarsbygg.no/festningene/Festningene/Akershus-festning/Museer-og-utstillinger/Forsvarsmuseet/",
+    "wheelchair": "yes",
+    "wikidata": "Q4793001",
+    "wikimedia_commons": "Category:Forsvarsmuseet",
+    "wikipedia": "en:Armed Forces Museum (Norway)",
+    "wikipedia:no": "Forsvarsmuseet‎"
+  }
+},
+{
+  "type": "way",
+  "id": 71461508,
+  "center": {
+    "lat": 59.9089584,
+    "lon": 10.6988598
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge K"
+  }
+},
+{
+  "type": "way",
+  "id": 88639599,
+  "center": {
+    "lat": 59.9153362,
+    "lon": 10.7196462
+  },
+  "tags": {
+    "building": "hotel",
+    "building:levels": "7",
+    "image": "https://photos.app.goo.gl/6zHRestaXRnPH6Fu5",
+    "name": "Sommerro",
+    "old_name": "Oslo Lysverker",
+    "ref:bygningsnr": "80513348",
+    "roof:shape": "flat",
+    "tourism": "hotel",
+    "website": "https://www.sommerrohouse.com"
+  }
+},
+{
+  "type": "way",
+  "id": 89545556,
+  "center": {
+    "lat": 59.9176980,
+    "lon": 10.7284673
+  },
+  "tags": {
+    "attraction": "formal_garden",
+    "leisure": "park",
+    "name": "Slottsparken",
+    "name:de": "Schlosspark",
+    "name:ko": "왕궁 공원",
+    "tourism": "attraction",
+    "wheelchair": "yes",
+    "wikidata": "Q4583462",
+    "wikimedia_commons": "Category:Slottsparken (Royal Palace Park), Oslo",
+    "wikipedia": "en:Palace Park"
+  }
+},
+{
+  "type": "way",
+  "id": 90768996,
+  "center": {
+    "lat": 59.9150305,
+    "lon": 10.7270455
+  },
+  "tags": {
+    "building": "civic",
+    "building:levels": "4",
+    "check_date": "2023-05-14",
+    "description": "The main attraction is playwright and poet Henrik Ibsen's home in Oslo. The apartment is fully restored and the visitor center features an exhibit on Ibsen's life and writing.",
+    "name": "Ibsenmuseet",
+    "name:en": "The Ibsen Museum",
+    "name:no": "Ibsenmuseet",
+    "operator": "Norsk Folkemuseum",
+    "ref:bygningsnr": "80485891",
+    "roof:levels": "1",
+    "roof:shape": "gabled",
+    "tourism": "museum",
+    "website": "https://ibsenmt.no",
+    "wikidata": "Q1519078",
+    "wikimedia_commons": "Category:Ibsenmuseet",
+    "wikipedia": "en:Ibsen Museum (Oslo)"
+  }
+},
+{
+  "type": "way",
+  "id": 92647224,
+  "center": {
+    "lat": 59.9105905,
+    "lon": 10.7280265
+  },
+  "tags": {
+    "building": "office",
+    "building:colour": "#665158",
+    "building:levels": "7",
+    "image": "https://photos.app.goo.gl/YgTnd5Jif2eUwZNA6",
+    "name": "Aker Brygge Shopping",
+    "operator": "Aker Brygge Shopping",
+    "ref:bygningsnr": "80996268",
+    "shop": "mall",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 92649935,
+  "center": {
+    "lat": 59.9108663,
+    "lon": 10.7264687
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building": "commercial",
+    "building:levels": "3",
+    "image": "https://photos.app.goo.gl/ZMp2KpXegaRtQnzK8",
+    "name": "Latter",
+    "ref:bygningsnr": "81139490",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 111867428,
+  "center": {
+    "lat": 59.9170376,
+    "lon": 10.7345688
+  },
+  "tags": {
+    "building": "museum",
+    "check_date:opening_hours": "2026-05-25",
+    "description": "Includes Egyptioan mummies and the only complete Viking helmet ever found",
+    "fee": "yes",
+    "fee:conditional": "no @ age < 16",
+    "heritage": "yes",
+    "name": "Kulturhistorisk museum",
+    "name:en": "Museum of Cultural History",
+    "opening_hours:signed": "no",
+    "operator": "UiO",
+    "ref:bygningsnr": "80486448",
+    "tourism": "museum",
+    "website": "https://www.khm.uio.no/",
+    "wikidata": "Q3356148",
+    "wikimedia_commons": "Category:Kulturhistorisk museum, Oslo",
+    "wikipedia": "en:Museum of Cultural History, Oslo"
+  }
+},
+{
+  "type": "way",
+  "id": 112243882,
+  "center": {
+    "lat": 59.9164200,
+    "lon": 10.7495145
+  },
+  "tags": {
+    "building": "school",
+    "building:levels": "8",
+    "email": "co.xpress.youngstorget@choice.no",
+    "fax": "+4722031111",
+    "image": "https://photos.app.goo.gl/rfU4YxcX7FFQPbuf7",
+    "internet_access": "yes",
+    "internet_access:fee": "no",
+    "name": "Comfort Hotel Xpress",
+    "operator": "Choice",
+    "phone": "+4722031100",
+    "ref:bygningsnr": "80478453",
+    "smoking": "no",
+    "tourism": "hotel",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "way",
+  "id": 112401084,
+  "center": {
+    "lat": 59.9163380,
+    "lon": 10.7554205
+  },
+  "tags": {
+    "building": "civic",
+    "check_date": "2025-07-05",
+    "name": "Jødisk museum",
+    "ref:bygningsnr": "80473370",
+    "tourism": "museum",
+    "wikidata": "Q6189888",
+    "wikimedia_commons": "Category:Jødisk Museum i Oslo",
+    "wikipedia": "en:Jewish Museum in Oslo"
+  }
+},
+{
+  "type": "way",
+  "id": 114200488,
+  "center": {
+    "lat": 59.9083388,
+    "lon": 10.6989585
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Sundt-bryggen"
+  }
+},
+{
+  "type": "way",
+  "id": 114200489,
+  "center": {
+    "lat": 59.9099898,
+    "lon": 10.6968230
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge E"
+  }
+},
+{
+  "type": "way",
+  "id": 114200492,
+  "center": {
+    "lat": 59.9111153,
+    "lon": 10.6966627
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge H"
+  }
+},
+{
+  "type": "way",
+  "id": 116386028,
+  "center": {
+    "lat": 59.9246655,
+    "lon": 10.7203900
+  },
+  "tags": {
+    "brand": "Saga Hotel Oslo",
+    "building": "apartments",
+    "building:levels": "7",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "name": "Saga Apartments Oslo",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "phone": "+47 22 55 44 90",
+    "ref:bygningsnr": "81695210",
+    "smoking": "no",
+    "stars": "3",
+    "tourism": "hotel",
+    "website": "https://sagahoteloslo.no/saga-apartments/"
+  }
+},
+{
+  "type": "way",
+  "id": 120083044,
+  "center": {
+    "lat": 59.9220325,
+    "lon": 10.7265735
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "building": "kiosk",
+    "changing_table": "no",
+    "check_date": "2025-08-21",
+    "cuisine": "american;burger",
+    "name": "American Burgers",
+    "outdoor_seating": "yes",
+    "ref:bygningsnr": "300141224",
+    "takeaway": "yes",
+    "toilets:wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 126778644,
+  "center": {
+    "lat": 59.9185220,
+    "lon": 10.7501634
+  },
+  "tags": {
+    "amenity": "school",
+    "capacity": "210",
+    "email": "postmottak@ude.oslo.kommune.no",
+    "fee": "no",
+    "grades": "1-7",
+    "isced:level": "1",
+    "name": "Møllergata skole",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "phone": "+47 23466600",
+    "ref:NO:orgnr": "974590042",
+    "ref:udir_nsr": "974590042",
+    "website": "https://mollergata.osloskolen.no/",
+    "wikidata": "Q15976050",
+    "wikimedia_commons": "Category:Møllergata skole"
+  }
+},
+{
+  "type": "way",
+  "id": 132766114,
+  "center": {
+    "lat": 59.9161665,
+    "lon": 10.7234474
+  },
+  "tags": {
+    "building": "civic",
+    "check_date": "2026-08-14",
+    "contact:facebook": "https://www.facebook.com/KunstStallen/",
+    "fee": "yes",
+    "museum": "art",
+    "name": "Dronning Sonjas kunststall",
+    "ref:bygningsnr": "81416079",
+    "tourism": "museum",
+    "website": "https://www.kongehuset.no/artikkel.html?tid=153246&sek=79786",
+    "wikidata": "Q42023914",
+    "wikimedia_commons": "Category:Dronning Sonja KunstStall",
+    "wikipedia": "en:The Queen Sonja Art Stable"
+  }
+},
+{
+  "type": "way",
+  "id": 185505576,
+  "center": {
+    "lat": 59.9085230,
+    "lon": 10.7259965
+  },
+  "tags": {
+    "area": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Tingvalla-utstikkeren"
+  }
+},
+{
+  "type": "way",
+  "id": 291774094,
+  "center": {
+    "lat": 59.9096811,
+    "lon": 10.6967107
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge D",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 291774095,
+  "center": {
+    "lat": 59.9093266,
+    "lon": 10.6965109
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge X"
+  }
+},
+{
+  "type": "way",
+  "id": 355306767,
+  "center": {
+    "lat": 59.9032073,
+    "lon": 10.7412392
+  },
+  "tags": {
+    "area": "yes",
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "lit": "yes",
+    "name": "Vippetangen",
+    "network": "Ruter",
+    "public_transport": "platform",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 435653432,
+  "center": {
+    "lat": 59.9117430,
+    "lon": 10.7584042
+  },
+  "tags": {
+    "amenity": "bus_station",
+    "building:part": "yes",
+    "bus": "yes",
+    "layer": "-1",
+    "name": "Oslo bussterminal",
+    "name:en": "Oslo Bus Terminal",
+    "name:fr": "Station routière d'Oslo",
+    "name:zh": "奥斯陆车站",
+    "public_transport": "station",
+    "ref:nsrs": "6505",
+    "wheelchair": "yes",
+    "wikidata": "Q7107012",
+    "wikimedia_commons": "Category:Oslo bussterminal",
+    "wikipedia": "en:Oslo Bus Terminal"
+  }
+},
+{
+  "type": "way",
+  "id": 545698009,
+  "center": {
+    "lat": 59.9102542,
+    "lon": 10.7342004
+  },
+  "tags": {
+    "amenity": "pub",
+    "building": "yes",
+    "building:levels": "1",
+    "image": "https://photos.app.goo.gl/DobhGHbcQ13iYdBF6",
+    "indoor_seating": "no",
+    "name": "Pappabuene",
+    "outdoor_seating": "yes",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 545729857,
+  "center": {
+    "lat": 59.9100304,
+    "lon": 10.7282716
+  },
+  "tags": {
+    "access": "yes",
+    "leisure": "playground",
+    "name": "Aker Brygge Lekeplass"
+  }
+},
+{
+  "type": "way",
+  "id": 547297401,
+  "center": {
+    "lat": 59.9190514,
+    "lon": 10.7524575
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building": "civic",
+    "check_date": "2026-07-25",
+    "image": "https://photos.app.goo.gl/tLwvFPcHmgPxdwWMA",
+    "name": "Vega scene",
+    "ref:bygningsnr": "300628430",
+    "website": "https://vegascene.no/",
+    "wikidata": "Q115126806"
+  }
+},
+{
+  "type": "way",
+  "id": 677234877,
+  "center": {
+    "lat": 59.9224240,
+    "lon": 10.7510915
+  },
+  "tags": {
+    "amenity": "theatre",
+    "building": "civic",
+    "building:levels": "5",
+    "check_date": "2026-08-12",
+    "image": "https://photos.app.goo.gl/BBHT3FJVNJaWjZdW8",
+    "name": "Vulkan arena",
+    "ref:bygningsnr": "81851964",
+    "roof:levels": "1",
+    "theatre:genre": "musical",
+    "website": "https://vulkanarena.no"
+  }
+},
+{
+  "type": "way",
+  "id": 727490344,
+  "center": {
+    "lat": 59.9077425,
+    "lon": 10.7570100
+  },
+  "tags": {
+    "brand": "Clarion",
+    "brand:wikidata": "Q10454567",
+    "building": "hotel",
+    "building:levels": "9",
+    "check_date": "2026-03-07",
+    "image": "https://photos.app.goo.gl/E96htNZ9p3z8zzRK7",
+    "layer": "1",
+    "name": "Clarion Hotel Oslo",
+    "ref:bygningsnr": "300571832",
+    "roof:levels": "0",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 771936826,
+  "center": {
+    "lat": 59.9136221,
+    "lon": 10.7408297
+  },
+  "tags": {
+    "electrified": "yes",
+    "gauge": "1435",
+    "layer": "-2",
+    "name": "Overkjøringsspor Stortinget",
+    "railway": "subway",
+    "service": "crossover",
+    "tunnel": "yes",
+    "usage": "main"
+  }
+},
+{
+  "type": "way",
+  "id": 771936827,
+  "center": {
+    "lat": 59.9136223,
+    "lon": 10.7408253
+  },
+  "tags": {
+    "electrified": "yes",
+    "gauge": "1435",
+    "layer": "-2",
+    "name": "Overkjøringsspor Stortinget",
+    "railway": "subway",
+    "service": "crossover",
+    "tunnel": "yes",
+    "usage": "main"
+  }
+},
+{
+  "type": "way",
+  "id": 772265973,
+  "center": {
+    "lat": 59.9090741,
+    "lon": 10.7343226
+  },
+  "tags": {
+    "building": "ship",
+    "contact:facebook": "https://www.facebook.com/groups/130908400590972/",
+    "image": "https://photos.app.goo.gl/MtEJF8Yurs2iTpya7",
+    "name": "M314 Alta",
+    "seamark:hulk:category": "museum",
+    "seamark:type": "hulk",
+    "tourism": "museum",
+    "website": "https://m314alta.org/",
+    "wikidata": "Q4353317",
+    "wikipedia": "en:HNoMS Alta (M314)"
+  }
+},
+{
+  "type": "way",
+  "id": 810259696,
+  "center": {
+    "lat": 59.9074842,
+    "lon": 10.7526811
+  },
+  "tags": {
+    "alt_name": "Operaen",
+    "amenity": "theatre",
+    "architect": "Snøhetta",
+    "architect:wikidata": "Q511335",
+    "architect:wikipedia": "no:Snøhetta (arkitektfirma)",
+    "building": "civic",
+    "building:levels": "0",
+    "check_date": "2026-07-03",
+    "heritage": "yes",
+    "image": "https://photos.app.goo.gl/EvFtzpLKAWt5Y3gTA",
+    "layer": "1",
+    "mapillary": "325748722374651",
+    "name": "Operahuset i Oslo",
+    "name:de": "Opernhaus Oslo",
+    "name:en": "Oslo Opera House",
+    "name:es": "Ópera de Oslo",
+    "name:fr": "Opéra d'Oslo",
+    "name:ja": "オスロ・オペラハウス",
+    "name:ko": "오슬로 오페라하우스",
+    "name:no": "Operahuset i Oslo",
+    "name:pt": "Ópera de Oslo",
+    "name:ru": "Оперный театр Осло",
+    "name:zh": "奧斯陸歌劇院",
+    "panoramax": "f0e8c394-0eda-4de3-a1c7-62762a8e1ca9",
+    "phone": "+47 21 42 21 21",
+    "ref:bygningsnr": "81770859",
+    "roof:levels": "5",
+    "roof:shape": "skillion",
+    "start_date": "2003",
+    "toilets": "yes",
+    "toilets:access": "yes",
+    "toilets:fee": "no",
+    "toilets:wheelchair": "yes",
+    "tourism": "attraction",
+    "website": "https://operaen.no/",
+    "wheelchair": "yes",
+    "wikidata": "Q43280",
+    "wikimedia_commons": "Category:Oslo Opera house",
+    "wikipedia": "en:Oslo Opera House"
+  }
+},
+{
+  "type": "way",
+  "id": 845186772,
+  "center": {
+    "lat": 59.9114865,
+    "lon": 10.6963867
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge I"
+  }
+},
+{
+  "type": "way",
+  "id": 848866858,
+  "center": {
+    "lat": 59.9095267,
+    "lon": 10.7277288
+  },
+  "tags": {
+    "area": "yes",
+    "floating": "yes",
+    "man_made": "pier",
+    "name": "Lektern",
+    "panoramax": "8af41e4f-4a53-4c71-9095-1d2b8bc6c8c4",
+    "surface": "wood"
+  }
+},
+{
+  "type": "way",
+  "id": 848872466,
+  "center": {
+    "lat": 59.9096171,
+    "lon": 10.7274832
+  },
+  "tags": {
+    "area": "yes",
+    "name": "D/S Alfen",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "way",
+  "id": 865170294,
+  "center": {
+    "lat": 59.9065116,
+    "lon": 10.7350333
+  },
+  "tags": {
+    "alt_name": "Søndre Akershuskaia",
+    "man_made": "quay",
+    "name": "Søndre Akershuskai",
+    "natural": "coastline"
+  }
+},
+{
+  "type": "way",
+  "id": 865183365,
+  "center": {
+    "lat": 59.9051484,
+    "lon": 10.7461155
+  },
+  "tags": {
+    "image": "https://photos.app.goo.gl/BoLyCACc63F6zvZBA",
+    "man_made": "quay",
+    "name": "Revierkaia",
+    "natural": "coastline"
+  }
+},
+{
+  "type": "way",
+  "id": 870012541,
+  "center": {
+    "lat": 59.9238998,
+    "lon": 10.7294063
+  },
+  "tags": {
+    "amenity": "school",
+    "name": "Kristelig gymnasium"
+  }
+},
+{
+  "type": "way",
+  "id": 870639372,
+  "center": {
+    "lat": 59.9200740,
+    "lon": 10.7187653
+  },
+  "tags": {
+    "amenity": "school",
+    "capacity": "812",
+    "email": "postmottak.uranienborg@osloskolen.no",
+    "fax": "+47 22556450",
+    "fee": "no",
+    "grades": "1-10",
+    "isced:level": "1;2",
+    "name": "Uranienborg skole",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "phone": "+47 22 44 00 00",
+    "ref:NO:orgnr": "974590328",
+    "ref:udir_nsr": "974590328",
+    "website": "https://uranienborg.osloskolen.no/",
+    "wikidata": "Q12008565",
+    "wikimedia_commons": "Category:Uranienborg skole"
+  }
+},
+{
+  "type": "way",
+  "id": 870640504,
+  "center": {
+    "lat": 59.9138356,
+    "lon": 10.7201207
+  },
+  "tags": {
+    "amenity": "school",
+    "capacity": "45",
+    "email": "postmottak.ohg.vgs@osloskolen.no",
+    "fee": "no",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Oslo Handelsgymnasium",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "phone": "+47 22 12 92 50",
+    "ref:NO:orgnr": "974590883",
+    "ref:udir_nsr": "974590883",
+    "website": "https://ohg.vgs.no",
+    "wikidata": "Q11994222",
+    "wikimedia_commons": "Category:Parkveien 65, Oslo",
+    "wikipedia": "en:Oslo Commerce School"
+  }
+},
+{
+  "type": "way",
+  "id": 870940069,
+  "center": {
+    "lat": 59.9210707,
+    "lon": 10.7410765
+  },
+  "tags": {
+    "amenity": "school",
+    "email": "postmottak.oslo-katedral.vgs@osloskolen.no",
+    "fee": "no",
+    "grades": "11-13",
+    "isced:level": "3",
+    "name": "Oslo katedralskole",
+    "operator": "Oslo kommune",
+    "operator:type": "public",
+    "phone": "+47 23 35 34 70",
+    "ref:NO:orgnr": "874590932",
+    "ref:udir_nsr": "874590932",
+    "website": "https://oslo-katedral.vgs.no",
+    "wheelchair": "no",
+    "wikidata": "Q672095",
+    "wikipedia": "en:Oslo Cathedral School"
+  }
+},
+{
+  "type": "way",
+  "id": 907300464,
+  "center": {
+    "lat": 59.9017372,
+    "lon": 10.7409986
+  },
+  "tags": {
+    "artist_name": "Bjarte Agdestein;Endre Skandfer;Ronald Kabcek",
+    "artwork_type": "installation",
+    "building": "yes",
+    "building:colour": "orange",
+    "height": "12",
+    "name": "Havnepromenaden infopunkt 8: Vippetangen",
+    "name:en": "Port promenade info point 8: Vippetangen",
+    "operator": "Oslo Kommune",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "way",
+  "id": 939764476,
+  "center": {
+    "lat": 59.9106768,
+    "lon": 10.7326226
+  },
+  "tags": {
+    "area": "yes",
+    "man_made": "pier",
+    "name": "Honnørbrygga"
+  }
+},
+{
+  "type": "way",
+  "id": 939764477,
+  "center": {
+    "lat": 59.9099001,
+    "lon": 10.7336902
+  },
+  "tags": {
+    "area": "yes",
+    "man_made": "pier",
+    "mooring": "yes",
+    "name": "Rådhusbrygge 1"
+  }
+},
+{
+  "type": "way",
+  "id": 939764478,
+  "center": {
+    "lat": 59.9100344,
+    "lon": 10.7328593
+  },
+  "tags": {
+    "area": "yes",
+    "man_made": "pier",
+    "mooring": "yes",
+    "name": "Rådhusbrygge 2"
+  }
+},
+{
+  "type": "way",
+  "id": 939764479,
+  "center": {
+    "lat": 59.9103194,
+    "lon": 10.7314723
+  },
+  "tags": {
+    "area": "yes",
+    "image": "https://photos.app.goo.gl/MPvpPvSe4vvdQx416",
+    "man_made": "pier",
+    "mooring": "yes",
+    "name": "Rådhusbrygge 3"
+  }
+},
+{
+  "type": "way",
+  "id": 939764481,
+  "center": {
+    "lat": 59.9105202,
+    "lon": 10.7304965
+  },
+  "tags": {
+    "area": "yes",
+    "man_made": "pier",
+    "name": "Rådhusbrygge 4"
+  }
+},
+{
+  "type": "way",
+  "id": 1039892466,
+  "center": {
+    "lat": 59.9070102,
+    "lon": 10.7206181
+  },
+  "tags": {
+    "access": "yes",
+    "aeroway:light": "obstacle",
+    "aeroway:light:character": "fixed",
+    "aeroway:light:colour": "red",
+    "building": "civic",
+    "ele": "7",
+    "email": "drift@tjuvholmen.no",
+    "fee": "yes",
+    "height": "90",
+    "image": "https://photos.app.goo.gl/1gxjX5MXocPRpJdZ8",
+    "man_made": "tower",
+    "name": "Tjuvtitten",
+    "phone": "+47 23 11 88 99",
+    "ref:bygningsnr": "300163248",
+    "tourism": "attraction",
+    "tower:type": "observation",
+    "url": "https://youtu.be/Ay3CyA-ZMnk",
+    "website": "https://www.visitoslo.com/no/produkt/?TLp=691112",
+    "wheelchair": "no",
+    "wikidata": "Q12006505",
+    "wikimedia_commons": "Category:Tjuvtitten"
+  }
+},
+{
+  "type": "way",
+  "id": 1062404152,
+  "center": {
+    "lat": 59.9112214,
+    "lon": 10.7329419
+  },
+  "tags": {
+    "name": "Rådhusplassen",
+    "place": "square"
+  }
+},
+{
+  "type": "way",
+  "id": 1062588873,
+  "center": {
+    "lat": 59.9132355,
+    "lon": 10.7255704
+  },
+  "tags": {
+    "amenity": "school",
+    "capacity": "611",
+    "email": "postmottak.ruselokka@osloskolen.no",
+    "fee": "no",
+    "grades": "1-10",
+    "isced:level": "1;2",
+    "name": "Ruseløkka skole",
+    "operator": "Oslo kommune",
+    "operator:type": "government",
+    "operator:wikidata": "Q5245991",
+    "phone": "+47 23 27 28 40",
+    "ref:NO:orgnr": "974590131",
+    "ref:udir_nsr": "974590131",
+    "website": "https://ruselokka.osloskolen.no/",
+    "wikidata": "Q17195024",
+    "wikimedia_commons": "File:Ruseløkka skole, 2024.jpg"
+  }
+},
+{
+  "type": "way",
+  "id": 1105519915,
+  "center": {
+    "lat": 59.9104849,
+    "lon": 10.7031780
+  },
+  "tags": {
+    "area": "yes",
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 1",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 1105519919,
+  "center": {
+    "lat": 59.9106229,
+    "lon": 10.7025369
+  },
+  "tags": {
+    "area": "yes",
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 2",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 1105519922,
+  "center": {
+    "lat": 59.9108535,
+    "lon": 10.7019736
+  },
+  "tags": {
+    "area": "yes",
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 3",
+    "operator": "Frognerkilens Båtforening av 1860",
+    "source": "yahoo"
+  }
+},
+{
+  "type": "way",
+  "id": 1218936754,
+  "center": {
+    "lat": 59.9128558,
+    "lon": 10.7005285
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 9"
+  }
+},
+{
+  "type": "way",
+  "id": 1218936755,
+  "center": {
+    "lat": 59.9081847,
+    "lon": 10.6956967
+  },
+  "tags": {
+    "floating": "yes",
+    "man_made": "pier",
+    "mooring": "private",
+    "name": "Brygge 1"
+  }
+},
+{
+  "type": "way",
+  "id": 1381696499,
+  "center": {
+    "lat": 59.9138039,
+    "lon": 10.7202108
+  },
+  "tags": {
+    "access": "yes",
+    "alt_name": "OHG Bunker",
+    "appointment": "required",
+    "building": "bunker",
+    "bunker_type": "pillbox",
+    "contact:email": "bunker.ohg.vgs@osloskolen.no",
+    "contact:phone": "+47 22 12 92 50",
+    "contact:website": "https://ohgbunkeren.osloskolen.no",
+    "fee": "yes",
+    "heritage": "protected",
+    "heritage:operator": "no:Riksantikvaren",
+    "historic": "bunker",
+    "layer": "-1",
+    "level": "-1",
+    "location": "underground",
+    "mapillary": "1120798966750081",
+    "mapillary:0": "1080226067385456",
+    "max_level": "-1",
+    "military": "bunker",
+    "min_level": "-1",
+    "museum": "war",
+    "name": "Wehrmacht bunkeren",
+    "opening_hours": "\"by appointment\"",
+    "toilets": "no",
+    "tourism": "museum",
+    "wheelchair": "no",
+    "wheelchair:description": "Partially accessible by prior arrangement (due to protected status)"
+  }
+},
+{
+  "type": "way",
+  "id": 1421832781,
+  "center": {
+    "lat": 59.9134696,
+    "lon": 10.7538702
+  },
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "kebab",
+    "name": "Vinny's Kebab",
+    "opening_hours": "Mo-Th 10:00-23:00; Fr 10:00-03:00; Sa 11:00-03:00; Su 12:00-23:00",
+    "phone": "+47 22179009",
+    "website": "https://gunerius.no/butikker/vinnys-kebab/"
+  }
+},
+{
+  "type": "way",
+  "id": 1509499373,
+  "center": {
+    "lat": 59.9124666,
+    "lon": 10.7563770
+  },
+  "tags": {
+    "brand": "Radisson Blu",
+    "brand:wikidata": "Q7281341",
+    "brand:wikipedia": "en:Radisson Blu",
+    "building": "hotel",
+    "check_date": "2026-09-26",
+    "email": "info.plaza.oslo@radissonblu.com",
+    "fax": "+47 22 05 80 10",
+    "image": "https://photos.app.goo.gl/QZxrLd5BjAgT9wca9",
+    "internet_access": "wlan",
+    "internet_access:fee": "no",
+    "loc_name": "Oslo Plaza",
+    "name": "Radisson Blu Plaza Hotel, Oslo",
+    "name:ko": "래디슨 블루 플라자 호텔",
+    "operator": "(SAS) Radisson Blu",
+    "payment:cash": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+47 22 05 80 00",
+    "rooms": "694",
+    "smoking": "outside",
+    "tourism": "hotel",
+    "website": "https://www.radissonblu.com/plazahotel-oslo",
+    "wheelchair": "yes",
+    "wikidata": "Q3499753",
+    "wikimedia_commons": "Category:Radisson Blu Plaza Hotel Oslo",
+    "wikipedia": "no:Oslo Plaza"
+  }
+},
+{
+  "type": "way",
+  "id": 1552909152,
+  "center": {
+    "lat": 59.9075211,
+    "lon": 10.7253243
+  },
+  "tags": {
+    "leisure": "marina",
+    "name": "Småbåtshavn Aker Brygge",
+    "panoramax": "fce941f4-1268-4b6f-95bc-4c84b0960358",
+    "seamark:harbour:category": "marina",
+    "seamark:type": "harbour"
+  }
+},
+{
+  "type": "relation",
+  "id": 2192109,
+  "center": {
+    "lat": 59.9132752,
+    "lon": 10.7432061
+  },
+  "tags": {
+    "Ruter:code": "STT",
+    "Ruter:id": "3010020",
+    "Ruter:name": "Stortinget [T-bane]",
+    "Ruter:pay_zone": "1",
+    "name": "Stortinget",
+    "network": "Ruter",
+    "operator": "Sporveien T-banen",
+    "public_transport": "stop_area",
+    "source": "Ruter",
+    "subway": "yes",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 3875060,
+  "center": {
+    "lat": 59.9080446,
+    "lon": 10.6973156
+  },
+  "tags": {
+    "man_made": "pier",
+    "name": "Dronningen",
+    "source": "geoeye",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 5305837,
+  "center": {
+    "lat": 59.9032124,
+    "lon": 10.7412392
+  },
+  "tags": {
+    "Ruter:code": "VT",
+    "Ruter:id": "3010071",
+    "Ruter:name": "Vippetangen (ved Fiskehallen)",
+    "Ruter:pay_zone": "1",
+    "bus": "yes",
+    "name": "Vippetangen",
+    "network": "Ruter",
+    "public_transport": "stop_area",
+    "source": "Ruter",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 6104597,
+  "center": {
+    "lat": 59.8830776,
+    "lon": 10.7948812
+  },
+  "tags": {
+    "colour": "#a85fa5",
+    "from": "Stortinget",
+    "line": "subway",
+    "name": "3 Stortinget → Mortensrud",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "network:wikipedia": "en:Ruter",
+    "operator": "Sporveien T-banen",
+    "operator:wikidata": "Q7107051",
+    "operator:wikipedia": "en:Sporveien T-banen",
+    "public_transport:version": "2",
+    "ref": "3",
+    "route": "subway",
+    "to": "Mortensrud",
+    "type": "route",
+    "web:colour": "#F07800",
+    "wikidata": "Q15731044",
+    "wikipedia": "en:Oslo Metro"
+  }
+},
+{
+  "type": "relation",
+  "id": 6104599,
+  "center": {
+    "lat": 59.8830939,
+    "lon": 10.7964361
+  },
+  "tags": {
+    "colour": "#a85fa5",
+    "from": "Mortensrud",
+    "line": "subway",
+    "name": "3 Mortensrud → Stortinget",
+    "network": "Ruter",
+    "network:wikidata": "Q750292",
+    "network:wikipedia": "en:Ruter",
+    "operator": "Sporveien T-banen",
+    "operator:wikidata": "Q7107051",
+    "operator:wikipedia": "en:Sporveien T-banen",
+    "public_transport:version": "2",
+    "ref": "3",
+    "route": "subway",
+    "to": "Stortinget",
+    "type": "route",
+    "web:colour": "#F07800",
+    "wikidata": "Q15731044",
+    "wikipedia": "en:Oslo Metro"
+  }
+},
+{
+  "type": "relation",
+  "id": 11158886,
+  "center": {
+    "lat": 59.9138391,
+    "lon": 10.7372096
+  },
+  "tags": {
+    "amenity": "fountain",
+    "image": "https://photos.app.goo.gl/kcF2VWEcHRTYAXNP8",
+    "mapillary": "320375609599255",
+    "name": "Spikersuppa",
+    "name:ko": "스피케슈파",
+    "natural": "water",
+    "source": "bing;knowledge",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 12267199,
+  "center": {
+    "lat": 59.9171934,
+    "lon": 10.7272358
+  },
+  "tags": {
+    "building": "palace",
+    "castle_type": "palace",
+    "historic": "castle",
+    "image": "https://photos.app.goo.gl/jKvSFgui8MqxWi129",
+    "loc_name": "Slottet",
+    "name": "Det kongelige slott",
+    "name:de": "Königspalast",
+    "name:en": "Royal Palace",
+    "name:it": "Palazzo reale di Oslo",
+    "panoramax": "9f1c4690-4f7a-4af2-9cc5-ee327f8be3ad",
+    "ref:bygningsnr": "81416001",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "website": "https://www.kongehuset.no/",
+    "wheelchair": "yes",
+    "wikidata": "Q863932",
+    "wikipedia": "en:Royal Palace, Oslo"
+  }
+},
+{
+  "type": "relation",
+  "id": 12391390,
+  "center": {
+    "lat": 59.9076000,
+    "lon": 10.7372632
+  },
+  "tags": {
+    "barrier": "city_wall",
+    "historic": "fortress",
+    "landuse": "military",
+    "name": "Akershus festning",
+    "name:de": "Festung Akershus",
+    "name:en": "Akershus fortress",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "relation",
+  "id": 13920124,
+  "center": {
+    "lat": 59.9137730,
+    "lon": 10.7214125
+  },
+  "tags": {
+    "brand": "Scandic Hotels",
+    "brand:wikidata": "Q129391",
+    "building": "hotel",
+    "building:levels": "6",
+    "email": "solli@scandichotels.com",
+    "name": "Scandic Solli",
+    "phone": "+47 23 15 57 00",
+    "ref:bygningsnr": "80489595",
+    "roof:shape": "flat",
+    "tourism": "hotel",
+    "type": "multipolygon",
+    "website": "https://www.scandichotels.no/hotell/norge/oslo/scandic-solli",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "relation",
+  "id": 13920125,
+  "center": {
+    "lat": 59.9116084,
+    "lon": 10.7288214
+  },
+  "tags": {
+    "building": "yes",
+    "building:levels": "2",
+    "fee": "yes",
+    "height": "14",
+    "image": "https://photos.app.goo.gl/iuibPomqyaB4ikvYA",
+    "museum": "art",
+    "name": "Nasjonalmuseet",
+    "name:en": "National museum of Norway",
+    "name:fr": "Musée national de Norvège",
+    "opening_date": "2022-06-11",
+    "opening_hours": "Tu-We 10:00-20:00; Th-Su 10:00-17:00",
+    "operator": "Statsbygg",
+    "operator:type": "public",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:qr_code": "no",
+    "start_date": "2022-06-11",
+    "subject:wikidata": "Q7061329",
+    "tourism": "museum",
+    "type": "multipolygon",
+    "website": "https://www.nasjonalmuseet.no/",
+    "wheelchair": "designated",
+    "wikidata": "Q112339532"
+  }
+},
+{
+  "type": "relation",
+  "id": 13931023,
+  "center": {
+    "lat": 59.9066596,
+    "lon": 10.7361132
+  },
+  "tags": {
+    "access": "permissive",
+    "building": "castle",
+    "building:material": "stone",
+    "contact:facebook": "akershusslott",
+    "contact:instagram": "akershus_slott",
+    "ele": "27",
+    "email": "akershusslott.kontakt@mil.no",
+    "facebook": "www.facebook.com/akershusslott/",
+    "heritage": "yes",
+    "historic": "castle",
+    "image": "https://photos.app.goo.gl/cEnMFe8yc9NApLg29",
+    "name": "Akershus slott",
+    "name:de": "Schloss Akershus",
+    "name:en": "Akershus castle",
+    "name:ja": "アーケシュフース城",
+    "name:ko": "아케르스후스 성",
+    "name:pt": "Castelo e Fortaleza de Akershus",
+    "name:ru": "Крепость Акерсхус",
+    "opening_hours": "Mo-Sa 10:00-16:00; Su 12:00-17:00",
+    "phone": "+47 23 09 39 17",
+    "ref:bygningsnr": "81441332",
+    "tourism": "attraction",
+    "type": "multipolygon",
+    "website": "https://kultur.forsvaret.no/museer/akershus-slott",
+    "wikidata": "Q644464"
+  }
+},
+{
+  "type": "relation",
+  "id": 14166523,
+  "center": {
+    "lat": 59.9130907,
+    "lon": 10.7297849
+  },
+  "tags": {
+    "amenity": "concert_hall",
+    "building": "civic",
+    "building:levels": "5;6",
+    "building:min_level": "2",
+    "name": "Oslo konserthus",
+    "ref:bygningsnr": "80659318",
+    "type": "multipolygon",
+    "wikidata": "Q1773297"
+  }
+}
+
+  ]
+}

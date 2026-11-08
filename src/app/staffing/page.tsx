@@ -65,13 +65,13 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
       <div className="ak-bar">
         <span className="ak-bar-label">Staff to</span>
         <div className="ak-seg">
-          <Link href={q("q", "p50")}><button aria-pressed={quantile === "p50"}>Likely day (P50)</button></Link>
-          <Link href={q("q", "p90")}><button aria-pressed={quantile === "p90"}>Busy day (P90)</button></Link>
+          <Link href={q("q", "p50")} aria-current={(quantile === "p50") ? "true" : undefined}>Likely day (P50)</Link>
+          <Link href={q("q", "p90")} aria-current={(quantile === "p90") ? "true" : undefined}>Busy day (P90)</Link>
         </div>
         <span className="ak-bar-label" style={{ marginLeft: 8 }}>Counter method</span>
         <div className="ak-seg">
-          <Link href={q("m", "erlangC")}><button aria-pressed={method === "erlangC"}>Erlang C</button></Link>
-          <Link href={q("m", "squareRoot")}><button aria-pressed={method === "squareRoot"}>Square-root rule</button></Link>
+          <Link href={q("m", "erlangC")} aria-current={(method === "erlangC") ? "true" : undefined}>Erlang C</Link>
+          <Link href={q("m", "squareRoot")} aria-current={(method === "squareRoot") ? "true" : undefined}>Square-root rule</Link>
         </div>
       </div>
 
@@ -106,7 +106,7 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
       <div className="ak-bar" style={{ marginTop: 16 }}>
         <span className="ak-bar-label">Day</span>
         <div className="ak-seg" style={{ flexWrap: "wrap", height: "auto" }}>
-          {dates.map((d) => <Link key={d} href={q("day", d)}><button aria-pressed={d === day}>{fmtDay(d)}</button></Link>)}
+          {dates.map((d) => <Link key={d} href={q("day", d)} aria-current={(d === day) ? "true" : undefined}>{fmtDay(d)}</Link>)}
         </div>
       </div>
 
