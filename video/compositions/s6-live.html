@@ -9,47 +9,127 @@
         @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
         @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
         #root { position: absolute; inset: 0; overflow: hidden; }
-        .s6-bg { position: absolute; inset: 0; background: #ffffff; }
+        .s6-ground { position: absolute; inset: 0; background: #f6f5f2; }
+        .s6-cam { position: absolute; left: 0; top: 0; width: 1600px; height: 1374px; transform-origin: 0 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.12); background: #fff; }
+        .s6-layer { position: absolute; inset: 0; }
+        #s6-sharp { clip-path: inset(-40px -40px -40px -40px round 10px); }
+        #s6-base { filter: blur(0px); }
+        .s6-layer img { display: block; width: 1600px; height: 1374px; }
+        .s6-veil { position: absolute; inset: 0; background: #f6f5f2; opacity: 0; }
+        .s6-ring { position: absolute; border: 3px solid #a32d1d; border-radius: 10px; opacity: 0; }
+        .s6-cap { position: absolute; left: 64px; bottom: 64px; padding: 18px 34px 22px; border-radius: 8px; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.16); font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 76px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s6-cap .w, .s6-big .w { display: inline-block; }
+        .s6-cap .s6-hot { color: #d9622b; }
+        .s6-card { position: absolute; inset: 0; background: #ffffff; }
         .s6-big { position: absolute; left: 0; right: 0; top: 460px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 144px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; }
-        .s6-big .w, .s6-cap .w, .s6-side .w { display: inline-block; }
-        .s6-big .s6-hot { color: #a32d1d; }
-        .s6-cap { position: absolute; left: 120px; top: 88px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 104px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
-        .s6-cap .s6-hot, .s6-side .s6-hot { color: #d9622b; }
-        .s6-cam { position: absolute; left: 80px; top: 468px; width: 1760px; height: 143px; transform-origin: 0 0; }
-        .s6-alarm { position: absolute; inset: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(163, 45, 29, 0.16); }
-        .s6-alarm img { display: block; width: 100%; height: 100%; }
-        .s6-side { position: absolute; left: 120px; top: 500px; width: 840px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 120px; line-height: 1.02; letter-spacing: -0.01em; color: #0a0a0a; }
-        .s6-stock { position: absolute; left: 1040px; top: 336px; width: 727px; height: 607px; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.1); }
-        .s6-stock img { display: block; width: 100%; height: 100%; }
+        .s6-big .s6-red { color: #a32d1d; }
       </style>
 
       <div id="root" data-composition-id="s6-live" data-width="1920" data-height="1080">
-        <div class="s6-bg"></div>
-        <h2 id="s6-big" class="s6-big"><span class="w">The</span> <span class="w s6-hot">rush</span> <span class="w">comes</span> <span class="w">anyway</span></h2>
-        <h2 id="s6-cap" class="s6-cap"><span class="w">Caught</span> <span class="w s6-hot">live.</span> <span class="w">Call</span> <span class="w">help</span> <span class="w">early.</span></h2>
+        <div class="s6-ground"></div>
         <div id="s6-cam" class="s6-cam" data-layout-allow-overflow>
-          <div class="s6-alarm"><img src="assets/shots/shift-alarms.png" alt="" /></div>
+          <div id="s6-base" class="s6-layer"><img src="assets/shots/shift.png" alt="" /></div>
+          <div id="s6-veil" class="s6-veil"></div>
+          <div id="s6-sharp" class="s6-layer"><img src="assets/shots/shift.png" alt="" /></div>
+          <div id="s6-ring" class="s6-ring"></div>
         </div>
-        <h2 id="s6-side" class="s6-side"><span class="w">Stock</span> <span class="w s6-hot">follows</span> <span class="w">sales</span></h2>
-        <div id="s6-stock" class="s6-stock"><img src="assets/shots/shift-stock.png" alt="" /></div>
+        <div id="s6-cap1" class="s6-cap"><span class="w">Caught</span> <span class="w s6-hot">live.</span> <span class="w">Call</span> <span class="w">help</span> <span class="w">early.</span></div>
+        <div id="s6-cap2" class="s6-cap"><span class="w">Stock</span> <span class="w s6-hot">follows</span> <span class="w">sales</span></div>
+        <div id="s6-cap3" class="s6-cap"><span class="w">Every</span> <span class="w s6-hot">spike</span> <span class="w">explained</span></div>
+        <div id="s6-cap4" class="s6-cap"><span class="w">Crew</span> <span class="w s6-hot">notes</span> <span class="w">count</span> <span class="w">too</span></div>
+        <div id="s6-card" class="s6-card" data-layout-allow-overflow>
+          <h2 id="s6-big" class="s6-big"><span class="w">The</span> <span class="w s6-red">rush</span> <span class="w">comes</span> <span class="w">anyway</span></h2>
+        </div>
       </div>
 
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          tl.fromTo("#s6-big .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: "expo.out", stagger: 0.09 }, 0.1);
-          tl.to("#s6-big", { opacity: 0, y: -60, duration: 0.3, ease: "power3.in" }, 1.9);
-          // The alarm slams in, with a short shake.
-          tl.fromTo("#s6-cam", { scale: 1.12, x: -105, y: -8, opacity: 0 }, { scale: 1, x: 0, y: 0, opacity: 1, duration: 0.3, ease: "power4.out" }, 2.2);
-          tl.fromTo("#s6-cam", { rotation: 0 }, { keyframes: [{ rotation: -0.6, duration: 0.06 }, { rotation: 0.5, duration: 0.06 }, { rotation: -0.25, duration: 0.06 }, { rotation: 0, duration: 0.06 }], ease: "none" }, 2.45);
-          tl.fromTo("#s6-cap .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 2.7);
+          const W = 1600, H = 1374;
+          const camEl = "#s6-cam", base = "#s6-base", veil = "#s6-veil", sharp = "#s6-sharp", ring = "#s6-ring";
+          const cam = (cx, cy, s) => ({ x: 960 - cx * s, y: 500 - cy * s, scale: s });
+          const clip = (b, q = 8) => `inset(${b[1] - q}px ${W - b[0] - b[2] - q}px ${H - b[1] - b[3] - q}px ${b[0] - q}px round 10px)`;
+          const FULL = "inset(-40px -40px -40px -40px round 10px)";
+          const focus = (t, b, d = 0.6) => {
+            tl.to(sharp, { clipPath: clip(b), duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(7px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0.5, duration: d, ease: "power2.out" }, t);
+          };
+          const clear = (t, d = 0.6) => {
+            tl.to(sharp, { clipPath: FULL, duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(0px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0, duration: d, ease: "power2.out" }, t);
+          };
+          const ringAt = (t, b, color, q = 8) => {
+            tl.set(ring, { borderColor: color }, t);
+            tl.set(ring, { left: b[0] - q, top: b[1] - q, width: b[2] + 2 * q, height: b[3] + 2 * q }, t);
+            tl.fromTo(ring, { opacity: 0, scale: 1.05 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.out", immediateRender: false }, t);
+          };
+          const unring = (t) => tl.to(ring, { opacity: 0, duration: 0.15 }, t);
+          const move = (t, c, d = 0.8) => tl.to(camEl, { ...c, duration: d, ease: "power2.inOut" }, t);
+          const caption = (sel, t, out) => {
+            tl.fromTo(sel, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, t);
+            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, t + 0.03);
+            if (out != null) tl.to(sel, { opacity: 0, y: -12, duration: 0.25, ease: "power3.in" }, out);
+          };
+          const RED = "#a32d1d", ORANGE = "#d9622b", GREEN = "#1f7a4d";
+
+          // Panel boxes on the Shift page, employee view (CSS px).
+          const BUSY = [1253, 225, 323, 103];
+          const ALARMS = [260, 340, 1316, 107];
+          const CREW = [260, 392, 1316, 53];
+          const STOCK = [641, 543, 443, 370];
+          const CARD = [260, 973, 1316, 352];
+          const RESEARCH = [690, 1058, 428, 267];
+          const CHIP = [830, 1257, 85, 22];
+          const QUOTE = [1143, 1104, 428, 50];
+
+          tl.set(camEl, { x: 96, y: 0, scale: 1.08 }, 0);
+
+          // Type card, then it lifts away to the live Shift screen.
+          tl.fromTo("#s6-big .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.3, ease: "expo.out", stagger: 0.06 }, 0.05);
+          tl.to("#s6-card", { yPercent: -100, duration: 0.45, ease: "power3.in" }, 1.15);
+          // Busyness goes red.
+          focus(1.6, BUSY);
+          move(1.6, cam(1414, 276, 2.0));
+          ringAt(2.1, BUSY, RED);
+          // The alarm: call help early.
+          unring(3.3);
+          focus(3.3, ALARMS);
+          move(3.3, cam(918, 393, 1.4));
+          ringAt(3.7, ALARMS, RED);
+          caption("#s6-cap1", 3.6, 7.0);
           // Push in on the crew line.
-          tl.to("#s6-cam", { x: 144, y: -76, scale: 1.6, duration: 0.9, ease: "power2.inOut" }, 4.0);
-          // Pull back and park the alarm at the top; stock comes in under it.
-          tl.to("#s6-cap", { opacity: 0, y: -30, duration: 0.3, ease: "power3.in" }, 5.9);
-          tl.to("#s6-cam", { x: 0, y: -348, scale: 1, duration: 0.8, ease: "power2.inOut" }, 6.0);
-          tl.fromTo("#s6-stock", { y: 200, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 6.4);
-          tl.fromTo("#s6-side .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 6.6);
+          unring(5.2);
+          focus(5.2, CREW);
+          move(5.2, cam(700, 418, 2.0));
+          ringAt(5.8, CREW, RED);
+          // Stock follows sales.
+          unring(7.2);
+          focus(7.2, STOCK);
+          move(7.2, cam(862, 728, 1.7));
+          ringAt(7.8, STOCK, ORANGE);
+          caption("#s6-cap2", 7.3, 9.6);
+          // Down to the spike card.
+          unring(9.8);
+          focus(9.8, CARD);
+          move(9.8, cam(918, 1149, 1.3), 1.0);
+          caption("#s6-cap3", 10.0, 14.2);
+          // The researched answer is confirmed.
+          focus(11.8, RESEARCH);
+          move(11.8, cam(904, 1191, 1.9));
+          ringAt(12.5, CHIP, GREEN, 6);
+          // What the crew saw.
+          unring(14.4);
+          focus(14.4, QUOTE);
+          move(14.4, cam(1357, 1129, 2.0));
+          ringAt(15.0, QUOTE, ORANGE);
+          caption("#s6-cap4", 14.5, 16.6);
+          // Pull back to the whole Shift dashboard.
+          unring(16.6);
+          clear(16.6);
+          move(16.6, { x: 331, y: 0, scale: 0.786 }, 0.9);
+          tl.to(camEl, { x: 316, y: -14, scale: 0.805, duration: 2.9, ease: "sine.inOut" }, 17.5);
           window.__timelines["s6-live"] = tl;
         })();
       </script>

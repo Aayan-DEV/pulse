@@ -1,5 +1,17 @@
 # Review (2026-11-08)
 
+## Second cut (after Aayan's notes)
+Notes: the film did not show the full dashboards; slow where there was little text; too fast where a lot was shown.
+1. Trains, Forecast, Staffing and Shift now play as camera tours over the full-page captures (see RIG.md).
+2. Everything except the part that matters blurs under a stone veil, and that part gets a ring.
+3. Each tour ends by pulling back to the whole dashboard.
+4. The text-only scenes are shorter (tension 8 s to 5 s, reveal 5 s to 3.6 s, claims 4 s to 3 s). Dense panels hold for 1.5 to 2 s each.
+5. The separate spike scene is merged into the Shift tour, so the camera scrolls down the same page to the spike card.
+
+`hyperframes check`: 0 errors. 4 warnings say each tour uses the same image twice (the blurred copy and the sharp copy). That is intended.
+
+## First cut
+
 `hyperframes check`: 0 findings in lint, runtime, layout, motion, contrast, craft and audio.
 
 ## Frames looked at

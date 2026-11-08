@@ -9,43 +9,89 @@
         @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
         @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
         #root { position: absolute; inset: 0; overflow: hidden; }
-        .s4-bg { position: absolute; inset: 0; background: #f6f5f2; }
-        .s4-cap { position: absolute; left: 120px; top: 88px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 104px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s4-ground { position: absolute; inset: 0; background: #f6f5f2; }
+        .s4-cam { position: absolute; left: 0; top: 0; width: 1600px; height: 1000px; transform-origin: 0 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.12); background: #fff; }
+        .s4-layer { position: absolute; inset: 0; }
+        #s4-sharp { clip-path: inset(-40px -40px -40px -40px round 10px); }
+        #s4-base { filter: blur(0px); }
+        .s4-layer img { display: block; width: 1600px; height: 1000px; }
+        .s4-veil { position: absolute; inset: 0; background: #f6f5f2; opacity: 0; }
+        .s4-ring { position: absolute; border: 3px solid #d9622b; border-radius: 10px; opacity: 0; }
+        .s4-cap { position: absolute; left: 64px; bottom: 64px; padding: 18px 34px 22px; border-radius: 8px; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.16); font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 76px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
         .s4-cap .w { display: inline-block; }
         .s4-cap .s4-hot { color: #d9622b; }
-        .s4-cam { position: absolute; left: 120px; top: 300px; width: 1680px; height: 443px; transform-origin: 0 0; }
-        .s4-shot { position: absolute; inset: 0; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.1); }
-        .s4-shot img { display: block; width: 100%; height: 100%; }
-        .s4-why { position: absolute; left: 461px; top: 246px; width: 998px; height: 798px; }
-        .s4-ring { position: absolute; left: 14px; top: 126px; width: 970px; height: 106px; border: 4px solid #d9622b; border-radius: 8px; }
       </style>
 
       <div id="root" data-composition-id="s4-predict" data-width="1920" data-height="1080">
-        <div id="s4-bg" class="s4-bg"></div>
-        <h2 id="s4-cap1" class="s4-cap"><span class="w">Every</span> <span class="w">hour,</span> <span class="w s4-hot">7 days</span> <span class="w">ahead</span></h2>
-        <h2 id="s4-cap2" class="s4-cap"><span class="w">And</span> <span class="w">it</span> <span class="w">knows</span> <span class="w s4-hot">why</span></h2>
+        <div id="s4-ground" class="s4-ground"></div>
         <div id="s4-cam" class="s4-cam" data-layout-allow-overflow>
-          <div class="s4-shot"><img src="assets/shots/forecast-days.png" alt="" /></div>
-        </div>
-        <div id="s4-why" class="s4-why">
-          <div class="s4-shot"><img src="assets/shots/forecast-why.png" alt="" /></div>
+          <div id="s4-base" class="s4-layer"><img src="assets/shots/forecast.png" alt="" /></div>
+          <div id="s4-veil" class="s4-veil"></div>
+          <div id="s4-sharp" class="s4-layer"><img src="assets/shots/forecast.png" alt="" /></div>
           <div id="s4-ring" class="s4-ring"></div>
         </div>
+        <div id="s4-cap1" class="s4-cap"><span class="w">Every</span> <span class="w">hour,</span> <span class="w s4-hot">7 days</span> <span class="w">ahead</span></div>
+        <div id="s4-cap2" class="s4-cap"><span class="w">And</span> <span class="w">it</span> <span class="w">knows</span> <span class="w s4-hot">why</span></div>
       </div>
 
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          tl.fromTo("#s4-bg", { yPercent: 100 }, { yPercent: 0, duration: 0.6, ease: "power2.inOut" }, 0);
-          tl.fromTo("#s4-cap1 .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 0.5);
-          tl.fromTo("#s4-cam", { y: 120, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 0.8);
-          // Push in on Today.
-          tl.to("#s4-cam", { x: 250, y: -70, scale: 2, duration: 1.1, ease: "power2.inOut" }, 3.0);
-          tl.to("#s4-cap1", { opacity: 0, y: -30, duration: 0.3, ease: "power3.in" }, 4.6);
-          tl.to("#s4-cam", { x: -1400, opacity: 0, duration: 0.6, ease: "power3.in" }, 4.6);
-          tl.fromTo("#s4-why", { x: 900, opacity: 0 }, { x: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 4.9);
-          tl.fromTo("#s4-cap2 .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 5.0);
-          tl.fromTo("#s4-ring", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power4.out" }, 5.9);
+          const W = 1600, H = 1000;
+          const camEl = "#s4-cam", base = "#s4-base", veil = "#s4-veil", sharp = "#s4-sharp", ring = "#s4-ring";
+          const cam = (cx, cy, s) => ({ x: 960 - cx * s, y: 500 - cy * s, scale: s });
+          const clip = (b, q = 8) => `inset(${b[1] - q}px ${W - b[0] - b[2] - q}px ${H - b[1] - b[3] - q}px ${b[0] - q}px round 10px)`;
+          const FULL = "inset(-40px -40px -40px -40px round 10px)";
+          const focus = (t, b, d = 0.6) => {
+            tl.to(sharp, { clipPath: clip(b), duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(7px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0.5, duration: d, ease: "power2.out" }, t);
+          };
+          const clear = (t, d = 0.6) => {
+            tl.to(sharp, { clipPath: FULL, duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(0px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0, duration: d, ease: "power2.out" }, t);
+          };
+          const ringAt = (t, b, q = 8) => {
+            tl.set(ring, { left: b[0] - q, top: b[1] - q, width: b[2] + 2 * q, height: b[3] + 2 * q }, t);
+            tl.fromTo(ring, { opacity: 0, scale: 1.05 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.out", immediateRender: false }, t);
+          };
+          const caption = (sel, t, out) => {
+            tl.fromTo(sel, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, t);
+            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, t + 0.03);
+            if (out != null) tl.to(sel, { opacity: 0, y: -12, duration: 0.25, ease: "power3.in" }, out);
+          };
+
+          // Panel boxes on the Forecast page (CSS px).
+          const DAYS = [260, 200, 1316, 347];
+          const TODAY = [340, 380, 145, 140];
+          const HOURS = [260, 559, 867, 347];
+          const WHY = [1142, 559, 434, 347];
+          const XMAS = [1142, 614, 434, 46];
+          const WHOLE = { x: 96, y: 0, scale: 1.08 };
+
+
+          // The whole Forecast dashboard slides up into view.
+          tl.fromTo("#s4-ground", { yPercent: 100 }, { yPercent: 0, duration: 0.6, ease: "power2.inOut" }, 0);
+          tl.fromTo(camEl, { x: 96, y: 1080, scale: 1.08 }, { ...WHOLE, duration: 0.6, ease: "power2.inOut" }, 0);
+          caption("#s4-cap1", 0.5, 4.5);
+          // Orders per day, ring Today.
+          focus(1.4, DAYS);
+          tl.to(camEl, { ...cam(918, 373, 1.3), duration: 0.8, ease: "power2.inOut" }, 1.4);
+          ringAt(1.9, TODAY);
+          // Hour by hour.
+          tl.to(ring, { opacity: 0, duration: 0.15 }, 3.1);
+          focus(3.1, HOURS);
+          tl.to(camEl, { ...cam(693, 732, 1.6), duration: 0.8, ease: "power2.inOut" }, 3.1);
+          // Why, ring the Christmas market.
+          caption("#s4-cap2", 4.7, 8.9);
+          focus(4.6, WHY);
+          tl.to(camEl, { ...cam(1359, 736, 2.0), duration: 0.8, ease: "power2.inOut" }, 4.6);
+          ringAt(5.3, XMAS);
+          // Back out to the whole page.
+          tl.to(ring, { opacity: 0, duration: 0.2 }, 7.5);
+          clear(7.5);
+          tl.to(camEl, { ...WHOLE, duration: 0.8, ease: "power2.inOut" }, 7.5);
           window.__timelines["s4-predict"] = tl;
         })();
       </script>

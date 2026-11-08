@@ -36,7 +36,7 @@
             <span>A calmer crew</span>
           </div>
         </div>
-        <div id="s8-brand" class="s8-end">
+        <div id="s8-brand" class="s8-end" data-layout-allow-overflow>
           <div class="s8-mark">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path pathLength="1" d="M19.07 4.93A10 10 0 0 0 6.99 3.34" />
@@ -57,16 +57,17 @@
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          [["#s8-i1", 0.15], ["#s8-i2", 1.05], ["#s8-i3", 1.95]].forEach(function (p) {
+          [["#s8-i1", 0.15], ["#s8-i2", 0.55], ["#s8-i3", 0.95]].forEach(function (p) {
             tl.fromTo(p[0], { opacity: 0, x: -60, filter: "blur(6px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out" }, p[1]);
           });
-          tl.to(["#s8-i1", "#s8-i2", "#s8-i3"], { opacity: 0, y: -50, duration: 0.3, ease: "power3.in", stagger: 0.05 }, 3.9);
+          tl.to(["#s8-i1", "#s8-i2", "#s8-i3"], { opacity: 0, y: -50, duration: 0.3, ease: "power3.in", stagger: 0.05 }, 3.0);
           // The mark draws in on the impact, then the name holds.
-          tl.fromTo("#s8-brand", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 4.3);
-          tl.fromTo("#s8-brand .s8-mark path, #s8-brand .s8-mark circle", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDasharray: 1, strokeDashoffset: 0, duration: 0.8, ease: "power2.out", stagger: 0.05 }, 4.35);
-          tl.fromTo("#s8-brand .s8-mark", { scale: 0.6, rotation: -40 }, { scale: 1, rotation: 0, duration: 0.9, ease: "expo.out" }, 4.35);
-          tl.fromTo("#s8-name", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 4.9);
-          tl.fromTo("#s8-place", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 5.2);
+          tl.fromTo("#s8-brand", { opacity: 0 }, { opacity: 1, duration: 0.01 }, 3.35);
+          tl.fromTo("#s8-brand .s8-mark path, #s8-brand .s8-mark circle", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDasharray: 1, strokeDashoffset: 0, duration: 0.8, ease: "power2.out", stagger: 0.05 }, 3.4);
+          tl.fromTo("#s8-brand .s8-mark", { scale: 0.6, rotation: -40 }, { scale: 1, rotation: 0, duration: 0.9, ease: "expo.out" }, 3.4);
+          tl.fromTo("#s8-name", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 3.9);
+          tl.fromTo("#s8-place", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 4.2);
+          tl.fromTo("#s8-brand", { scale: 1 }, { scale: 1.035, duration: 4.4, ease: "sine.inOut" }, 4.2);
           window.__timelines["s8-end"] = tl;
         })();
       </script>

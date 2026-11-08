@@ -11,14 +11,14 @@ OBJECTS: The real panels: Biggest shutdowns (Trains), Orders per day + Why (Fore
          the two red alarms + Stock (Shift), the spike card with three answers (Shift). The lucide Radar icon is the mark.
 MOTION:  Arrivals expo.out / power4.out 0.5-0.8 s; camera moves power2.inOut 0.8-1.2 s; exits power3.in 0.3 s.
          Titles enter per word with blur 6 px -> 0 in 0.45 s expo.out, 0.08 s apart, and then hold still.
-SHOTS:   0-6     hook: Biggest shutdowns, camera close on "9 in 10 cancelled for 22 hours", pulls back to the list. Title "Mon 11 Nov 2024".
-         6-14    tension: red flood. "Commuters pour out at Nationaltheatret" -> "Straight into a rush nobody planned" -> cuts: "Emergency calls" / "Empty fryers" / "A stressed crew".
-         14-18.5 reveal: white flood, Radar draws, "Pulse sees it coming".
-         18.5-27 predict: Orders per day panel, push to Today; Why panel carried in: Christmas market +179 orders (the Why panel), Today 1,000 orders.
-         27-35   plan: green staffing status, Who works pans; "Shifts planned a week ahead".
-         35-44   live: "The rush comes anyway" -> alarms slam in -> push on "5 crew needed, 3 planned" -> Stock panel.
-         44-52   payoff: spike card, punch into the confirmed researched answer, then the crew's note.
-         52-60   claim + end: "Fewer emergency shifts" / "Less waste" / "A calmer crew", then Radar + "Pulse Oslo" held 2.5 s.
+SHOTS:   0-6     hook: the full Trains dashboard, scroll to History, blur, ring "Mon, 11 Nov 2024: 99 of 100", then "9 in 10 cancelled for 22 hours".
+         5.6-10.6 tension: the ringed row floods red. "Days like this break the plan." The old way: three quick cuts.
+         10.2-13.8 reveal: white circle, the Radar mark draws, "Pulse sees it coming".
+         13.4-23.2 Forecast tour: whole page, Orders per day (ring Today), hour by hour, Why (ring Christmas market +179), whole page.
+         23-31   Staffing tour: whole page, "22 people working today" (green ring), crew needed vs planned, Who works, whole page.
+         31-51.4 Shift tour (employee view): "The rush comes anyway", Busyness, the two alarms, the crew line, Stock, the spike card,
+                 the confirmed badge, the crew's note, whole page.
+         51.4-60 claims, then Radar + "Pulse Oslo" + "Burger King Klingenberggata 5".
 BANNED:  dark void, glow, particles, purple or blue gradients, glass cards, cream-paper-serif-mono-label look,
          three cards in a row, KPI grids, title over a dimmed screenshot, docked logo, everything fading up,
          invented numbers or savings claims, invented UI.

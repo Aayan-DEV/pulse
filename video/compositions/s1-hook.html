@@ -9,37 +9,67 @@
         @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
         @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
         #root { position: absolute; inset: 0; overflow: hidden; }
-        .s1-bg { position: absolute; inset: 0; background: #f6f5f2; }
-        .s1-cam { position: absolute; left: 310px; top: 300px; width: 1300px; height: 710px; transform-origin: 0 0; }
-        .s1-panel { position: absolute; inset: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.1); background: #fff; }
-        .s1-panel img { display: block; width: 1300px; height: 710px; }
-        .s1-mark { position: absolute; left: 18px; top: 156px; width: 1264px; height: 104px; border: 4px solid #a32d1d; border-radius: 8px; }
-        .s1-title { position: absolute; left: 0; right: 0; top: 96px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 128px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; }
-        .s1-title .w { display: inline-block; }
-        .s1-title .s1-hot { color: #a32d1d; }
+        .s1-ground { position: absolute; inset: 0; background: #f6f5f2; }
+        .s1-cam { position: absolute; left: 0; top: 0; width: 1600px; height: 1886px; transform-origin: 0 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.12); background: #fff; }
+        .s1-layer { position: absolute; inset: 0; }
+        #s1-sharp { clip-path: inset(-40px -40px -40px -40px round 10px); }
+        #s1-base { filter: blur(0px); }
+        .s1-layer img { display: block; width: 1600px; height: 1886px; }
+        .s1-veil { position: absolute; inset: 0; background: #f6f5f2; opacity: 0; }
+        .s1-ring { position: absolute; border: 3px solid #a32d1d; border-radius: 10px; opacity: 0; }
+        .s1-cap { position: absolute; left: 64px; bottom: 64px; padding: 18px 34px 22px; border-radius: 8px; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.16); font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 76px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s1-cap .w { display: inline-block; }
+        .s1-cap .s1-hot { color: #a32d1d; }
       </style>
 
       <div id="root" data-composition-id="s1-hook" data-width="1920" data-height="1080">
-        <div class="s1-bg"></div>
+        <div class="s1-ground"></div>
         <div id="s1-cam" class="s1-cam" data-layout-allow-overflow>
-          <div class="s1-panel"><img src="assets/shots/transit-shutdowns.png" alt="" /></div>
-          <div id="s1-mark" class="s1-mark"></div>
+          <div id="s1-base" class="s1-layer"><img src="assets/shots/transit.png" alt="" /></div>
+          <div id="s1-veil" class="s1-veil"></div>
+          <div id="s1-sharp" class="s1-layer"><img src="assets/shots/transit.png" alt="" /></div>
+          <div id="s1-ring" class="s1-ring"></div>
         </div>
-        <h1 id="s1-title" class="s1-title"><span class="w">The</span> <span class="w s1-hot">worst</span> <span class="w">day</span> <span class="w">for</span> <span class="w">trains</span></h1>
+        <div id="s1-cap" class="s1-cap"><span class="w">The</span> <span class="w s1-hot">worst</span> <span class="w">day</span> <span class="w">for</span> <span class="w">trains</span></div>
       </div>
 
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          const cam = document.querySelector("#s1-cam");
-          const words = document.querySelectorAll("#s1-title .w");
-          // Open close on row 1 (already readable at frame 0), then pull back to the whole panel.
-          tl.fromTo(cam, { x: -110, y: -153, scale: 1.9 }, { x: -110, y: -153, scale: 1.9, duration: 1.6 }, 0);
-          tl.to(cam, { x: 32.5, y: -10, scale: 0.95, duration: 1.3, ease: "power2.inOut" }, 1.6);
-          tl.fromTo("#s1-mark", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 0.5);
-          tl.fromTo(words, { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 2.4);
-          // Exit: everything except the red row steps back as the red takes over.
-          tl.to(["#s1-title", ".s1-panel"], { opacity: 0.0, duration: 0.3, ease: "power3.in" }, 5.7);
+          const W = 1600, H = 1886;
+          const camEl = "#s1-cam", base = "#s1-base", veil = "#s1-veil", sharp = "#s1-sharp", ring = "#s1-ring";
+          const cam = (cx, cy, s) => ({ x: 960 - cx * s, y: 500 - cy * s, scale: s });
+          const clip = (b, q = 8) => `inset(${b[1] - q}px ${W - b[0] - b[2] - q}px ${H - b[1] - b[3] - q}px ${b[0] - q}px round 10px)`;
+          const FULL = "inset(-40px -40px -40px -40px round 10px)";
+          const focus = (t, b, d = 0.6) => {
+            tl.to(sharp, { clipPath: clip(b), duration: d, ease: "power2.inOut" }, t);
+            tl.to(base, { filter: "blur(7px)", duration: d, ease: "power2.out" }, t);
+            tl.to(veil, { opacity: 0.5, duration: d, ease: "power2.out" }, t);
+          };
+          const ringAt = (t, b, q = 8) => {
+            tl.set(ring, { left: b[0] - q, top: b[1] - q, width: b[2] + 2 * q, height: b[3] + 2 * q }, t);
+            tl.fromTo(ring, { opacity: 0, scale: 1.05 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.out", immediateRender: false }, t);
+          };
+
+          // Panel boxes on the Trains page (CSS px).
+          const WORST_ROW = [260, 1600, 650, 44];   // Mon, 11 Nov 2024: 99 of 100
+          const SHUT_ROW = [926, 1555, 650, 52];    // Nationaltheatret trains: 9 in 10 cancelled for 22 hours
+
+          tl.set(camEl, { x: 0, y: 0, scale: 1.2 }, 0);
+
+          // The whole Trains dashboard, then scroll down to its history.
+          tl.fromTo("#s1-cap", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, 0);
+          tl.fromTo("#s1-cap .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, 0.03);
+          tl.to(camEl, { ...cam(918, 1660, 1.15), duration: 1.1, ease: "power2.inOut" }, 0.7);
+          // Blur the rest; ring the worst day, then the shutdown behind it.
+          focus(1.9, WORST_ROW);
+          tl.to(camEl, { ...cam(585, 1622, 1.7), duration: 0.8, ease: "power2.inOut" }, 1.9);
+          ringAt(2.1, WORST_ROW);
+          tl.to(ring, { opacity: 0, duration: 0.15 }, 3.0);
+          focus(3.0, SHUT_ROW, 0.7);
+          tl.to(camEl, { ...cam(1251, 1581, 1.9), duration: 0.8, ease: "power2.inOut" }, 3.0);
+          ringAt(3.6, SHUT_ROW);
+          tl.to("#s1-cap", { opacity: 0, y: -12, duration: 0.25, ease: "power3.in" }, 5.3);
           window.__timelines["s1-hook"] = tl;
         })();
       </script>

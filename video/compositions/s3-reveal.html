@@ -41,12 +41,12 @@
         (function () {
           const tl = gsap.timeline({ paused: true });
           // A white circle opens from the centre and wipes the red away.
-          tl.fromTo("#s3-bg", { clipPath: "circle(0% at 50% 40%)" }, { clipPath: "circle(120% at 50% 40%)", duration: 0.8, ease: "expo.inOut" }, 0);
-          tl.fromTo("#s3-stack .s3-mark path, #s3-stack .s3-mark circle", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDasharray: 1, strokeDashoffset: 0, duration: 0.9, ease: "power2.out", stagger: 0.06 }, 0.5);
-          tl.fromTo(".s3-mark", { scale: 0.7, rotation: -30 }, { scale: 1, rotation: 0, duration: 1.0, ease: "expo.out" }, 0.5);
-          tl.fromTo("#s3-title .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.09 }, 1.1);
+          tl.fromTo("#s3-bg", { clipPath: "circle(0% at 50% 40%)" }, { clipPath: "circle(120% at 50% 40%)", duration: 0.7, ease: "expo.inOut" }, 0);
+          tl.fromTo("#s3-stack .s3-mark path, #s3-stack .s3-mark circle", { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDasharray: 1, strokeDashoffset: 0, duration: 0.7, ease: "power2.out", stagger: 0.05 }, 0.35);
+          tl.fromTo(".s3-mark", { scale: 0.7, rotation: -30 }, { scale: 1, rotation: 0, duration: 0.8, ease: "expo.out" }, 0.35);
+          tl.fromTo("#s3-title .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out", stagger: 0.07 }, 0.7);
           // Push: the page scrolls up into the product.
-          tl.to("#s3-stack", { y: -260, opacity: 0, duration: 0.6, ease: "power2.inOut" }, 4.4);
+          tl.to("#s3-stack", { y: -260, opacity: 0, duration: 0.5, ease: "power2.inOut" }, 2.9);
           window.__timelines["s3-reveal"] = tl;
         })();
       </script>
