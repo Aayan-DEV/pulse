@@ -3,6 +3,7 @@ import PageHead from "@/components/PageHead";
 import { readData } from "@/lib/data";
 import type { CityEvent } from "@/lib/types";
 import { STORE } from "@/lib/types";
+import { employeeEvents } from "@/lib/shift/employeeEvents";
 import EventsTable from "@/components/EventsTable";
 
 export const dynamic = "force-dynamic";
@@ -18,8 +19,9 @@ export default function EventsPage() {
   const hist = readData<CityEvent[]>("events-history.json", []);
   const up = readData<CityEvent[]>("events-upcoming.json", []);
   const cal = readData<CityEvent[]>("events-calendar.json", []);
+  const emp = employeeEvents().map((e) => ({ ...e, note: `Employee-reported ${new Date(e.reportedAt).toLocaleString("en-GB", { timeZone: "Europe/Oslo" })}` }));
   const seen = new Set<string>();
-  const all = [...up, ...hist, ...cal].filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)))
+  const all = [...emp, ...up, ...hist, ...cal].filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)))
     .map((e) => ({ ...e, distanceM: Math.round(distM(e.lat, e.lon)) }))
     .sort((a, b) => b.start.localeCompare(a.start));
   const cats = all.reduce<Record<string, number>>((m, e) => ((m[e.category] = (m[e.category] ?? 0) + 1), m), {});

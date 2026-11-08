@@ -1,6 +1,7 @@
 // What-if engine: reruns the real model with a scenario's inputs (an added event, weather, transit, cruise,
 // payday or Christmas-market overrides) and compares it with the normal forecast on the same inputs.
 import "server-only";
+import { employeeEvents } from "./shift/employeeEvents";
 import { metWeather } from "./forecast";
 import { readData } from "./data";
 import type { CityEvent, CruiseCall, EventCategory, ForecastHour, WeatherHour } from "./types";
@@ -61,7 +62,7 @@ export async function runWhatIf(sc: Scenario): Promise<WhatIfResult> {
     const same = lastW ? weather.filter((x) => new Date(x.time).getUTCHours() === t.getUTCHours()).pop() : undefined;
     return same ?? { time: t.toISOString(), tempC: 5, precipMm: 0, windMs: 3 };
   };
-  const lib = [...readData<CityEvent[]>("events-upcoming.json", []), ...readData<CityEvent[]>("events-history.json", []), ...readData<CityEvent[]>("events-calendar.json", [])];
+  const lib = [...readData<CityEvent[]>("events-upcoming.json", []), ...readData<CityEvent[]>("events-history.json", []), ...readData<CityEvent[]>("events-calendar.json", []), ...employeeEvents()];
   const end = from.getTime() + (N + 6) * 3600_000;
   const seen = new Set<string>();
   const events = lib.filter((e) => !seen.has(e.id) && (seen.add(e.id), Date.parse(e.end) >= from.getTime() - 6 * 3600_000 && Date.parse(e.start) <= end));

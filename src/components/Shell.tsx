@@ -5,27 +5,28 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   LayoutGrid, Map, TrendingUp, Search, Users, CalendarDays, TrainFront,
-  Gauge, BookOpen, Database, Sun, Moon, Radar, Bot, FlaskConical,
+  Gauge, BookOpen, Database, Sun, Moon, Radar, Bot, FlaskConical, Clock3,
 } from "lucide-react";
 
 const NAV: { group: string; items: { href: string; label: string; icon: React.ElementType }[] }[] = [
-  { group: "Store", items: [
-    { href: "/", label: "Overview", icon: LayoutGrid },
+  { group: "Employee", items: [
+    { href: "/", label: "Shift", icon: Clock3 },
+  ]},
+  { group: "Manager", items: [
+    { href: "/overview", label: "Overview", icon: LayoutGrid },
     { href: "/map", label: "Live map", icon: Map },
     { href: "/forecast", label: "Forecast", icon: TrendingUp },
-    { href: "/why", label: "Why it spiked", icon: Search },
     { href: "/what-if", label: "What if", icon: FlaskConical },
-  ]},
-  { group: "People", items: [
+    { href: "/why", label: "Why it spiked", icon: Search },
     { href: "/staffing", label: "Staffing", icon: Users },
   ]},
-  { group: "Signals", items: [
+  { group: "Manager · Signals", items: [
     { href: "/events", label: "Events", icon: CalendarDays },
     { href: "/transit", label: "Trains and trams", icon: TrainFront },
     { href: "/agents", label: "Agents", icon: Bot },
     { href: "/sources", label: "Data sources", icon: Database },
   ]},
-  { group: "Model", items: [
+  { group: "Manager · Model", items: [
     { href: "/benchmark", label: "Benchmark", icon: Gauge },
     { href: "/method", label: "Method", icon: BookOpen },
   ]},

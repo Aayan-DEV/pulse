@@ -1,3 +1,4 @@
+import { employeeEvents } from "./shift/employeeEvents";
 import "server-only";
 import type { CityEvent, CruiseCall, ForecastHour, TransitSituation, WeatherHour } from "./types";
 import { STORE } from "./types";
@@ -102,7 +103,7 @@ export async function getForecast(days = 2): Promise<ForecastPayload> {
   let transit: { situations: TransitSituation[]; stats: TransitStats } = { situations: [], stats: {} };
   try { transit = await enturNow(); } catch (e) { errors.push(e instanceof Error ? e.message : "Entur failed"); }
 
-  const events = [...readData<CityEvent[]>("events-upcoming.json", []), ...readData<CityEvent[]>("events-history.json", []), ...readData<CityEvent[]>("events-calendar.json", [])];
+  const events = [...readData<CityEvent[]>("events-upcoming.json", []), ...readData<CityEvent[]>("events-history.json", []), ...readData<CityEvent[]>("events-calendar.json", []), ...employeeEvents()];
   const winStart = from.getTime() - 6 * 3600_000, winEnd = from.getTime() + (hoursN + 6) * 3600_000;
   const seen = new Set<string>();
   const evWin = events.filter((e) => {
