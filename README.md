@@ -100,7 +100,7 @@ Synthetic sales prove the pipeline and the method, not real effect sizes. With r
 - **Model:**
   - LightGBM quantile models (P10, P50, P90), calibrated with split conformal prediction.
   - Inference runs in TypeScript from the exported trees; a parity test against Python passes.
-- **Error (WAPE):** 21.4%, against 31.0% (hour × weekday mean) and 32.2% (same hour last week). The noise floor is 19.1%; it rose when day-to-day noise was added to the simulator.
+- **Error (WAPE):** 21.6%, against 31.0% (hour × weekday mean) and 32.2% (same hour last week). The noise floor is 19.1%; it rose when day-to-day noise was added to the simulator.
 - **Range:** P10 to P90 catches 78.5% of hours, against an 80% target.
 - **Spike finder:** the true cause ranks first on 85% of 40 spike days and in the top 3 on 100%.
 - **Effect recovery (transit):** the model estimates 18.55 extra orders per hour against 17.85 true, with a correlation of 0.906.
