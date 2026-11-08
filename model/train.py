@@ -136,12 +136,14 @@ def main():
                    "weather": json.load(open(DATA / "weather_meta.json"))},
         "mysteryEffects": sim_meta["mystery"],
         "model": {"type": "LightGBM quantile regression", "quantiles": QUANTS, "trees": N_TREES, **{k: v for k, v in PARAMS.items() if k in ("learning_rate", "num_leaves", "min_data_in_leaf")}},
-        "openingHours": "Assumed: daily 10:00-01:00, Fri/Sat nights until 03:00 (Europe/Oslo).",
+        "openingHours": "Real hours from the owner calendar: Mon-Thu 10:00-24:00, Fri-Sat 10:00-04:00, Sun 11:00-24:00 (Europe/Oslo).",
         "assumptions": [
             "Sales are simulated; drivers (weather, holidays, events, transit, cruise) are real where the files exist.",
             "Baseline weekday lunch peak 95 transactions/hour; Saturday summer lunch about 145.",
             "No sales lags: the model forecasts from calendar, weather, events, transit and cruise only.",
             "P10/P90 are calibrated by split conformal (CQR) on the last 3 months of train.",
+            "Crowds via Nationaltheatret: events at Ullevaal (share 0.35, 10 min), Holmenkollen (0.50, 20 min), Unity Arena Fornebu (0.25, 25 min), Bislett (0.15, 10 min) and Ekeberg (0.10, 20 min) count at any distance. Share = part of the crowd assumed to pass Nationaltheatret; windows are 2 h before (start - travel) and 1.5 h after (end + travel). Simulated response: 0.4 % of the routed crowd per pre hour, 0.8 % per post hour. All assumptions, set from the route map, not measured.",
+            "Cruise: a PATTERN, not real calls. July uses the CruiseMapper count for July 2027 (about 151 calls; 8 ships on 3 and 4 Jul, 7 on 22 and 26 Jul); the May, Jun, Aug and Sep counts are an assumed season shape. Simulated response: 1.2 orders per 1000 passengers in port per hour.",
         ],
         "featureDefinitions": DEFINITIONS,
     }

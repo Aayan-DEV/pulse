@@ -1,6 +1,6 @@
 # Demand model (BK Klingenberg)
 
-Generated 2026-11-08T08:22:15+00:00 by `model/train.py`. Rebuild: `model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs.py`, then `npx tsx scripts/model/parity.ts`.
+Generated 2026-11-08T08:51:48+00:00 by `model/train.py`. Rebuild: `model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs.py`, then `npx tsx scripts/model/parity.ts`.
 
 ## Real vs simulated
 
@@ -10,9 +10,9 @@ Generated 2026-11-08T08:22:15+00:00 by `model/train.py`. Rebuild: `model/.venv/b
   - Holidays: `date-holidays` 'NO' public holidays (the same library in Python via an export and in TS live).
   - Transit: src/data/transit-history.json (53178 rows, real Entur SIRI-ET). Rail late-5-min share, rail cancelled share and metro late-5-min share at Nationaltheatret, hourly. The simulator's transit uplift is driven by these real hours.
   - Events: src/data/events-history.json (111 events).
-  - Cruise: SIMULATED seasonal cruise pattern (cruise-history.json missing).
+  - Cruise: src/data/cruise-history.json (2164 calls, PATTERN from CruiseMapper July 2027, not real calls).
   - Christmas market: calendar rule for Jul i Vinterland at Spikersuppa (about 0.3 km away): open 7 Nov to 3 Jan, closed 24 Dec. Listings give 7 Nov 2026 to 3 Jan 2027 (rove.me/to/oslo/christmas-markets); one Visit Oslo page says 15 Nov, and 2025 listings vary (7 or 8 Nov). The same window is assumed every year. `days_to_christmas` sits in Calendar & holidays, not in Christmas market.
-- **Assumed:** opening hours. Assumed: daily 10:00-01:00, Fri/Sat nights until 03:00 (Europe/Oslo).
+- **Opening hours:** Real hours from the owner calendar: Mon-Thu 10:00-24:00, Fri-Sat 10:00-04:00, Sun 11:00-24:00 (Europe/Oslo).
 
 ## Simulator assumptions
 
@@ -30,47 +30,50 @@ Generated 2026-11-08T08:22:15+00:00 by `model/train.py`. Rebuild: `model/.venv/b
 ## Model
 
 - LightGBM quantile regression, three models (alpha 0.1 / 0.5 / 0.9), 300 trees, num_leaves 31.
-- 21 features, all computable live from timestamp, weather, events, transit situations/stats and cruise calls (`src/data/model/features.json`).
+- 23 features, all computable live from timestamp, weather, events, transit situations/stats and cruise calls (`src/data/model/features.json`).
 - **No sales lags.** Live inference needs no POS feed. The cost: the model cannot adapt to a level shift (new competitor, refurbishment) until it is retrained.
-- Split (Europe/Oslo dates): fit 2023-01-01 to 2025-07-31, conformal calibration 2025-08-01 to 2025-10-31, test 2025-11-01 to 2026-11-07. Open-hour rows: fit 14681, calibration 1433, test 5795.
+- Split (Europe/Oslo dates): fit 2023-01-01 to 2025-07-31, conformal calibration 2025-08-01 to 2025-10-31, test 2025-11-01 to 2026-11-07. Open-hour rows: fit 14141, calibration 1380, test 5584.
 - Calibration: split conformal (CQR), one offset per tail, scaled by sqrt(P50).
 
 ## Results (test period, open hours)
 
 | Model | WAPE | MAE | Pinball P50 |
 |---|---|---|---|
-| LightGBM P50 (this model) | 20.2% | 15.7 | 7.86 |
-| Seasonal naive (same hour last week) | 31.7% | 24.7 | 12.33 |
-| Oracle: true simulated mean (noise floor) | 18.0% | 14.0 | 7.01 |
-| Hour x weekday mean | 29.8% | 23.2 | 11.58 |
+| LightGBM P50 (this model) | 20.0% | 16.2 | 8.09 |
+| Seasonal naive (same hour last week) | 31.5% | 25.4 | 12.71 |
+| Oracle: true simulated mean (noise floor) | 17.9% | 14.5 | 7.25 |
+| Hour x weekday mean | 30.8% | 24.8 | 12.42 |
 
-- Pinball P10 / P90 (calibrated): 3.20 / 4.14; raw: 3.22 / 4.12.
-- 80% interval coverage: raw 75.7%, calibrated 79.6% (below P10 8.8%, above P90 11.6%).
+- Pinball P10 / P90 (calibrated): 3.31 / 4.29; raw: 3.39 / 4.27.
+- 80% interval coverage: raw 72.0%, calibrated 77.9% (below P10 9.0%, above P90 13.1%).
 
 ### Effect recovery (model uplift = P50 minus P50 with that group set to neutral values, mean over hours where the true effect is active)
 
 | Group | Active hours | True mean uplift | Model mean uplift | Corr |
 |---|---|---|---|---|
-| Weather | 2102 | -0.95 | 3.23 | 0.825 |
-| Calendar & holidays | 1394 | 2.6 | 2.25 | 0.777 |
-| Events | 28 | 24.04 | 6.5 | -0.614 |
-| Transit disruption | 3164 | 17.55 | 17.75 | 0.927 |
-| Cruise | 623 | 11.42 | 7.18 | 0.584 |
-| Christmas market | 907 | 12.03 | 6.37 | 0.758 |
+| Weather | 2058 | -0.94 | 2.93 | 0.828 |
+| Calendar & holidays | 1367 | 2.66 | 3.03 | 0.767 |
+| Events | 27 | 24.28 | 9.81 | -0.545 |
+| Crowds via Nationaltheatret | 25 | 49.2 | 15.76 | 0.995 |
+| Transit disruption | 3077 | 17.85 | 18.33 | 0.91 |
+| Cruise | 979 | 12.43 | 9.08 | 0.873 |
+| Christmas market | 877 | 12.34 | 6.85 | 0.704 |
 | Mystery (hidden) | 20 | 67.22 | 0.0 |  |
 
 Weather has the wrong sign on average: the neutral point (12 C, dry, 3 m/s) is rare in winter, so the model's counterfactual is an extrapolation. The per-hour correlation is still high.
 
 ### Spike finder
 
-test days with >= 2 open hours above calibrated P90, ranked by excess. Days evaluated: 40. Top-1 hit 72.5%, top-3 hit 92.5%.
+test days with >= 2 open hours above calibrated P90, ranked by excess. Days evaluated: 40. Top-1 hit 80.0%, top-3 hit 95.0%.
 
 | True cause | Days | Top-1 | Top-3 |
 |---|---|---|---|
-| Mystery | 6 | 16.7% | 100.0% |
+| Mystery | 6 | 33.3% | 83.3% |
+| Transit disruption | 24 | 95.8% | 95.8% |
 | Events | 2 | 100.0% | 100.0% |
-| Transit disruption | 26 | 88.5% | 88.5% |
-| Christmas market | 3 | 0.0% | 100.0% |
+| Christmas market | 2 | 0.0% | 100.0% |
+| Crowds via Nationaltheatret | 2 | 100.0% | 100.0% |
+| Cruise | 1 | 0.0% | 100.0% |
 | noise | 3 | 100.0% | 100.0% |
 
 "Mystery" and "noise" days count as a hit when "No logged cause" is ranked. Mystery days in the test period: 2025-12-11, 2026-09-26, 2026-03-26, 2025-12-02, 2026-04-11, 2026-01-07.
@@ -79,14 +82,15 @@ test days with >= 2 open hours above calibrated P90, ranked by excess. Days eval
 
 | Dropped | WAPE | Delta |
 |---|---|---|
-| none | 20.3% | +0.00 pp |
-| Baseline/time | 33.7% | +13.35 pp |
-| Calendar & holidays | 20.8% | +0.48 pp |
-| Weather | 21.9% | +1.60 pp |
-| Events | 20.3% | -0.04 pp |
-| Transit disruption | 31.6% | +11.28 pp |
-| Cruise | 20.4% | +0.06 pp |
-| Christmas market | 20.3% | -0.06 pp |
+| none | 20.2% | +0.00 pp |
+| Baseline/time | 31.5% | +11.31 pp |
+| Calendar & holidays | 20.4% | +0.20 pp |
+| Weather | 20.9% | +0.78 pp |
+| Events | 20.2% | +0.02 pp |
+| Transit disruption | 31.7% | +11.55 pp |
+| Cruise | 20.4% | +0.27 pp |
+| Christmas market | 20.1% | -0.05 pp |
+| Crowds via Nationaltheatret | 20.2% | +0.01 pp |
 
 ## Drivers in the app
 

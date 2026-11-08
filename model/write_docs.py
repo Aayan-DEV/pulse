@@ -38,7 +38,7 @@ Generated {m['generatedAt']} by `model/train.py`. Rebuild: `model/.venv/bin/pyth
   - Events: {m['inputs']['events']}.
   - Cruise: {m['inputs']['cruise']}.
   - Christmas market: calendar rule for Jul i Vinterland at Spikersuppa (about 0.3 km away): open 7 Nov to 3 Jan, closed 24 Dec. Listings give 7 Nov 2026 to 3 Jan 2027 (rove.me/to/oslo/christmas-markets); one Visit Oslo page says 15 Nov, and 2025 listings vary (7 or 8 Nov). The same window is assumed every year. `days_to_christmas` sits in Calendar & holidays, not in Christmas market.
-- **Assumed:** opening hours. {m['openingHours']}
+- **Opening hours:** {m['openingHours']}
 
 ## Simulator assumptions
 

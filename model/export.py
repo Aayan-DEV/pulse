@@ -76,7 +76,7 @@ def export_all(models, conf, test, raw, cal, grouped, bench, spikes, meta, event
 
     # parity set: 200 test rows, with event/cruise subsets, synthetic situations and some synthetic transit stats
     rng = np.random.default_rng(3)
-    busy = np.where((t.ev_active + t.ev_pre + t.ev_post + t.transit_disruption + t.cruise_pax + t.xmas_market) > 0)[0]
+    busy = np.where((t.ev_active + t.ev_pre + t.ev_post + t.transit_disruption + t.cruise_pax + t.xmas_market + t.crowd_nt_pre + t.crowd_nt_post) > 0)[0]
     pick = list(rng.choice(busy, min(100, len(busy)), replace=False)) if len(busy) else []
     rest = np.setdiff1d(np.arange(len(t)), pick)
     pick = sorted(pick + list(rng.choice(rest, 200 - len(pick), replace=False)))
@@ -122,6 +122,9 @@ def export_all(models, conf, test, raw, cal, grouped, bench, spikes, meta, event
         cal_rows.append([dd.isoformat(), c["is_holiday"], c["school_holiday"], c["payday_window"], c["days_to_christmas"], c["xmas_market"]])
         dd += timedelta(days=1)
     parity["calendar"] = cal_rows
+    from features import is_open
+    wk = pd.date_range("2026-11-16", periods=24 * 8, freq="h", tz="Europe/Oslo")  # Mon 16 Nov .. Mon 23 Nov
+    parity["openWeek"] = [[x.isoformat(), bool(o)] for x, o in zip(wk, is_open(wk.hour.to_numpy(), wk.dayofweek.to_numpy()))]
     Xn = build_features(ts[:5], np.zeros(5), np.zeros(5), np.zeros(5), [], [], [])
     parity["noStats"] = [{"time": rows.time.iloc[i].isoformat(), "features": [float(v) for v in Xn.iloc[i].to_numpy()]} for i in range(5)]
     _w("parity.json", parity, DATA)

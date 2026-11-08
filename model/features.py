@@ -31,6 +31,8 @@ FEATURES = [
     "cruise_pax",
     # Christmas market
     "xmas_market",
+    # Crowds via Nationaltheatret (route-weighted, no distance cutoff)
+    "crowd_nt_pre", "crowd_nt_post",
 ]
 
 GROUPS = {
@@ -41,7 +43,51 @@ GROUPS = {
     "Transit disruption": ["transit_disruption", "rail_late5_share", "rail_cancelled_share", "metro_late5_share"],
     "Cruise": ["cruise_pax"],
     "Christmas market": ["xmas_market"],
+    "Crowds via Nationaltheatret": ["crowd_nt_pre", "crowd_nt_post"],
 }
+
+# Venues whose crowds travel through Nationaltheatret (T-bane common tunnel or the rail tunnel), whatever the distance.
+# ASSUMPTIONS (documented in docs/model.md): share = part of the crowd that passes Nationaltheatret on the way in or
+# out; travelMin = typical ride from Nationaltheatret to the venue gate. Not measured; set from the route map.
+#   Ullevaal: T-bane lines 4/5 stop at Ullevaal stadion, about 10 min via the common tunnel -> 0.35
+#   Holmenkollen: line 1 (Holmenkollbanen) starts through Nationaltheatret, about 20 min -> 0.50
+#   Unity Arena, Fornebu: trains via Nationaltheatret to Lysaker, then bus or walk, about 25 min -> 0.25
+#   Bislett: tram 17/18 or walk; few use Nationaltheatret, about 10 min -> 0.15
+#   Ekeberg: trams 13/19 from Jernbanetorget; few pass Nationaltheatret, about 20 min -> 0.10
+ROUTE_VENUES = [
+    {"name": "Ullevaal Stadion", "lat": 59.9488, "lon": 10.7346, "share": 0.35, "travelMin": 10},
+    {"name": "Holmenkollen", "lat": 59.9637, "lon": 10.6676, "share": 0.50, "travelMin": 20},
+    {"name": "Unity Arena, Fornebu", "lat": 59.8955, "lon": 10.6235, "share": 0.25, "travelMin": 25},
+    {"name": "Bislett Stadion", "lat": 59.9250, "lon": 10.7330, "share": 0.15, "travelMin": 10},
+    {"name": "Ekeberg", "lat": 59.8990, "lon": 10.7700, "share": 0.10, "travelMin": 20},
+]
+ROUTE_MATCH_KM = 0.8
+ROUTE_PRE_S = 2 * 3600    # arrivals pass Nationaltheatret during the 2 h before (start - travel)
+ROUTE_POST_S = 5400       # departures pass during the 1.5 h after (end + travel)
+
+
+def route_venue(e: dict):
+    """The route venue an event is held at (within 0.8 km), or None. Transit, cruise and protest events never count."""
+    if e["category"] in ("transit", "cruise", "protest"):
+        return None
+    for v in ROUTE_VENUES:
+        if haversine_km(v["lat"], v["lon"], e["lat"], e["lon"]) <= ROUTE_MATCH_KM:
+            return v
+    return None
+
+
+def route_windows(e: dict, v: dict):
+    """(pre windows, post windows, value). Events over 12 h are split into daily sessions with the same clock times."""
+    s = iso_s(e["start"]); en = iso_s(e["end"]); dur = en - s
+    if dur <= 12 * 3600:
+        sessions = [(s, en)]
+    else:
+        daily = dur % 86400 or 12 * 3600
+        sessions = [(s + k * 86400, s + k * 86400 + daily) for k in range(int(dur // 86400) + 1)]
+    tr = v["travelMin"] * 60
+    pre = [(a - tr - ROUTE_PRE_S, a - tr) for a, _ in sessions]
+    post = [(b + tr, b + tr + ROUTE_POST_S) for _, b in sessions]
+    return pre, post, (e.get("expectedAttendance") or 500) * v["share"] / 1000.0
 
 DEFINITIONS = {
     "hour": "Local hour 0-23 (Europe/Oslo).",
@@ -64,6 +110,8 @@ DEFINITIONS = {
     "rail_cancelled_share": "Share of rail calls in the hour cancelled (Entur). NaN when unknown.",
     "metro_late5_share": "Share of metro calls in the hour more than 5 min late (Entur). NaN when unknown.",
     "cruise_pax": "Sum of passengers (default 2500) of cruise ships in port this hour / 1000.",
+    "crowd_nt_pre": "Sum over events at a route venue (Ullevaal, Holmenkollen, Unity Arena, Bislett, Ekeberg; no distance cutoff) of attendance x route share / 1000, when the hour overlaps [start - travel - 2 h, start - travel). Shares and travel times are assumptions (ROUTE_VENUES).",
+    "crowd_nt_post": "Same sum when the hour overlaps [end + travel, end + travel + 1.5 h). Events over 12 h count as daily sessions.",
     "xmas_market": "1 when Jul i Vinterland (Spikersuppa, ~0.3 km) is open: 7 Nov..3 Jan, closed 24 Dec. 2026 season listed as 7 Nov 2026 - 3 Jan 2027; same window assumed every year.",
 }
 
@@ -73,7 +121,7 @@ NEUTRAL = {
     "temp_c": 12.0, "precip_mm": 0.0, "wind_ms": 3.0,
     "ev_active": 0, "ev_pre": 0, "ev_post": 0, "ev_near_count": 0,
     "transit_disruption": 0, "rail_late5_share": 0.05, "rail_cancelled_share": 0.0, "metro_late5_share": 0.05,
-    "cruise_pax": 0, "xmas_market": 0,
+    "cruise_pax": 0, "xmas_market": 0, "crowd_nt_pre": 0, "crowd_nt_post": 0,
 }
 
 _HOL = None
@@ -179,8 +227,15 @@ def build_features(times_s: np.ndarray, temp, precip, wind, events: list, situat
     out["wind_ms"] = np.asarray(wind, dtype=float)
 
     ev_active = np.zeros(n); ev_pre = np.zeros(n); ev_post = np.zeros(n); ev_near = np.zeros(n)
-    transit = np.zeros(n)
+    transit = np.zeros(n); crowd_pre = np.zeros(n); crowd_post = np.zeros(n)
     for e in events:
+        rv = route_venue(e)
+        if rv is not None:
+            pre, post, val = route_windows(e, rv)
+            for a, b in pre:
+                crowd_pre += np.where((a < t + 3600) & (b > t), val, 0.0)
+            for a, b in post:
+                crowd_post += np.where((a < t + 3600) & (b > t), val, 0.0)
         s = iso_s(e["start"]); en = iso_s(e["end"])
         d = haversine_km(STORE_LAT, STORE_LON, e["lat"], e["lon"])
         cat = e["category"]
@@ -212,7 +267,8 @@ def build_features(times_s: np.ndarray, temp, precip, wind, events: list, situat
         cpax += np.where((t >= a) & (t < b), (c.get("passengers") or 2500) / 1000.0, 0.0)
 
     out.update({"ev_active": ev_active, "ev_pre": ev_pre, "ev_post": ev_post, "ev_near_count": ev_near,
-                "transit_disruption": transit, "cruise_pax": cpax})
+                "transit_disruption": transit, "cruise_pax": cpax,
+                "crowd_nt_pre": crowd_pre, "crowd_nt_post": crowd_post})
     # No stats passed at all -> assume a typical hour (the NEUTRAL values). Passed but NaN -> unknown.
     out["rail_late5_share"] = np.full(n, NEUTRAL["rail_late5_share"]) if rail_late5 is None else np.asarray(rail_late5, dtype=float)
     out["rail_cancelled_share"] = np.full(n, NEUTRAL["rail_cancelled_share"]) if rail_canc is None else np.asarray(rail_canc, dtype=float)
@@ -221,7 +277,10 @@ def build_features(times_s: np.ndarray, temp, precip, wind, events: list, situat
 
 
 def is_open(hour: np.ndarray, dow: np.ndarray) -> np.ndarray:
-    """Assumed opening hours: daily 10:00-01:00; Fri and Sat nights until 03:00.
-    Hour 0 is open every day; hours 1-2 only on Sat/Sun mornings (Fri/Sat nights)."""
+    """Real opening hours (owner calendar, docs/bk-klingenberg-demand-calendar.md):
+    Mon-Thu 10:00-24:00, Fri-Sat 10:00-04:00, Sun 11:00-24:00.
+    Hours 0-3 are open only on Sat and Sun mornings (the Fri and Sat nights)."""
     hour = np.asarray(hour); dow = np.asarray(dow)
-    return (hour >= 10) | (hour == 0) | (((hour == 1) | (hour == 2)) & ((dow == 5) | (dow == 6)))
+    day = (hour >= 10) & ~((dow == 6) & (hour == 10))
+    night = (hour <= 3) & ((dow == 5) | (dow == 6))
+    return day | night

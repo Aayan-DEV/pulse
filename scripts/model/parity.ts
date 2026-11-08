@@ -1,7 +1,7 @@
 // Parity test: TS feature builder + tree inference vs Python. Run: npx tsx scripts/model/parity.ts
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { buildFeatures, FEATURE_NAMES } from "../../src/lib/model/features";
+import { buildFeatures, FEATURE_NAMES, isOpen } from "../../src/lib/model/features";
 import { predictQuantiles } from "../../src/lib/model/predict";
 
 const root = join(__dirname, "..", "..");
@@ -49,6 +49,13 @@ for (const r of parity.noStats as { time: string; features: number[] }[]) {
   const x = buildFeatures(new Date(r.time), { tempC: 0, precipMm: 0, windMs: 0 }, [], [], []);
   r.features.forEach((pv, i) => { if (!close(x[i], pv, 1e-9)) { featFail++; console.error(`noStats ${FEATURE_NAMES[i]} @ ${r.time}: ts=${x[i]} py=${pv}`); } });
 }
+// Opening hours: TS isOpen must match Python is_open for a full week, including Fri/Sat nights to 04:00.
+let openFail = 0;
+for (const [ts, py] of (parity.openWeek ?? []) as [string, boolean][]) {
+  if (isOpen(new Date(ts)) !== py) { openFail++; if (openFail <= 10) console.error(`isOpen ${ts}: ts=${!py} py=${py}`); }
+}
+console.log(`openHoursChecked=${(parity.openWeek ?? []).length} openMismatches=${openFail}`);
+featFail += openFail;
 console.log(`calendarDays=${parity.calendar.length} calendarMismatches=${calFail}`);
 console.log(`rows=${parity.rows.length} featureMismatches=${featFail} predictionMismatches=${predFail} maxPredDiff=${maxPredDiff.toExponential(2)}`);
 if (featFail || predFail) {

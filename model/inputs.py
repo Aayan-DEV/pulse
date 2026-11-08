@@ -59,7 +59,7 @@ def load_cruise() -> tuple[list, str]:
                 c = c.get("calls", c.get("cruise", []))
             c = [x for x in c if "arrival" in x and "departure" in x]
             if c:
-                return c, f"src/data/cruise-history.json ({len(c)} calls)"
+                return c, f"src/data/cruise-history.json ({len(c)} calls, PATTERN from CruiseMapper July 2027, not real calls)"
         except Exception:
             pass
     # Simulated seasonal pattern: May-Sep, ~55% of days a ship, 08:00-17:00 local.

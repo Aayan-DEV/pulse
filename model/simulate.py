@@ -8,12 +8,12 @@ import math
 import numpy as np
 import pandas as pd
 
-from features import STORE_LAT, STORE_LON, build_features, haversine_km, iso_s, is_open
+from features import STORE_LAT, STORE_LON, build_features, haversine_km, iso_s, is_open, route_venue, route_windows
 from inputs import DATA, END, START, load_cruise, load_events, load_transit_stats, load_weather
 
 PEAK = 95.0  # weekday lunch transactions/hour at baseline (see docs/model.md)
 HOUR_PROFILE = {10: .30, 11: .62, 12: 1.0, 13: .92, 14: .62, 15: .58, 16: .70, 17: .85, 18: .82, 19: .68,
-                20: .56, 21: .48, 22: .42, 23: .36, 0: .26, 1: .30, 2: .22}
+                20: .56, 21: .48, 22: .42, 23: .36, 0: .26, 1: .30, 2: .22, 3: .15}
 DOW = [0.90, 0.92, 0.95, 1.0, 1.12, 1.22, 1.0]
 MONTH = [0, .85, .88, .92, .97, 1.05, 1.15, 1.25, 1.18, 1.0, .95, .95, 1.05]
 MYSTERY_KINDS = ["viral TikTok about the store", "private event nearby let out", "film shoot crowd on Karl Johan",
@@ -41,7 +41,7 @@ def simulate(seed: int = 42):
     # Baseline: hour x dow x month x trend x Fri/Sat bar crowd
     prof = np.array([HOUR_PROFILE.get(x, 0.0) for x in h])
     sun_morning = (dow == 6) & (h <= 11) & (h >= 10)
-    bar = ((np.isin(dow, [4, 5]) & (h >= 22)) | (np.isin(dow, [5, 6]) & (h <= 2))).astype(float)
+    bar = ((np.isin(dow, [4, 5]) & (h >= 22)) | (np.isin(dow, [5, 6]) & (h <= 3))).astype(float)
     base = PEAK * prof * np.array(DOW)[dow] * np.array(MONTH)[mon] * (1 + 0.02 * X["years_since_2023"].to_numpy())
     base *= np.where(sun_morning, 0.7, 1.0) * (1 + 0.4 * bar)
     base = np.where(open_, base, 0.0)
@@ -121,11 +121,31 @@ def simulate(seed: int = 42):
         top_val = np.where(better, v, top_val); top_ev = np.where(better, e["id"], top_ev)
     truth["Events"] = ev_add
 
+    # Crowds via Nationaltheatret: route venues at any distance. ASSUMPTION: 0.4 % of the routed crowd buys per
+    # pre-window hour and 0.8 % per post-window hour (post-event hunger is the bigger effect).
+    cr_add = np.zeros(n)
+    for e in events:
+        rv = route_venue(e)
+        if rv is None:
+            continue
+        pre, post, val = route_windows(e, rv)
+        v = np.zeros(n)
+        for a, b in pre:
+            v += np.where((a < t + 3600) & (b > t), val * 1000 * 0.004, 0.0)
+        for a, b in post:
+            v += np.where((a < t + 3600) & (b > t), val * 1000 * 0.008, 0.0)
+        v = np.where(open_, v, 0.0)
+        cr_add += v
+        better = v > top_val
+        top_val = np.where(better, v, top_val); top_ev = np.where(better, e["id"], top_ev)
+    truth["Crowds via Nationaltheatret"] = cr_add
+
     # Cruise passengers (additive, 09-17 local)
     cr = X["cruise_pax"].to_numpy()
-    truth["Cruise"] = np.where(open_ & (h >= 9) & (h <= 17), cr * 4.0, 0.0)
+    # ASSUMPTION: 1.2 orders per 1000 passengers in port per hour (about 1 % of passengers over a 9 h call).
+    truth["Cruise"] = np.where(open_ & (h >= 9) & (h <= 17), cr * 1.2, 0.0)
 
-    mu = np.maximum(mu_mult + truth["Events"] + truth["Cruise"], 0.0)
+    mu = np.maximum(mu_mult + truth["Events"] + truth["Crowds via Nationaltheatret"] + truth["Cruise"], 0.0)
     lam = rng.gamma(NB_R, np.maximum(mu, 1e-9) / NB_R)
     y = np.where(open_, rng.poisson(lam), 0)
 

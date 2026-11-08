@@ -4,9 +4,9 @@ import math
 import numpy as np
 import pandas as pd
 
-from features import FEATURES, GROUPS, NEUTRAL, STORE_LAT, STORE_LON, haversine_km, iso_s
+from features import FEATURES, GROUPS, NEUTRAL, STORE_LAT, STORE_LON, haversine_km, iso_s, route_venue, route_windows
 
-TRUTH_GROUPS = ["Weather", "Calendar & holidays", "Events", "Transit disruption", "Cruise", "Christmas market"]
+TRUTH_GROUPS = ["Weather", "Calendar & holidays", "Events", "Crowds via Nationaltheatret", "Transit disruption", "Cruise", "Christmas market"]
 
 
 def neutralize(X: pd.DataFrame, group: str) -> pd.DataFrame:
@@ -46,6 +46,15 @@ def _candidates(day_rows, events, cruise):
         if e["category"] == "cruise":
             continue
         d = haversine_km(STORE_LAT, STORE_LON, e["lat"], e["lon"])
+        rv = route_venue(e)
+        if rv is not None:
+            pre, post, val = route_windows(e, rv)
+            ov = np.mean(np.any([(ts < b) & (ts + 3600 > a) for a, b in pre + post], axis=0))
+            if ov > 0:
+                cands.append({"id": e["id"], "kind": "event", "title": f"{e['title']} (crowd via Nationaltheatret)",
+                              "category": e["category"], "distanceKm": round(d, 2),
+                              "score": round(float(ov * math.log1p(val * 1000) * 1.5), 3)})
+                continue
         lim = 10 if e["category"] == "transit" else 3
         if d > lim:
             continue
@@ -87,7 +96,7 @@ def _truth(day_rows, excess, mystery_dates):
     if g == "Mystery":
         info = mystery_dates.get(str(day_rows.local_date.iloc[0]), {})
         return {"group": "Mystery", "id": "unexplained", "label": f"Hidden: {info.get('kind', 'mystery effect')}", "mystery": True}
-    if g == "Events":
+    if g in ("Events", "Crowds via Nationaltheatret"):
         ids = day_rows["truth_top_event"][day_rows["truth_top_event"] != ""]
         eid = ids.mode().iloc[0] if len(ids) else ""
         return {"group": g, "id": eid, "label": f"Event {eid}"}

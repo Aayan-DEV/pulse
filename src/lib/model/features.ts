@@ -11,7 +11,41 @@ export const FEATURE_NAMES = [
   "transit_disruption", "rail_late5_share", "rail_cancelled_share", "metro_late5_share",
   "cruise_pax",
   "xmas_market",
+  "crowd_nt_pre", "crowd_nt_post",
 ] as const;
+
+/** Venues whose crowds pass Nationaltheatret, at any distance. ASSUMPTIONS, mirrored from model/features.py ROUTE_VENUES. */
+export const ROUTE_VENUES = [
+  { name: "Ullevaal Stadion", lat: 59.9488, lon: 10.7346, share: 0.35, travelMin: 10 },
+  { name: "Holmenkollen", lat: 59.9637, lon: 10.6676, share: 0.5, travelMin: 20 },
+  { name: "Unity Arena, Fornebu", lat: 59.8955, lon: 10.6235, share: 0.25, travelMin: 25 },
+  { name: "Bislett Stadion", lat: 59.925, lon: 10.733, share: 0.15, travelMin: 10 },
+  { name: "Ekeberg", lat: 59.899, lon: 10.77, share: 0.1, travelMin: 20 },
+] as const;
+const ROUTE_MATCH_KM = 0.8, ROUTE_PRE_S = 2 * 3600, ROUTE_POST_S = 5400;
+
+export function routeVenue(e: CityEvent): (typeof ROUTE_VENUES)[number] | null {
+  if (e.category === "transit" || e.category === "cruise" || e.category === "protest") return null;
+  for (const v of ROUTE_VENUES) if (haversineKm(v.lat, v.lon, e.lat, e.lon) <= ROUTE_MATCH_KM) return v;
+  return null;
+}
+
+/** Pre and post windows (epoch seconds) and the routed crowd / 1000. Events over 12 h are daily sessions. */
+export function routeWindows(e: CityEvent, v: (typeof ROUTE_VENUES)[number]) {
+  const s = Date.parse(e.start) / 1000, en = Date.parse(e.end) / 1000, dur = en - s;
+  let sessions: [number, number][];
+  if (dur <= 12 * 3600) sessions = [[s, en]];
+  else {
+    const daily = dur % 86400 || 12 * 3600;
+    sessions = Array.from({ length: Math.floor(dur / 86400) + 1 }, (_, k) => [s + k * 86400, s + k * 86400 + daily]);
+  }
+  const tr = v.travelMin * 60;
+  return {
+    pre: sessions.map(([a]) => [a - tr - ROUTE_PRE_S, a - tr] as [number, number]),
+    post: sessions.map(([, b]) => [b + tr, b + tr + ROUTE_POST_S] as [number, number]),
+    value: ((e.expectedAttendance || 500) * v.share) / 1000.0,
+  };
+}
 
 /** Hourly Entur delay stats. Leave a field undefined (or NaN) when unknown. */
 export type TransitStats = {
@@ -96,10 +130,12 @@ export function osloParts(time: Date): { y: number; m: number; d: number; hour: 
   return { y, m, d, hour, dow: weekdayMon0(ymd(y, m, d)) };
 }
 
-/** Assumed opening hours: daily 10:00-01:00, Fri/Sat nights until 03:00. */
+/** Real opening hours (owner calendar): Mon-Thu 10-24, Fri-Sat 10-04, Sun 11-24. Same as model/features.py is_open. */
 export function isOpen(time: Date): boolean {
   const { hour, dow } = osloParts(time);
-  return hour >= 10 || hour === 0 || ((hour === 1 || hour === 2) && (dow === 5 || dow === 6));
+  const day = hour >= 10 && !(dow === 6 && hour === 10);
+  const night = hour <= 3 && (dow === 5 || dow === 6);
+  return day || night;
 }
 
 function toRad(x: number): number {
@@ -136,8 +172,14 @@ export function buildFeatures(
   const dtx = daysBetween(ymd(y, 12, 24), date);
   const md = m * 100 + d;
 
-  let evActive = 0, evPre = 0, evPost = 0, evNear = 0, transit = 0;
+  let evActive = 0, evPre = 0, evPost = 0, evNear = 0, transit = 0, crowdPre = 0, crowdPost = 0;
   for (const e of events) {
+    const rv = routeVenue(e);
+    if (rv) {
+      const { pre, post, value } = routeWindows(e, rv);
+      for (const [a, b] of pre) if (a < t + 3600 && b > t) crowdPre += value;
+      for (const [a, b] of post) if (a < t + 3600 && b > t) crowdPost += value;
+    }
     const s = sec(e.start), en = sec(e.end);
     const dist = haversineKm(STORE.lat, STORE.lon, e.lat, e.lon);
     const active = t >= s && t < en;
@@ -180,6 +222,7 @@ export function buildFeatures(
     transitStats ? num(transitStats.metroLate5Share) : 0.05,
     cpax,
     (md >= 1107 || md <= 103) && md !== 1224 ? 1 : 0, // Jul i Vinterland: 7 Nov..3 Jan, closed 24 Dec
+    crowdPre, crowdPost,
   ];
 }
 
