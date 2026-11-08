@@ -13,10 +13,17 @@ type Bench = {
   effectRecovery: { group: string; activeHours: number; trueMeanUplift: number | null; modelMeanUplift: number | null; corr?: number | null; note?: string }[];
   spikeFinder: { spikeDaysEvaluated: number; definition: string; top1: number; top3: number; byTruth: Record<string, { days: number; top1: number; top3: number }> };
   ablation: { dropped: string; wape: number; delta: number }[];
+  eventDiagnostics?: Record<string, { featureOnHours: number; trueEffectHours: number; featureOnWithoutEffect: number; shareOfTestOrders: number; wapeOnEffectHours: number | null; baselineWapeOnEffectHours: number | null }>;
 };
 type Hist = { daily: { date: string; actual: number; p10: number; p50: number; p90: number }[]; note: string };
 
 const pct = (v: number | null | undefined, d = 1) => (v == null ? "n/a" : `${(v * 100).toFixed(d)}%`);
+const weak = (e: Bench["effectRecovery"][number]) =>
+  e.note ? null // hidden by design (mystery effects)
+  : e.corr != null && e.corr < 0.3 ? "Weak match"
+  : e.trueMeanUplift != null && e.modelMeanUplift != null && Math.sign(e.trueMeanUplift) !== Math.sign(e.modelMeanUplift) ? "Wrong sign"
+  : e.trueMeanUplift != null && e.modelMeanUplift != null && e.trueMeanUplift > 0 && e.modelMeanUplift < 0.5 * e.trueMeanUplift ? "Under half size"
+  : null;
 const d10 = (iso: string) => new Date(iso).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Oslo" });
 
 export default function BenchmarkPage() {
@@ -61,7 +68,7 @@ export default function BenchmarkPage() {
           <table className="ak-table">
             <thead><tr><th>Reason</th><th className="num">Hours active</th><th className="num">True</th><th className="num">Model</th><th className="num">Match</th></tr></thead>
             <tbody>{b.effectRecovery.map((e) => (
-              <tr key={e.group}><td style={{ whiteSpace: "normal" }}>{e.group}{e.note && <span className="sub">{e.note}</span>}</td>
+              <tr key={e.group}><td style={{ whiteSpace: "normal" }}>{e.group}{weak(e) && <> <span className="ak-pill ak-pill--neg">{weak(e)}</span></>}{e.note && <span className="sub">{e.note}</span>}</td>
                 <td className="num">{e.activeHours.toLocaleString("en")}</td>
                 <td className="num">{e.trueMeanUplift == null ? "n/a" : e.trueMeanUplift.toFixed(1)}</td>
                 <td className="num">{e.modelMeanUplift == null ? "n/a" : e.modelMeanUplift.toFixed(1)}</td>
@@ -71,6 +78,34 @@ export default function BenchmarkPage() {
           <p className="ak-panel-foot">Match is the correlation between the model&apos;s hourly estimate and the true hourly effect. Few active hours means too little to learn from; pooling many stores fixes that.</p>
         </section>
       </div>
+
+      {b.eventDiagnostics && (() => {
+        const ev = b.eventDiagnostics.Events, cr = b.eventDiagnostics["Crowds via Nationaltheatret"];
+        const er = (g: string) => b.effectRecovery.find((e) => e.group === g);
+        const evAbl = b.ablation.find((a) => a.dropped === "Events");
+        const wx = er("Weather");
+        const evWorse = ev.wapeOnEffectHours != null && ev.baselineWapeOnEffectHours != null && ev.wapeOnEffectHours > ev.baselineWapeOnEffectHours;
+        return (
+          <section className="ak-panel" style={{ marginTop: 16 }}>
+            <div className="ak-panel-head"><div><h2 className="ak-h">Weak spots</h2><p className="ak-note">Where the model is not yet good enough. Shown here instead of hidden.</p></div></div>
+            <div className="ak-kpis">
+              <div className="ak-kpi"><div className="ak-kpi-label">Real event hours, test year</div><div className="ak-kpi-value is-bad">{ev.trueEffectHours}</div><div className="ak-kpi-sub">{pct(ev.shareOfTestOrders, 2)} of all orders</div></div>
+              <div className="ak-kpi"><div className="ak-kpi-label">Event signal on, no real effect</div><div className="ak-kpi-value is-bad">{ev.featureOnWithoutEffect}</div><div className="ak-kpi-sub">of {ev.featureOnHours} hours it is on</div></div>
+              <div className="ak-kpi"><div className="ak-kpi-label">Error on event hours</div><div className={`ak-kpi-value${evWorse ? " is-bad" : ""}`}>{pct(ev.wapeOnEffectHours)}</div><div className="ak-kpi-sub">Hour × weekday average: {pct(ev.baselineWapeOnEffectHours)}</div></div>
+              <div className="ak-kpi"><div className="ak-kpi-label">Error on crowd hours</div><div className="ak-kpi-value">{pct(cr?.wapeOnEffectHours)}</div><div className="ak-kpi-sub">Hour × weekday average: {pct(cr?.baselineWapeOnEffectHours)}</div></div>
+            </div>
+            <div className="ak-panel-body ak-prose" style={{ maxWidth: "none" }}>
+              <ul>
+                <li><b>Events nearby are weak.</b> Match {er("Events")?.corr?.toFixed(2)}, model {er("Events")?.modelMeanUplift?.toFixed(1)} vs true {er("Events")?.trueMeanUplift?.toFixed(1)} orders per hour, and dropping them moves the error by {evAbl ? `${evAbl.delta >= 0 ? "+" : ""}${(evAbl.delta * 100).toFixed(2)} pt` : "n/a"}{evWorse ? "; on real event hours the model does worse than a plain average" : ""}.
+                  {" "}<b>Why:</b> too few event hours ({ev.trueEffectHours} in the test year) and a diluted signal: it is on for {ev.featureOnHours} hours, and {ev.featureOnWithoutEffect} of them are long or small events with no real effect, so the model cannot tell the real ones apart.</li>
+                <li><b>Crowds via Nationaltheatret get the timing right but the size wrong.</b> Match {er("Crowds via Nationaltheatret")?.corr?.toFixed(2)}, but the model gives {er("Crowds via Nationaltheatret")?.modelMeanUplift?.toFixed(1)} vs true {er("Crowds via Nationaltheatret")?.trueMeanUplift?.toFixed(1)} orders per hour. <b>Why:</b> only about 20 stadium events in three years of training data.</li>
+                {wx && <li><b>Weather has the wrong sign on average</b> (model {wx.modelMeanUplift?.toFixed(1)} vs true {wx.trueMeanUplift?.toFixed(1)}), though the hour-by-hour match is {wx.corr?.toFixed(2)}. <b>Why:</b> the &quot;no weather&quot; point (12°C, dry, 3 m/s) is rare in winter, so switching weather off is a guess outside the data.</li>}
+                <li><b>Fix:</b> give every event a real attendance and a session length instead of a default size, drop month-long items from the hourly event signal, and pool many stores so rare events repeat.</li>
+              </ul>
+            </div>
+          </section>
+        );
+      })()}
 
       <div className="ak-grid" style={{ marginTop: 16 }}>
         <section className="ak-panel">

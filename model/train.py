@@ -121,6 +121,22 @@ def main():
     spikes, hit = spike_finder(test, cal, events, cruise, sim_meta)
     bench["spikeFinder"] = hit
     bench["ablation"] = ablation(fit, wape, fitd, test)
+
+    # Event diagnostics: are event effects too rare to learn, or are the features too diluted?
+    p50 = cal["p50"]; hx = np.nan_to_num(hdmean, nan=float(np.mean(y)))
+    diag = {}
+    for g, cols in (("Events", ["ev_active", "ev_pre", "ev_post"]), ("Crowds via Nationaltheatret", ["crowd_nt_pre", "crowd_nt_post"])):
+        on = (test[cols].sum(axis=1) > 0).to_numpy()
+        real = (test[f"truth_{g}"] > 0.5).to_numpy()
+        diag[g] = {
+            "featureOnHours": int(on.sum()), "trueEffectHours": int(real.sum()),
+            "featureOnWithoutEffect": int((on & ~real).sum()),
+            "shareOfTestOrders": float(test[f"truth_{g}"].sum() / y.sum()),
+            "wapeOnEffectHours": wape(y[real], p50[real]) if real.any() else None,
+            "baselineWapeOnEffectHours": wape(y[real], hx[real]) if real.any() else None,
+        }
+    bench["eventDiagnostics"] = diag
+    print(json.dumps(diag))
     print(json.dumps(bench["effectRecovery"], indent=0)); print(hit); print(json.dumps(bench["ablation"]))
 
     meta = {

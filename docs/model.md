@@ -1,6 +1,6 @@
 # Demand model (BK Klingenberg)
 
-Generated 2026-11-08T08:51:48+00:00 by `model/train.py`. Rebuild: `model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs.py`, then `npx tsx scripts/model/parity.ts`.
+Generated 2026-11-08T08:53:39+00:00 by `model/train.py`. Rebuild: `model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs.py`, then `npx tsx scripts/model/parity.ts`.
 
 ## Real vs simulated
 
