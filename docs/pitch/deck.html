@@ -13,11 +13,9 @@ body { font-family: "Geist", "Inter", system-ui, sans-serif; color: var(--ink); 
 .slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #fff; page-break-after: always; break-after: page; }
 .slide:last-child { page-break-after: auto; break-after: auto; }
 .wash { position: absolute; inset: 0; width: 1920px; height: 1080px; pointer-events: none; }
-.content { position: absolute; inset: 0; padding: 150px 160px 0 160px; }
-.footer { position: absolute; left: 160px; right: 160px; bottom: 56px; display: flex; justify-content: space-between; font-size: 20px; color: var(--grey); letter-spacing: 0.01em; }
-h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 1.02; }
-.kicker { font-size: 24px; font-weight: 500; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
-.points { list-style: none; margin-top: 76px; display: flex; flex-direction: column; gap: 40px; max-width: 1380px; }
+.content { position: absolute; inset: 0; padding: 104px 160px 0 160px; display: flex; flex-direction: column; align-items: center; }
+h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1.04; text-align: center; }
+.points { list-style: none; margin-top: 88px; display: flex; flex-direction: column; gap: 40px; width: 1240px; }
 .points li { display: flex; gap: 32px; align-items: flex-start; font-size: 38px; line-height: 1.3; letter-spacing: -0.012em; }
 .points.tight { gap: 34px; }
 .points.tight li { font-size: 36px; }
@@ -27,23 +25,28 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
 .ic { color: var(--accent); display: inline-block; }
 .ic.grey { color: var(--grey); }
 .grey { color: var(--grey); }
-.closing { margin-top: 64px; font-size: 40px; font-weight: 500; letter-spacing: -0.02em; }
+.closing { width: 1240px; margin-top: 64px; font-size: 40px; font-weight: 500; letter-spacing: -0.02em; }
 
 /* Title slide */
-.center-left { position: absolute; left: 160px; right: 160px; top: 0; bottom: 60px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.center-left { position: absolute; left: 160px; right: 160px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
 .logo { width: 120px; height: 120px; color: var(--accent); }
 .wordmark { font-size: 200px; font-weight: 600; letter-spacing: -0.06em; line-height: 0.95; margin-top: 40px; }
 .tagline { font-size: 52px; font-weight: 400; letter-spacing: -0.025em; margin-top: 36px; }
 .small-line { font-size: 26px; color: var(--grey); margin-top: 56px; letter-spacing: 0.01em; }
 
 /* Two columns */
-.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; margin-top: 84px; max-width: 1600px; }
-.col h3 { font-size: 30px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding-bottom: 24px; border-bottom: 1.5px solid var(--line); }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; margin-top: 88px; width: 1500px; }
+.cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 64px; margin-top: 64px; width: 1600px; }
+.cols3 li { font-size: 28px; line-height: 1.32; }
+.cols3 li .ic { width: 32px; height: 32px; }
+.cols3 ul { gap: 28px; }
+.note { margin-top: 36px; font-size: 24px; color: var(--grey); text-align: center; }
+.col h3, .cols3 h3 { font-size: 30px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding-bottom: 24px; border-bottom: 1.5px solid var(--line); }
 .col.others h3 { color: var(--grey); }
 .col.pulse h3 { color: var(--accent); }
-.col ul { list-style: none; margin-top: 40px; display: flex; flex-direction: column; gap: 34px; }
-.col li { display: flex; gap: 24px; font-size: 36px; line-height: 1.3; letter-spacing: -0.012em; }
-.col li .ic { width: 38px; height: 38px; flex: none; margin-top: 4px; }
+.col ul, .cols3 ul { list-style: none; margin-top: 40px; display: flex; flex-direction: column; gap: 34px; }
+.col li, .cols3 li { display: flex; gap: 24px; font-size: 36px; line-height: 1.3; letter-spacing: -0.012em; }
+.col li .ic, .cols3 li .ic { width: 38px; height: 38px; flex: none; margin-top: 4px; }
 .col.others li { color: var(--grey); }
 
 /* Big word slides */
@@ -52,7 +55,7 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
 .big-sub .ic { width: 44px; height: 44px; }
 
 /* Slide 2 visual */
-.globe-vis { position: absolute; right: 150px; top: 200px; width: 620px; height: 620px; }
+.globe-vis { width: 420px; height: 420px; margin-top: 48px; }
 </style>
 </head>
 <body>
@@ -72,6 +75,15 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
     <radialGradient id="gPeach"><stop offset="0" stop-color="#f7b58a" stop-opacity="1"/><stop offset="0.7" stop-color="#f7b58a" stop-opacity="0.55"/><stop offset="1" stop-color="#f7b58a" stop-opacity="0"/></radialGradient>
     <radialGradient id="gCoral"><stop offset="0" stop-color="#f4895f" stop-opacity="1"/><stop offset="0.65" stop-color="#f4895f" stop-opacity="0.5"/><stop offset="1" stop-color="#f4895f" stop-opacity="0"/></radialGradient>
     <radialGradient id="gLight"><stop offset="0" stop-color="#fbd3b8" stop-opacity="1"/><stop offset="0.75" stop-color="#fbd3b8" stop-opacity="0.6"/><stop offset="1" stop-color="#fbd3b8" stop-opacity="0"/></radialGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" stitchTiles="stitch" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1.6 0 0 0 -0.3" result="n"/>
+      <feComposite in="SourceGraphic" in2="n" operator="arithmetic" k1="1.9" k2="0.08" k3="0" k4="0"/>
+    </filter>
+    <filter id="dust" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="21" stitchTiles="stitch" result="t"/>
+      <feColorMatrix in="t" type="matrix" values="0 0 0 0 0.88  0 0 0 0 0.53  0 0 0 0 0.36  0 0 0 2.4 -1.35"/>
+    </filter>
   </defs>
 </svg>
 
@@ -83,62 +95,53 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
     <div class="tagline">Know the rush before it hits.</div>
     <div class="small-line">Oslo Sprint 2026</div>
   </div>
-  <div class="footer"><span>Pulse</span><span>1</span></div>
 </section>
 
 <!-- 2. Everywhere -->
 <section class="slide" data-wash="br,tl-small">
   <div class="content">
-    <h1>Not only for Oslo.<br>For everywhere.</h1>
-    <ul class="points" style="max-width:980px">
-      <li><span class="ic" data-icon="store"></span><span>Built and tested on one real Burger King in Oslo, at Klingenberggata 5.</span></li>
+    <h1>Not only for Oslo. For everywhere.</h1>
+    <ul class="points" style="width:1100px;margin-top:64px">
+      <li><span class="ic" data-icon="store"></span><span>Built on one real Burger King in Oslo, at Klingenberggata 5.</span></li>
       <li><span class="ic" data-icon="map-pin"></span><span>Any store with an address can get the same local picture.</span></li>
     </ul>
+    <svg class="globe-vis" viewBox="0 0 620 620">
+      <g fill="none" stroke="#d9d4cf" stroke-width="1.5">
+        <circle cx="310" cy="310" r="280"/>
+        <ellipse cx="310" cy="310" rx="140" ry="280"/>
+        <line x1="310" y1="30" x2="310" y2="590"/>
+        <ellipse cx="310" cy="310" rx="280" ry="95"/>
+        <line x1="30" y1="310" x2="590" y2="310"/>
+      </g>
+      <g fill="#c9c3bd">
+        <circle cx="190" cy="250" r="7"/><circle cx="420" cy="380" r="7"/><circle cx="250" cy="430" r="7"/><circle cx="470" cy="230" r="7"/><circle cx="140" cy="370" r="7"/>
+      </g>
+      <g>
+        <circle cx="340" cy="150" r="40" fill="none" stroke="#d9622b" stroke-opacity="0.25" stroke-width="1.5"/>
+        <circle cx="340" cy="150" r="22" fill="none" stroke="#d9622b" stroke-opacity="0.5" stroke-width="1.5"/>
+        <circle cx="340" cy="150" r="9" fill="#d9622b"/>
+        <text x="392" y="158" font-size="28" fill="#6b6b6b" font-family="Geist, sans-serif">Oslo</text>
+      </g>
+    </svg>
   </div>
-  <svg class="globe-vis" viewBox="0 0 620 620">
-    <g fill="none" stroke="#d9d4cf" stroke-width="1.5">
-      <circle cx="310" cy="310" r="280"/>
-      <ellipse cx="310" cy="310" rx="140" ry="280"/>
-      <line x1="310" y1="30" x2="310" y2="590"/>
-      <ellipse cx="310" cy="310" rx="280" ry="95"/>
-      <line x1="30" y1="310" x2="590" y2="310"/>
-    </g>
-    <g fill="#c9c3bd">
-      <circle cx="190" cy="250" r="7"/>
-      <circle cx="420" cy="380" r="7"/>
-      <circle cx="250" cy="430" r="7"/>
-      <circle cx="470" cy="230" r="7"/>
-      <circle cx="140" cy="370" r="7"/>
-    </g>
-    <g>
-      <circle cx="340" cy="150" r="40" fill="none" stroke="#d9622b" stroke-opacity="0.25" stroke-width="1.5"/>
-      <circle cx="340" cy="150" r="22" fill="none" stroke="#d9622b" stroke-opacity="0.5" stroke-width="1.5"/>
-      <circle cx="340" cy="150" r="9" fill="#d9622b"/>
-      <text x="392" y="158" font-size="24" fill="#6b6b6b" font-family="Geist, sans-serif">Oslo</text>
-    </g>
-  </svg>
-  <div class="footer"><span>Pulse</span><span>2</span></div>
 </section>
 
 <!-- 3. Problem -->
 <section class="slide" data-wash="tl,br-small">
   <div class="content">
-    <div class="kicker">Problem</div>
     <h1>Busy stores plan blind.</h1>
     <ul class="points tight">
-      <li><span class="ic" data-icon="briefcase"></span><span>While travelling in Oslo, I met my old Domino's employer. He now owns a very busy Burger King near Aker Brygge.</span></li>
+      <li><span class="ic" data-icon="briefcase"></span><span>While travelling in Oslo, I met my old Domino's employer. He owns a very busy Burger King near Aker Brygge.</span></li>
       <li><span class="ic" data-icon="calendar"></span><span>His real problem is planning ahead around what happens near the store: trains that stop, events, weather, and why one day went well.</span></li>
       <li><span class="ic" data-icon="clock"></span><span>I lived it too. At Domino's there was no forecast. When a rush hit, I was called in at short notice to help for a few hours.</span></li>
     </ul>
     <div class="closing" style="padding-left:76px">It is a personal problem, not a guess.</div>
   </div>
-  <div class="footer"><span>Pulse</span><span>3</span></div>
 </section>
 
 <!-- 4. Solution -->
 <section class="slide" data-wash="tr,bl-small">
   <div class="content">
-    <div class="kicker">Solution</div>
     <h1>Pulse watches the area for you.</h1>
     <ul class="points">
       <li><span class="ic" data-icon="map-pin"></span><span>Real-time data for one local store.</span></li>
@@ -148,28 +151,58 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
       <li><span class="ic" data-icon="clock"></span><span>An hourly forecast of orders, the crew it needs, and why.</span></li>
     </ul>
   </div>
-  <div class="footer"><span>Pulse</span><span>4</span></div>
 </section>
 
-<!-- 5. Market -->
-<section class="slide" data-wash="bl,tr-small">
-  <div class="content">
-    <div class="kicker">Market</div>
-    <h1>Start where the margin is thin.</h1>
-    <ul class="points">
-      <li><span class="ic" data-icon="store"></span><span>High-traffic, high-demand fast food stores.</span></li>
-      <li><span class="ic" data-icon="users"></span><span>More than 20 employees.</span></li>
-      <li><span class="ic" data-icon="wallet"></span><span>Thin margins, and staff is the biggest cost they control.</span></li>
-      <li><span class="ic" data-icon="calendar"></span><span>They need this local picture every day.</span></li>
-    </ul>
-  </div>
-  <div class="footer"><span>Pulse</span><span>5</span></div>
-</section>
-
-<!-- 6. Why me -->
+<!-- 5. What we built -->
 <section class="slide" data-wash="br,tl-small">
   <div class="content">
-    <div class="kicker">Founder</div>
+    <h1>What we built in 48 hours.</h1>
+    <div class="cols3">
+      <div class="col pulse">
+        <h3>Model</h3>
+        <ul>
+          <li><span class="ic" data-icon="chart"></span><span>LightGBM quantile models (P10, P50, P90), calibrated with split conformal prediction.</span></li>
+          <li><span class="ic" data-icon="target"></span><span>21.4% WAPE on a held-out year, against 31.0% for the hour and weekday average.</span></li>
+          <li><span class="ic" data-icon="code"></span><span>Trees exported to TypeScript, with a parity test against Python.</span></li>
+        </ul>
+      </div>
+      <div class="col pulse">
+        <h3>Live data</h3>
+        <ul>
+          <li><span class="ic" data-icon="cloud"></span><span>MET Norway Locationforecast and Frost observations.</span></li>
+          <li><span class="ic" data-icon="train"></span><span>Entur Journey Planner, live vehicles, and 1.8 million past stop calls (SIRI-ET on BigQuery).</span></li>
+          <li><span class="ic" data-icon="calendar"></span><span>Venue programmes scraped live with context.dev.</span></li>
+        </ul>
+      </div>
+      <div class="col pulse">
+        <h3>Agents and staffing</h3>
+        <ul>
+          <li><span class="ic" data-icon="bot"></span><span>Gemini on Vertex AI: an event scout with Google Search grounding, a road camera watcher, a staffing overseer.</span></li>
+          <li><span class="ic" data-icon="users"></span><span>Erlang C crew per hour and a set-covering shift plan (linear programming).</span></li>
+          <li><span class="ic" data-icon="check"></span><span>38 tests, including Norwegian Working Environment Act rules.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">Store sales are simulated on top of the real inputs until a till system is connected.</div>
+  </div>
+</section>
+
+<!-- 6. First customers -->
+<section class="slide" data-wash="bl,tr-small">
+  <div class="content">
+    <h1>Who we sell to first.</h1>
+    <ul class="points">
+      <li><span class="ic" data-icon="store"></span><span>Busy fast food stores with a lot of walk-in traffic.</span></li>
+      <li><span class="ic" data-icon="users"></span><span>More than 20 people on the payroll.</span></li>
+      <li><span class="ic" data-icon="wallet"></span><span>Margins are thin, and staff is their biggest cost.</span></li>
+      <li><span class="ic" data-icon="clock"></span><span>One wrong shift means paying people to wait, or losing sales in a rush.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 7. Why me -->
+<section class="slide" data-wash="br,tl-small">
+  <div class="content">
     <h1>Why me</h1>
     <ul class="points tight">
       <li><span class="ic" data-icon="bag"></span><span>Ran e-commerce while living in Norway and made 15k USD selling products.</span></li>
@@ -178,13 +211,11 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
       <li><span class="ic" data-icon="cap"></span><span>Studying computational engineering and AI in Finland.</span></li>
     </ul>
   </div>
-  <div class="footer"><span>Pulse</span><span>6</span></div>
 </section>
 
-<!-- 7. Competitors -->
+<!-- 8. Competitors -->
 <section class="slide" data-wash="tr,bl-small">
   <div class="content">
-    <div class="kicker">Competitors</div>
     <h1>Others are not hyper-local.</h1>
     <div class="cols">
       <div class="col others">
@@ -203,25 +234,22 @@ h1 { font-size: 104px; font-weight: 600; letter-spacing: -0.045em; line-height: 
       </div>
     </div>
   </div>
-  <div class="footer"><span>Pulse</span><span>7</span></div>
 </section>
 
-<!-- 8. Demo -->
+<!-- 9. Demo -->
 <section class="slide" data-wash="bl-big,tr-small">
   <div class="center-left">
     <div class="big">Demo</div>
     <div class="big-sub"><span class="ic" data-icon="play"></span>Live, on the real store.</div>
   </div>
-  <div class="footer"><span>Pulse</span><span>8</span></div>
 </section>
 
-<!-- 9. Thank you -->
+<!-- 10. Thank you -->
 <section class="slide" data-wash="br-big,tl-small">
   <div class="center-left">
     <div class="big" style="font-size:200px">Thank you</div>
     <div class="big-sub" style="color:var(--ink);margin-top:64px"><span class="ic" data-icon="radar" style="width:56px;height:56px"></span><span style="font-weight:600;letter-spacing:-0.03em">Pulse</span></div>
   </div>
-  <div class="footer"><span>Pulse</span><span>9</span></div>
 </section>
 
 <script>
@@ -244,6 +272,9 @@ const ICONS = {
   hand: '<path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/>',
   sliders: '<line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/>',
   check: '<path d="M20 6 9 17l-5-5"/>',
+  chart: '<path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/>',
+  target: '<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+  bot: '<path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>',
   play: '<polygon points="6 3 20 12 6 21 6 3"/>'
 };
 document.querySelectorAll('[data-icon]').forEach(el => {
@@ -271,7 +302,7 @@ function blobs(key, seed) {
 }
 document.querySelectorAll('.slide').forEach((sl, i) => {
   const keys = (sl.dataset.wash || '').split(',').filter(Boolean);
-  const svg = `<svg class="wash" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g opacity="0.26">${keys.map(k => blobs(k, i)).join('')}</g></svg>`;
+  const svg = `<svg class="wash" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"><g filter="url(#grain)"><g opacity="0.3">${keys.map(k => blobs(k, i)).join('')}</g></g><rect width="1920" height="1080" filter="url(#dust)" opacity="0.26"/></svg>`;
   sl.insertAdjacentHTML('afterbegin', svg);
 });
 </script>

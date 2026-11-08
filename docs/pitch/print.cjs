@@ -9,7 +9,7 @@ const { chromium } = require('/Users/aayan/Development/ECS/frontend/node_modules
   for (let i = 0; i < n; i++) {
     const sl = p.locator('.slide').nth(i);
     await sl.evaluate(el => [...el.children].forEach(c => { if (!c.classList.contains('wash')) c.style.visibility = 'hidden'; }));
-    const buf = await sl.screenshot({ type: 'jpeg', quality: 82 });
+    const buf = await sl.screenshot({ type: 'jpeg', quality: 93 });
     await sl.evaluate((el, src) => {
       [...el.children].forEach(c => { c.style.visibility = ''; });
       const w = el.querySelector('.wash'); const img = document.createElement('img');
