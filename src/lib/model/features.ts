@@ -30,15 +30,19 @@ export function routeVenue(e: CityEvent): (typeof ROUTE_VENUES)[number] | null {
   return null;
 }
 
+const MAX_EVENT_DAYS = 14;
+/** Real sessions (epoch s): one if <= 12 h, daily sessions if longer, none over 14 days. Mirrors features.py sessions. */
+export function eventSessions(e: CityEvent): [number, number][] {
+  const s = Date.parse(e.start) / 1000, en = Date.parse(e.end) / 1000, dur = en - s;
+  if (dur <= 12 * 3600) return [[s, en]];
+  if (dur > MAX_EVENT_DAYS * 86400) return [];
+  const daily = dur % 86400 || 12 * 3600;
+  return Array.from({ length: Math.floor(dur / 86400) + 1 }, (_, k) => [s + k * 86400, s + k * 86400 + daily] as [number, number]);
+}
+
 /** Pre and post windows (epoch seconds) and the routed crowd / 1000. Events over 12 h are daily sessions. */
 export function routeWindows(e: CityEvent, v: (typeof ROUTE_VENUES)[number]) {
-  const s = Date.parse(e.start) / 1000, en = Date.parse(e.end) / 1000, dur = en - s;
-  let sessions: [number, number][];
-  if (dur <= 12 * 3600) sessions = [[s, en]];
-  else {
-    const daily = dur % 86400 || 12 * 3600;
-    sessions = Array.from({ length: Math.floor(dur / 86400) + 1 }, (_, k) => [s + k * 86400, s + k * 86400 + daily]);
-  }
+  const sessions = eventSessions(e);
   const tr = v.travelMin * 60;
   return {
     pre: sessions.map(([a]) => [a - tr - ROUTE_PRE_S, a - tr] as [number, number]),
@@ -190,13 +194,13 @@ export function buildFeatures(
     if (e.category === "cruise" || dist > 3) continue;
     const A = e.expectedAttendance || 500;
     const w = A * Math.exp(-dist / 0.8);
-    const durH = (en - s) / 3600.0;
-    evActive += active ? w / Math.max(3.0, durH) / 100.0 : 0.0;
-    if (durH <= 12) {
-      evPre += s > t && s <= t + 3 * 3600 ? w / 1000.0 : 0.0;
-      evPost += en <= t && en > t - 2 * 3600 ? w / 1000.0 : 0.0;
+    for (const [ss, se] of eventSessions(e)) {
+      const on = t >= ss && t < se;
+      evActive += on ? w / Math.max(3.0, (se - ss) / 3600.0) / 100.0 : 0.0;
+      evPre += ss > t && ss <= t + 3 * 3600 ? w / 1000.0 : 0.0;
+      evPost += se <= t && se > t - 2 * 3600 ? w / 1000.0 : 0.0;
+      if (dist <= 1) evNear += on ? 1 : 0;
     }
-    if (dist <= 1) evNear += active ? 1 : 0;
   }
   for (const s of situations) {
     if (s.severity === "slight" || s.severity === "noImpact") continue;

@@ -1,6 +1,6 @@
 # Demand model (BK Klingenberg)
 
-Generated 2026-11-08T08:53:39+00:00 by `model/train.py`. Rebuild: `model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs.py`, then `npx tsx scripts/model/parity.ts`.
+Generated 2026-11-08T09:00:24+00:00 by `model/train.py`. Rebuild: `model/.venv/bin/python model/train.py && model/.venv/bin/python model/write_docs.py`, then `npx tsx scripts/model/parity.ts`.
 
 ## Real vs simulated
 
@@ -39,42 +39,42 @@ Generated 2026-11-08T08:53:39+00:00 by `model/train.py`. Rebuild: `model/.venv/b
 
 | Model | WAPE | MAE | Pinball P50 |
 |---|---|---|---|
-| LightGBM P50 (this model) | 20.0% | 16.2 | 8.09 |
-| Seasonal naive (same hour last week) | 31.5% | 25.4 | 12.71 |
-| Oracle: true simulated mean (noise floor) | 17.9% | 14.5 | 7.25 |
-| Hour x weekday mean | 30.8% | 24.8 | 12.42 |
+| LightGBM P50 (this model) | 21.4% | 17.3 | 8.65 |
+| Seasonal naive (same hour last week) | 32.2% | 26.0 | 13.00 |
+| Oracle: true simulated mean (noise floor) | 19.1% | 15.4 | 7.72 |
+| Hour x weekday mean | 31.0% | 25.1 | 12.53 |
 
-- Pinball P10 / P90 (calibrated): 3.31 / 4.29; raw: 3.39 / 4.27.
-- 80% interval coverage: raw 72.0%, calibrated 77.9% (below P10 9.0%, above P90 13.1%).
+- Pinball P10 / P90 (calibrated): 3.33 / 4.42; raw: 3.38 / 4.38.
+- 80% interval coverage: raw 76.1%, calibrated 78.5% (below P10 9.5%, above P90 12.1%).
 
 ### Effect recovery (model uplift = P50 minus P50 with that group set to neutral values, mean over hours where the true effect is active)
 
 | Group | Active hours | True mean uplift | Model mean uplift | Corr |
 |---|---|---|---|---|
-| Weather | 2058 | -0.94 | 2.93 | 0.828 |
-| Calendar & holidays | 1367 | 2.66 | 3.03 | 0.767 |
-| Events | 27 | 24.28 | 9.81 | -0.545 |
-| Crowds via Nationaltheatret | 25 | 49.2 | 15.76 | 0.995 |
-| Transit disruption | 3077 | 17.85 | 18.33 | 0.91 |
-| Cruise | 979 | 12.43 | 9.08 | 0.873 |
-| Christmas market | 877 | 12.34 | 6.85 | 0.704 |
+| Weather | 2058 | -0.94 | 3.02 | 0.843 |
+| Calendar & holidays | 1367 | 2.66 | 3.01 | 0.664 |
+| Events | 87 | 9.79 | 3.12 | 0.23 |
+| Crowds via Nationaltheatret | 25 | 49.2 | 28.92 | 0.99 |
+| Transit disruption | 3077 | 17.85 | 18.55 | 0.906 |
+| Cruise | 979 | 12.43 | 8.6 | 0.847 |
+| Christmas market | 877 | 12.34 | 10.94 | 0.736 |
 | Mystery (hidden) | 20 | 67.22 | 0.0 |  |
 
 Weather has the wrong sign on average: the neutral point (12 C, dry, 3 m/s) is rare in winter, so the model's counterfactual is an extrapolation. The per-hour correlation is still high.
 
 ### Spike finder
 
-test days with >= 2 open hours above calibrated P90, ranked by excess. Days evaluated: 40. Top-1 hit 80.0%, top-3 hit 95.0%.
+test days with >= 2 open hours above calibrated P90, ranked by excess. Days evaluated: 40. Top-1 hit 85.0%, top-3 hit 100.0%.
 
 | True cause | Days | Top-1 | Top-3 |
 |---|---|---|---|
-| Mystery | 6 | 33.3% | 83.3% |
-| Transit disruption | 24 | 95.8% | 95.8% |
-| Events | 2 | 100.0% | 100.0% |
-| Christmas market | 2 | 0.0% | 100.0% |
+| Mystery | 4 | 25.0% | 100.0% |
+| Transit disruption | 29 | 100.0% | 100.0% |
 | Crowds via Nationaltheatret | 2 | 100.0% | 100.0% |
-| Cruise | 1 | 0.0% | 100.0% |
-| noise | 3 | 100.0% | 100.0% |
+| Calendar & holidays | 1 | 0.0% | 100.0% |
+| noise | 1 | 100.0% | 100.0% |
+| Christmas market | 2 | 0.0% | 100.0% |
+| Events | 1 | 100.0% | 100.0% |
 
 "Mystery" and "noise" days count as a hit when "No logged cause" is ranked. Mystery days in the test period: 2025-12-11, 2026-09-26, 2026-03-26, 2025-12-02, 2026-04-11, 2026-01-07.
 
@@ -82,15 +82,15 @@ test days with >= 2 open hours above calibrated P90, ranked by excess. Days eval
 
 | Dropped | WAPE | Delta |
 |---|---|---|
-| none | 20.2% | +0.00 pp |
-| Baseline/time | 31.5% | +11.31 pp |
-| Calendar & holidays | 20.4% | +0.20 pp |
-| Weather | 20.9% | +0.78 pp |
-| Events | 20.2% | +0.02 pp |
-| Transit disruption | 31.7% | +11.55 pp |
-| Cruise | 20.4% | +0.27 pp |
-| Christmas market | 20.1% | -0.05 pp |
-| Crowds via Nationaltheatret | 20.2% | +0.01 pp |
+| none | 21.5% | +0.00 pp |
+| Baseline/time | 31.9% | +10.38 pp |
+| Calendar & holidays | 21.9% | +0.41 pp |
+| Weather | 23.4% | +1.89 pp |
+| Events | 21.3% | -0.25 pp |
+| Transit disruption | 30.1% | +8.62 pp |
+| Cruise | 21.9% | +0.40 pp |
+| Christmas market | 22.0% | +0.50 pp |
+| Crowds via Nationaltheatret | 21.8% | +0.24 pp |
 
 ## Drivers in the app
 

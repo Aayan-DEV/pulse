@@ -293,7 +293,10 @@
     "label": "Wikipedia: Norway Cup",
     "url": "https://en.wikipedia.org/wiki/Norway_Cup"
    }
-  ]
+  ],
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 25000 is an estimate: players, coaches and parents per day; Norway Cup reports about 30 000 players over the week."
  },
  {
   "id": "transit-entur-2023080805-nt-rail",
@@ -327,7 +330,10 @@
     "label": "Festivaly: Øyafestivalen 2023 (8-12.8.2023, Tøyenparken)",
     "url": "https://festivaly.eu/oyafestivalen-2023"
    }
-  ]
+  ],
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 20000 is an estimate: about 20 000 festival guests per day."
  },
  {
   "id": "transit-entur-2023090715-nt-rail",
@@ -437,13 +443,15 @@
   "start": "2023-12-10T13:00:00+01:00",
   "end": "2023-12-10T14:30:00+01:00",
   "recurring": "yearly 10 December",
-  "note": "Ceremony hours are the usual 13:00 slot; the source confirms the date and place.",
+  "note": "Ceremony hours are the usual 13:00 slot; the source confirms the date and place. Attendance 1000 is an estimate: City Hall ceremony seats about 1 000 guests.",
   "sources": [
    {
     "label": "nobelpeaceprize.org: 2023 Nobel Peace Prize Award Ceremony",
     "url": "https://www.nobelpeaceprize.org/articles/2023-nobel-peace-prize-award-ceremony"
    }
-  ]
+  ],
+  "expectedAttendance": 1000,
+  "attendanceIsEstimate": true
  },
  {
   "id": "ceremony-2023-12-10-nobel-torchlight-karl-johan",
@@ -646,7 +654,10 @@
     "label": "FIS: Oslo Cross-Country World Cup 9-10 Mar 2024",
     "url": "https://www.fis-ski.com/DB/general/event-details.html?sectorcode=CC&eventid=53714&seasoncode=2024"
    }
-  ]
+  ],
+  "expectedAttendance": 30000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 30000 is an estimate: same as the other Holmenkollen years."
  },
  {
   "id": "transit-entur-2024031511-nt-metro",
@@ -811,7 +822,10 @@
     "label": "NTB press release: Slik blir årets jubileumspride (Pride Parade Saturday 29 June)",
     "url": "https://kommunikasjon.ntb.no/pressemelding/18145029/slik-blir-arets-jubileumspride?publisherId=17847803&lang=no"
    }
-  ]
+  ],
+  "expectedAttendance": 50000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 50000 is an estimate: parade participants plus spectators."
  },
  {
   "id": "transit-2024-06-29-oslo-s-nationaltheatret-signal-fault",
@@ -872,7 +886,10 @@
     "label": "Last.fm: Øyafestivalen 2024 (6-10 August 2024)",
     "url": "https://last.fm/festival/4768362+%C3%98yafestivalen+2024"
    }
-  ]
+  ],
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 20000 is an estimate: about 20 000 festival guests per day."
  },
  {
   "id": "transit-2024-08-13-oslo-s-earth-fault",
@@ -1043,7 +1060,10 @@
     "label": "ABC Nyheter: Julegrana tent på Universitetsplassen (2 Dec 2024)",
     "url": "https://www.abcnyheter.no/nyheter/norge/2024/12/02/196048000/julegrana-tent-pa-universitetsplassen?nr=1"
    }
-  ]
+  ],
+  "expectedAttendance": 3000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 3000 is an estimate: tree lighting crowd on Karl Johan."
  },
  {
   "id": "ceremony-2024-12-10-nobel-peace-prize",
@@ -1060,7 +1080,10 @@
     "label": "NobelPrize.org: The Nobel Peace Prize award ceremony 2024",
     "url": "https://www.nobelprize.org/ceremonies/the-nobel-peace-prize-award-ceremony-2024/"
    }
-  ]
+  ],
+  "expectedAttendance": 1000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 1000 is an estimate: City Hall ceremony seats about 1 000 guests."
  },
  {
   "id": "transit-2024-12-10-traffic-control-fire-alarm",
@@ -1089,7 +1112,7 @@
   "start": "2024-12-10T17:30:00+01:00",
   "end": "2024-12-10T19:00:00+01:00",
   "recurring": "yearly 10 December",
-  "note": "Visit Oslo lists 17:30-18:00 start; end time is an estimate for the walk past the store to Grand Hotel.",
+  "note": "Visit Oslo lists 17:30-18:00 start; end time is an estimate for the walk past the store to Grand Hotel. Attendance 5000 is an estimate: torchlight procession, typical crowd.",
   "sources": [
    {
     "label": "Visit Oslo: Fakkeltog for Nobels Fredspris",
@@ -1099,7 +1122,9 @@
     "label": "Flickr: Fakkeltoget Nobels Fredspris 2024 (taken 10 Dec 2024)",
     "url": "https://www.flickr.com/photos/115813984@N07/54208261937/"
    }
-  ]
+  ],
+  "expectedAttendance": 5000,
+  "attendanceIsEstimate": true
  },
  {
   "id": "transit-2024-12-25-nationwide-train-stop",
@@ -1148,7 +1173,7 @@
   "lon": 10.73383,
   "start": "2024-12-31T23:00:00+01:00",
   "end": "2025-01-01T01:00:00+01:00",
-  "note": "Kommune told people to watch from where they were rather than gather on Rådhusplassen. Show time around midnight; exact minutes not in sources.",
+  "note": "Kommune told people to watch from where they were rather than gather on Rådhusplassen. Show time around midnight; exact minutes not in sources. Attendance 20000 is an estimate: Rådhusplassen New Year show crowd.",
   "sources": [
    {
     "label": "Nettavisen: Oslo dropper fyrverkeri, satser på lyd- og lysshow",
@@ -1158,7 +1183,9 @@
     "label": "Avisa Oslo: lysshow fra Rådhusplassen for nesten to millioner",
     "url": "https://www.ao.no/oslo-kommune-bruker-nesten-to-millioner-kroner-pa-nyttarsmarkering/s/5-128-946492"
    }
-  ]
+  ],
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true
  },
  {
   "id": "transit-entur-2025010605-nt-rail",
@@ -1287,7 +1314,10 @@
     "label": "Oslo Pride: Oslo Pride-paraden 2025 (Saturday 28 June 12:00, Grønland to Kontraskjæret)",
     "url": "https://www.oslopride.no/events/oslo-pride-paraden-2025"
    }
-  ]
+  ],
+  "expectedAttendance": 50000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 50000 is an estimate: parade participants plus spectators."
  },
  {
   "id": "transit-2025-07-05-majorstuen-t-bane-closure",
@@ -1325,7 +1355,10 @@
     "label": "NFF tournament register: Norway Cup 26.07.2025 - 02.08.2025",
     "url": "https://www.fotball.no/finn-klubbturneringer/turneringssoknad/?tournamentApplicationId=371842"
    }
-  ]
+  ],
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 25000 is an estimate: players, coaches and parents per day; Norway Cup reports about 30 000 players over the week."
  },
  {
   "id": "concert-2025-07-ed-sheeran-ullevaal-d1",
@@ -1398,7 +1431,10 @@
     "label": "Last.fm: Øyafestivalen 2025",
     "url": "https://www.last.fm/festival/4847348+%C3%98yafestivalen+2025"
    }
-  ]
+  ],
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 20000 is an estimate: about 20 000 festival guests per day."
  },
  {
   "id": "protest-2025-08-30-climate-sta-opp-eidsvolls-plass",
@@ -1648,7 +1684,10 @@
     "label": "Nobel Peace Center: People's Peace Prize Celebration",
     "url": "https://www.nobelpeacecenter.org/en/events/people-s-peace-prize-celebration"
    }
-  ]
+  ],
+  "expectedAttendance": 5000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 5000 is an estimate: outdoor stage crowd at Rådhusplassen."
  },
  {
   "id": "ceremony-2025-12-10-nobel-torchlight",
@@ -1660,7 +1699,7 @@
   "start": "2025-12-10T11:45:00+01:00",
   "end": "2025-12-10T13:00:00+01:00",
   "recurring": "yearly 10 December",
-  "note": "Times as published by the Nobel Peace Center for 2025; Grand Hotel confirms the laureate's children waved from the balcony.",
+  "note": "Times as published by the Nobel Peace Center for 2025; Grand Hotel confirms the laureate's children waved from the balcony. Attendance 5000 is an estimate: torchlight procession, typical crowd.",
   "sources": [
    {
     "label": "Nobel Peace Center: Torchlight procession - Nobel Peace Prize 2025",
@@ -1670,7 +1709,9 @@
     "label": "Grand Hotel: Markeringen av Nobels fredspris 2025",
     "url": "https://grand.no/content/markeringen-av-nobels-fredspris-2025"
    }
-  ]
+  ],
+  "expectedAttendance": 5000,
+  "attendanceIsEstimate": true
  },
  {
   "id": "ceremony-2025-12-10-nobel-peace-prize",
@@ -1691,7 +1732,10 @@
     "label": "NobelPrize.org: Nobel Peace Prize award ceremony 2025",
     "url": "https://www.nobelprize.org/ceremonies/nobel-peace-prize-award-ceremony-2025/"
    }
-  ]
+  ],
+  "expectedAttendance": 1000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 1000 is an estimate: City Hall ceremony seats about 1 000 guests."
  },
  {
   "id": "transit-2026-01-13-oslotunnelen-smoke",
@@ -1910,7 +1954,10 @@
     "label": "Visit Oslo: Øyafestivalen",
     "url": "https://www.visitoslo.com/de/event/yafestivalen"
    }
-  ]
+  ],
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true,
+  "note": "Attendance 20000 is an estimate: about 20 000 festival guests per day."
  },
  {
   "id": "transit-entur-2026081708-nt-rail",

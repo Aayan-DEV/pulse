@@ -162,6 +162,14 @@ def main():
             "Cruise: a PATTERN, not real calls. July uses the CruiseMapper count for July 2027 (about 151 calls; 8 ships on 3 and 4 Jul, 7 on 22 and 26 Jul); the May, Jun, Aug and Sep counts are an assumed season shape. Simulated response: 1.2 orders per 1000 passengers in port per hour.",
         ],
         "featureDefinitions": DEFINITIONS,
+        "storeShape": {
+            "note": "Simulated POS shape, checked against the columns real datasets carry (CDRC family-restaurant 15-min slots, Kaggle Recruit daily visits). Ratios are assumptions.",
+            "channelShare": {k: round(float(d[f"orders_{k}"].sum() / d.y.sum()), 3) for k in ("counter", "kiosk", "wolt")},
+            "itemsPerOrder": round(float(d["items"].sum() / d.y.sum()), 2),
+            "basketNok": round(float(d["basket_nok"].sum() / d.y.sum()), 1),
+            "lunchPeakSlotShare": round(float(d[d.hour.isin([11, 12, 13])][["orders_q1", "orders_q2", "orders_q3", "orders_q4"]].sum().max() / d[d.hour.isin([11, 12, 13])].y.sum()), 3),
+            "dayNoiseSd": 0.06,
+        },
     }
     export_all(models, conf, test, raw, cal, grouped, bench, spikes, meta, events, cruise)
 

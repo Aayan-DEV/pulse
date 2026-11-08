@@ -8,7 +8,7 @@ import math
 import numpy as np
 import pandas as pd
 
-from features import STORE_LAT, STORE_LON, build_features, haversine_km, iso_s, is_open, route_venue, route_windows
+from features import STORE_LAT, STORE_LON, build_features, haversine_km, iso_s, is_open, route_venue, route_windows, sessions
 from inputs import DATA, END, START, load_cruise, load_events, load_transit_stats, load_weather
 
 PEAK = 95.0  # weekday lunch transactions/hour at baseline (see docs/model.md)
@@ -109,10 +109,11 @@ def simulate(seed: int = 42):
         d = haversine_km(STORE_LAT, STORE_LON, e["lat"], e["lon"])
         if d > 3:
             continue
-        s = iso_s(e["start"]); en = iso_s(e["end"]); dur = (en - s) / 3600
         A = (e.get("expectedAttendance") or 500) * math.exp(-d / 0.7)
-        v = np.where((t >= s) & (t < en), A * 0.012 / max(3.0, dur), 0.0)
-        if dur <= 12:
+        v = np.zeros(n)
+        for s, en in sessions(e):
+            dur = (en - s) / 3600
+            v += np.where((t >= s) & (t < en), A * 0.012 / max(3.0, dur), 0.0)
             v += np.where((s > t) & (s <= t + 3 * 3600), A * 0.004, 0.0)
             v += np.where((en <= t) & (en > t - 2 * 3600), A * 0.006, 0.0)
         v = np.where(open_, v, 0.0)
@@ -146,13 +147,36 @@ def simulate(seed: int = 42):
     truth["Cruise"] = np.where(open_ & (h >= 9) & (h <= 17), cr * 1.2, 0.0)
 
     mu = np.maximum(mu_mult + truth["Events"] + truth["Crowds via Nationaltheatret"] + truth["Cruise"], 0.0)
-    lam = rng.gamma(NB_R, np.maximum(mu, 1e-9) / NB_R)
+    # Day-to-day noise a real store has (staff, local happenings): one lognormal factor per local day, sd 6 %.
+    day_key = pd.Index(local.date)
+    uniq = day_key.unique()
+    day_f = pd.Series(rng.lognormal(0.0, 0.06, len(uniq)), index=uniq)
+    lam = rng.gamma(NB_R, np.maximum(mu * day_f.reindex(day_key).to_numpy(), 1e-9) / NB_R)
     y = np.where(open_, rng.poisson(lam), 0)
+
+    # Store shape, checked against what real POS datasets carry (CDRC family-restaurant 15-min slots, Recruit
+    # daily visits): channel mix, items vs transactions, basket value and 15-minute peaks. ASSUMED ratios.
+    wet = (P >= 0.2).astype(float); cold = (T < 0).astype(float); late = ((h >= 22) | (h <= 3)).astype(float)
+    wolt = np.clip(0.15 + 0.05 * wet + 0.03 * cold + 0.05 * late, 0, 0.4)
+    kiosk = np.full(n, 0.35)
+    counter = 1 - wolt - kiosk
+    ch = np.array([rng.multinomial(k, [c, ki, w_]) if k > 0 else [0, 0, 0] for k, c, ki, w_ in zip(y, counter, kiosk, wolt)])
+    items = y + rng.poisson(0.9 * y)                      # about 1.9 items per order
+    price = np.where(X["payday_window"].to_numpy() == 1, 89.0, 85.0)  # NOK per item, payday trade-up
+    basket_nok = np.round(items * price * rng.lognormal(0, 0.03, n) + ch[:, 2] * 25.0)  # Wolt orders carry bigger baskets
+    lunch = (h >= 11) & (h <= 13)
+    slot_w = np.where(lunch[:, None], [0.18, 0.30, 0.31, 0.21], [0.26, 0.25, 0.25, 0.24])
+    slots = np.array([rng.multinomial(k, w_) if k > 0 else [0, 0, 0, 0] for k, w_ in zip(y, slot_w)])
 
     df = X.copy()
     df.insert(0, "time", idx)
     df["open"] = open_
     df["y"] = y
+    df["orders_counter"], df["orders_kiosk"], df["orders_wolt"] = ch[:, 0], ch[:, 1], ch[:, 2]
+    df["items"] = items
+    df["basket_nok"] = basket_nok
+    for k in range(4):
+        df[f"orders_q{k + 1}"] = slots[:, k]
     df["mu"] = mu
     for g, v in truth.items():
         df[f"truth_{g}"] = v

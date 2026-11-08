@@ -76,17 +76,27 @@ def route_venue(e: dict):
     return None
 
 
-def route_windows(e: dict, v: dict):
-    """(pre windows, post windows, value). Events over 12 h are split into daily sessions with the same clock times."""
+MAX_EVENT_DAYS = 14  # longer items (Christmas market season, Ramadan, russ season) are not hourly events
+
+
+def sessions(e: dict):
+    """Real sessions of an event. Up to 12 h: one session. Longer: daily sessions with the same clock times,
+    attendance counted per session. Over 14 days: none (handled by their own features or left out)."""
     s = iso_s(e["start"]); en = iso_s(e["end"]); dur = en - s
     if dur <= 12 * 3600:
-        sessions = [(s, en)]
-    else:
-        daily = dur % 86400 or 12 * 3600
-        sessions = [(s + k * 86400, s + k * 86400 + daily) for k in range(int(dur // 86400) + 1)]
+        return [(s, en)]
+    if dur > MAX_EVENT_DAYS * 86400:
+        return []
+    daily = dur % 86400 or 12 * 3600
+    return [(s + k * 86400, s + k * 86400 + daily) for k in range(int(dur // 86400) + 1)]
+
+
+def route_windows(e: dict, v: dict):
+    """(pre windows, post windows, value). Events over 12 h are split into daily sessions with the same clock times."""
+    sessions_ = sessions(e)
     tr = v["travelMin"] * 60
-    pre = [(a - tr - ROUTE_PRE_S, a - tr) for a, _ in sessions]
-    post = [(b + tr, b + tr + ROUTE_POST_S) for _, b in sessions]
+    pre = [(a - tr - ROUTE_PRE_S, a - tr) for a, _ in sessions_]
+    post = [(b + tr, b + tr + ROUTE_POST_S) for _, b in sessions_]
     return pre, post, (e.get("expectedAttendance") or 500) * v["share"] / 1000.0
 
 DEFINITIONS = {
@@ -101,7 +111,7 @@ DEFINITIONS = {
     "temp_c": "Air temperature, deg C.",
     "precip_mm": "Precipitation in the hour, mm.",
     "wind_ms": "Wind speed, m/s.",
-    "ev_active": "Sum over events active this hour (start <= t < end, within 3 km, not transit/cruise) of attendance * exp(-d/0.8 km) / max(3, duration h) / 100.",
+    "ev_active": "Sum over event sessions active this hour (within 3 km, not transit/cruise) of attendance * exp(-d/0.8 km) / max(3, session h) / 100. Events over 12 h count as daily sessions; items over 14 days are left out.",
     "ev_pre": "Sum over events (<= 12 h long, within 3 km) starting in (t, t+3h] of attendance * exp(-d/0.8 km) / 1000.",
     "ev_post": "Sum over events (<= 12 h long, within 3 km) that ended in (t-2h, t] of attendance * exp(-d/0.8 km) / 1000.",
     "ev_near_count": "Number of events active this hour within 1 km.",
@@ -248,13 +258,14 @@ def build_features(times_s: np.ndarray, temp, precip, wind, events: list, situat
             continue
         A = e.get("expectedAttendance") or 500
         w = A * math.exp(-d / 0.8)
-        dur_h = (en - s) / 3600.0
-        ev_active += np.where(active, w / max(3.0, dur_h) / 100.0, 0.0)
-        if dur_h <= 12:
+        for s, en in sessions(e):
+            active = (t >= s) & (t < en)
+            dur_h = (en - s) / 3600.0
+            ev_active += np.where(active, w / max(3.0, dur_h) / 100.0, 0.0)
             ev_pre += np.where((s > t) & (s <= t + 3 * 3600), w / 1000.0, 0.0)
             ev_post += np.where((en <= t) & (en > t - 2 * 3600), w / 1000.0, 0.0)
-        if d <= 1:
-            ev_near += active.astype(float)
+            if d <= 1:
+                ev_near += active.astype(float)
     for sit in situations:
         a = iso_s(sit["validFrom"]) if sit.get("validFrom") else -math.inf
         b = iso_s(sit["validTo"]) if sit.get("validTo") else math.inf
