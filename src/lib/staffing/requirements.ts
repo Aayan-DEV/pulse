@@ -47,12 +47,15 @@ export type StaffingParams = {
   closeDownHours: number;
   /** Crew (excluding the manager) in pre-open and close-down hours. ASSUMPTION. */
   prepCrew: number;
-  /** Opening hours per weekday, 0 = Monday. ASSUMPTION: 10:00-01:00, Fri/Sat 10:00-03:00. */
+  /** Opening hours per weekday, 0 = Monday. Real hours from the owner calendar (docs/bk-klingenberg-demand-calendar.md):
+   *  Mon-Thu 10:00-24:00, Fri-Sat 10:00-04:00, Sun 11:00-24:00. The demand model was trained on 10:00-01:00 (Fri/Sat 03:00)
+   *  and needs a retrain to learn the 03:00-04:00 hour. */
   openingHours: OpeningHours[];
 };
 
-const SUN_THU: OpeningHours = { open: 10, close: 25 };
-const FRI_SAT: OpeningHours = { open: 10, close: 27 };
+const MON_THU: OpeningHours = { open: 10, close: 24 };
+const FRI_SAT: OpeningHours = { open: 10, close: 28 };
+const SUN: OpeningHours = { open: 11, close: 24 };
 
 export const DEFAULT_STAFFING: StaffingParams = {
   quantile: "p50",
@@ -71,7 +74,7 @@ export const DEFAULT_STAFFING: StaffingParams = {
   preOpenHours: 1,
   closeDownHours: 1,
   prepCrew: 2,
-  openingHours: [SUN_THU, SUN_THU, SUN_THU, SUN_THU, FRI_SAT, FRI_SAT, SUN_THU],
+  openingHours: [MON_THU, MON_THU, MON_THU, MON_THU, FRI_SAT, FRI_SAT, SUN],
 };
 
 export type Phase = "preopen" | "open" | "close";

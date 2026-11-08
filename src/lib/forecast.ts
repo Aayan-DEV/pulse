@@ -102,7 +102,7 @@ export async function getForecast(days = 2): Promise<ForecastPayload> {
   let transit: { situations: TransitSituation[]; stats: TransitStats } = { situations: [], stats: {} };
   try { transit = await enturNow(); } catch (e) { errors.push(e instanceof Error ? e.message : "Entur failed"); }
 
-  const events = [...readData<CityEvent[]>("events-upcoming.json", []), ...readData<CityEvent[]>("events-history.json", [])];
+  const events = [...readData<CityEvent[]>("events-upcoming.json", []), ...readData<CityEvent[]>("events-history.json", []), ...readData<CityEvent[]>("events-calendar.json", [])];
   const winStart = from.getTime() - 6 * 3600_000, winEnd = from.getTime() + (hoursN + 6) * 3600_000;
   const seen = new Set<string>();
   const evWin = events.filter((e) => {

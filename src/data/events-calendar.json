@@ -1,0 +1,1297 @@
+[
+ {
+  "id": "cal-17mai-2027",
+  "title": "17 May 2027: children's parade on Karl Johan (also Whit Monday)",
+  "category": "holiday",
+  "venue": null,
+  "lat": 59.9138,
+  "lon": 10.7385,
+  "start": "2027-05-17T10:00:00+02:00",
+  "end": "2027-05-17T13:30:00+02:00",
+  "expectedAttendance": 60000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 5,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-pride-2027",
+  "title": "Oslo Pride 2027, Pride Park at Rådhusplassen (week)",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.9117,
+  "lon": 10.7339,
+  "start": "2027-06-20T10:00:00+02:00",
+  "end": "2027-06-26T22:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 5,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-pride-parade-2027",
+  "title": "Oslo Pride parade on Karl Johan to Kontraskjæret",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.9083,
+  "lon": 10.7358,
+  "start": "2027-06-26T13:00:00+02:00",
+  "end": "2027-06-26T17:00:00+02:00",
+  "expectedAttendance": 90000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "inferred",
+  "impact": 5,
+  "note": "parade time inferred",
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-takethat-2027",
+  "title": "Take That open-air concert, Tjuvholmen (first show in Norway)",
+  "category": "concert",
+  "venue": null,
+  "lat": 59.9068,
+  "lon": 10.7214,
+  "start": "2027-06-18T18:00:00+02:00",
+  "end": "2027-06-18T23:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 5,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-holmenkollen-2027",
+  "title": "Holmenkollen FIS ski weekend (50 km men 13th, women 14th)",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.9637,
+  "lon": 10.6676,
+  "start": "2027-03-12T09:00:00+01:00",
+  "end": "2027-03-14T17:00:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 5,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-biathlon-2027",
+  "title": "Biathlon World Cup finale, Holmenkollen",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.9637,
+  "lon": 10.6676,
+  "start": "2027-03-16T09:00:00+01:00",
+  "end": "2027-03-21T17:00:00+01:00",
+  "dateStatus": "inferred",
+  "impact": 5,
+  "note": "start 15 or 16 Mar",
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-nor-wales-2026",
+  "title": "Norway vs Wales (men), Ullevaal",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.9488,
+  "lon": 10.7346,
+  "start": "2026-11-14T17:00:00+01:00",
+  "end": "2026-11-14T20:00:00+01:00",
+  "expectedAttendance": 27000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "inferred",
+  "impact": 5,
+  "note": "kick-off 17:00 or 18:00",
+  "sources": [
+   {
+    "label": "Ullevaal Stadion",
+    "url": "https://www.ullevaal-stadion.no/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-cupfinal-2027",
+  "title": "Men's cup final (NM-finalen), probably Ullevaal",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.9488,
+  "lon": 10.7346,
+  "start": "2027-05-29T15:00:00+02:00",
+  "end": "2027-05-29T19:00:00+02:00",
+  "expectedAttendance": 27000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "inferred",
+  "impact": 5,
+  "note": "venue probable",
+  "sources": [
+   {
+    "label": "Ullevaal Stadion",
+    "url": "https://www.ullevaal-stadion.no/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-tbane-2026-11-19",
+  "title": "T-bane closed through the centre (Nationaltheatret, Stortinget, Jernbanetorget)",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9146,
+  "lon": 10.7317,
+  "start": "2026-11-19T00:00:00+01:00",
+  "end": "2026-11-22T23:59:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Ruter: Det store T-baneløftet (closures)",
+    "url": "https://ruter.no/om-oss/prosjekter-og-innovasjon/det-store-t-baneloftet"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-tbane-2027-02-25",
+  "title": "T-bane closed through the centre (Nationaltheatret, Stortinget, Jernbanetorget)",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9146,
+  "lon": 10.7317,
+  "start": "2027-02-25T00:00:00+01:00",
+  "end": "2027-02-28T23:59:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Ruter: Det store T-baneløftet (closures)",
+    "url": "https://ruter.no/om-oss/prosjekter-og-innovasjon/det-store-t-baneloftet"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-tbane-2027-03-26",
+  "title": "T-bane closed through the centre (Nationaltheatret, Stortinget, Jernbanetorget) : Easter",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9146,
+  "lon": 10.7317,
+  "start": "2027-03-26T00:00:00+01:00",
+  "end": "2027-03-29T23:59:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Ruter: Det store T-baneløftet (closures)",
+    "url": "https://ruter.no/om-oss/prosjekter-og-innovasjon/det-store-t-baneloftet"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-tbane-2027-05-04",
+  "title": "T-bane closed through the centre (Nationaltheatret, Stortinget, Jernbanetorget) : Ascension",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9146,
+  "lon": 10.7317,
+  "start": "2027-05-04T00:00:00+02:00",
+  "end": "2027-05-07T23:59:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Ruter: Det store T-baneløftet (closures)",
+    "url": "https://ruter.no/om-oss/prosjekter-og-innovasjon/det-store-t-baneloftet"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-tbane-2027-07-01",
+  "title": "T-bane closed through the centre (Nationaltheatret, Stortinget, Jernbanetorget)",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9146,
+  "lon": 10.7317,
+  "start": "2027-07-01T00:00:00+02:00",
+  "end": "2027-07-04T23:59:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Ruter: Det store T-baneløftet (closures)",
+    "url": "https://ruter.no/om-oss/prosjekter-og-innovasjon/det-store-t-baneloftet"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-tbane-2027-08-12",
+  "title": "T-bane closed through the centre (Nationaltheatret, Stortinget, Jernbanetorget) : Øya",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9146,
+  "lon": 10.7317,
+  "start": "2027-08-12T00:00:00+02:00",
+  "end": "2027-08-15T23:59:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Ruter: Det store T-baneløftet (closures)",
+    "url": "https://ruter.no/om-oss/prosjekter-og-innovasjon/det-store-t-baneloftet"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-banenor-nights-2027",
+  "title": "No trains Oslo S to Lysaker on weekday nights (22:30 to 04:15)",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9111,
+  "lon": 10.7528,
+  "start": "2027-01-25T22:30:00+01:00",
+  "end": "2027-02-06T04:15:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Bane NOR traffic notices",
+    "url": "https://www.banenor.no/reise-og-trafikk/trafikkmeldinger/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-banenor-weekend-2027",
+  "title": "Oslo S to Lysaker closed all weekend",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9111,
+  "lon": 10.7528,
+  "start": "2027-01-30T00:00:00+01:00",
+  "end": "2027-01-31T23:59:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Bane NOR traffic notices",
+    "url": "https://www.banenor.no/reise-og-trafikk/trafikkmeldinger/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-oslos-summer-2027",
+  "title": "Oslo S closed to trains (reported, not verified)",
+  "category": "transit",
+  "venue": null,
+  "lat": 59.9111,
+  "lon": 10.7528,
+  "start": "2027-07-17T00:00:00+02:00",
+  "end": "2027-08-03T23:59:00+02:00",
+  "dateStatus": "unverified",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Bane NOR traffic notices",
+    "url": "https://www.banenor.no/reise-og-trafikk/trafikkmeldinger/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-films-2026-12-18",
+  "title": "Avengers: Doomsday and Dune: Part Three open (Klingenberg kino, Saga)",
+  "category": "cinema",
+  "venue": null,
+  "lat": 59.9135,
+  "lon": 10.7325,
+  "start": "2026-12-18T12:00:00+01:00",
+  "end": "2026-12-20T23:59:00+01:00",
+  "dateStatus": "inferred",
+  "impact": 4,
+  "note": "worldwide date; Norwegian date not confirmed",
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-blackfriday-2026",
+  "title": "Black Friday",
+  "category": "other",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2026-11-27T10:00:00+01:00",
+  "end": "2026-11-27T22:00:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-sundayshop-2026-12-06",
+  "title": "Shops open on Sunday before Christmas",
+  "category": "other",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2026-12-06T12:00:00+01:00",
+  "end": "2026-12-06T18:00:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-sundayshop-2026-12-13",
+  "title": "Shops open on Sunday before Christmas",
+  "category": "other",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2026-12-13T12:00:00+01:00",
+  "end": "2026-12-13T18:00:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-sundayshop-2026-12-20",
+  "title": "Shops open on Sunday before Christmas",
+  "category": "other",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2026-12-20T12:00:00+01:00",
+  "end": "2026-12-20T18:00:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-cruise-2027-07-03",
+  "title": "Cruise peak: 8 ships in Oslo",
+  "category": "cruise",
+  "venue": null,
+  "lat": 59.9045,
+  "lon": 10.7395,
+  "start": "2027-07-03T08:00:00+02:00",
+  "end": "2027-07-03T18:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "CruiseMapper Oslo, July 2027",
+    "url": "https://www.cruisemapper.com/ports/oslo-port-57?month=2027-07"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-cruise-2027-07-04",
+  "title": "Cruise peak: 8 ships in Oslo",
+  "category": "cruise",
+  "venue": null,
+  "lat": 59.9045,
+  "lon": 10.7395,
+  "start": "2027-07-04T08:00:00+02:00",
+  "end": "2027-07-04T18:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "CruiseMapper Oslo, July 2027",
+    "url": "https://www.cruisemapper.com/ports/oslo-port-57?month=2027-07"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-cruise-2027-07-22",
+  "title": "Cruise peak: 7 ships in Oslo",
+  "category": "cruise",
+  "venue": null,
+  "lat": 59.9045,
+  "lon": 10.7395,
+  "start": "2027-07-22T08:00:00+02:00",
+  "end": "2027-07-22T18:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "CruiseMapper Oslo, July 2027",
+    "url": "https://www.cruisemapper.com/ports/oslo-port-57?month=2027-07"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-cruise-2027-07-26",
+  "title": "Cruise peak: 7 ships in Oslo",
+  "category": "cruise",
+  "venue": null,
+  "lat": 59.9045,
+  "lon": 10.7395,
+  "start": "2027-07-26T08:00:00+02:00",
+  "end": "2027-07-26T18:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "CruiseMapper Oslo, July 2027",
+    "url": "https://www.cruisemapper.com/ports/oslo-port-57?month=2027-07"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-ramadan-2027",
+  "title": "Ramadan (lunch dips, rush after iftar)",
+  "category": "holiday",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-02-08T00:00:00+01:00",
+  "end": "2027-03-08T23:59:00+01:00",
+  "dateStatus": "inferred",
+  "impact": 4,
+  "note": "approximate, moon sighting",
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-eid-2027",
+  "title": "Eid al-Fitr, family day out",
+  "category": "holiday",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-03-09T10:00:00+01:00",
+  "end": "2027-03-10T22:00:00+01:00",
+  "dateStatus": "inferred",
+  "impact": 4,
+  "sources": [
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-russ-2027",
+  "title": "Russ celebration season (late-night groups)",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-04-15T20:00:00+02:00",
+  "end": "2027-05-18T03:00:00+02:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "note": "mid-April start",
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-off-2027",
+  "title": "Oslo Freedom Forum",
+  "category": "conference",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-05-31T10:00:00+02:00",
+  "end": "2027-06-02T22:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-musikkfest-2027",
+  "title": "Musikkfest Oslo",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-06-05T10:00:00+02:00",
+  "end": "2027-06-05T22:00:00+02:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-jazz-2027",
+  "title": "Oslo Jazz Festival",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-08-16T17:00:00+02:00",
+  "end": "2027-08-21T23:59:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-marathon-2027",
+  "title": "Oslo Marathon, start and finish at Rådhusplassen",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.9117,
+  "lon": 10.7339,
+  "start": "2027-09-11T08:00:00+02:00",
+  "end": "2027-09-11T16:00:00+02:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-kulturnatt-2027",
+  "title": "Kulturnatt Oslo",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-09-17T17:00:00+02:00",
+  "end": "2027-09-17T23:59:00+02:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-norshipping-2027",
+  "title": "Nor-Shipping (fills central hotels)",
+  "category": "conference",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-06-07T10:00:00+02:00",
+  "end": "2027-06-11T22:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-obf-2027",
+  "title": "Oslo Business Forum",
+  "category": "conference",
+  "venue": null,
+  "lat": 59.9139,
+  "lon": 10.738,
+  "start": "2027-09-22T10:00:00+02:00",
+  "end": "2027-09-23T22:00:00+02:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-8mars-2027",
+  "title": "8 March march (International Women's Day)",
+  "category": "protest",
+  "venue": null,
+  "lat": 59.9131,
+  "lon": 10.74,
+  "start": "2027-03-08T16:00:00+01:00",
+  "end": "2027-03-08T19:00:00+01:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-1mai-2027",
+  "title": "1 May march (Labour Day)",
+  "category": "protest",
+  "venue": null,
+  "lat": 59.9131,
+  "lon": 10.74,
+  "start": "2027-05-01T10:00:00+02:00",
+  "end": "2027-05-01T15:00:00+02:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-11-12-jcole",
+  "title": "J. Cole, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2026-11-12T19:00:00+01:00",
+  "end": "2026-11-12T22:30:00+01:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-11-14-prodigy",
+  "title": "The Prodigy, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2026-11-14T19:00:00+01:00",
+  "end": "2026-11-14T22:30:00+01:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-12-05-wwales",
+  "title": "Norway vs Wales (women), Ullevaal",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.9488,
+  "lon": 10.7346,
+  "start": "2026-12-05T19:00:00+01:00",
+  "end": "2026-12-05T22:30:00+01:00",
+  "expectedAttendance": 27000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Ullevaal Stadion",
+    "url": "https://www.ullevaal-stadion.no/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-12-11-dom1",
+  "title": "Christmas concerts, Oslo Cathedral",
+  "category": "concert",
+  "venue": null,
+  "lat": 59.9124,
+  "lon": 10.7465,
+  "start": "2026-12-11T19:00:00+01:00",
+  "end": "2026-12-11T22:30:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-12-12-dom2",
+  "title": "Christmas concerts, Oslo Cathedral",
+  "category": "concert",
+  "venue": null,
+  "lat": 59.9124,
+  "lon": 10.7465,
+  "start": "2026-12-12T19:00:00+01:00",
+  "end": "2026-12-12T22:30:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-12-13-dom3",
+  "title": "Christmas concerts, Oslo Cathedral",
+  "category": "concert",
+  "venue": null,
+  "lat": 59.9124,
+  "lon": 10.7465,
+  "start": "2026-12-13T19:00:00+01:00",
+  "end": "2026-12-13T22:30:00+01:00",
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2026-12-28-handball",
+  "title": "Handball cup finals, Oslo Spektrum",
+  "category": "sports",
+  "venue": "Oslo Spektrum",
+  "lat": 59.9129,
+  "lon": 10.7547,
+  "start": "2026-12-28T19:00:00+01:00",
+  "end": "2026-12-28T22:30:00+01:00",
+  "expectedAttendance": 9000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Oslo Spektrum events",
+    "url": "https://www.oslospektrum.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-02-04-disney",
+  "title": "Disney On Ice (to 7 Feb), Unity Arena",
+  "category": "other",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-02-04T19:00:00+01:00",
+  "end": "2027-02-04T22:30:00+01:00",
+  "expectedAttendance": 10000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-02-13-broiler",
+  "title": "Broiler, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-02-13T19:00:00+01:00",
+  "end": "2027-02-13T22:30:00+01:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-02-18-wenche",
+  "title": "Wenche Myhre, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-02-18T19:00:00+01:00",
+  "end": "2027-02-18T22:30:00+01:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-02-19-ffdp",
+  "title": "Five Finger Death Punch, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-02-19T19:00:00+01:00",
+  "end": "2027-02-19T22:30:00+01:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-03-02-teddy",
+  "title": "Teddy Swims, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-03-02T19:00:00+01:00",
+  "end": "2027-03-02T22:30:00+01:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-04-06-rush",
+  "title": "Rush, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-04-06T19:00:00+02:00",
+  "end": "2027-04-06T22:30:00+02:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-04-29-inflames",
+  "title": "In Flames, Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.9129,
+  "lon": 10.7547,
+  "start": "2027-04-29T19:00:00+02:00",
+  "end": "2027-04-29T22:30:00+02:00",
+  "expectedAttendance": 11500,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Oslo Spektrum events",
+    "url": "https://www.oslospektrum.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-05-05-adams2",
+  "title": "Bryan Adams, Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.9129,
+  "lon": 10.7547,
+  "start": "2027-05-05T19:00:00+02:00",
+  "end": "2027-05-05T22:30:00+02:00",
+  "expectedAttendance": 11500,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Oslo Spektrum events",
+    "url": "https://www.oslospektrum.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-05-08-sombr",
+  "title": "sombr, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-05-08T19:00:00+02:00",
+  "end": "2027-05-08T22:30:00+02:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-06-10-bislett",
+  "title": "Bislett Games (athletics), Bislett",
+  "category": "sports",
+  "venue": null,
+  "lat": 59.925,
+  "lon": 10.733,
+  "start": "2027-06-10T19:00:00+02:00",
+  "end": "2027-06-10T22:30:00+02:00",
+  "expectedAttendance": 15000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-06-23-tor",
+  "title": "Tons of Rock (to 26 Jun), Ekeberg",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.899,
+  "lon": 10.77,
+  "start": "2027-06-23T19:00:00+02:00",
+  "end": "2027-06-23T22:30:00+02:00",
+  "expectedAttendance": 30000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-arena-2027-07-09-nickelback",
+  "title": "Nickelback, Unity Arena",
+  "category": "concert",
+  "venue": "Unity Arena",
+  "lat": 59.8955,
+  "lon": 10.6235,
+  "start": "2027-07-09T19:00:00+02:00",
+  "end": "2027-07-09T22:30:00+02:00",
+  "expectedAttendance": 25000,
+  "attendanceIsEstimate": true,
+  "dateStatus": "confirmed",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Unity Arena events",
+    "url": "https://unityarena.no/arrangementer/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ },
+ {
+  "id": "cal-oya-2027",
+  "title": "Øya festival",
+  "category": "festival",
+  "venue": null,
+  "lat": 59.916,
+  "lon": 10.78,
+  "start": "2027-08-11T14:00:00+02:00",
+  "end": "2027-08-14T23:59:00+02:00",
+  "dateStatus": "inferred",
+  "impact": 3,
+  "sources": [
+   {
+    "label": "Visit Oslo",
+    "url": "https://www.visitoslo.com/"
+   },
+   {
+    "label": "Owner demand calendar (docs/bk-klingenberg-demand-calendar.md)",
+    "url": "/docs/bk-klingenberg-demand-calendar.md"
+   }
+  ]
+ }
+]

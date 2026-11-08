@@ -17,8 +17,9 @@ function distM(lat: number, lon: number) {
 export default function EventsPage() {
   const hist = readData<CityEvent[]>("events-history.json", []);
   const up = readData<CityEvent[]>("events-upcoming.json", []);
+  const cal = readData<CityEvent[]>("events-calendar.json", []);
   const seen = new Set<string>();
-  const all = [...up, ...hist].filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)))
+  const all = [...up, ...hist, ...cal].filter((e) => (seen.has(e.id) ? false : (seen.add(e.id), true)))
     .map((e) => ({ ...e, distanceM: Math.round(distM(e.lat, e.lon)) }))
     .sort((a, b) => b.start.localeCompare(a.start));
   const cats = all.reduce<Record<string, number>>((m, e) => ((m[e.category] = (m[e.category] ?? 0) + 1), m), {});
@@ -26,7 +27,7 @@ export default function EventsPage() {
   return (
     <main className="adm-content">
       <PageHead crumb="Signals / Events" title="Events" icon={CalendarDays}
-        finding={<><b>{all.length} events</b> with a source link each, {within1k} of them within 1 km of the store. The model learns how much each kind moves sales.</>} />
+        finding={<><b>{all.length} events</b> with a source link each, {within1k} of them within 1 km of the store. {cal.length} come from the owner demand calendar, marked when the date is inferred or unverified. The model learns how much each kind moves sales.</>} />
       <section className="ak-panel">
         <div className="ak-kpis">
           {Object.entries(cats).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([k, v]) => (

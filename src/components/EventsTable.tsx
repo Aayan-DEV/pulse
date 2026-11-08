@@ -38,7 +38,7 @@ export default function EventsTable({ events }: { events: Row[] }) {
           <tbody>
             {rows.map((e) => (
               <tr key={e.id}>
-                <td style={{ whiteSpace: "normal", minWidth: 260 }}>{e.title}<span className="sub">{e.venue}{e.recurring ? ` · ${e.recurring}` : ""}</span></td>
+                <td style={{ whiteSpace: "normal", minWidth: 260 }}>{e.title}<span className="sub">{e.venue}{e.recurring ? ` · ${e.recurring}` : ""}{e.note ? ` · ${e.note}` : ""}</span>{e.dateStatus && e.dateStatus !== "confirmed" && <span className="ak-pill ak-pill--warn" style={{ marginTop: 4 }}>Date {e.dateStatus}</span>}{e.impact && <span className="ak-pill ak-pill--data" style={{ marginTop: 4, marginLeft: 4 }}>Impact {e.impact}/5</span>}</td>
                 <td><span className={`ak-pill ${e.category === "transit" || e.category === "protest" ? "ak-pill--neg" : e.category === "celebrity" ? "ak-pill--data" : ""}`}>{e.category}</span></td>
                 <td className="num">{fmt(e.start)}</td>
                 <td className="num">{e.distanceM < 1000 ? `${e.distanceM} m` : `${(e.distanceM / 1000).toFixed(1)} km`}</td>

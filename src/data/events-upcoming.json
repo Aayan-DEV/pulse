@@ -1,0 +1,2264 @@
+[
+ {
+  "id": "konserthus-2026-11-8-mari-boine-70-ar",
+  "title": "Mari Boine 70 år, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-08T19:00:00+01:00",
+  "end": "2026-11-08T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Mari Boine 70 år",
+    "url": "https://oslokonserthus.no/program/mari-boine-70-år"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-10-carola",
+  "title": "Carola, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-10T19:00:00+01:00",
+  "end": "2026-11-10T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Carola",
+    "url": "https://oslokonserthus.no/program/carola-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-12-oslo-filharmonien-brahms-nr-2-4",
+  "title": "Oslo-filharmonien | Brahms nr. 2 & 4, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-12T19:00:00+01:00",
+  "end": "2026-11-12T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Brahms nr. 2 & 4",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-brahms-3"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-12-stargazer",
+  "title": "Stargazer, Oslo Konserthus (Røverstaden)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-12T19:00:00+01:00",
+  "end": "2026-11-12T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Stargazer",
+    "url": "https://oslokonserthus.no/program/stargazer"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-13-synne-vo",
+  "title": "Synne Vo (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-13T19:00:00+01:00",
+  "end": "2026-11-13T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Synne Vo",
+    "url": "https://oslospektrum.no/arrangementer/synne-vo/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 13. og lørdag 14. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-13-ylvis-calle",
+  "title": "Ylvis & Calle, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-13T19:00:00+01:00",
+  "end": "2026-11-13T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Ylvis & Calle",
+    "url": "https://oslokonserthus.no/program/ylvis-calle"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-14-synne-vo",
+  "title": "Synne Vo (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-14T19:00:00+01:00",
+  "end": "2026-11-14T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Synne Vo",
+    "url": "https://oslospektrum.no/arrangementer/synne-vo/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 13. og lørdag 14. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-14-de-fire-arstidene",
+  "title": "De fire årstidene, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-14T19:00:00+01:00",
+  "end": "2026-11-14T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: De fire årstidene",
+    "url": "https://oslokonserthus.no/program/de-fire-årstidene"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-14-christiania-jazzband-morten-gunnar-larsen",
+  "title": "Christiania Jazzband & Morten Gunnar Larsen, Oslo Konserthus (Glasshuset)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-14T19:00:00+01:00",
+  "end": "2026-11-14T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Christiania Jazzband & Morten Gunnar Larsen",
+    "url": "https://oslokonserthus.no/program/christiania-jazzband-morten-gunnar-larsen-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-14-ylvis-calle",
+  "title": "Ylvis & Calle, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-14T19:00:00+01:00",
+  "end": "2026-11-14T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Ylvis & Calle",
+    "url": "https://oslokonserthus.no/program/ylvis-calle"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-15-love-actually-in-concert-2026",
+  "title": "Love Actually™ in Concert 2026, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-15T19:00:00+01:00",
+  "end": "2026-11-15T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Love Actually™ in Concert 2026",
+    "url": "https://oslokonserthus.no/program/love-actually-in-concert-4"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-17-tove-lo",
+  "title": "Tove Lo (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-17T19:00:00+01:00",
+  "end": "2026-11-17T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Tove Lo",
+    "url": "https://oslospektrum.no/arrangementer/tove-lo/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Tirsdag 17. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "nobel-center-2026-11-18-the-press-under-pressure",
+  "title": "The press under pressure (Nobel Peace Center event)",
+  "category": "other",
+  "venue": "Nobel Peace Center",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "start": "2026-11-18T12:00:00+01:00",
+  "end": "2026-11-18T13:00:00+01:00",
+  "sources": [
+   {
+    "label": "Nobel Peace Center: The press under pressure",
+    "url": "https://www.nobelpeacecenter.org/en/events/the-press-under-pressure"
+   },
+   {
+    "label": "Nobel Peace Center events",
+    "url": "https://www.nobelpeacecenter.org/en/events"
+   }
+  ]
+ },
+ {
+  "id": "nobel-center-2026-11-18-preview-of-the-exhibition-the-price-of-peace",
+  "title": "Preview of the exhibition \"The Price of Peace\" (Nobel Peace Center tour)",
+  "category": "other",
+  "venue": "Nobel Peace Center",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "start": "2026-11-18T12:30:00+01:00",
+  "end": "2026-11-18T15:20:00+01:00",
+  "sources": [
+   {
+    "label": "Nobel Peace Center: Preview of the exhibition \"The Price of Peace\"",
+    "url": "https://www.nobelpeacecenter.org/en/tours/preview-of-the-exhibition-the-price-of-peace"
+   },
+   {
+    "label": "Nobel Peace Center events",
+    "url": "https://www.nobelpeacecenter.org/en/events"
+   }
+  ]
+ },
+ {
+  "id": "nobel-center-2026-11-18-justice-by-poets-in-the-garden",
+  "title": "\"Justice\" by Poets in the garden (Nobel Peace Center event)",
+  "category": "other",
+  "venue": "Nobel Peace Center",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "start": "2026-11-18T13:00:00+01:00",
+  "end": "2026-11-18T14:30:00+01:00",
+  "sources": [
+   {
+    "label": "Nobel Peace Center: \"Justice\" by Poets in the garden",
+    "url": "https://www.nobelpeacecenter.org/en/events/justice-by-poets-in-the-garden"
+   },
+   {
+    "label": "Nobel Peace Center events",
+    "url": "https://www.nobelpeacecenter.org/en/events"
+   }
+  ]
+ },
+ {
+  "id": "konserthus-2026-11-18-oslo-filharmonien-kort-klassisk-brahms",
+  "title": "Oslo-filharmonien | Kort & klassisk: Brahms, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-18T19:00:00+01:00",
+  "end": "2026-11-18T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Kort & klassisk: Brahms",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-kort-klassisk-brahms-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-19-oslo-filharmonien-brahms-nr-3-og-pianokonsert-nr-1",
+  "title": "Oslo-filharmonien | Brahms nr. 3 og pianokonsert nr. 1, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-19T19:00:00+01:00",
+  "end": "2026-11-19T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Brahms nr. 3 og pianokonsert nr. 1",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-brahms-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-19-molly-hammar",
+  "title": "Molly Hammar, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-19T19:00:00+01:00",
+  "end": "2026-11-19T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Molly Hammar",
+    "url": "https://oslokonserthus.no/program/molly-hammar"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-20-marstein",
+  "title": "Marstein (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-20T19:00:00+01:00",
+  "end": "2026-11-20T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Marstein",
+    "url": "https://oslospektrum.no/arrangementer/marstein/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 20. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-20-christmas-with-nordic-tenors-2026",
+  "title": "Christmas with Nordic Tenors 2026, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-20T19:00:00+01:00",
+  "end": "2026-11-20T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Christmas with Nordic Tenors 2026",
+    "url": "https://oslokonserthus.no/program/christmas-with-nordic-tenors-2026"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-20-molly-hammar",
+  "title": "Molly Hammar, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-20T19:00:00+01:00",
+  "end": "2026-11-20T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Molly Hammar",
+    "url": "https://oslokonserthus.no/program/molly-hammar"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-21-westlife",
+  "title": "Westlife (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-21T19:00:00+01:00",
+  "end": "2026-11-21T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Westlife",
+    "url": "https://oslospektrum.no/arrangementer/westlife/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 21. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-21-barratt-due-i-konserthuset",
+  "title": "Barratt Due i Konserthuset, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-21T19:00:00+01:00",
+  "end": "2026-11-21T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Barratt Due i Konserthuset",
+    "url": "https://oslokonserthus.no/program/barratt-due-i-konserthuset"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-21-livepodkast-beckheim-ness",
+  "title": "Livepodkast: Beckheim & Ness, Oslo Konserthus (Røverstaden)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-21T19:00:00+01:00",
+  "end": "2026-11-21T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Livepodkast: Beckheim & Ness",
+    "url": "https://oslokonserthus.no/program/livepodkast-beckheim-ness-3"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-22-bj-rnis-redder-julen",
+  "title": "Bjørnis redder julen!, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-22T19:00:00+01:00",
+  "end": "2026-11-22T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Bjørnis redder julen!",
+    "url": "https://oslokonserthus.no/program/bjørnis-redder-julen"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-23-10cc",
+  "title": "10cc, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-23T19:00:00+01:00",
+  "end": "2026-11-23T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: 10cc",
+    "url": "https://oslokonserthus.no/program/10cc"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-24-det-betales",
+  "title": "Det Betales, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-24T19:00:00+01:00",
+  "end": "2026-11-24T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Det Betales",
+    "url": "https://oslokonserthus.no/program/det-betales"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-24-jan-erik-vold-john-pal-inderberg",
+  "title": "Jan Erik Vold & John Pål Inderberg, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-24T19:00:00+01:00",
+  "end": "2026-11-24T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Jan Erik Vold & John Pål Inderberg",
+    "url": "https://oslokonserthus.no/program/jan-erik-vold-john-pål-inderberg"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-26-niec-2026",
+  "title": "NIEC 2026, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-26T19:00:00+01:00",
+  "end": "2026-11-26T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: NIEC 2026",
+    "url": "https://oslokonserthus.no/program/niec-2026"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-26-oslo-filharmonien-nordheim-lutoslawski-og-berlioz",
+  "title": "Oslo-filharmonien | Nordheim, Lutoslawski og Berlioz, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-26T19:00:00+01:00",
+  "end": "2026-11-26T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Nordheim, Lutoslawski og Berlioz",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-nordheim-lutoslawski-og-berlioz"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-27-beabadoobee-the-powerlines-tour",
+  "title": "beabadoobee: The Powerlines Tour (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-27T19:00:00+01:00",
+  "end": "2026-11-27T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: beabadoobee: The Powerlines Tour",
+    "url": "https://oslospektrum.no/arrangementer/beabadobee/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 27. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-27-kayhan-kalhor-ensemble",
+  "title": "Kayhan Kalhor & Ensemble, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-27T19:00:00+01:00",
+  "end": "2026-11-27T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Kayhan Kalhor & Ensemble",
+    "url": "https://oslokonserthus.no/program/kayhan-kalhor-ensemble"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-11-28-lars-winnerback",
+  "title": "Lars Winnerbäck (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-11-28T19:00:00+01:00",
+  "end": "2026-11-28T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Lars Winnerbäck",
+    "url": "https://oslospektrum.no/arrangementer/lars-winnerback-2/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 28. november 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-28-mas-que-nada-m-bruna-santana-og-harald-bergersen",
+  "title": "Mas Que Nada m/Bruna Santana og Harald Bergersen, Oslo Konserthus (Glasshuset)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-28T19:00:00+01:00",
+  "end": "2026-11-28T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Mas Que Nada m/Bruna Santana og Harald Bergersen",
+    "url": "https://oslokonserthus.no/program/mas-que-nada-m-bruna-santana-og-harald-bergersen"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-28-janove-med-strykekvartett",
+  "title": "Janove med Strykekvartett, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-28T19:00:00+01:00",
+  "end": "2026-11-28T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Janove med Strykekvartett",
+    "url": "https://oslokonserthus.no/program/janove-med-strykekvartett"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-29-konsert-for-liten-og-for-stor",
+  "title": "Konsert for liten og for stor, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-29T19:00:00+01:00",
+  "end": "2026-11-29T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Konsert for liten og for stor",
+    "url": "https://oslokonserthus.no/program/trygve-kongshavn-og-credo"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-29-uli-jon-roth",
+  "title": "Uli Jon Roth, Oslo Konserthus (Røverstaden)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-29T19:00:00+01:00",
+  "end": "2026-11-29T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Uli Jon Roth",
+    "url": "https://oslokonserthus.no/program/uli-jon-roth"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-29-eva-weel-skram",
+  "title": "Eva Weel Skram, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-29T19:00:00+01:00",
+  "end": "2026-11-29T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Eva Weel Skram",
+    "url": "https://oslokonserthus.no/program/eva-weel-skram-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-11-30-atle-pettersen-tusen-julelys",
+  "title": "Atle Pettersen - Tusen julelys, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-11-30T19:00:00+01:00",
+  "end": "2026-11-30T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Atle Pettersen - Tusen julelys",
+    "url": "https://oslokonserthus.no/program/atle-pettersen-tusen-julelys"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-1-william-sundman-saaf",
+  "title": "William Sundman Sääf, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-01T19:00:00+01:00",
+  "end": "2026-12-01T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: William Sundman Sääf",
+    "url": "https://oslokonserthus.no/program/william-sundman-sääf"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-2-trio-de-janeiro-med-hanna-paulsberg-birger-mistere",
+  "title": "Trio de Janeiro med Hanna Paulsberg & Birger Mistereggen, Oslo Konserthus (Røverstaden)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-02T19:00:00+01:00",
+  "end": "2026-12-02T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Trio de Janeiro med Hanna Paulsberg & Birger Mistereggen",
+    "url": "https://oslokonserthus.no/program/trio-de-janeiro-med-birger-mistereggen"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-2-prima-vista-social-club-majken-christiansen",
+  "title": "Prima Vista Social Club & Majken Christiansen, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-02T19:00:00+01:00",
+  "end": "2026-12-02T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Prima Vista Social Club & Majken Christiansen",
+    "url": "https://oslokonserthus.no/program/prima-vista-social-club-majken-christiansen-3"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-3-jake-xerxes-fussell",
+  "title": "Jake Xerxes Fussell, Oslo Konserthus (Røverstaden)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-03T19:00:00+01:00",
+  "end": "2026-12-03T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Jake Xerxes Fussell",
+    "url": "https://oslokonserthus.no/program/jake-xerxes-fussell"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-3-oslo-filharmonien-seasons-recomposed",
+  "title": "Oslo-filharmonien | Seasons Recomposed, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-03T19:00:00+01:00",
+  "end": "2026-12-03T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Seasons Recomposed",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-seasons-recomposed"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-4-the-sinatra-songbook-2026",
+  "title": "The Sinatra Songbook 2026, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-04T19:00:00+01:00",
+  "end": "2026-12-04T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: The Sinatra Songbook 2026",
+    "url": "https://oslokonserthus.no/program/the-sinatra-songbook-2026"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-5-julestemning-med-lise-davidsen",
+  "title": "Julestemning med Lise Davidsen (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-05T19:00:00+01:00",
+  "end": "2026-12-05T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Julestemning med Lise Davidsen",
+    "url": "https://oslospektrum.no/arrangementer/julestemning-med-lise-davidsen/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 5. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-5-oslo-filharmonien-barnas-jul",
+  "title": "Oslo-filharmonien | Barnas jul, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-05T19:00:00+01:00",
+  "end": "2026-12-05T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Barnas jul",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-barnas-jul"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-5-oslo-filharmonien-seasons-recomposed",
+  "title": "Oslo-filharmonien | Seasons Recomposed, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-05T19:00:00+01:00",
+  "end": "2026-12-05T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Seasons Recomposed",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-seasons-recomposed"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-6-emma",
+  "title": "emma (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-06T19:00:00+01:00",
+  "end": "2026-12-06T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: emma",
+    "url": "https://oslospektrum.no/arrangementer/emma/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Søndag 6. desember 2026 Kl. 14.00 (få billetter) og kl. 18.00 (utsolgt). Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-6-oslo-filharmonien-barnas-jul",
+  "title": "Oslo-filharmonien | Barnas jul, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-06T19:00:00+01:00",
+  "end": "2026-12-06T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Barnas jul",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-barnas-jul"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-7-sissels-jul-2026",
+  "title": "Sissels Jul - 2026, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-07T19:00:00+01:00",
+  "end": "2026-12-07T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Sissels Jul - 2026",
+    "url": "https://oslokonserthus.no/program/sissels-jul-2026"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-8-night-of-soul",
+  "title": "Night of Soul, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-08T19:00:00+01:00",
+  "end": "2026-12-08T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Night of Soul",
+    "url": "https://oslokonserthus.no/program/night-of-soul"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-8-bugge-wesseltoft-2026",
+  "title": "Bugge Wesseltoft 2026, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-08T19:00:00+01:00",
+  "end": "2026-12-08T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Bugge Wesseltoft 2026",
+    "url": "https://oslokonserthus.no/program/bugge-wesseltoft-2026"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-9-kurs-i-klassisk-fra-bach-til-beatles",
+  "title": "«Kurs i klassisk»: Fra Bach til Beatles, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-09T19:00:00+01:00",
+  "end": "2026-12-09T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: «Kurs i klassisk»: Fra Bach til Beatles",
+    "url": "https://oslokonserthus.no/program/fra-bach-til-beatles-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-9-christel-alsos",
+  "title": "Christel Alsos, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-09T19:00:00+01:00",
+  "end": "2026-12-09T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Christel Alsos",
+    "url": "https://oslokonserthus.no/program/christel-alsos-3-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "nobel-center-2026-12-10-people-s-peace-prize-celebration",
+  "title": "People's Peace Prize Celebration (Nobel Peace Center event)",
+  "category": "ceremony",
+  "venue": "Nobel Peace Center",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "start": "2026-12-10T06:30:00+01:00",
+  "end": "2026-12-10T12:00:00+01:00",
+  "sources": [
+   {
+    "label": "Nobel Peace Center: People's Peace Prize Celebration",
+    "url": "https://www.nobelpeacecenter.org/en/events/people-s-peace-prize-celebration-2026"
+   },
+   {
+    "label": "Nobel Peace Center events",
+    "url": "https://www.nobelpeacecenter.org/en/events"
+   }
+  ]
+ },
+ {
+  "id": "nobel-center-2026-12-10-screening-of-the-nobel-peace-prize-ceremony",
+  "title": "Screening of the Nobel Peace Prize Ceremony (Nobel Peace Center event)",
+  "category": "other",
+  "venue": "Nobel Peace Center",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "start": "2026-12-10T07:00:00+01:00",
+  "end": "2026-12-10T08:30:00+01:00",
+  "sources": [
+   {
+    "label": "Nobel Peace Center: Screening of the Nobel Peace Prize Ceremony",
+    "url": "https://www.nobelpeacecenter.org/en/events/screening-of-the-nobel-peace-prize-ceremony-2026"
+   },
+   {
+    "label": "Nobel Peace Center events",
+    "url": "https://www.nobelpeacecenter.org/en/events"
+   }
+  ]
+ },
+ {
+  "id": "nobel-center-2026-12-10-torchlight-procession-nobel-peace-prize-2026",
+  "title": "Torchlight procession - Nobel Peace Prize 2026 (Nobel Peace Center event)",
+  "category": "ceremony",
+  "venue": "Nobel Peace Center",
+  "lat": 59.911612,
+  "lon": 10.7304,
+  "start": "2026-12-10T11:45:00+01:00",
+  "end": "2026-12-10T13:00:00+01:00",
+  "sources": [
+   {
+    "label": "Nobel Peace Center: Torchlight procession - Nobel Peace Prize 2026",
+    "url": "https://www.nobelpeacecenter.org/en/events/torchlight-procession-nobel-peace-prize-2026"
+   },
+   {
+    "label": "Nobel Peace Center events",
+    "url": "https://www.nobelpeacecenter.org/en/events"
+   }
+  ]
+ },
+ {
+  "id": "konserthus-2026-12-10-oslo-filharmonien-korngold-og-r-strauss",
+  "title": "Oslo-filharmonien | Korngold og R. Strauss, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-10T19:00:00+01:00",
+  "end": "2026-12-10T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Korngold og R. Strauss",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-korngold-og-r-strauss"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-11-emma-steinbakken-emmas-jul",
+  "title": "Emma Steinbakken – Emmas Jul (julekonsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-11T19:00:00+01:00",
+  "end": "2026-12-11T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Emma Steinbakken – Emmas Jul",
+    "url": "https://oslospektrum.no/arrangementer/emma-steinbakken-emmas-jul/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 11. og lørdag 12. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-11-oslo-filharmonien-korngold-og-r-strauss",
+  "title": "Oslo-filharmonien | Korngold og R. Strauss, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-11T19:00:00+01:00",
+  "end": "2026-12-11T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Korngold og R. Strauss",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-korngold-og-r-strauss"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-11-jul-pa-svenska-2026",
+  "title": "Jul på Svenska 2026, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-11T19:00:00+01:00",
+  "end": "2026-12-11T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Jul på Svenska 2026",
+    "url": "https://oslokonserthus.no/program/jul-på-svenska-2026"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-12-emma-steinbakken-emmas-jul",
+  "title": "Emma Steinbakken – Emmas Jul (julekonsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-12T19:00:00+01:00",
+  "end": "2026-12-12T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Emma Steinbakken – Emmas Jul",
+    "url": "https://oslospektrum.no/arrangementer/emma-steinbakken-emmas-jul/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 11. og lørdag 12. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-12-kristelig-gymnasium",
+  "title": "Kristelig Gymnasium, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-12T19:00:00+01:00",
+  "end": "2026-12-12T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Kristelig Gymnasium",
+    "url": "https://oslokonserthus.no/program/kristelig-gymnasium-2"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-13-secret-garden-sacred-night",
+  "title": "Secret Garden – Sacred Night (julekonsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-13T19:00:00+01:00",
+  "end": "2026-12-13T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Secret Garden – Sacred Night",
+    "url": "https://oslospektrum.no/arrangementer/secret-garden-sacred-night/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Søndag 13. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-13-oslo-gospel-choir",
+  "title": "Oslo Gospel Choir, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-13T19:00:00+01:00",
+  "end": "2026-12-13T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo Gospel Choir",
+    "url": "https://oslokonserthus.no/program/oslo-gospel-choir-13"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-13-magnolia-jazzbands-julestjerne-konsert",
+  "title": "Magnolia Jazzbands julestjerne konsert, Oslo Konserthus (Lille sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-13T19:00:00+01:00",
+  "end": "2026-12-13T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Magnolia Jazzbands julestjerne konsert",
+    "url": "https://oslokonserthus.no/program/magnolia-jazzbands-julestjerne-konsert-3"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-14-emma",
+  "title": "emma (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-14T19:00:00+01:00",
+  "end": "2026-12-14T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: emma",
+    "url": "https://oslospektrum.no/arrangementer/emma/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Søndag 6. desember 2026 Kl. 14.00 (få billetter) og kl. 18.00 (utsolgt). Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-15-helene-b-ksle-og-s-lvguttene",
+  "title": "Helene Bøksle og Sølvguttene (julekonsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-15T19:00:00+01:00",
+  "end": "2026-12-15T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Helene Bøksle og Sølvguttene",
+    "url": "https://oslospektrum.no/arrangementer/helene-boksle-og-solvguttene/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Tirsdag 15. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-16-kurt-nilsen-julekonsert-2026",
+  "title": "Kurt Nilsen Julekonsert 2026 (julekonsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-16T19:00:00+01:00",
+  "end": "2026-12-16T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Kurt Nilsen Julekonsert 2026",
+    "url": "https://oslospektrum.no/arrangementer/kurt-nilsen-julekonsert-2026/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Onsdag 16. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-16-oslo-filharmonien-julekonsert",
+  "title": "Oslo-filharmonien | Julekonsert, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-16T19:00:00+01:00",
+  "end": "2026-12-16T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Julekonsert",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-julekonsert-26"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-17-oslo-filharmonien-julekonsert",
+  "title": "Oslo-filharmonien | Julekonsert, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-17T19:00:00+01:00",
+  "end": "2026-12-17T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Julekonsert",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-julekonsert-26"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-18-emma",
+  "title": "emma (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-18T19:00:00+01:00",
+  "end": "2026-12-18T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: emma",
+    "url": "https://oslospektrum.no/arrangementer/emma/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Søndag 6. desember 2026 Kl. 14.00 (få billetter) og kl. 18.00 (utsolgt). Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-18-putti-plutti-pott-og-julenissens-skjegg",
+  "title": "Putti Plutti Pott og Julenissens skjegg (familieteater), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-18T19:00:00+01:00",
+  "end": "2026-12-18T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Putti Plutti Pott og Julenissens skjegg",
+    "url": "https://oslospektrum.no/arrangementer/putti-plutti-pott-og-julenissens-skjegg/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 18. til søndag 20. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-18-oslo-filharmonien-julekonsert",
+  "title": "Oslo-filharmonien | Julekonsert, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-18T19:00:00+01:00",
+  "end": "2026-12-18T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Oslo-filharmonien | Julekonsert",
+    "url": "https://oslokonserthus.no/program/oslo-filharmonien-julekonsert-26"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-19-putti-plutti-pott-og-julenissens-skjegg",
+  "title": "Putti Plutti Pott og Julenissens skjegg (familieteater), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-19T19:00:00+01:00",
+  "end": "2026-12-19T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Putti Plutti Pott og Julenissens skjegg",
+    "url": "https://oslospektrum.no/arrangementer/putti-plutti-pott-og-julenissens-skjegg/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 18. til søndag 20. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-19-stjernenatt",
+  "title": "Stjernenatt, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-19T19:00:00+01:00",
+  "end": "2026-12-19T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Stjernenatt",
+    "url": "https://oslokonserthus.no/program/stjernenatt"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-20-putti-plutti-pott-og-julenissens-skjegg",
+  "title": "Putti Plutti Pott og Julenissens skjegg (familieteater), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-20T19:00:00+01:00",
+  "end": "2026-12-20T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Putti Plutti Pott og Julenissens skjegg",
+    "url": "https://oslospektrum.no/arrangementer/putti-plutti-pott-og-julenissens-skjegg/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 18. til søndag 20. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-20-no-e-d-d-e-jul-igjen",
+  "title": "No e D.D.E. Jul Igjen, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-20T19:00:00+01:00",
+  "end": "2026-12-20T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: No e D.D.E. Jul Igjen",
+    "url": "https://oslokonserthus.no/program/no-e-d-d-e-jul-igjen"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "konserthus-2026-12-21-adam-douglas",
+  "title": "Adam Douglas, Oslo Konserthus (Store sal)",
+  "category": "concert",
+  "venue": "Oslo Konserthus",
+  "lat": 59.913091,
+  "lon": 10.729785,
+  "start": "2026-12-21T19:00:00+01:00",
+  "end": "2026-12-21T22:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Konserthus: Adam Douglas",
+    "url": "https://oslokonserthus.no/program/adam-douglas"
+   },
+   {
+    "label": "Oslo Konserthus program",
+    "url": "https://oslokonserthus.no/program"
+   }
+  ],
+  "note": "Time not on the listing; 19:00-22:00 assumed."
+ },
+ {
+  "id": "spektrum-2026-12-28-nm-finalene-2026",
+  "title": "NM-finalene 2026 (håndball), Oslo Spektrum",
+  "category": "sports",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2026-12-28T19:00:00+01:00",
+  "end": "2026-12-28T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: NM-finalene 2026",
+    "url": "https://oslospektrum.no/arrangementer/nm-finalene-2026/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Mandag 28. desember 2026. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-1-7-nhos-arskonferanse-2027",
+  "title": "NHOs Årskonferanse 2027 (konferanse), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-01-07T19:00:00+01:00",
+  "end": "2027-01-07T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: NHOs Årskonferanse 2027",
+    "url": "https://oslospektrum.no/arrangementer/nhos-arskonferanse-2027/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Torsdag 7. januar 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-1-22-delara",
+  "title": "Delara (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-01-22T19:00:00+01:00",
+  "end": "2027-01-22T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Delara",
+    "url": "https://oslospektrum.no/arrangementer/delara/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 22. januar 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-1-30-chris-holsten",
+  "title": "Chris Holsten (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-01-30T19:00:00+01:00",
+  "end": "2027-01-30T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Chris Holsten",
+    "url": "https://oslospektrum.no/arrangementer/chris-holsten/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 30. januar 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-2-6-roc-boyz",
+  "title": "Roc Boyz (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-02-06T19:00:00+01:00",
+  "end": "2027-02-06T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Roc Boyz",
+    "url": "https://oslospektrum.no/arrangementer/roc-boyz/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 6. februar 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-2-27-oskar-med-k",
+  "title": "oskar med k (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-02-27T19:00:00+01:00",
+  "end": "2027-02-27T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: oskar med k",
+    "url": "https://oslospektrum.no/arrangementer/oskar-med-k/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 27. februar 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-6-tobias-sten",
+  "title": "Tobias Sten (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-06T19:00:00+01:00",
+  "end": "2027-03-06T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Tobias Sten",
+    "url": "https://oslospektrum.no/arrangementer/tobias-sten-2/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 6. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-12-soppgirobygget",
+  "title": "Soppgirobygget (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-12T19:00:00+01:00",
+  "end": "2027-03-12T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Soppgirobygget",
+    "url": "https://oslospektrum.no/arrangementer/soppgirobygget/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 12. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-13-manowar",
+  "title": "MANOWAR (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-13T19:00:00+01:00",
+  "end": "2027-03-13T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: MANOWAR",
+    "url": "https://oslospektrum.no/arrangementer/manowar/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 13. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-16-james-blunt",
+  "title": "James Blunt (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-16T19:00:00+01:00",
+  "end": "2027-03-16T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: James Blunt",
+    "url": "https://oslospektrum.no/arrangementer/james-blunt/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Tirsdag 16. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-20-ka2",
+  "title": "Ka2 (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-20T19:00:00+01:00",
+  "end": "2027-03-20T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Ka2",
+    "url": "https://oslospektrum.no/arrangementer/ka2/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 20. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-23-brandi-carlile",
+  "title": "Brandi Carlile (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-23T19:00:00+01:00",
+  "end": "2027-03-23T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Brandi Carlile",
+    "url": "https://oslospektrum.no/arrangementer/brandi-carlile/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Tirsdag 23. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-3-28-megadeth-breakout-hibernation-of-the-nations-europ",
+  "title": "Megadeth – Breakout: Hibernation Of The Nations Europe Tour 2027 (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-03-28T19:00:00+02:00",
+  "end": "2027-03-28T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Megadeth – Breakout: Hibernation Of The Nations Europe Tour 2027",
+    "url": "https://oslospektrum.no/arrangementer/megadeth-breakout-hibernation-of-the-nations-europe-tour-2027/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Søndag 28. mars 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-4-3-honningbarna",
+  "title": "Honningbarna (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-04-03T19:00:00+02:00",
+  "end": "2027-04-03T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Honningbarna",
+    "url": "https://oslospektrum.no/arrangementer/honningbarna/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 3. april 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-4-9-lind-nilsen-fuentes-holm",
+  "title": "Lind, Nilsen, Fuentes, Holm (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-04-09T19:00:00+02:00",
+  "end": "2027-04-09T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Lind, Nilsen, Fuentes, Holm",
+    "url": "https://oslospektrum.no/arrangementer/lind-nilsen-fuentes-holm/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 9. og lørdag 10. april 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-4-10-lind-nilsen-fuentes-holm",
+  "title": "Lind, Nilsen, Fuentes, Holm (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-04-10T19:00:00+02:00",
+  "end": "2027-04-10T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Lind, Nilsen, Fuentes, Holm",
+    "url": "https://oslospektrum.no/arrangementer/lind-nilsen-fuentes-holm/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 9. og lørdag 10. april 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-4-17-moillrock",
+  "title": "Moillrock (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-04-17T19:00:00+02:00",
+  "end": "2027-04-17T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Moillrock",
+    "url": "https://oslospektrum.no/arrangementer/moillrock/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 17. april 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-4-23-simple-minds",
+  "title": "Simple Minds (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-04-23T19:00:00+02:00",
+  "end": "2027-04-23T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Simple Minds",
+    "url": "https://oslospektrum.no/arrangementer/simple-minds/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 23. april 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-4-24-the-world-of-hans-zimmer-a-new-dimension",
+  "title": "The World of Hans Zimmer – A New Dimension (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-04-24T19:00:00+02:00",
+  "end": "2027-04-24T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: The World of Hans Zimmer – A New Dimension",
+    "url": "https://oslospektrum.no/arrangementer/the-world-of-hans-zimmer-a-new-dimension/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 24. april 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-5-3-bryan-adams-roll-with-the-punches",
+  "title": "Bryan Adams: Roll with the Punches (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-05-03T19:00:00+02:00",
+  "end": "2027-05-03T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Bryan Adams: Roll with the Punches",
+    "url": "https://oslospektrum.no/arrangementer/bryan-adams-roll-with-the-punches/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Mandag 3. mai 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-5-29-weezer",
+  "title": "Weezer (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-05-29T19:00:00+02:00",
+  "end": "2027-05-29T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Weezer",
+    "url": "https://oslospektrum.no/arrangementer/weezer/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 29. mai 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-6-8-jorja-smith",
+  "title": "Jorja Smith (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-06-08T19:00:00+02:00",
+  "end": "2027-06-08T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Jorja Smith",
+    "url": "https://oslospektrum.no/arrangementer/jorja-smith/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Tirsdag 8. juni 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-6-9-andre-rieu",
+  "title": "André Rieu (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-06-09T19:00:00+02:00",
+  "end": "2027-06-09T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: André Rieu",
+    "url": "https://oslospektrum.no/arrangementer/andre-rieu-2/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Onsdag 9. juni 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-6-19-the-send",
+  "title": "The Send (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-06-19T19:00:00+02:00",
+  "end": "2027-06-19T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: The Send",
+    "url": "https://oslospektrum.no/arrangementer/the-send/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 19. juni 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-7-28-santana-planet-of-free-will-global-tour-2027",
+  "title": "Santana – Planet of Free Will Global Tour 2027 (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-07-28T19:00:00+02:00",
+  "end": "2027-07-28T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Santana – Planet of Free Will Global Tour 2027",
+    "url": "https://oslospektrum.no/arrangementer/santana-planet-of-free-will-global-tour-2027/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Onsdag 28. juli 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-9-10-ronan-keating-just-getting-started-world-tour",
+  "title": "Ronan Keating – «Just Getting Started» World Tour (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-09-10T19:00:00+02:00",
+  "end": "2027-09-10T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Ronan Keating – «Just Getting Started» World Tour",
+    "url": "https://oslospektrum.no/arrangementer/ronan-keating/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Fredag 10. september 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-10-6-till-lindemann",
+  "title": "Till Lindemann (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-10-06T19:00:00+02:00",
+  "end": "2027-10-06T23:00:00+02:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Till Lindemann",
+    "url": "https://oslospektrum.no/arrangementer/till-lindemann/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Onsdag 6. oktober 2027. Time not on the listing; 19:00-23:00 assumed."
+ },
+ {
+  "id": "spektrum-2027-11-13-hagle",
+  "title": "Hagle (konsert), Oslo Spektrum",
+  "category": "concert",
+  "venue": "Oslo Spektrum",
+  "lat": 59.91299,
+  "lon": 10.75472,
+  "start": "2027-11-13T19:00:00+01:00",
+  "end": "2027-11-13T23:00:00+01:00",
+  "sources": [
+   {
+    "label": "Oslo Spektrum: Hagle",
+    "url": "https://oslospektrum.no/arrangementer/hagle/"
+   },
+   {
+    "label": "Oslo Spektrum programme",
+    "url": "https://www.oslospektrum.no/"
+   }
+  ],
+  "note": "Listed date: Lørdag 13. november 2027. Time not on the listing; 19:00-23:00 assumed."
+ }
+]

@@ -13,9 +13,10 @@ export async function getUpcomingEvents(): Promise<CityEvent[]> {
   const { from, to } = windowBounds();
   const upcoming = readDataFile<CityEvent[]>("events-upcoming.json", []);
   const history = readDataFile<CityEvent[]>("events-history.json", []);
+  const calendar = readDataFile<CityEvent[]>("events-calendar.json", []);
   const seen = new Set<string>();
   const out: CityEvent[] = [];
-  for (const e of [...upcoming, ...history]) {
+  for (const e of [...upcoming, ...history, ...calendar]) {
     const s = new Date(e.start).getTime();
     const en = new Date(e.end).getTime();
     if (en < from || s > to || seen.has(e.id)) continue;

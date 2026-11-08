@@ -48,6 +48,9 @@ export type CityEvent = {
   expectedAttendance?: number;
   attendanceIsEstimate?: boolean;
   recurring?: string;       // e.g. "yearly 17 May"
+  note?: string;
+  dateStatus?: "confirmed" | "inferred" | "unverified"; // set for the owner demand calendar entries
+  impact?: 1 | 2 | 3 | 4 | 5;                          // owner calendar rating, 5 = biggest
   sources: Source[];        // empty array is NOT allowed; every event cites where it came from
 };
 

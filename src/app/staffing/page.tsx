@@ -4,6 +4,7 @@ import PageHead from "@/components/PageHead";
 import { getForecast } from "@/lib/forecast";
 import { staffRequirements, type Quantile, type FrontMethod, DEFAULT_STAFFING } from "@/lib/staffing/requirements";
 import { buildSchedule } from "@/lib/staffing/schedule";
+import { wageCost, MIN_WAGE_NOK, EXTRAS_NOK, RATE_BY_GROUP } from "@/lib/staffing/cost";
 import { syntheticRoster } from "@/lib/staffing/rules";
 import StaffingCharts from "@/components/StaffingCharts";
 
@@ -49,6 +50,8 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
   const minH = Math.min(...dayShifts.map((s) => s.start), ...dayReq.map((r) => r.hour));
   const maxH = Math.max(...dayShifts.map((s) => s.start + s.length), ...dayReq.map((r) => r.hour + 1));
   const span = Math.max(1, maxH - minH);
+  const wage = wageCost(sched.shifts, roster);
+  const nok = (v: number) => `NOK ${Math.round(v).toLocaleString("en").replace(/,/g, " ")}`;
   const eff = sched.cost.requiredPersonHours / Math.max(1, sched.cost.plannedPaidHours);
   const q = (k: string, v: string) => {
     const p = new URLSearchParams({ q: quantile, m: method, day: day ?? "" }); p.set(k, v); return `/staffing?${p}`;
@@ -83,6 +86,22 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
           <div className="ak-kpi"><div className="ak-kpi-label">Shifts</div><div className="ak-kpi-value">{sched.cost.shiftCount}</div><div className="ak-kpi-sub">{sched.cost.unfilledShifts ? <span className="is-bad">{sched.cost.unfilledShifts} not filled</span> : "All filled by name"}</div></div>
           <div className="ak-kpi"><div className="ak-kpi-label">Rule problems</div><div className={`ak-kpi-value${sched.violations.length ? " is-bad" : ""}`}>{sched.violations.length}</div><div className="ak-kpi-sub">Rest, breaks, youth limits</div></div>
         </div>
+      </section>
+
+      <section className="ak-panel" style={{ marginTop: 16 }}>
+        <div className="ak-panel-head"><div><h2 className="ak-h">Wage cost, 7 days</h2><p className="ak-note">Every paid hour priced at the legal minimum wage for the person&apos;s age, from 6 Nov 2026.</p></div></div>
+        <div className="ak-kpis">
+          <div className="ak-kpi"><div className="ak-kpi-label">At minimum wage</div><div className="ak-kpi-value">{nok(wage.baseNok)}</div><div className="ak-kpi-sub">{Math.round(wage.paidHours)} paid hours{wage.unpricedHours ? `, ${Math.round(wage.unpricedHours)} unfilled priced as adult` : ""}</div></div>
+          <div className="ak-kpi"><div className="ak-kpi-label">Agreement extras</div><div className="ak-kpi-value">{nok(wage.extrasNok)}</div><div className="ak-kpi-sub">Only owed if bound by Riksavtalen</div></div>
+          <div className="ak-kpi"><div className="ak-kpi-label">With extras</div><div className="ak-kpi-value">{nok(wage.baseNok + wage.extrasNok)}</div><div className="ak-kpi-sub">{nok((wage.baseNok + wage.extrasNok) / Math.max(1, wage.paidHours))} per paid hour</div></div>
+          <div className="ak-kpi"><div className="ak-kpi-label">Night hours</div><div className="ak-kpi-value">{Math.round(wage.nightHours)}</div><div className="ak-kpi-sub">21:00 to 06:00, adults only</div></div>
+        </div>
+        <p className="ak-panel-foot">
+          Minimum wage: adult NOK {MIN_WAGE_NOK.adult}, 18 NOK {MIN_WAGE_NOK.age18}, 17 NOK {MIN_WAGE_NOK.age17}, under 17 NOK {MIN_WAGE_NOK.under17} (<a className="ak-link" href="https://lovdata.no/dokument/SF/forskrift/2026-10-22-2235" target="_blank" rel="noreferrer">FOR-2026-10-22-2235</a>).
+          Roster rates used: adult {RATE_BY_GROUP.adult}, youth 16 to 17 {RATE_BY_GROUP.youth} (assumed 17), age 15 {RATE_BY_GROUP.school}.
+          Extras per hour: evening NOK {EXTRAS_NOK.evening} (18:00 to 21:00, assumed window), Saturday from 14:00 and Sunday NOK {EXTRAS_NOK.weekend}, night NOK {EXTRAS_NOK.night} (21:00 to 06:00, assumed window) (<a className="ak-link" href="https://www.fellesforbundet.no/globalassets/blokker/t26/riksavtalen/stemmemateriell-riksavtalen---2026.pdf" target="_blank" rel="noreferrer">Riksavtalen 2026</a>).
+          Under 18s never work 21:00 to 06:00 or over 8 hours a day, and adults get 11 hours&apos; rest between shifts (<a className="ak-link" href="https://www.arbeidstilsynet.no/arbeidstid-og-organisering/tilrettelegging/ungdom-i-arbeid/arbeidstid-for-personer-under-18-ar/" target="_blank" rel="noreferrer">Arbeidstilsynet</a>); the scheduler enforces both. Opening hours: Mon to Thu 10 to 24, Fri and Sat 10 to 04, Sun 11 to 24.
+        </p>
       </section>
 
       {peak && (
