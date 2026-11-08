@@ -17,7 +17,7 @@ let weatherCache: { at: number; hours: WeatherHour[] } | null = null;
 
 // met.no Locationforecast 2.0 (CC BY 4.0): hourly for ~2.5 days, then 6-hourly up to 9 days.
 // 6-hourly steps are held for each hour, with rain spread evenly over the 6 hours.
-async function metWeather(): Promise<WeatherHour[]> {
+export async function metWeather(): Promise<WeatherHour[]> {
   if (weatherCache && Date.now() - weatherCache.at < 10 * 60_000) return weatherCache.hours;
   const r = await fetch(`https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${STORE.lat.toFixed(4)}&lon=${STORE.lon.toFixed(4)}`,
     { headers: { "User-Agent": UA }, cache: "no-store", signal: AbortSignal.timeout(8000) });
