@@ -1,5 +1,15 @@
 # Review (2026-11-08)
 
+## Third cut: a demo, not a launch (after Aayan's notes)
+Notes: it felt like a product launch; the sidebar was short; show live working, show before and after, focus on a few key features.
+1. Order: Before Pulse (red) → "Pulse sees it coming" → Overview → Forecast → live Shift rush → live What if → Staffing → With Pulse → end card. About 68 s.
+2. Two scenes are real screen recordings of the running app (Playwright, 1920x1080, page zoom 1.2, a drawn cursor):
+   - Shift: the "Simulate a rush (demo)" button is clicked; the rush alarm, the crew alarm, the red hour and a new spike card with live web research appear.
+   - What if: "T-bane closed", then "Christmas market", are tapped and the real model reruns.
+3. The captions say "We simulate a rush", because the sales stream is simulated.
+4. All dashboard captures were retaken with the sidebar pinned to the full page height.
+5. The Trains tour and the old Shift tour were removed (copies in ECS/_trash).
+
 ## Second cut (after Aayan's notes)
 Notes: the film did not show the full dashboards; slow where there was little text; too fast where a lot was shown.
 1. Trains, Forecast, Staffing and Shift now play as camera tours over the full-page captures (see RIG.md).

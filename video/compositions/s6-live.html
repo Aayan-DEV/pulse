@@ -23,14 +23,14 @@
         <div class="s6-ground"></div>
         <div id="s6-win" class="s6-win">
           <div id="s6-cam" class="s6-cam" data-layout-allow-overflow>
-            <video id="s6-vid" class="clip" src="assets/live/shift.mp4" data-start="0" data-duration="19.9" muted playsinline></video>
+            <video id="s6-vid" class="clip" src="assets/live/shift.mp4" data-start="0" data-duration="16.6" muted playsinline></video>
           </div>
         </div>
         <div id="s6-live" class="s6-live"><i id="s6-dot"></i>Live demo</div>
         <div id="s6-cap1" class="s6-cap"><span class="w">The</span> <span class="w">shift</span> <span class="w">screen,</span> <span class="w s6-hot">right</span> <span class="w s6-hot">now</span></div>
         <div id="s6-cap2" class="s6-cap"><span class="w">We</span> <span class="w">simulate</span> <span class="w">a</span> <span class="w s6-hot">rush</span></div>
         <div id="s6-cap3" class="s6-cap"><span class="w">Pulse</span> <span class="w">says:</span> <span class="w s6-hot">call</span> <span class="w s6-hot">help</span> <span class="w">now</span></div>
-        <div id="s6-cap4" class="s6-cap"><span class="w">The</span> <span class="w">spike</span> <span class="w">gets</span> <span class="w s6-hot">researched</span></div>
+        <div id="s6-cap4" class="s6-cap"><span class="w">Each</span> <span class="w s6-hot">spike</span> <span class="w">gets</span> <span class="w">a</span> <span class="w">card</span></div>
       </div>
       <script>
         (function () {
@@ -46,18 +46,18 @@
           tl.fromTo("#s6-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0);
           tl.fromTo("#s6-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.3);
           tl.fromTo("#s6-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 27, yoyo: true }, 0.3);
-          caption("#s6-cap1", 0.3, 4.90);
+          caption("#s6-cap1", 0.3, 3.0);
           // Push in on this hour and the rush button.
-          tl.to("#s6-cam", { ...cam(760, 700, 1.45), duration: 1.0, ease: "power2.inOut" }, 1.0);
-          caption("#s6-cap2", 5.10, 7.80);
+          tl.to("#s6-cam", { ...cam(760, 700, 1.45), duration: 1.0, ease: "power2.inOut" }, 0.9);
+          caption("#s6-cap2", 3.15, 5.5);
           // The alarm lands: rush now, crew needed.
-          tl.to("#s6-cam", { ...cam(1100, 560, 1.2), duration: 0.8, ease: "power2.inOut" }, 7.90);
-          caption("#s6-cap3", 8.00, 14.30);
+          tl.to("#s6-cam", { ...cam(1100, 560, 1.2), duration: 0.8, ease: "power2.inOut" }, 4.8);
+          caption("#s6-cap3", 5.65, 11.4);
           // This hour turns red.
-          tl.to("#s6-cam", { ...cam(540, 820, 1.6), duration: 0.8, ease: "power2.inOut" }, 11.30);
-          tl.to("#s6-cam", { ...cam(960, 540, 1), duration: 0.7, ease: "power2.inOut" }, 14.00);
-          caption("#s6-cap4", 15.30, null);
-          tl.to("#s6-cam", { ...cam(1100, 520, 1.15), duration: 0.9, ease: "power2.inOut" }, 16.60);
+          tl.to("#s6-cam", { ...cam(540, 820, 1.6), duration: 0.8, ease: "power2.inOut" }, 8.1);
+          tl.to("#s6-cam", { ...cam(960, 540, 1), duration: 0.7, ease: "power2.inOut" }, 11.0);
+          caption("#s6-cap4", 12.4, null);
+          tl.to("#s6-cam", { ...cam(1100, 520, 1.15), duration: 0.9, ease: "power2.inOut" }, 13.6);
           window.__timelines["s6-live"] = tl;
         })();
       </script>
