@@ -56,6 +56,12 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
 
 /* Slide 2 visual */
 .globe-vis { width: 420px; height: 420px; margin-top: 48px; }
+/* FAQ */
+.faq { display: grid; grid-template-columns: 1fr 1fr; column-gap: 96px; row-gap: 40px; margin-top: 64px; width: 1600px; }
+.faq div { border-top: 1.5px solid var(--line); padding-top: 22px; }
+.faq b { display: block; font-size: 29px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; }
+.faq p { margin-top: 10px; font-size: 26px; line-height: 1.38; color: #3a3a3a; letter-spacing: -0.01em; }
+.faq b span { color: var(--accent); margin-right: 14px; font-weight: 500; }
 </style>
 </head>
 <body>
@@ -251,6 +257,22 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
   <div class="center-left">
     <div class="big" style="font-size:200px">Thank you</div>
     <div class="big-sub" style="color:var(--ink);margin-top:64px"><span class="ic" data-icon="radar" style="width:56px;height:56px"></span><span style="font-weight:600;letter-spacing:-0.03em">Pulse</span></div>
+  </div>
+</section>
+
+<!-- 11. FAQ -->
+<section class="slide" data-wash="tl,br-small">
+  <div class="content">
+    <h1>FAQ</h1>
+    <div class="faq">
+      <div><b><span>01</span>What's your next step if you win tonight?</b><p>Launch it live. Talk to the customers booked for Monday. Connect the Burger King's till and train on real sales.</p></div>
+      <div><b><span>02</span>What's your biggest technical risk?</b><p>The model learned from simulated sales. We only know the real accuracy once a till is connected.</p></div>
+      <div><b><span>03</span>What did you leave out, and why?</b><p>Till connection, logins and more stores. We made one store work end to end first.</p></div>
+      <div><b><span>04</span>How will you get your first 100 users?</b><p>Start with the owner's own stores. One franchise owner runs many stores, so one yes brings several. Then walk into busy fast food stores in Oslo.</p></div>
+      <div><b><span>05</span>How have you tested this with users?</b><p>Not yet. The problem came from the owner, and the first customer calls are booked for Monday.</p></div>
+      <div><b><span>06</span>What legal hurdles could stop this?</b><p>Few. Pulse reads weather, trains, events and public road cameras, no personal data. Real staff rotas will need GDPR care.</p></div>
+      <div><b><span>07</span>Why hasn't anyone solved this before?</b><p>Tools forecast from past sales only. They don't see what is happening around the store right now. That is the part we built.</p></div>
+    </div>
   </div>
 </section>
 
