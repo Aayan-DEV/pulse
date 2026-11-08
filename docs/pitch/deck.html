@@ -55,6 +55,7 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
 .big-sub .ic { width: 44px; height: 44px; }
 
 /* Slide 2 visual */
+.cols.snug li { font-size: 33px; }
 .globe-vis { width: 420px; height: 420px; margin-top: 48px; }
 /* FAQ */
 .faq { display: grid; grid-template-columns: 1fr 1fr; column-gap: 96px; row-gap: 40px; margin-top: 64px; width: 1600px; }
@@ -107,27 +108,42 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
 <section class="slide" data-wash="tl,br-small">
   <div class="content">
     <h1>Busy stores have a blind spot.</h1>
-    <ul class="points tight">
-      <li><span class="ic" data-icon="briefcase"></span><span>While travelling in Oslo, I met my old Domino's employer. He owns the Burger King near Aker Brygge.</span></li>
-      <li><span class="ic" data-icon="chart"></span><span>I told him about my startup. He said his problem is not knowing why his stores make sales.</span></li>
-      <li><span class="ic" data-icon="train"></span><span>And not knowing what happens nearby in real time, to forecast stock. Example: the trains stop working, and sales go up.</span></li>
-      <li><span class="ic" data-icon="clock"></span><span>I worked at his Domino's in Majorstuen. When a rush hit, I was called in.</span></li>
-      <li><span class="ic" data-icon="users"></span><span>Many times the rush was over by the time I arrived. That means lost sales and unhappy customers.</span></li>
+    <ul class="points tight" style="width:1600px;margin-top:64px">
+      <li><span class="ic" data-icon="store"></span><span>I went back to my old Domino's.</span></li>
+      <li><span class="ic" data-icon="users"></span><span>I talked with the owner, who also owns the Burger King at Aker Brygge.</span></li>
     </ul>
-    <div class="closing" style="padding-left:76px">It is a personal and real problem.</div>
+    <div class="cols snug" style="margin-top:64px;width:1600px">
+      <div class="col pulse">
+        <h3>His problems</h3>
+        <ul>
+          <li><span class="ic" data-icon="chart"></span><span>Not knowing why his stores make sales.</span></li>
+          <li><span class="ic" data-icon="train"></span><span>Not knowing what happens nearby in real time, like trains that stop working.</span></li>
+        </ul>
+      </div>
+      <div class="col pulse">
+        <h3>Mine</h3>
+        <ul>
+          <li><span class="ic" data-icon="clock"></span><span>At his Domino's, I was called in when a rush hit.</span></li>
+          <li><span class="ic" data-icon="users"></span><span>Often the rush was over when I arrived. Lost sales, unhappy customers.</span></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- 3. Solution, everywhere -->
+<!-- 3. Solution -->
 <section class="slide" data-wash="br,tl-small">
   <div class="content">
-    <h1>Solution: a real-time events analyser.</h1>
-    <ul class="points" style="width:1400px;margin-top:64px">
-      <li><span class="ic" data-icon="store"></span><span>Built and simulated on one real Burger King in Oslo, at Klingenberggata 5.</span></li>
-      <li><span class="ic" data-icon="chart"></span><span>Every decision comes from matching live events against the store's sales data.</span></li>
-      <li><span class="ic" data-icon="map-pin"></span><span>Any store with an address can get the same local picture.</span></li>
-    </ul>
-    <svg class="globe-vis" viewBox="0 0 620 620">
+    <h1>Solution: the Palantir for<br>high-demand retail stores.</h1>
+    <div style="display:flex;align-items:center;gap:80px;margin-top:72px;width:1600px">
+      <ul class="points tight" style="margin-top:0;width:1120px">
+        <li><span class="ic" data-icon="radar"></span><span>Watches the area around a store live: events, trains, weather.</span></li>
+        <li><span class="ic" data-icon="clock"></span><span>An hourly forecast of orders, the crew it needs, and why.</span></li>
+        <li><span class="ic" data-icon="chart"></span><span>Every decision comes from matching live events against the store's sales data.</span></li>
+        <li><span class="ic" data-icon="store"></span><span>Built and simulated on one real Burger King in Oslo.</span></li>
+        <li><span class="ic" data-icon="map-pin"></span><span>Any store with an address can get the same local picture.</span></li>
+      </ul>
+      <svg class="globe-vis" style="width:400px;height:400px;margin-top:0;flex:none" viewBox="0 0 620 620">
       <g fill="none" stroke="#d9d4cf" stroke-width="1.5">
         <circle cx="310" cy="310" r="280"/>
         <ellipse cx="310" cy="310" rx="140" ry="280"/>
@@ -145,24 +161,11 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
         <text x="392" y="158" font-size="28" fill="#6b6b6b" font-family="Geist, sans-serif">Oslo</text>
       </g>
     </svg>
+    </div>
   </div>
 </section>
 
-<!-- 4. Solution -->
-<section class="slide" data-wash="tr,bl-small">
-  <div class="content">
-    <h1>Pulse watches the area for you.</h1>
-    <ul class="points">
-      <li><span class="ic" data-icon="map-pin"></span><span>Real-time data for one local store.</span></li>
-      <li><span class="ic" data-icon="calendar"></span><span>Events nearby.</span></li>
-      <li><span class="ic" data-icon="train"></span><span>Transport and disruptions.</span></li>
-      <li><span class="ic" data-icon="cloud"></span><span>Weather, and more.</span></li>
-      <li><span class="ic" data-icon="clock"></span><span>An hourly forecast of orders, the crew it needs, and why.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- 5. What we built -->
+<!-- 4. What we built -->
 <section class="slide" data-wash="br,tl-small">
   <div class="content">
     <h1>What we built in 48 hours.</h1>
@@ -195,7 +198,7 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
   </div>
 </section>
 
-<!-- 6. Why me -->
+<!-- 5. Why me -->
 <section class="slide" data-wash="br,tl-small">
   <div class="content">
     <h1>Why me</h1>
@@ -209,7 +212,7 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
   </div>
 </section>
 
-<!-- 7. Demo -->
+<!-- 6. Demo -->
 <section class="slide" data-wash="bl-big,tr-small">
   <div class="center-left">
     <div class="big">Demo</div>
@@ -217,7 +220,7 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
   </div>
 </section>
 
-<!-- 8. Thank you -->
+<!-- 7. Thank you -->
 <section class="slide" data-wash="br-big,tl-small">
   <div class="center-left">
     <div class="big" style="font-size:200px">Thank you</div>
@@ -225,7 +228,7 @@ h1 { font-size: 96px; font-weight: 600; letter-spacing: -0.045em; line-height: 1
   </div>
 </section>
 
-<!-- 9. FAQ -->
+<!-- 8. FAQ -->
 <section class="slide" data-wash="tl,br-small">
   <div class="content">
     <h1>FAQ</h1>
