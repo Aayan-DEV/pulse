@@ -1,36 +1,48 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import {
   LayoutGrid, Map, TrendingUp, Search, Users, CalendarDays, TrainFront,
   Gauge, BookOpen, Database, Sun, Moon, Radar, Bot, FlaskConical, Clock3,
 } from "lucide-react";
 
-const NAV: { group: string; items: { href: string; label: string; icon: React.ElementType }[] }[] = [
-  { group: "Employee", items: [
-    { href: "/", label: "Shift", icon: Clock3 },
-  ]},
-  { group: "Manager", items: [
-    { href: "/overview", label: "Overview", icon: LayoutGrid },
-    { href: "/map", label: "Live map", icon: Map },
-    { href: "/forecast", label: "Forecast", icon: TrendingUp },
-    { href: "/what-if", label: "What if", icon: FlaskConical },
-    { href: "/why", label: "Why it spiked", icon: Search },
-    { href: "/staffing", label: "Staffing", icon: Users },
-  ]},
-  { group: "Manager · Signals", items: [
-    { href: "/events", label: "Events", icon: CalendarDays },
-    { href: "/transit", label: "Trains and trams", icon: TrainFront },
-    { href: "/agents", label: "Agents", icon: Bot },
-    { href: "/sources", label: "Data sources", icon: Database },
-  ]},
-  { group: "Manager · Model", items: [
-    { href: "/benchmark", label: "Benchmark", icon: Gauge },
-    { href: "/method", label: "Method", icon: BookOpen },
-  ]},
-];
+type Item = { href: string; label: string; icon: React.ElementType };
+type View = "employee" | "employer";
+
+// The crew sees today and the live signals. The employer also gets planning, agents and the model pages.
+const NAV: Record<View, { group: string; items: Item[] }[]> = {
+  employee: [
+    { group: "Today", items: [
+      { href: "/", label: "Shift", icon: Clock3 },
+      { href: "/transit", label: "Trains and trams", icon: TrainFront },
+      { href: "/events", label: "Events", icon: CalendarDays },
+      { href: "/map", label: "Live map", icon: Map },
+    ]},
+  ],
+  employer: [
+    { group: "Today", items: [
+      { href: "/overview", label: "Overview", icon: LayoutGrid },
+      { href: "/transit", label: "Trains and trams", icon: TrainFront },
+      { href: "/events", label: "Events", icon: CalendarDays },
+      { href: "/map", label: "Live map", icon: Map },
+    ]},
+    { group: "Plan", items: [
+      { href: "/forecast", label: "Forecast", icon: TrendingUp },
+      { href: "/staffing", label: "Staffing", icon: Users },
+      { href: "/what-if", label: "What if", icon: FlaskConical },
+      { href: "/why", label: "Why it spiked", icon: Search },
+    ]},
+    { group: "Behind the scenes", items: [
+      { href: "/agents", label: "Agents", icon: Bot },
+      { href: "/sources", label: "Data sources", icon: Database },
+      { href: "/benchmark", label: "Benchmark", icon: Gauge },
+      { href: "/method", label: "Method", icon: BookOpen },
+    ]},
+  ],
+};
+const HOME: Record<View, string> = { employee: "/", employer: "/overview" };
 
 function useTheme() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -52,9 +64,31 @@ function useTheme() {
   return { theme, toggle };
 }
 
-export default function Shell({ children }: { children: React.ReactNode }) {
+function ViewSwitch({ view, onChange }: { view: View; onChange: (v: View) => void }) {
+  return (
+    <div className="ak-seg view-switch" role="group" aria-label="Who is using this">
+      {(["employee", "employer"] as const).map((v) => (
+        <button key={v} type="button" aria-pressed={view === v} onClick={() => onChange(v)}>{v === "employee" ? "Employee" : "Employer"}</button>
+      ))}
+    </div>
+  );
+}
+
+export default function Shell({ children, initialView }: { children: React.ReactNode; initialView: View }) {
   const path = usePathname();
+  const router = useRouter();
   const { theme, toggle } = useTheme();
+  const [view, setView] = useState<View>(initialView);
+  const nav = NAV[view];
+  const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+  const switchView = (v: View) => {
+    if (v === view) return;
+    document.cookie = `pulse-view=${v}; path=/; max-age=31536000; samesite=lax`;
+    setView(v);
+    // Stay on the page if the other view has it too, otherwise go to that view's start page.
+    if (NAV[v].some((g) => g.items.some((it) => isActive(it.href)))) router.refresh();
+    else router.push(HOME[v]);
+  };
   return (
     <div className="adm">
       <aside className="adm-sidebar">
@@ -62,12 +96,13 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <Radar className="ak-brand-logo" />
           <div className="ak-brand-name">Pulse <span>Oslo</span></div>
         </div>
+        <div className="view-switch-wrap"><ViewSwitch view={view} onChange={switchView} /></div>
         <nav className="adm-nav-scroll">
-          {NAV.map((g) => (
+          {nav.map((g) => (
             <div key={g.group}>
               <div className="adm-nav-group">{g.group}</div>
               {g.items.map((it) => {
-                const active = it.href === "/" ? path === "/" : path.startsWith(it.href);
+                const active = isActive(it.href);
                 const Icon = it.icon;
                 return (
                   <Link key={it.href} href={it.href} className={`adm-nav${active ? " active" : ""}`}>
@@ -99,11 +134,11 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <span className="ak-stamp adm-header-right">Burger King Klingenberg · Nationaltheatret</span>
           <button className="ak-icon-btn adm-mobile-only" onClick={toggle} type="button" aria-label="Switch theme">{theme === "dark" ? <Sun /> : <Moon />}</button>
         </header>
+        <div className="adm-mobile-only view-switch-mobile"><ViewSwitch view={view} onChange={switchView} /></div>
         <nav className="adm-mobile-nav" aria-label="Sections">
-          {NAV.flatMap((g) => g.items).map((it) => {
-            const active = it.href === "/" ? path === "/" : path.startsWith(it.href);
-            return <Link key={it.href} href={it.href} aria-current={active ? "page" : undefined}>{it.label}</Link>;
-          })}
+          {nav.flatMap((g) => g.items).map((it) => (
+            <Link key={it.href} href={it.href} aria-current={isActive(it.href) ? "page" : undefined}>{it.label}</Link>
+          ))}
         </nav>
         {children}
       </div>

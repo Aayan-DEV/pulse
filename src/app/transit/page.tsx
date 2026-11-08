@@ -1,75 +1,126 @@
 import { TrainFront } from "lucide-react";
 import PageHead from "@/components/PageHead";
-import { readData } from "@/lib/data";
-import type { CityEvent } from "@/lib/types";
-import TransitCharts, { type DayRow } from "@/components/TransitCharts";
+import { NextHourChart, TypicalDayChart, WeeklyChart } from "@/components/transit/TransitCharts";
+import { getTransit } from "@/lib/live";
+import { trainsNow, type TrainNow } from "@/lib/shift/trains";
+import { getForecast } from "@/lib/forecast";
+import { typicalDay, weekly, worstDays, biggestDisruptions, historyRange } from "@/lib/transitHistory";
+import { osloParts } from "@/lib/model/features";
+import { getView } from "@/lib/view";
 
 export const dynamic = "force-dynamic";
 
-type HourRow = { t: string; stop?: string; mode: string; calls: number; meanDelay: number; p90Delay?: number; late5Share: number; cancelled: number };
+const TITLE = { green: "Trains are on time", yellow: "Some trains are late", red: "Many trains are late or cancelled" } as const;
+const dayName = (dow: number) => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dow];
+const date = (d: string) => new Date(d.length > 10 ? d : d + "T12:00:00Z").toLocaleDateString("en-GB", { timeZone: "Europe/Oslo", weekday: "short", day: "numeric", month: "short", year: "numeric" });
 
-export default function TransitPage() {
-  const raw = readData<HourRow[] | { rows: HourRow[] }>("transit-history.json", []);
-  const STOPS: Record<string, string> = { NT: "Nationaltheatret", OSL: "Oslo S" };
-  const hours: HourRow[] = (Array.isArray(raw) ? raw : raw.rows ?? []).map((h) => ({ ...h, mode: `${STOPS[h.stop ?? ""] ?? h.stop ?? ""} ${h.mode}`.trim() }));
-  type Ep = { stop: string; mode: string; start: string; end: string; hours: number; calls: number; cancelled: number; maxMedianDelay: number; meanCancelShare: number; score: number };
-  const eps = readData<Ep[]>("transit-episodes.json", []).sort((a, b) => b.score - a.score);
-  // Daily roll-up per mode, weighted by calls.
-  const byDay = new Map<string, Record<string, { calls: number; late: number; canc: number; delay: number }>>();
-  for (const h of hours) {
-    const d = h.t.slice(0, 10);
-    const m = byDay.get(d) ?? {};
-    const x = m[h.mode] ?? { calls: 0, late: 0, canc: 0, delay: 0 };
-    x.calls += h.calls; x.late += h.late5Share * h.calls; x.canc += h.cancelled; x.delay += h.meanDelay * h.calls;
-    m[h.mode] = x; byDay.set(d, m);
-  }
-  const modes = Array.from(new Set(hours.map((h) => h.mode)));
-  const days: DayRow[] = Array.from(byDay.entries()).sort((a, b) => a[0].localeCompare(b[0])).map(([d, m]) => {
-    const row: DayRow = { day: d };
-    for (const k of modes) if (m[k]?.calls) {
-      row[`${k}_late`] = +(100 * m[k].late / m[k].calls).toFixed(2);
-      row[`${k}_canc`] = +(100 * m[k].canc / m[k].calls).toFixed(2);
-      row[`${k}_delay`] = +(m[k].delay / m[k].calls).toFixed(2);
-    }
-    return row;
-  });
-  const episodes = readData<CityEvent[]>("events-history.json", []).filter((e) => e.category === "transit")
-    .sort((a, b) => b.start.localeCompare(a.start));
-  const totalCalls = hours.reduce((s, h) => s + h.calls, 0);
-  const range = hours.length ? `${hours[0].t.slice(0, 10)} to ${hours[hours.length - 1].t.slice(0, 10)}` : "";
-  const worst = days.slice().sort((a, b) => ((b[`${modes[0]}_late`] as number) ?? 0) - ((a[`${modes[0]}_late`] as number) ?? 0)).slice(0, 8);
+export default async function TransitPage() {
+  const view = await getView();
+  const now = Date.now();
+  const { hour, dow: mon0 } = osloParts(new Date(now));
+  const dow = (mon0 + 1) % 7; // Sunday = 0, like Date.getDay()
+
+  let t: TrainNow | null = null;
+  try { const live = await getTransit(); t = trainsNow(live.departures, live.situations, now); } catch { /* feed down: say so below */ }
+
+  // What the model adds to this hour's orders because of the trains right now.
+  let effect: number | null = null;
+  try {
+    const f = await getForecast(1);
+    const h = f.hours.find((x) => Date.parse(x.time) <= now && now < Date.parse(x.time) + 3600_000);
+    if (h?.open) effect = Math.round(h.drivers.find((d) => d.group === "Transit disruption")?.value ?? 0);
+  } catch { /* leave unknown */ }
+
+  const usual = typicalDay(dow);
+  const usualNow = usual.find((u) => u.hour === hour)?.late;
+  const nowPer100 = t && t.total ? Math.round((100 * (t.late + t.cancelled)) / t.total) : null;
 
   return (
     <main className="adm-content">
-      <PageHead crumb="Signals / Trains and trams" title="Trains and trams" icon={TrainFront}
-        finding={hours.length
-          ? <><b>{totalCalls.toLocaleString("en")} real stop calls</b> from Entur&apos;s SIRI-ET archive ({range}) at the stops beside the store. When trains stop, commuters walk out at Nationaltheatret and buy food.</>
-          : <>Real historic delays from Entur&apos;s BigQuery archive are being pulled now. Live departures are on the map.</>} />
-      {hours.length > 0 && <TransitCharts days={days} modes={modes} />}
-      <div className="ak-grid" style={{ marginTop: 16 }}>
+      <PageHead crumb="Today / Trains and trams" title="Trains and trams" icon={TrainFront}
+        finding={<>The three stops next to the store. When trains are late, people wait nearby, and some come in to eat.</>} />
+
+      {t ? (
+        <section className={`tr-hero tr-hero--${t.level}`}>
+          <span className={`sh-dot sh-dot--${t.level}`} aria-hidden />
+          <div><h2>{TITLE[t.level]}</h2><p>{t.action}</p></div>
+        </section>
+      ) : (
+        <section className="tr-hero tr-hero--yellow"><span className="sh-dot sh-dot--yellow" aria-hidden /><div><h2>No live train data</h2><p>Entur did not answer. Try again in a minute.</p></div></section>
+      )}
+
+      {t && (
+        <section className="ak-panel" style={{ marginTop: 12 }}>
+          <div className="ak-kpis">
+            <div className="ak-kpi"><div className="ak-kpi-label">Departures next hour</div><div className="ak-kpi-value">{t.total}</div></div>
+            <div className="ak-kpi"><div className="ak-kpi-label">Late, 5+ min</div><div className={`ak-kpi-value${t.late ? " is-warn" : ""}`}>{t.late}</div></div>
+            <div className="ak-kpi"><div className="ak-kpi-label">Cancelled</div><div className={`ak-kpi-value${t.cancelled ? " is-bad" : ""}`}>{t.cancelled}</div></div>
+            <div className="ak-kpi"><div className="ak-kpi-label">Extra orders this hour</div>
+              <div className="ak-kpi-value">{effect == null ? <span className="is-na">Closed</span> : effect > 0 ? `+${effect}` : effect < 0 ? `${effect}` : "0"}</div>
+              <div className="ak-kpi-sub">from the trains, by the forecast</div></div>
+          </div>
+        </section>
+      )}
+
+      <div className="ak-grid" style={{ marginTop: 12 }}>
         <section className="ak-panel">
-          <div className="ak-panel-head"><div><h2 className="ak-h">Worst days for {modes[0] ?? "rail"}</h2><p className="ak-note">Share of calls more than 5 minutes late</p></div></div>
-          {worst.length === 0 && <div className="ak-empty">No history loaded yet.</div>}
-          {worst.map((d) => (
-            <div className="ak-row" key={d.day}>
-              <div className="ak-row-title">{new Date(d.day + "T12:00:00Z").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short", year: "numeric" })}</div>
-              <div className="ak-row-n is-bad">{(d[`${modes[0]}_late`] as number)?.toFixed(1)}%</div>
+          <div className="ak-panel-head"><div><h2 className="ak-h">Next hour</h2><p className="ak-note">Departures every 10 minutes. Grey is on time, yellow is late, red is cancelled.</p></div></div>
+          <div className="ak-panel-body">{t ? <NextHourChart data={t.buckets} /> : <div className="ak-empty">No live data.</div>}</div>
+        </section>
+        <section className="ak-panel">
+          <div className="ak-panel-head"><div><h2 className="ak-h">Warnings today</h2><p className="ak-note">Notices from Entur for these stops and lines.</p></div></div>
+          {!t?.notices.length && <div className="ak-empty">No warnings.</div>}
+          {t?.notices.slice(0, view === "employer" ? 12 : 5).map((n) => (
+            <div className="ak-row" key={n.id}>
+              <div><div className="ak-row-title">{n.text}</div>
+                <div className="ak-row-why">{[n.startsLater ? `From ${n.from}` : "", n.to ? `until ${n.to}` : "", n.lines].filter(Boolean).join(" · ")}</div></div>
             </div>
           ))}
         </section>
+      </div>
+
+      {usual.length > 0 && (
+        <section className="ak-panel" style={{ marginTop: 12 }}>
+          <div className="ak-panel-head"><div>
+            <h2 className="ak-h">A normal {dayName(dow)}</h2>
+            <p className="ak-note">Late trains out of every 100, hour by hour.{usualNow != null && nowPer100 != null
+              ? <> Now: <b>{nowPer100}</b>, usually <b>{usualNow}</b> at this hour.</> : null}</p>
+          </div></div>
+          <div className="ak-panel-body"><TypicalDayChart data={usual} nowHour={hour} /></div>
+        </section>
+      )}
+
+      {view === "employer" && <History />}
+    </main>
+  );
+}
+
+function History() {
+  const range = historyRange();
+  if (!range) return null;
+  const worst = worstDays(), eps = biggestDisruptions();
+  return (
+    <>
+      <h2 className="tr-section">History</h2>
+      <section className="ak-panel">
+        <div className="ak-panel-head"><div><h2 className="ak-h">Late trains out of 100, by week</h2>
+          <p className="ak-note">Nationaltheatret, {date(range.from)} to {date(range.to)}. Late means 5+ minutes or cancelled. Orange is trains, black is metro.</p></div></div>
+        <div className="ak-panel-body"><WeeklyChart data={weekly()} /></div>
+      </section>
+      <div className="ak-grid" style={{ marginTop: 12 }}>
         <section className="ak-panel">
-          <div className="ak-panel-head"><div><h2 className="ak-h">Biggest real disruptions</h2><p className="ak-note">{eps.length} episodes found in Entur&apos;s archive, ranked by size. {episodes.length} more come from news sources in the event library.</p></div></div>
-          <div style={{ maxHeight: 420, overflowY: "auto" }}>
-            {eps.length === 0 && <div className="ak-empty">No episodes yet.</div>}
-            {eps.slice(0, 40).map((e, k) => (
-              <div className="ak-row" key={k}>
-                <div><div className="ak-row-title">{STOPS[e.stop] ?? e.stop} {e.mode}: {Math.round(e.meanCancelShare * 100)}% cancelled for {e.hours} h</div>
-                  <div className="ak-row-why">{new Date(e.start).toLocaleString("en-GB", { timeZone: "Europe/Oslo", weekday: "short", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" })} · {e.cancelled.toLocaleString("en")} of {e.calls.toLocaleString("en")} calls cancelled · worst median delay {e.maxMedianDelay.toFixed(1)} min</div></div>
-              </div>
-            ))}
-          </div>
+          <div className="ak-panel-head"><div><h2 className="ak-h">Worst days</h2><p className="ak-note">Trains late out of 100</p></div></div>
+          {worst.map((d) => (
+            <div className="ak-row" key={d.day}><div className="ak-row-title">{date(d.day)}</div><div className="ak-row-n is-bad">{d.late} of 100</div></div>
+          ))}
+        </section>
+        <section className="ak-panel">
+          <div className="ak-panel-head"><div><h2 className="ak-h">Biggest shutdowns</h2><p className="ak-note">Longest runs of cancellations</p></div></div>
+          {eps.map((e, k) => (
+            <div className="ak-row" key={k}><div><div className="ak-row-title">{e.text}</div><div className="ak-row-why">{date(e.when)}</div></div></div>
+          ))}
         </section>
       </div>
-    </main>
+    </>
   );
 }

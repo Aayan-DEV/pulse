@@ -5,6 +5,7 @@ import { liveSales, demoOffset } from "@/lib/shift/sales";
 import { detectSpikes } from "@/lib/shift/spikes";
 import { inventory } from "@/lib/shift/inventory";
 import { employeeEvents } from "@/lib/shift/employeeEvents";
+import { trainsNow } from "@/lib/shift/trains";
 import { getTransit, getWeather, getUpcomingEvents } from "@/lib/live";
 import { staffRequirements } from "@/lib/staffing/requirements";
 import { buildSchedule } from "@/lib/staffing/schedule";
@@ -41,12 +42,8 @@ export default async function ShiftPage() {
   let trains = { level: "green" as "green" | "yellow" | "red", text: "Trains and trams running normally" };
   try {
     const t = await getTransit();
-    const near = t.departures.filter((d) => Date.parse(d.time) < now + 3600_000);
-    const late = near.filter((d) => d.delayMin > 5).length, canc = near.filter((d) => d.cancelled).length;
-    const share = near.length ? (late + canc) / near.length : 0;
-    trains = share >= 0.15 || canc >= 3 ? { level: "red", text: `${late} late and ${canc} cancelled in the next hour` }
-      : share > 0.05 || t.situations.length ? { level: "yellow", text: t.situations[0]?.summary ?? `${late} departures late` }
-      : { level: "green", text: `${near.length} departures next hour, on time` };
+    const tn = trainsNow(t.departures, t.situations, Date.now());
+    trains = { level: tn.level, text: tn.headline };
   } catch { trains = { level: "yellow", text: "Train feed unavailable" }; }
   let weather = { level: "green" as "green" | "yellow" | "red", text: "Weather unknown" };
   try {

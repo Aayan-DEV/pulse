@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 import Shell from "@/components/Shell";
+import { getView } from "@/lib/view";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -14,12 +15,12 @@ export const metadata: Metadata = {
 
 const themeBoot = `try{var t=localStorage.getItem("pulse-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t;}catch(e){}`;
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head><script dangerouslySetInnerHTML={{ __html: themeBoot }} /></head>
       <body className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
-        <Shell>{children}</Shell>
+        <Shell initialView={await getView()}>{children}</Shell>
       </body>
     </html>
   );
