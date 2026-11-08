@@ -1,5 +1,13 @@
 # Review (2026-11-08)
 
+## Fifth cut: focus on the live demo (after Aayan's notes)
+Notes: in the live parts, blur what is not relevant so the changing values are clear; add a circle that shows the zoomed-in values; cut the intro so the demo gets more time.
+1. Intro is shorter: Before Pulse 2.0 s (was 3.0), reveal 1.8 s (was 2.4), dashboards 0.75 s each (was 0.9).
+2. Live Shift is 9.6 s (was 8) and live What if is 7.2 s (was 5.2). Together they are now over half the film.
+3. Each live scene plays the recording three times in sync: blurred and veiled underneath, a sharp copy clipped to the part that changes (with an orange ring), and a zoomed copy in a circle at the side.
+4. Shift: the rush button and this hour (88 on pace), then the alarm (219 on pace, 11 crew needed), then this hour turning red. What if: the T-bane tile, the orders rerun (1 016 to 1 351), the Christmas market tile, the orders rerun again (1 192).
+5. The three video copies have slightly different durations (0.04 s apart at the end) so the renderer treats them as separate media.
+
 ## Fourth cut: 30 seconds, with music (after Aayan's notes)
 Notes: make it 30 s with the most important parts; show every dashboard and the map one by one, quickly; detail sections as cards; a music bed and better sound effects.
 1. Order: Before Pulse (red, 3 s) → "Pulse sees it coming" → six dashboards in quick succession (Overview, Live map, Forecast, Staffing, Trains and trams, What if) → three detail cards (crew vs planned, orders today, why today is different) → live Shift rush → live What if → end card. 30 s.

@@ -11,11 +11,18 @@
         #root { position: absolute; inset: 0; overflow: hidden; }
         .s6-ground { position: absolute; inset: 0; background: #f6f5f2; }
         .s6-win { position: absolute; left: 173px; top: 36px; width: 1574px; height: 885px; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.14); }
-        .s6-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
-        .s6-cam video { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+        .s6-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(0.819792); }
+        .s6-layer { position: absolute; inset: 0; }
+        .s6-layer video, .s6-magin video { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+        #s6-base { filter: blur(0px); }
+        #s6-sharp { clip-path: inset(0px 0px 0px 0px round 10px); }
+        .s6-veil { position: absolute; inset: 0; background: #f6f5f2; opacity: 0; }
+        .s6-ring { position: absolute; border: 4px solid #d9622b; border-radius: 12px; opacity: 0; }
+        .s6-mag { position: absolute; left: 1280.0px; top: 480.0px; width: 420px; height: 420px; border-radius: 50%; overflow: hidden; background: #fff; border: 5px solid #d9622b; box-shadow: 0 24px 60px rgba(20, 19, 16, 0.28); opacity: 0; }
+        .s6-magin { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
         .s6-live { position: absolute; left: 173px; top: 966px; display: flex; align-items: center; gap: 14px; font-family: "Geist", sans-serif; font-weight: 500; font-size: 30px; color: #a32d1d; }
         .s6-live i { width: 16px; height: 16px; border-radius: 50%; background: #a32d1d; display: block; }
-        .s6-cap { position: absolute; left: 0; right: 0; top: 948px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 68px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s6-cap { position: absolute; left: 0; right: 0; top: 948px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 68px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; opacity: 0; }
         .s6-cap .w { display: inline-block; }
         .s6-cap .s6-hot { color: #d9622b; }
       </style>
@@ -23,35 +30,54 @@
         <div class="s6-ground"></div>
         <div id="s6-win" class="s6-win">
           <div id="s6-cam" class="s6-cam" data-layout-allow-overflow>
-            <video id="s6-vid" class="clip" src="assets/live/shift.mp4" data-start="0" data-duration="8" data-media-start="2.2" muted playsinline></video>
+            <div id="s6-base" class="s6-layer"><video id="s6-vid" class="clip" src="assets/live/shift.mp4" data-start="0" data-duration="9.6" data-media-start="2.0" muted playsinline></video></div>
+            <div id="s6-veil" class="s6-veil"></div>
+            <div id="s6-sharp" class="s6-layer"><video id="s6-vid2" class="clip" src="assets/live/shift.mp4" data-start="0" data-duration="9.56" data-media-start="2.0" muted playsinline></video></div>
+            <div id="s6-ring" class="s6-ring"></div>
           </div>
         </div>
+        <div id="s6-mag" class="s6-mag"><div id="s6-magin" class="s6-magin" data-layout-allow-overflow><video id="s6-vid3" class="clip" src="assets/live/shift.mp4" data-start="0" data-duration="9.52" data-media-start="2.0" muted playsinline></video></div></div>
         <div id="s6-live" class="s6-live"><i id="s6-dot"></i>Live demo</div>
-        <div id="s6-cap2" class="s6-cap"><span class="w">We</span> <span class="w">simulate</span> <span class="w">a</span> <span class="w s6-hot">rush</span></div>
-        <div id="s6-cap3" class="s6-cap"><span class="w">Pulse</span> <span class="w">says:</span> <span class="w s6-hot">call</span> <span class="w s6-hot">help</span> <span class="w">now</span></div>
+        <div id="s6-cap0" class="s6-cap"><span class="w">We</span> <span class="w">simulate</span> <span class="w">a</span> <span class="w s6-hot">rush</span></div>
+        <div id="s6-cap1" class="s6-cap"><span class="w">Pulse</span> <span class="w">says:</span> <span class="w s6-hot">call</span> <span class="w s6-hot">help</span> <span class="w">now</span></div>
+        <div id="s6-cap2" class="s6-cap"><span class="w">On</span> <span class="w">pace</span> <span class="w">for</span> <span class="w s6-hot">219.</span> <span class="w">The</span> <span class="w">top</span> <span class="w">was</span> <span class="w">141.</span></div>
       </div>
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          const K = 1574 / 1920;
-          const cam = (cx, cy, s) => { const k = K * s; let x = 787 - cx * k, y = 442.5 - cy * k; x = Math.min(0, Math.max(1574 - 1920 * k, x)); y = Math.min(0, Math.max(885 - 1080 * k, y)); return { x: x, y: y, scale: k }; };
-          const caption = (sel, t, out) => {
-            tl.fromTo(sel, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, t);
-            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, t + 0.03);
-            if (out != null) tl.to(sel, { opacity: 0, y: -10, duration: 0.25, ease: "power3.in" }, out);
-          };
-          tl.set("#s6-cam", cam(960, 540, 1), 0);
-          tl.fromTo("#s6-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0);
-          tl.fromTo("#s6-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.3);
-          tl.fromTo("#s6-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 12, yoyo: true }, 0.3);
-          // Push in on this hour and the rush button.
-          tl.to("#s6-cam", { ...cam(700, 640, 1.3), duration: 0.9, ease: "power2.inOut" }, 0.3);
-          caption("#s6-cap2", 0.2, 2.6);
-          // The alarm lands: rush now, crew needed.
-          tl.to("#s6-cam", { ...cam(1100, 560, 1.2), duration: 0.7, ease: "power2.inOut" }, 2.5);
-          caption("#s6-cap3", 2.75, null);
-          // This hour turns red.
-          tl.to("#s6-cam", { ...cam(540, 820, 1.6), duration: 0.7, ease: "power2.inOut" }, 5.6);
+          const W = 1920, H = 1080, D = 420, Q = 10;
+          const PH = [{"t": 0.3, "box": [300, 400, 760, 370], "mag": [470, 668, 1.4]}, {"t": 2.6, "box": [300, 398, 1600, 146], "mag": [560, 470, 1.35]}, {"t": 5.2, "box": [300, 622, 1010, 330], "mag": [450, 800, 1.45]}];
+          const CAPS = [[0.2, 2.45], [2.7, 5.05], [5.3, null]];
+          // Spotlight: everything outside the box is blurred and veiled.
+          const clip = (b) => `inset(${b[1] - Q}px ${W - b[0] - b[2] - Q}px ${H - b[1] - b[3] - Q}px ${b[0] - Q}px round 10px)`;
+          const ring = (b) => ({ left: b[0] - Q, top: b[1] - Q, width: b[2] + 2 * Q, height: b[3] + 2 * Q });
+          // Magnifier: video point (vx, vy) at the circle centre, zoom z on stage.
+          const mag = (m) => ({ x: D / 2 - 5 - m[0] * m[2], y: D / 2 - 5 - m[1] * m[2], scale: m[2] });
+          tl.fromTo("#s6-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, 0);
+          tl.fromTo("#s6-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.2);
+          tl.fromTo("#s6-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 15, yoyo: true }, 0.2);
+          PH.forEach(function (ph, i) {
+            const t = ph.t, d = i === 0 ? 0.5 : 0.55;
+            if (i === 0) {
+              tl.set("#s6-sharp", { clipPath: clip(ph.box) }, 0);
+              tl.set("#s6-ring", ring(ph.box), 0);
+              tl.set("#s6-magin", mag(ph.mag), 0);
+              tl.to("#s6-base", { filter: "blur(7px)", duration: d, ease: "power2.out" }, t);
+              tl.to("#s6-veil", { opacity: 0.5, duration: d, ease: "power2.out" }, t);
+              tl.fromTo("#s6-ring", { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.out", immediateRender: false }, t + 0.15);
+              tl.fromTo("#s6-mag", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)", immediateRender: false }, t + 0.25);
+            } else {
+              tl.to("#s6-sharp", { clipPath: clip(ph.box), duration: d, ease: "power3.inOut" }, t);
+              tl.to("#s6-ring", { ...ring(ph.box), duration: d, ease: "power3.inOut" }, t);
+              tl.to("#s6-magin", { ...mag(ph.mag), duration: d, ease: "power3.inOut" }, t);
+            }
+          });
+          CAPS.forEach(function (c, i) {
+            const sel = "#s6-cap" + i;
+            tl.fromTo(sel, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out", immediateRender: false }, c[0]);
+            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out", immediateRender: false }, c[0] + 0.03);
+            if (c[1] != null) tl.to(sel, { opacity: 0, y: -10, duration: 0.22, ease: "power3.in" }, c[1]);
+          });
           window.__timelines["s6-live"] = tl;
         })();
       </script>

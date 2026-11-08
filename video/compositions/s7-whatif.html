@@ -11,11 +11,18 @@
         #root { position: absolute; inset: 0; overflow: hidden; }
         .s7-ground { position: absolute; inset: 0; background: #f6f5f2; }
         .s7-win { position: absolute; left: 173px; top: 36px; width: 1574px; height: 885px; border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.14); }
-        .s7-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
-        .s7-cam video { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+        .s7-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; transform: scale(0.819792); }
+        .s7-layer { position: absolute; inset: 0; }
+        .s7-layer video, .s7-magin video { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+        #s7-base { filter: blur(0px); }
+        #s7-sharp { clip-path: inset(0px 0px 0px 0px round 10px); }
+        .s7-veil { position: absolute; inset: 0; background: #f6f5f2; opacity: 0; }
+        .s7-ring { position: absolute; border: 4px solid #d9622b; border-radius: 12px; opacity: 0; }
+        .s7-mag { position: absolute; left: 1545.0px; top: 387.0px; width: 290px; height: 290px; border-radius: 50%; overflow: hidden; background: #fff; border: 5px solid #d9622b; box-shadow: 0 24px 60px rgba(20, 19, 16, 0.28); opacity: 0; }
+        .s7-magin { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
         .s7-live { position: absolute; left: 173px; top: 966px; display: flex; align-items: center; gap: 14px; font-family: "Geist", sans-serif; font-weight: 500; font-size: 30px; color: #a32d1d; }
         .s7-live i { width: 16px; height: 16px; border-radius: 50%; background: #a32d1d; display: block; }
-        .s7-cap { position: absolute; left: 0; right: 0; top: 948px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 68px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s7-cap { position: absolute; left: 0; right: 0; top: 948px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 68px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; opacity: 0; }
         .s7-cap .w { display: inline-block; }
         .s7-cap .s7-hot { color: #d9622b; }
       </style>
@@ -23,32 +30,54 @@
         <div class="s7-ground"></div>
         <div id="s7-win" class="s7-win">
           <div id="s7-cam" class="s7-cam" data-layout-allow-overflow>
-            <video id="s7-vid" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="5.2" data-media-start="0.8" muted playsinline></video>
+            <div id="s7-base" class="s7-layer"><video id="s7-vid" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="7.2" data-media-start="0.6" muted playsinline></video></div>
+            <div id="s7-veil" class="s7-veil"></div>
+            <div id="s7-sharp" class="s7-layer"><video id="s7-vid2" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="7.16" data-media-start="0.6" muted playsinline></video></div>
+            <div id="s7-ring" class="s7-ring"></div>
           </div>
         </div>
+        <div id="s7-mag" class="s7-mag"><div id="s7-magin" class="s7-magin" data-layout-allow-overflow><video id="s7-vid3" class="clip" src="assets/live/whatif.mp4" data-start="0" data-duration="7.12" data-media-start="0.6" muted playsinline></video></div></div>
         <div id="s7-live" class="s7-live"><i id="s7-dot"></i>Live demo</div>
-        <div id="s7-cap1" class="s7-cap"><span class="w">What</span> <span class="w">if</span> <span class="w">the</span> <span class="w s7-hot">T-bane</span> <span class="w">closes?</span></div>
-        <div id="s7-cap2" class="s7-cap"><span class="w">The</span> <span class="w">model</span> <span class="w s7-hot">reruns</span> <span class="w">on</span> <span class="w">the</span> <span class="w">spot</span></div>
+        <div id="s7-cap0" class="s7-cap"><span class="w">What</span> <span class="w">if</span> <span class="w">the</span> <span class="w s7-hot">T-bane</span> <span class="w">closes?</span></div>
+        <div id="s7-cap1" class="s7-cap"><span class="w">The</span> <span class="w">model</span> <span class="w s7-hot">reruns</span> <span class="w">on</span> <span class="w">the</span> <span class="w">spot</span></div>
+        <div id="s7-cap2" class="s7-cap"><span class="w">And</span> <span class="w">if</span> <span class="w">the</span> <span class="w s7-hot">market</span> <span class="w">closes?</span></div>
       </div>
       <script>
         (function () {
           const tl = gsap.timeline({ paused: true });
-          const K = 1574 / 1920;
-          const cam = (cx, cy, s) => { const k = K * s; let x = 787 - cx * k, y = 442.5 - cy * k; x = Math.min(0, Math.max(1574 - 1920 * k, x)); y = Math.min(0, Math.max(885 - 1080 * k, y)); return { x: x, y: y, scale: k }; };
-          const caption = (sel, t, out) => {
-            tl.fromTo(sel, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out" }, t);
-            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out" }, t + 0.03);
-            if (out != null) tl.to(sel, { opacity: 0, y: -10, duration: 0.25, ease: "power3.in" }, out);
-          };
-          tl.set("#s7-cam", cam(960, 540, 1), 0);
-          tl.fromTo("#s7-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "power3.out" }, 0);
-          tl.fromTo("#s7-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.3);
-          tl.fromTo("#s7-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 7, yoyo: true }, 0.3);
-          caption("#s7-cap1", 0.2, 2.6);
-          // Push in on the scenario tiles and the result cards.
-          tl.to("#s7-cam", { ...cam(1100, 620, 1.22), duration: 0.8, ease: "power2.inOut" }, 0.3);
-          caption("#s7-cap2", 2.8, null);
-          tl.to("#s7-cam", { ...cam(1100, 760, 1.22), duration: 0.8, ease: "power2.inOut" }, 2.7);
+          const W = 1920, H = 1080, D = 290, Q = 10;
+          const PH = [{"t": 0.3, "box": [300, 288, 1600, 136], "mag": [440, 360, 1.25]}, {"t": 1.7, "box": [300, 792, 1600, 166], "mag": [448, 880, 1.22]}, {"t": 4.3, "box": [300, 288, 1600, 136], "mag": [1500, 360, 1.25]}, {"t": 5.4, "box": [300, 792, 1600, 166], "mag": [448, 880, 1.22]}];
+          const CAPS = [[0.2, 2.4], [2.55, 4.3], [4.45, null]];
+          // Spotlight: everything outside the box is blurred and veiled.
+          const clip = (b) => `inset(${b[1] - Q}px ${W - b[0] - b[2] - Q}px ${H - b[1] - b[3] - Q}px ${b[0] - Q}px round 10px)`;
+          const ring = (b) => ({ left: b[0] - Q, top: b[1] - Q, width: b[2] + 2 * Q, height: b[3] + 2 * Q });
+          // Magnifier: video point (vx, vy) at the circle centre, zoom z on stage.
+          const mag = (m) => ({ x: D / 2 - 5 - m[0] * m[2], y: D / 2 - 5 - m[1] * m[2], scale: m[2] });
+          tl.fromTo("#s7-win", { opacity: 0, y: 40, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "power3.out" }, 0);
+          tl.fromTo("#s7-live", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.2);
+          tl.fromTo("#s7-dot", { opacity: 1 }, { opacity: 0.25, duration: 0.6, ease: "sine.inOut", repeat: 11, yoyo: true }, 0.2);
+          PH.forEach(function (ph, i) {
+            const t = ph.t, d = i === 0 ? 0.5 : 0.55;
+            if (i === 0) {
+              tl.set("#s7-sharp", { clipPath: clip(ph.box) }, 0);
+              tl.set("#s7-ring", ring(ph.box), 0);
+              tl.set("#s7-magin", mag(ph.mag), 0);
+              tl.to("#s7-base", { filter: "blur(7px)", duration: d, ease: "power2.out" }, t);
+              tl.to("#s7-veil", { opacity: 0.5, duration: d, ease: "power2.out" }, t);
+              tl.fromTo("#s7-ring", { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.out", immediateRender: false }, t + 0.15);
+              tl.fromTo("#s7-mag", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)", immediateRender: false }, t + 0.25);
+            } else {
+              tl.to("#s7-sharp", { clipPath: clip(ph.box), duration: d, ease: "power3.inOut" }, t);
+              tl.to("#s7-ring", { ...ring(ph.box), duration: d, ease: "power3.inOut" }, t);
+              tl.to("#s7-magin", { ...mag(ph.mag), duration: d, ease: "power3.inOut" }, t);
+            }
+          });
+          CAPS.forEach(function (c, i) {
+            const sel = "#s7-cap" + i;
+            tl.fromTo(sel, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.3, ease: "power4.out", immediateRender: false }, c[0]);
+            tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.3, stagger: 0.05, ease: "expo.out", immediateRender: false }, c[0] + 0.03);
+            if (c[1] != null) tl.to(sel, { opacity: 0, y: -10, duration: 0.22, ease: "power3.in" }, c[1]);
+          });
           window.__timelines["s7-whatif"] = tl;
         })();
       </script>
