@@ -50,7 +50,8 @@ export default function SpikeExplorer({ spikes }: { spikes: Spike[] }) {
               <p className="ak-note">{s.actual.toLocaleString("en")} orders against a likely top of {Math.round(s.p90).toLocaleString("en")}: <b>{Math.round(s.excessTransactions).toLocaleString("en")} extra</b> over {s.spikeHours} hours.</p></div>
           </div>
           <div className="ak-panel-body">
-            <ForecastChart height={220} data={s.hours.map((h) => ({ label: hh(h.time), p10: h.p10 ?? h.p50 * 0.7, p50: h.p50, p90: h.p90, actual: h.actual }))} />
+            <p className="ak-note" style={{ margin: "0 0 8px" }}>Shaded band runs from likely (P50) to the top of the range (P90). Ink line is what happened.</p>
+            <ForecastChart height={220} data={s.hours.map((h) => ({ label: hh(h.time), p10: h.p10 ?? h.p50, p50: h.p50, p90: h.p90, actual: h.actual }))} />
           </div>
         </section>
         <section className="ak-panel">

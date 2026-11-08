@@ -204,6 +204,10 @@ export default function LiveMap({ places }: { places: Place[] }) {
   const w = live?.weather;
   const obs = (w as LiveSnapshot["weather"] & { observed?: { tempC: number; precipMm: number; windMs: number; time: string; station?: string } })?.observed;
 
+  const sits = useMemo(() => {
+    const seen = new Set<string>();
+    return (live?.transit.situations ?? []).filter((x) => (seen.has(x.summary) ? false : (seen.add(x.summary), true)));
+  }, [live]);
   const todayEvents = useMemo(() => (live?.events ?? []).slice().sort((a, b) => a.start.localeCompare(b.start)).slice(0, 12), [live]);
 
   return (
@@ -231,9 +235,9 @@ export default function LiveMap({ places }: { places: Place[] }) {
                   </div></div>
                 ) : <div className="ak-empty">No weather right now.</div>}
               </Section>
-              <Section title={`Disruptions (${live.transit.situations.length})`} icon={AlertTriangle}>
-                {live.transit.situations.length === 0 && <div className="ak-row"><div className="ak-row-why">No disruption notices for the nearby stops right now.</div></div>}
-                {live.transit.situations.slice(0, 6).map((s) => (
+              <Section title={`Disruption notices (${sits.length})`} icon={AlertTriangle}>
+                {sits.length === 0 && <div className="ak-row"><div className="ak-row-why">No disruption notices for the nearby stops right now.</div></div>}
+                {sits.slice(0, 6).map((s) => (
                   <div className="ak-row" key={s.id}><div>
                     <div className="ak-row-title is-bad">{s.summary}</div>
                     {s.description && <div className="ak-row-why">{s.description.slice(0, 160)}</div>}

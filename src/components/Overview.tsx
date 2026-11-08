@@ -80,7 +80,7 @@ export default function Overview() {
           <div className="ak-kpi">
             <div className="ak-kpi-label">Trains and trams</div>
             <div className={`ak-kpi-value${late ? " is-bad" : ""}`}>{live ? (late ? `${late} late` : "On time") : "–"}</div>
-            <div className="ak-kpi-sub">{live ? `${live.transit.situations.length} disruption notices nearby` : "Entur live"}</div>
+            <div className="ak-kpi-sub">{live ? `${new Set(live.transit.situations.map((x) => x.summary)).size} disruption notices nearby` : "Entur live"}</div>
           </div>
           <div className="ak-kpi">
             <div className="ak-kpi-label">Events, next 7 days</div>
@@ -116,7 +116,7 @@ export default function Overview() {
             <Link href="/map" className="ak-btn">Open the map</Link>
           </div>
           {!live && <div className="ak-empty">Loading live data</div>}
-          {live?.transit.situations.slice(0, 3).map((s) => (
+          {live && [...new Map(live.transit.situations.map((x) => [x.summary, x])).values()].slice(0, 3).map((s) => (
             <div className="ak-row" key={s.id}><div><div className="ak-row-title is-bad">{s.summary}</div><div className="ak-row-why">Entur disruption notice</div></div></div>
           ))}
           {live?.events.slice(0, 4).map((e) => (

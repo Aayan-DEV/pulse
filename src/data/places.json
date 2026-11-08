@@ -236,7 +236,7 @@
   "lat": 59.915579,
   "lon": 10.731927,
   "distanceM": 194,
-  "note": "Second-busiest rail station in Norway after Oslo S; T-bane lines 1-5; exits face the store.",
+  "note": "Train (Oslo tunnel) and T-bane lines 1-5 under the same Entur stop place NSR:StopPlace:58404; exits face the store.",
   "sources": [
    {
     "label": "OpenStreetMap node 5218231660 (ODbL)",
@@ -326,7 +326,7 @@
   "lat": 59.911612,
   "lon": 10.7304,
   "distanceM": 286,
-  "note": "Museum on Rådhusplassen; start of the torchlight procession since 2024.",
+  "note": "Museum on Rådhusplassen; recent torchlight processions start outside it.",
   "sources": [
    {
     "label": "OpenStreetMap node 8046314379 (ODbL)",
@@ -371,7 +371,7 @@
   "lat": 59.911608,
   "lon": 10.728821,
   "distanceM": 336,
-  "note": "Largest art museum in the Nordics; school groups and tourists.",
+  "note": "National art museum at Vestbanen; school groups and tourists.",
   "sources": [
    {
     "label": "OpenStreetMap relation 13920125 (ODbL)",
