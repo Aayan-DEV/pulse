@@ -93,8 +93,15 @@ export default function Shell({ children }: { children: React.ReactNode }) {
           <span className="ak-live-dot" aria-hidden />
           <span className="ak-stamp">Live: weather, trains and trams, events, cameras</span>
           <span style={{ flex: 1 }} />
-          <span className="ak-stamp">Burger King Klingenberg · Nationaltheatret</span>
+          <span className="ak-stamp adm-header-right">Burger King Klingenberg · Nationaltheatret</span>
+          <button className="ak-icon-btn adm-mobile-only" onClick={toggle} type="button" aria-label="Switch theme">{theme === "dark" ? <Sun /> : <Moon />}</button>
         </header>
+        <nav className="adm-mobile-nav" aria-label="Sections">
+          {NAV.flatMap((g) => g.items).map((it) => {
+            const active = it.href === "/" ? path === "/" : path.startsWith(it.href);
+            return <Link key={it.href} href={it.href} aria-current={active ? "page" : undefined}>{it.label}</Link>;
+          })}
+        </nav>
         {children}
       </div>
     </div>

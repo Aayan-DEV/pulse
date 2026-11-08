@@ -260,8 +260,16 @@ a.ak-row:hover, button.ak-row:hover { background: var(--od-surface); }
   .ak-kpi + .ak-kpi { border-left: 0; }
   .ak-kpi { border-bottom: 1px solid var(--od-line); }
 }
+.adm-mobile-nav, .adm-mobile-only { display: none; }
 @media (max-width: 768px) {
   .adm-sidebar { display: none; }
+  .adm-header-right { display: none; }
+  .adm-header .ak-stamp { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .adm-mobile-only { display: inline-grid; }
+  .adm-mobile-nav { display: flex; gap: 4px; overflow-x: auto; padding: 8px 12px; border-bottom: 1px solid var(--od-line); background: var(--od-sidebar); scrollbar-width: none; position: sticky; top: 52px; z-index: 39; }
+  .adm-mobile-nav a { flex: none; height: 30px; padding: 0 10px; border-radius: var(--od-r); font: 400 13px/30px var(--od-body); color: var(--od-muted); text-decoration: none; white-space: nowrap; }
+  .adm-mobile-nav a[aria-current="page"] { background: var(--od-nav-active); color: var(--od-ink); }
+  .map-wrap { height: calc(100vh - 99px); }
   .adm-main { margin-left: 0; }
   .adm-content { padding: 20px 16px 40px; }
   .ak-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
