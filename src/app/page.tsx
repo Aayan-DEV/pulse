@@ -1,7 +1,7 @@
 import { Clock3 } from "lucide-react";
 import PageHead from "@/components/PageHead";
 import ShiftView, { type ShiftData } from "@/components/shift/ShiftView";
-import { liveSales } from "@/lib/shift/sales";
+import { liveSales, demoOffset } from "@/lib/shift/sales";
 import { detectSpikes } from "@/lib/shift/spikes";
 import { inventory } from "@/lib/shift/inventory";
 import { employeeEvents } from "@/lib/shift/employeeEvents";
@@ -73,7 +73,7 @@ export default async function ShiftPage() {
   for (const it of inv.items.filter((i) => i.level === "red")) alarms.push({ kind: "stock", text: `${it.label} running low: ${it.left} ${it.unit} left${it.hoursLeft != null ? `, about ${it.hoursLeft.toFixed(1)} h at this pace` : ""}.` });
 
   const data: ShiftData = {
-    updated: hh(now), status: [{ key: "trains", label: "Trains and trams", ...trains }, { key: "weather", label: "Weather", ...weather }, { key: "events", label: "Events now and next", ...events }, { key: "busy", label: "Busyness", ...busy }],
+    updated: hh(now), demoClock: demoOffset() ? hh(now) : null, status: [{ key: "trains", label: "Trains and trams", ...trains }, { key: "weather", label: "Weather", ...weather }, { key: "events", label: "Events now and next", ...events }, { key: "busy", label: "Busyness", ...busy }],
     alarms, inventory: inv.items, pace: inv.pacePerHour, cards,
     current: cur ? { label: hh(cur.time), soFar: cur.soFar ?? 0, projected: cur.projected ?? 0, p50: cur.p50, p90: cur.p90, open: cur.open } : null,
   };

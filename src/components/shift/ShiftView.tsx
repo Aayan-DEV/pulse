@@ -13,7 +13,7 @@ const MiniMap = dynamic(() => import("./MiniMap"), { ssr: false, loading: () => 
 
 type Level = "green" | "yellow" | "red";
 export type ShiftData = {
-  updated: string;
+  updated: string; demoClock: string | null;
   status: { key: string; label: string; level: Level; text: string }[];
   alarms: { kind: "spike" | "staff" | "stock"; text: string; href?: string }[];
   inventory: Stock[]; pace: number; cards: SpikeCard[];
@@ -93,6 +93,7 @@ export default function ShiftView({ data, venues }: { data: ShiftData; venues: V
   const c = data.current;
   return (
     <>
+      {data.demoClock && <div className="ak-error" style={{ marginBottom: 12 }}>Demo clock is on: the screen acts as if it is {data.demoClock}. <button className="ak-btn" style={{ marginLeft: 8 }} onClick={async () => { await fetch("/api/sales", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ reset: true }) }); router.refresh(); }}>Back to real time</button></div>}
       <div className="sh-status">
         {data.status.map((s) => <div key={s.key} className="sh-stat"><span className={`sh-dot sh-dot--${s.level}`} /><div><b>{s.label}</b><span>{s.text}</span></div></div>)}
       </div>

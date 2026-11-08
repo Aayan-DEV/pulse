@@ -377,3 +377,6 @@ body { font-size: 16px; line-height: 24px; }
 .sh-modal-box { width: min(640px, 100%); max-height: 90vh; overflow: auto; background: var(--od-surface); border: 1px solid var(--od-line); border-radius: 4px; padding: 20px; display: grid; gap: 14px; }
 .sh-modal-head { display: flex; justify-content: space-between; align-items: center; } .sh-modal-head h2 { margin: 0; font-size: 22px; }
 .sh-icon-btn { border: 0; background: transparent; color: var(--od-ink); cursor: pointer; padding: 6px; } .sh-icon-btn svg { width: 22px; height: 22px; }
+
+.mini-map-wrap { position: relative; }
+.mini-map-msg { position: absolute; inset: 8px 16px 16px; display: grid; place-items: center; text-align: center; color: var(--od-muted); font-size: 14px; }

@@ -5,7 +5,10 @@ import "server-only";
 import { getForecast } from "@/lib/forecast";
 import type { ForecastPayload } from "@/lib/forecastPayload";
 
-const g = globalThis as unknown as { __pulseForced?: Record<string, number> };
+const g = globalThis as unknown as { __pulseForced?: Record<string, number>; __pulseClock?: number };
+/** Demo clock: an offset (ms) so the demo can run when the store is closed. Shown on the Shift screen when set. */
+export const demoOffset = () => g.__pulseClock ?? 0;
+export const setDemoOffset = (ms: number) => { g.__pulseClock = ms; };
 const forced = (g.__pulseForced ??= {});
 
 function seeded(s: string) {
@@ -25,7 +28,7 @@ export type SalesHour = ForecastPayload["hours"][number] & { actual?: number; so
 
 export async function liveSales(): Promise<{ hours: SalesHour[]; now: number; fc: ForecastPayload }> {
   const fc = await getForecast(1);
-  const now = Date.now();
+  const now = Date.now() + demoOffset();
   const hours = fc.hours.map((h) => {
     const s = Date.parse(h.time), e = s + 3600_000;
     const total = h.p50 * hourFactor(h.time);
