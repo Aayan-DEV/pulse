@@ -1,0 +1,9 @@
+{
+ "lat": 59.9136222,
+ "lon": 10.7322505,
+ "note": "Single source of the store location. The TS app (src/lib/types.ts STORE) and the Python model (model/features.py) both read this file.",
+ "sources": [
+  {"label": "OpenStreetMap node 383991805 (Burger King, Klingenberggata 5)", "url": "https://www.openstreetmap.org/node/383991805"},
+  {"label": "Kartverket address point, Klingenberggata 5, 0161 Oslo: 59.913608, 10.732172 (agrees within about 5 m)", "url": "https://ws.geonorge.no/adresser/v1/sok?sok=Klingenberggata%205&postnummer=0161"}
+ ]
+}

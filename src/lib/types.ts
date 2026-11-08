@@ -1,12 +1,15 @@
 // Shared contract between the data, model, staffing and UI parts.
 // Every agent reads this file; change it only by adding optional fields.
+import storeLocation from "../data/store.json";
 
 export const STORE = {
   id: "bk-klingenberg",
   name: "Burger King Klingenberg",
   address: "Klingenberggata 5, 0161 Oslo",
-  lat: 59.91389,
-  lon: 10.73277,
+  // OSM node 383991805; Kartverket's address point agrees within about 5 m. Sources in src/data/store.json.
+  lat: storeLocation.lat,
+  lon: storeLocation.lon,
+  locationSources: storeLocation.sources,
   // brreg org 981909100 "BURGER KING AVD 5031 KLINGENBERG", 45 employees, opened 1999-11-01
   orgNumber: "981909100",
   employees: 45,

@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { AlertTriangle, Users, Package, Zap, CalendarPlus, Search, X, CheckCircle2, CircleHelp, CircleDot, LoaderCircle, Bot, UserRound, Cpu, Map as MapIcon } from "lucide-react";
+import { STORE } from "@/lib/types";
 import type { SpikeCard } from "@/lib/shift/spikes";
 import type { Stock } from "@/lib/shift/inventory";
 
@@ -23,7 +24,7 @@ const hh = (iso: string) => new Date(iso).toLocaleTimeString("en-GB", { timeZone
 const ICON = { spike: Zap, staff: Users, stock: Package };
 
 function LogEvent({ venues, onClose }: { venues: Venue[]; onClose: () => void }) {
-  const here = { key: "store", name: "Outside the store", lat: 59.91389, lon: 10.73277, km: 0 };
+  const here = { key: "store", name: "Outside the store", lat: STORE.lat, lon: STORE.lon, km: 0 };
   const places = [here, ...venues.filter((v) => v.km <= 3)];
   const [title, setTitle] = useState(""); const [place, setPlace] = useState("store");
   const [people, setPeople] = useState(50); const [startsIn, setStartsIn] = useState(0); const [lasts, setLasts] = useState(2);

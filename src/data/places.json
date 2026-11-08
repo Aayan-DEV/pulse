@@ -3,18 +3,22 @@
   "id": "bk-klingenberg",
   "name": "Burger King Klingenberg",
   "category": "competitor",
-  "lat": 59.91389,
-  "lon": 10.73277,
+  "lat": 59.9136222,
+  "lon": 10.7322505,
   "distanceM": 0,
   "note": "The store itself (category set to competitor so it groups with QSR; filter by id).",
   "sources": [
    {
-    "label": "Brønnøysundregistrene: org 981909100 BURGER KING AVD 5031 KLINGENBERG",
-    "url": "https://data.brreg.no/enhetsregisteret/oppslag/underenheter/981909100"
+    "label": "OpenStreetMap node 383991805 (Burger King, Klingenberggata 5)",
+    "url": "https://www.openstreetmap.org/node/383991805"
    },
    {
-    "label": "OpenStreetMap: Burger King Klingenberggata (node 383991805)",
-    "url": "https://www.openstreetmap.org/node/383991805"
+    "label": "Kartverket address point, Klingenberggata 5, 0161 Oslo: 59.913608, 10.732172 (agrees within about 5 m)",
+    "url": "https://ws.geonorge.no/adresser/v1/sok?sok=Klingenberggata%205&postnummer=0161"
+   },
+   {
+    "label": "Brønnøysundregistrene: org 981909100 BURGER KING AVD 5031 KLINGENBERG",
+    "url": "https://data.brreg.no/enhetsregisteret/oppslag/underenheter/981909100"
    }
   ]
  },
@@ -24,7 +28,7 @@
   "category": "nightlife",
   "lat": 59.913812,
   "lon": 10.733027,
-  "distanceM": 17,
+  "distanceM": 48,
   "note": "Pubs on the store's block (Dr. Jekyll's, The Old Irish Pub, The Lannisters, Raadhuset Bar, Bar Boman).",
   "sources": [
    {
@@ -55,7 +59,7 @@
   "category": "cinema",
   "lat": 59.914122,
   "lon": 10.732463,
-  "distanceM": 31,
+  "distanceM": 57,
   "note": "Large central cinema 100 m north.",
   "sources": [
    {
@@ -70,7 +74,7 @@
   "category": "venue",
   "lat": 59.913728,
   "lon": 10.732298,
-  "distanceM": 32,
+  "distanceM": 12,
   "note": "Revue theatre on Klingenberggata, next door to the store.",
   "sources": [
    {
@@ -85,7 +89,7 @@
   "category": "competitor",
   "lat": 59.913623,
   "lon": 10.733301,
-  "distanceM": 42,
+  "distanceM": 59,
   "note": "Quick-service, same block.",
   "sources": [
    {
@@ -100,7 +104,7 @@
   "category": "cinema",
   "lat": 59.913468,
   "lon": 10.732893,
-  "distanceM": 47,
+  "distanceM": 40,
   "note": "Odeon/Oslo Kino cinema in the same block; screenings end into the store's evening peak.",
   "sources": [
    {
@@ -115,7 +119,7 @@
   "category": "hotel",
   "lat": 59.91409,
   "lon": 10.733521,
-  "distanceM": 47,
+  "distanceM": 88,
   "note": "Hotel across Stortingsgata from Nationaltheatret.",
   "sources": [
    {
@@ -130,7 +134,7 @@
   "category": "competitor",
   "lat": 59.913656,
   "lon": 10.733493,
-  "distanceM": 48,
+  "distanceM": 69,
   "note": "Direct competitor directly opposite the store.",
   "sources": [
    {
@@ -145,7 +149,7 @@
   "category": "competitor",
   "lat": 59.913295,
   "lon": 10.732756,
-  "distanceM": 66,
+  "distanceM": 46,
   "note": "Quick-service, same block.",
   "sources": [
    {
@@ -160,7 +164,7 @@
   "category": "transit",
   "lat": 59.914615,
   "lon": 10.732888,
-  "distanceM": 81,
+  "distanceM": 116,
   "note": "Trams 11, 12, 13, 17, 18, 19 stop outside the store.",
   "sources": [
    {
@@ -175,7 +179,7 @@
   "category": "venue",
   "lat": 59.914366,
   "lon": 10.734254,
-  "distanceM": 98,
+  "distanceM": 139,
   "note": "National theatre; evening shows release audiences next to the store.",
   "sources": [
    {
@@ -190,7 +194,7 @@
   "category": "competitor",
   "lat": 59.914738,
   "lon": 10.730323,
-  "distanceM": 166,
+  "distanceM": 164,
   "note": "Station quick-service food.",
   "sources": [
    {
@@ -205,7 +209,7 @@
   "category": "hotel",
   "lat": 59.913542,
   "lon": 10.735917,
-  "distanceM": 180,
+  "distanceM": 205,
   "note": "Hotel on Stortingsgata.",
   "sources": [
    {
@@ -220,7 +224,7 @@
   "category": "venue",
   "lat": 59.913091,
   "lon": 10.729785,
-  "distanceM": 189,
+  "distanceM": 150,
   "note": "Concert hall in Vika; evening concerts.",
   "sources": [
    {
@@ -235,7 +239,7 @@
   "category": "transit",
   "lat": 59.915579,
   "lon": 10.731927,
-  "distanceM": 194,
+  "distanceM": 218,
   "note": "Train (Oslo tunnel) and T-bane lines 1-5 under the same Entur stop place NSR:StopPlace:58404; exits face the store.",
   "sources": [
    {
@@ -250,7 +254,7 @@
   "category": "landmark",
   "lat": 59.912049,
   "lon": 10.733692,
-  "distanceM": 211,
+  "distanceM": 193,
   "note": "Nobel Peace Prize ceremony on 10 December; tourist magnet.",
   "sources": [
    {
@@ -265,7 +269,7 @@
   "category": "cinema",
   "lat": 59.913388,
   "lon": 10.72853,
-  "distanceM": 243,
+  "distanceM": 209,
   "note": "Cinema in Vika.",
   "sources": [
    {
@@ -280,7 +284,7 @@
   "category": "market",
   "lat": 59.913839,
   "lon": 10.73721,
-  "distanceM": 248,
+  "distanceM": 278,
   "note": "Jul i Vinterland Christmas market and ice rink each November to New Year, 250 m away.",
   "sources": [
    {
@@ -295,7 +299,7 @@
   "category": "hotel",
   "lat": 59.912596,
   "lon": 10.736948,
-  "distanceM": 274,
+  "distanceM": 286,
   "note": "Hotel by Rosenkrantz gate.",
   "sources": [
    {
@@ -310,7 +314,7 @@
   "category": "hotel",
   "lat": 59.912837,
   "lon": 10.737375,
-  "distanceM": 282,
+  "distanceM": 299,
   "note": "Hotel by Stortinget.",
   "sources": [
    {
@@ -325,7 +329,7 @@
   "category": "museum",
   "lat": 59.911612,
   "lon": 10.7304,
-  "distanceM": 286,
+  "distanceM": 246,
   "note": "Museum on Rådhusplassen; recent torchlight processions start outside it.",
   "sources": [
    {
@@ -340,7 +344,7 @@
   "category": "landmark",
   "lat": 59.911221,
   "lon": 10.732942,
-  "distanceM": 297,
+  "distanceM": 270,
   "note": "City Hall square: Oslo Marathon start/finish, New Year events, outdoor concerts.",
   "sources": [
    {
@@ -355,7 +359,7 @@
   "category": "competitor",
   "lat": 59.91549,
   "lon": 10.737453,
-  "distanceM": 316,
+  "distanceM": 357,
   "note": "Burger competitor north of Karl Johan.",
   "sources": [
    {
@@ -370,7 +374,7 @@
   "category": "museum",
   "lat": 59.911608,
   "lon": 10.728821,
-  "distanceM": 336,
+  "distanceM": 294,
   "note": "National art museum at Vestbanen; school groups and tourists.",
   "sources": [
    {
@@ -385,7 +389,7 @@
   "category": "museum",
   "lat": 59.915031,
   "lon": 10.727046,
-  "distanceM": 343,
+  "distanceM": 330,
   "note": "Museum by the Palace park.",
   "sources": [
    {
@@ -400,7 +404,7 @@
   "category": "transit",
   "lat": 59.911058,
   "lon": 10.729975,
-  "distanceM": 351,
+  "distanceM": 312,
   "note": "Tram stop serving the Aker Brygge office and dining cluster.",
   "sources": [
    {
@@ -415,7 +419,7 @@
   "category": "museum",
   "lat": 59.916783,
   "lon": 10.73554,
-  "distanceM": 357,
+  "distanceM": 396,
   "note": "University museum by Karl Johan; school visits.",
   "sources": [
    {
@@ -430,7 +434,7 @@
   "category": "venue",
   "lat": 59.915219,
   "lon": 10.738625,
-  "distanceM": 358,
+  "distanceM": 397,
   "note": "Theatre on Kristian IVs gate; evening audiences.",
   "sources": [
    {
@@ -445,7 +449,7 @@
   "category": "nightlife",
   "lat": 59.91524,
   "lon": 10.738815,
-  "distanceM": 369,
+  "distanceM": 408,
   "note": "Pubs and clubs (Lawo, Last Train, John's Bar, Mulligan's, Justisen, Herr Nilsen, Per på Hjørnet): Friday and Saturday late-night foot traffic.",
   "sources": [
    {
@@ -492,7 +496,7 @@
   "category": "hotel",
   "lat": 59.913733,
   "lon": 10.739478,
-  "distanceM": 374,
+  "distanceM": 403,
   "note": "Nobel laureate's hotel; torchlight procession ends here.",
   "sources": [
    {
@@ -507,7 +511,7 @@
   "category": "transit",
   "lat": 59.910891,
   "lon": 10.73587,
-  "distanceM": 376,
+  "distanceM": 365,
   "note": "Tram stop by Rådhusplassen and Akershus fortress.",
   "sources": [
    {
@@ -522,7 +526,7 @@
   "category": "venue",
   "lat": 59.914414,
   "lon": 10.739797,
-  "distanceM": 396,
+  "distanceM": 430,
   "note": "Theatre near Karl Johan; evening audiences.",
   "sources": [
    {
@@ -537,7 +541,7 @@
   "category": "school",
   "lat": 59.913236,
   "lon": 10.72557,
-  "distanceM": 408,
+  "distanceM": 375,
   "note": "Primary school 450 m west.",
   "capacity": 611,
   "sources": [
@@ -553,7 +557,7 @@
   "category": "hotel",
   "lat": 59.915162,
   "lon": 10.739712,
-  "distanceM": 412,
+  "distanceM": 450,
   "note": "Hotel by Rosenkrantz gate.",
   "sources": [
    {
@@ -568,7 +572,7 @@
   "category": "landmark",
   "lat": 59.913006,
   "lon": 10.740113,
-  "distanceM": 421,
+  "distanceM": 444,
   "note": "Demonstrations at Eidsvolls plass and the Parliament.",
   "sources": [
    {
@@ -583,7 +587,7 @@
   "category": "school",
   "lat": 59.911209,
   "lon": 10.738378,
-  "distanceM": 432,
+  "distanceM": 434,
   "note": "Upper secondary school by Rådhusplassen.",
   "sources": [
    {
@@ -598,7 +602,7 @@
   "category": "hotel",
   "lat": 59.914167,
   "lon": 10.740803,
-  "distanceM": 449,
+  "distanceM": 481,
   "note": "Hotel on Karl Johan.",
   "sources": [
    {
@@ -613,7 +617,7 @@
   "category": "competitor",
   "lat": 59.914853,
   "lon": 10.740626,
-  "distanceM": 451,
+  "distanceM": 487,
   "note": "Burger competitor in Rosenkrantz gate.",
   "sources": [
    {
@@ -628,7 +632,7 @@
   "category": "school",
   "lat": 59.914746,
   "lon": 10.724413,
-  "distanceM": 475,
+  "distanceM": 454,
   "note": "Upper secondary school near the Palace park.",
   "sources": [
    {
@@ -643,7 +647,7 @@
   "category": "landmark",
   "lat": 59.917193,
   "lon": 10.727236,
-  "distanceM": 480,
+  "distanceM": 486,
   "note": "17 May children's parade ends here; changing of the guard draws tourists.",
   "sources": [
    {
@@ -658,7 +662,7 @@
   "category": "school",
   "lat": 59.913011,
   "lon": 10.724217,
-  "distanceM": 487,
+  "distanceM": 453,
   "note": "Upper secondary school in Vika.",
   "sources": [
    {
@@ -673,7 +677,7 @@
   "category": "competitor",
   "lat": 59.913732,
   "lon": 10.741768,
-  "distanceM": 502,
+  "distanceM": 531,
   "note": "Quick-service near Stortinget.",
   "sources": [
    {
@@ -688,7 +692,7 @@
   "category": "hotel",
   "lat": 59.918446,
   "lon": 10.734108,
-  "distanceM": 512,
+  "distanceM": 546,
   "note": "Large hotel at Holbergs plass.",
   "sources": [
    {
@@ -703,7 +707,7 @@
   "category": "competitor",
   "lat": 59.912701,
   "lon": 10.741744,
-  "distanceM": 517,
+  "distanceM": 539,
   "note": "Burger competitor on Karl Johan.",
   "sources": [
    {
@@ -718,7 +722,7 @@
   "category": "office",
   "lat": 59.910116,
   "lon": 10.727135,
-  "distanceM": 524,
+  "distanceM": 483,
   "note": "Waterfront offices, shops, restaurants and bars 500 m south-west; lunch and after-work traffic.",
   "sources": [
    {
@@ -753,7 +757,7 @@
   "category": "hotel",
   "lat": 59.91116,
   "lon": 10.724113,
-  "distanceM": 570,
+  "distanceM": 530,
   "note": "Business and conference hotel in Vika.",
   "sources": [
    {
@@ -768,7 +772,7 @@
   "category": "competitor",
   "lat": 59.915071,
   "lon": 10.722518,
-  "distanceM": 586,
+  "distanceM": 566,
   "note": "McDonald's west of the store.",
   "sources": [
    {
@@ -783,7 +787,7 @@
   "category": "transit",
   "lat": 59.913566,
   "lon": 10.743342,
-  "distanceM": 590,
+  "distanceM": 618,
   "note": "Next metro station east; Karl Johan and Stortinget crowds.",
   "sources": [
    {
@@ -798,7 +802,7 @@
   "category": "school",
   "lat": 59.913836,
   "lon": 10.720121,
-  "distanceM": 705,
+  "distanceM": 677,
   "note": "Upper secondary school at Solli.",
   "capacity": 45,
   "sources": [
@@ -814,7 +818,7 @@
   "category": "landmark",
   "lat": 59.9076,
   "lon": 10.737263,
-  "distanceM": 743,
+  "distanceM": 726,
   "note": "Fortress by the cruise quays; tourist route to the centre.",
   "sources": [
    {
@@ -829,7 +833,7 @@
   "category": "hotel",
   "lat": 59.915336,
   "lon": 10.719646,
-  "distanceM": 749,
+  "distanceM": 728,
   "note": "Hotel at Solli plass.",
   "sources": [
    {
@@ -844,7 +848,7 @@
   "category": "port",
   "lat": 59.906512,
   "lon": 10.735033,
-  "distanceM": 830,
+  "distanceM": 806,
   "note": "Cruise berth below Akershus fortress, closest to the store.",
   "sources": [
    {
@@ -859,7 +863,7 @@
   "category": "cinema",
   "lat": 59.909533,
   "lon": 10.745719,
-  "distanceM": 869,
+  "distanceM": 878,
   "note": "Film institute cinema.",
   "sources": [
    {
@@ -874,7 +878,7 @@
   "category": "school",
   "lat": 59.921071,
   "lon": 10.741077,
-  "distanceM": 923,
+  "distanceM": 963,
   "note": "Upper secondary school north of the centre.",
   "sources": [
    {
@@ -889,7 +893,7 @@
   "category": "hotel",
   "lat": 59.907613,
   "lon": 10.72098,
-  "distanceM": 959,
+  "distanceM": 917,
   "note": "Hotel at Tjuvholmen.",
   "sources": [
    {
@@ -904,7 +908,7 @@
   "category": "museum",
   "lat": 59.906925,
   "lon": 10.721938,
-  "distanceM": 982,
+  "distanceM": 941,
   "note": "Art museum at Tjuvholmen past Aker Brygge.",
   "sources": [
    {
@@ -919,7 +923,7 @@
   "category": "school",
   "lat": 59.920074,
   "lon": 10.718765,
-  "distanceM": 1040,
+  "distanceM": 1039,
   "note": "Primary school.",
   "capacity": 812,
   "sources": [
@@ -935,7 +939,7 @@
   "category": "competitor",
   "lat": 59.911234,
   "lon": 10.752962,
-  "distanceM": 1164,
+  "distanceM": 1185,
   "note": "Same brand at Oslo S; absorbs station traffic.",
   "sources": [
    {
@@ -950,7 +954,7 @@
   "category": "transit",
   "lat": 59.911025,
   "lon": 10.753138,
-  "distanceM": 1179,
+  "distanceM": 1200,
   "note": "Rail bottleneck: faults at Oslo S or in the Oslo tunnel stop trains at Nationaltheatret.",
   "sources": [
    {
@@ -965,7 +969,7 @@
   "category": "port",
   "lat": 59.905148,
   "lon": 10.746116,
-  "distanceM": 1224,
+  "distanceM": 1219,
   "note": "Cruise berth; passengers walk via Akershus and Rådhusplassen.",
   "sources": [
    {
@@ -980,7 +984,7 @@
   "category": "venue",
   "lat": 59.912987,
   "lon": 10.75472,
-  "distanceM": 1228,
+  "distanceM": 1255,
   "note": "Main indoor arena (concerts, Nobel Peace Prize Concert); 1.2 km east.",
   "sources": [
    {
@@ -995,7 +999,7 @@
   "category": "port",
   "lat": 59.903698,
   "lon": 10.743741,
-  "distanceM": 1288,
+  "distanceM": 1276,
   "note": "Cruise and ferry berth at the tip of Akershus.",
   "sources": [
    {
@@ -1010,7 +1014,7 @@
   "category": "port",
   "lat": 59.90884,
   "lon": 10.71012,
-  "distanceM": 1382,
+  "distanceM": 1343,
   "note": "Kiel ferry terminal west of Aker Brygge.",
   "sources": [
    {

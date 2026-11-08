@@ -12,7 +12,8 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
-STORE_LAT, STORE_LON = 59.91389, 10.73277
+_STORE = json.load(open(ROOT.parent / "src" / "data" / "store.json"))  # single source, shared with the TS app
+STORE_LAT, STORE_LON = _STORE["lat"], _STORE["lon"]
 EPOCH_2023 = 1672531200.0  # 2023-01-01T00:00Z
 YEAR_S = 365.25 * 86400
 
