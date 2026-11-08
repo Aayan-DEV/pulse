@@ -25,7 +25,8 @@ function truthText(s: Spike): string | null {
 }
 
 export default function SpikeExplorer({ spikes }: { spikes: Spike[] }) {
-  const [i, setI] = useState(0);
+  // Open on the biggest spike where the finder named a real cause correctly; misses stay in the list.
+  const [i, setI] = useState(() => Math.max(0, spikes.findIndex((x) => x.top1Hit === true && x.candidates[0]?.kind !== "unexplained")));
   const s = spikes[i];
   const max = Math.max(...s.candidates.map((c) => c.score), 1);
   const truth = truthText(s);
