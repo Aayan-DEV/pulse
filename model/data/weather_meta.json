@@ -1,0 +1,9 @@
+{
+ "source": "MET Norway Frost, Oslo Blindern SN18700, CC BY 4.0 (the Frost API response still links CC BY 3.0 NO); gaps filled from the Open-Meteo archive",
+ "gapFillShare": {
+  "tempC": 0.0,
+  "precipMm": 0.005656242596541104,
+  "windMs": 0.0
+ },
+ "rows": 33768
+}

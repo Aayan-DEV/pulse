@@ -1,0 +1,363 @@
+[
+ {
+  "id": "transit-2023-07-01-follobanen-oslo-s-summer-work",
+  "title": "Follobanen closed all July 2023 while westbound tracks at Oslo S were connected; Østfoldbanen Oslo S-Holmlia closed 1-5 July",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2023-07-01T05:00:00+02:00",
+  "end": "2023-08-01T01:00:00+02:00",
+  "sources": [
+   {
+    "label": "Vy: summer work 2023 (published 11 May 2023)",
+    "url": "https://www.vy.no/vygruppen/presse-og-nyheter/2023/3314173"
+   }
+  ],
+  "note": "Vy gives 'all of July' for Follobanen without exact hours; wider Bane NOR summer work ran 24 June to 6 August 2023."
+ },
+ {
+  "id": "transit-2024-05-28-oslo-s-earth-fault",
+  "title": "Earth fault at Oslo S knocks out signalling in the morning rush",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2024-05-28T08:40:00+02:00",
+  "end": "2024-05-28T10:40:00+02:00",
+  "sources": [
+   {
+    "label": "TU/NTB: Oslo S stengt for togtrafikk på grunn av jordfeil",
+    "url": "https://www.tu.no/artikler/oslo-s-stengt-for-togtrafikk-pa-grunn-av-jordfeil/547367"
+   }
+  ],
+  "note": "Start about 08:40; at 08:46 traffic was returning to normal with delays. End is a 2 h placeholder for knock-on delays."
+ },
+ {
+  "id": "transit-2024-06-29-oslo-s-nationaltheatret-signal-fault",
+  "title": "Signal fault between Oslo S and Nationaltheatret disrupts Drammen and Asker lines",
+  "category": "transit",
+  "venue": "Oslotunnelen",
+  "lat": 59.91476,
+  "lon": 10.73135,
+  "start": "2024-06-29T12:58:00+02:00",
+  "end": "2024-06-29T15:00:00+02:00",
+  "sources": [
+   {
+    "label": "TU Nyhetsstudio/NTB: Signalfeil skapte togtrøbbel i Oslo",
+    "url": "https://www.tu.no/nyhetsstudio/signalfeil-skapte-togtroebbel-i-oslo/48355"
+   }
+  ],
+  "note": "Start is the NTB report time 12:58; search summaries say fixed a little over two hours later, so the end is approximate. Source page now returns 404."
+ },
+ {
+  "id": "transit-2024-08-13-oslo-s-earth-fault",
+  "title": "Earth fault brings full stop at Oslo S on a Tuesday morning",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2024-08-13T05:00:00+02:00",
+  "end": "2024-08-13T10:45:00+02:00",
+  "sources": [
+   {
+    "label": "TU: Feilen på Oslo S er rettet – Bane Nor vet ikke hvorfor den oppsto",
+    "url": "https://www.tu.no/artikler/feilen-pa-oslo-s-er-rettet-bane-nor-vet-ikke-hvorfor-den-oppsto/549767"
+   }
+  ],
+  "note": "Article (paywalled) says full stop Tuesday morning, fixed by publication at 10:45; exact start unknown, service-day start used."
+ },
+ {
+  "id": "transit-2024-12-10-traffic-control-fire-alarm",
+  "title": "Fire alarm evacuates Oslo traffic control centre and stops all trains in Eastern Norway",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2024-12-10T15:20:00+01:00",
+  "end": "2024-12-10T15:40:00+01:00",
+  "sources": [
+   {
+    "label": "TU: Full stans i togtrafikken i Oslo",
+    "url": "https://www.tu.no/artikler/full-stans-i-togtrafikken-i-oslo/553795"
+   }
+  ],
+  "note": "About 20 minutes stop in the afternoon rush; knock-on delays after."
+ },
+ {
+  "id": "transit-2024-12-25-nationwide-train-stop",
+  "title": "Nationwide train stop on Christmas Day after train-to-control-centre communication failure",
+  "category": "transit",
+  "venue": "Oslotunnelen",
+  "lat": 59.91476,
+  "lon": 10.73135,
+  "start": "2024-12-25T07:55:00+01:00",
+  "end": "2024-12-25T20:08:00+01:00",
+  "sources": [
+   {
+    "label": "TU: Togene sto stille i over tolv timer – feilen er rettet",
+    "url": "https://www.tu.no/artikler/togene-sto-stille-i-over-tolv-timer-feilen-er-rettet/554229"
+   },
+   {
+    "label": "TU: Innstiller togavganger ut dagen – full stans i hele landet",
+    "url": "https://www.tu.no/artikler/innstiller-togavganger-ut-dagen-full-stans-i-hele-landet/554220"
+   }
+  ],
+  "note": "Fault reported 07:55; partial service with limited capacity from 20:08."
+ },
+ {
+  "id": "transit-2025-07-05-majorstuen-t-bane-closure",
+  "title": "Majorstuen T-bane station fully closed, no metro trains can pass, for track work",
+  "category": "transit",
+  "venue": "Majorstuen (T-bane fellestunnel west end)",
+  "lat": 59.91325,
+  "lon": 10.74152,
+  "start": "2025-07-05T05:00:00+02:00",
+  "end": "2025-08-11T01:00:00+02:00",
+  "sources": [
+   {
+    "label": "Sporveien: Oppgradering av Majorstuen stasjon",
+    "url": "https://www.sporveien.no/prosjekter-og-arbeid/oppgradering-av-majorstuen-stasjon/"
+   }
+  ],
+  "note": "Sporveien: '5. juli til 10. august 2025 stenger vi for all T-banetrafikk'; 'Ingen tog kan passere' Majorstuen. Exact effect on east-side lines through the city centre not stated; no boarding at Majorstuen 23 June-19 September 2025."
+ },
+ {
+  "id": "transit-2025-09-02-oslotunnelen-contact-line-fault",
+  "title": "Overhead line fault in the Oslo tunnel takes main Drammen-bound track out in the evening rush",
+  "category": "transit",
+  "venue": "Oslotunnelen",
+  "lat": 59.91476,
+  "lon": 10.73135,
+  "start": "2025-09-02T15:30:00+02:00",
+  "end": "2025-09-02T19:02:00+02:00",
+  "sources": [
+   {
+    "label": "TU Nyhetsstudio (3 Sep 2025): Oslotunnelen kontaktledningsfeil",
+    "url": "https://www.tu.no/nyhetsstudio/87965"
+   }
+  ],
+  "note": "Partial outage: trains used the neighbouring track with cancellations between Oslo S and Skøyen. Source page now returns 404; content confirmed from search result text."
+ },
+ {
+  "id": "transit-2025-10-13-oslo-s-power-outage",
+  "title": "Power outage at Oslo S stops all trains for a short period",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2025-10-13T09:00:00+02:00",
+  "end": "2025-10-13T09:30:00+02:00",
+  "sources": [
+   {
+    "label": "VG via Sol: Alle tog sto på Oslo S etter strømbrudd",
+    "url": "https://sol.no/nyheter/vg-alle-tog-sto-pa-oslo-s-etter-strombrudd/83714848"
+   },
+   {
+    "label": "TU Nyhetsstudio: Alle tog sto på Oslo S – strømmen hadde gått",
+    "url": "https://www.tu.no/nyhetsstudio/alle-tog-sto-paa-oslo-s-stroemmen-hadde-gaatt/91428"
+   }
+  ],
+  "note": "Outage began 09:00 and the fault was found shortly after; duration not reported, 30 min is a placeholder end."
+ },
+ {
+  "id": "transit-2026-01-13-oslotunnelen-smoke",
+  "title": "Smoke from a local train stops all traffic in the Oslo tunnel; Nationaltheatret station evacuated",
+  "category": "transit",
+  "venue": "Oslotunnelen",
+  "lat": 59.91476,
+  "lon": 10.73135,
+  "start": "2026-01-13T05:00:00+01:00",
+  "end": "2026-01-14T01:00:00+01:00",
+  "sources": [
+   {
+    "label": "TU: Full stans i Oslotunnelen på grunn av røykutvikling",
+    "url": "https://www.tu.no/artikler/full-stans-i-oslotunnelen-pa-grunn-av-roykutvikling/566908"
+   }
+  ],
+  "note": "Article published 13 Jan 2026 10:17 (paywalled); exact start and end not visible, so the whole service day is used."
+ },
+ {
+  "id": "transit-2026-01-17-oslo-s-power-supply-closure",
+  "title": "Planned full closure of Oslo S for power supply work on the signalling system",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-01-17T05:00:00+01:00",
+  "end": "2026-01-18T04:00:00+01:00",
+  "sources": [
+   {
+    "label": "Vårt Oslo: Stenger Oslo S – Dessverre ikke til å unngå",
+    "url": "https://www.vartoslo.no/bane-nor-jernbanestasjon-kollektivtrafikk/stenger-oslo-s-dessverre-ikke-til-a-unnga/1085300"
+   },
+   {
+    "label": "Avisa Oslo: Stenger Oslo S",
+    "url": "https://www.ao.no/stenger-oslo-s-dessverre-ikke-til-a-unnga/s/5-128-1234607"
+   }
+  ]
+ },
+ {
+  "id": "transit-2026-02-16-oslo-s-earth-fault",
+  "title": "Earth fault causes full stop of train traffic at Oslo S on a Monday evening",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-02-16T18:37:00+01:00",
+  "end": "2026-02-16T20:37:00+01:00",
+  "sources": [
+   {
+    "label": "VG: Togstans på Oslo S",
+    "url": "https://www.vg.no/nyheter/i/V692WV/togtrafikken-staar-paa-oslo-s"
+   }
+  ],
+  "note": "VG live text: 'Oppdatert mandag 16. februar kl. 18:37 ... full stans i trafikken ved Oslo S pga. jordfeil'. Start is that report time; end not reported, 2 h placeholder."
+ },
+ {
+  "id": "transit-2026-04-01-t-bane-signal-fault",
+  "title": "Signal fault stops all T-bane (metro) traffic in Oslo",
+  "category": "transit",
+  "venue": "T-bane fellestunnelen",
+  "lat": 59.91325,
+  "lon": 10.74152,
+  "start": "2026-04-01T10:46:00+02:00",
+  "end": "2026-04-01T12:46:00+02:00",
+  "sources": [
+   {
+    "label": "TU: Full stans i T-banetrafikken i Oslo",
+    "url": "https://www.tu.no/artikler/full-stans-i-t-banetrafikken-i-oslo/570392"
+   }
+  ],
+  "note": "Start is the report time 10:46; end not reported, 2 h placeholder."
+ },
+ {
+  "id": "transit-2026-05-23-oslo-s-pentecost-closure",
+  "title": "Planned full closure of Oslo S on Whitsun Eve for signalling work",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-05-23T05:00:00+02:00",
+  "end": "2026-05-24T04:00:00+02:00",
+  "sources": [
+   {
+    "label": "iOslo: Stenger Oslo S pinseaften",
+    "url": "https://ioslo.no/a/qT3FKB/stenger-oslo-s-pinseaften"
+   },
+   {
+    "label": "TV 2: Oslo S stenger helt på pinseaften",
+    "url": "https://www.tv2.no/direkte/jpybz/siste-nytt/6a0b22542777e9946207db11/oslo-s-stenger-helt-pa-pinseaften"
+   }
+  ]
+ },
+ {
+  "id": "transit-2026-06-27-gardermobanen-summer-closure",
+  "title": "Summer closure of Gardermobanen tunnel Oslo S to Lillestrøm; buses replace trains",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-06-27T05:00:00+02:00",
+  "end": "2026-08-10T01:00:00+02:00",
+  "sources": [
+   {
+    "label": "Vy: Buss for tog sommeren 2026",
+    "url": "https://www.vy.no/trafikk-og-ruter/sommerarbeid-ostlandet"
+   }
+  ],
+  "note": "Closed 27 June to and including 9 August 2026; regional lines diverted via Hovedbanen."
+ },
+ {
+  "id": "transit-2026-07-09-oslo-s-lillestrom-power-fault",
+  "title": "Power problems stop long-distance, regional and Flytoget trains between Oslo S and Lillestrøm",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-07-09T18:10:00+02:00",
+  "end": "2026-07-09T23:04:00+02:00",
+  "sources": [
+   {
+    "label": "VG: Full stans i togtrafikken mellom Oslo S og Lillestrøm",
+    "url": "https://www.vg.no/nyheter/i/XM4Wob/full-stans-i-togtrafikken"
+   }
+  ],
+  "note": "Start is VG's first publish time 18:10 (actual start may be earlier); Bane NOR reported the fault fixed at 23:04."
+ },
+ {
+  "id": "transit-2026-10-10-oslo-s-planned-closure",
+  "title": "Planned full closure of Oslo S for train traffic",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-10-10T06:00:00+02:00",
+  "end": "2026-10-11T04:00:00+02:00",
+  "sources": [
+   {
+    "label": "Vy: Oslo S stengt 10. oktober 2026",
+    "url": "https://www.vy.no/aktuelt/oslo-s-stengt-10-oktober-2026"
+   }
+  ]
+ },
+ {
+  "id": "transit-2026-10-11-oslo-s-lysaker-closure",
+  "title": "Planned closure Oslo S to Lysaker through the Oslo tunnel; no trains at Nationaltheatret",
+  "category": "transit",
+  "venue": "Oslotunnelen",
+  "lat": 59.91476,
+  "lon": 10.73135,
+  "start": "2026-10-11T04:00:00+02:00",
+  "end": "2026-10-11T11:00:00+02:00",
+  "sources": [
+   {
+    "label": "Vy: Oslo S stengt 10. oktober 2026",
+    "url": "https://www.vy.no/aktuelt/oslo-s-stengt-10-oktober-2026"
+   }
+  ],
+  "note": "Vy: buses Oslo S-Lysaker; travellers to or from Nationaltheatret and Skøyen told to use Ruter."
+ },
+ {
+  "id": "transit-2026-10-23-oslo-s-skoyen-signal-fault",
+  "title": "Signal fault stops trains between Oslo S and Skøyen, including Nationaltheatret",
+  "category": "transit",
+  "venue": "Oslotunnelen",
+  "lat": 59.91476,
+  "lon": 10.73135,
+  "start": "2026-10-23T19:15:00+02:00",
+  "end": "2026-10-23T20:28:00+02:00",
+  "sources": [
+   {
+    "label": "VG: Oslo S og Nationaltheatret stengt for all togtrafikk",
+    "url": "https://www.vg.no/nyheter/i/w3zAzo/oslo-s-og-nationaltheatret-stengt-for-all-togtrafikk"
+   }
+  ],
+  "note": "VG says the stop lasted just over an hour and was already under way when the article was published at 19:15; Bane NOR cleared traffic at 20:28. Start time is approximate."
+ },
+ {
+  "id": "transit-2026-11-06-oslo-s-earth-fault",
+  "title": "Earth fault stops all trains through Oslo S for about 20 minutes",
+  "category": "transit",
+  "venue": "Oslo S",
+  "lat": 59.91076,
+  "lon": 10.75293,
+  "start": "2026-11-06T18:00:00+01:00",
+  "end": "2026-11-06T18:25:00+01:00",
+  "sources": [
+   {
+    "label": "Aftenposten: Full togstans på Oslo S – feilen er rettet",
+    "url": "https://www.aftenposten.no/norge/i/wd6rVn/full-togstans-paa-oslo-s-feilen-er-rettet"
+   },
+   {
+    "label": "NRK: Full stans i togtrafikken ved Oslo S (6 Nov 2026)",
+    "url": "https://www.nrk.no/stor-oslo/full-stans-i-togtrafikken-ved-oslo-s-1.18075737"
+   },
+   {
+    "label": "VG: Jordfeil ved Oslo S",
+    "url": "https://www.vg.no/nyheter/i/dJ54BO/full-stans-i-togtrafikken-ved-oslo-s-jordfeil"
+   }
+  ],
+  "note": "Reported just after 18:00, fixed 18:23-18:25; delays and cancellations continued afterwards."
+ }
+]

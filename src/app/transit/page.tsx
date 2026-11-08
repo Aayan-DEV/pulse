@@ -6,11 +6,14 @@ import TransitCharts, { type DayRow } from "@/components/TransitCharts";
 
 export const dynamic = "force-dynamic";
 
-type HourRow = { t: string; mode: string; calls: number; meanDelay: number; p90Delay?: number; late5Share: number; cancelled: number };
+type HourRow = { t: string; stop?: string; mode: string; calls: number; meanDelay: number; p90Delay?: number; late5Share: number; cancelled: number };
 
 export default function TransitPage() {
   const raw = readData<HourRow[] | { rows: HourRow[] }>("transit-history.json", []);
-  const hours: HourRow[] = Array.isArray(raw) ? raw : raw.rows ?? [];
+  const STOPS: Record<string, string> = { NT: "Nationaltheatret", OSL: "Oslo S" };
+  const hours: HourRow[] = (Array.isArray(raw) ? raw : raw.rows ?? []).map((h) => ({ ...h, mode: `${STOPS[h.stop ?? ""] ?? h.stop ?? ""} ${h.mode}`.trim() }));
+  type Ep = { stop: string; mode: string; start: string; end: string; hours: number; calls: number; cancelled: number; maxMedianDelay: number; meanCancelShare: number; score: number };
+  const eps = readData<Ep[]>("transit-episodes.json", []).sort((a, b) => b.score - a.score);
   // Daily roll-up per mode, weighted by calls.
   const byDay = new Map<string, Record<string, { calls: number; late: number; canc: number; delay: number }>>();
   for (const h of hours) {
@@ -55,13 +58,13 @@ export default function TransitPage() {
           ))}
         </section>
         <section className="ak-panel">
-          <div className="ak-panel-head"><div><h2 className="ak-h">Disruption episodes</h2><p className="ak-note">{episodes.length} sourced outages and delays in the event library</p></div></div>
+          <div className="ak-panel-head"><div><h2 className="ak-h">Biggest real disruptions</h2><p className="ak-note">{eps.length} episodes found in Entur&apos;s archive, ranked by size. {episodes.length} more come from news sources in the event library.</p></div></div>
           <div style={{ maxHeight: 420, overflowY: "auto" }}>
-            {episodes.length === 0 && <div className="ak-empty">No episodes yet.</div>}
-            {episodes.map((e) => (
-              <div className="ak-row" key={e.id}>
-                <div><div className="ak-row-title">{e.title}</div>
-                  <div className="ak-row-why">{new Date(e.start).toLocaleString("en-GB", { timeZone: "Europe/Oslo", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" })} · {e.sources[0] && <a className="ak-link" href={e.sources[0].url} target="_blank" rel="noreferrer">{e.sources[0].label.slice(0, 40)}</a>}</div></div>
+            {eps.length === 0 && <div className="ak-empty">No episodes yet.</div>}
+            {eps.slice(0, 40).map((e, k) => (
+              <div className="ak-row" key={k}>
+                <div><div className="ak-row-title">{STOPS[e.stop] ?? e.stop} {e.mode}: {Math.round(e.meanCancelShare * 100)}% cancelled for {e.hours} h</div>
+                  <div className="ak-row-why">{new Date(e.start).toLocaleString("en-GB", { timeZone: "Europe/Oslo", weekday: "short", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" })} · {e.cancelled.toLocaleString("en")} of {e.calls.toLocaleString("en")} calls cancelled · worst median delay {e.maxMedianDelay.toFixed(1)} min</div></div>
               </div>
             ))}
           </div>

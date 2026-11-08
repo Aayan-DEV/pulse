@@ -1,0 +1,858 @@
+[
+ {
+  "id": "sports-2023-06-17-norway-scotland-ullevaal",
+  "title": "Norway vs Scotland (Euro 2024 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2023-06-17T16:00:00+02:00",
+  "end": "2023-06-17T20:00:00+02:00",
+  "expectedAttendance": 25791,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2023-06-20-norway-cyprus-ullevaal",
+  "title": "Norway vs Cyprus (Euro 2024 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2023-06-20T18:45:00+02:00",
+  "end": "2023-06-20T22:45:00+02:00",
+  "expectedAttendance": 23643,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2023-09-12-norway-georgia-ullevaal",
+  "title": "Norway vs Georgia (Euro 2024 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2023-09-12T18:45:00+02:00",
+  "end": "2023-09-12T22:45:00+02:00",
+  "expectedAttendance": 23665,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2023-10-15-norway-spain-ullevaal",
+  "title": "Norway vs Spain (Euro 2024 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2023-10-15T18:45:00+02:00",
+  "end": "2023-10-15T22:45:00+02:00",
+  "expectedAttendance": 25885,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2024-06-05-norway-kosovo-ullevaal",
+  "title": "Norway vs Kosovo (friendly), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2024-06-05T16:00:00+02:00",
+  "end": "2024-06-05T20:00:00+02:00",
+  "expectedAttendance": 19634,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2024-09-09-norway-austria-ullevaal",
+  "title": "Norway vs Austria (Nations League), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2024-09-09T18:45:00+02:00",
+  "end": "2024-09-09T22:45:00+02:00",
+  "expectedAttendance": 23171,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2024-11-17-norway-kazakhstan-ullevaal",
+  "title": "Norway vs Kazakhstan (Nations League), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2024-11-17T16:00:00+01:00",
+  "end": "2024-11-17T20:00:00+01:00",
+  "expectedAttendance": 23458,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-06-06-norway-italy-ullevaal",
+  "title": "Norway vs Italy (World Cup 2026 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-06-06T18:45:00+02:00",
+  "end": "2025-06-06T22:45:00+02:00",
+  "expectedAttendance": 25796,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   },
+   {
+    "label": "Football Web Pages: Norway v Italy 2025-06-06 (attendance 25,796)",
+    "url": "https://www.footballwebpages.co.uk/match/2024-2025/world-cup-qualification-europe/norway/italy/528272"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-09-04-norway-finland-ullevaal",
+  "title": "Norway vs Finland (friendly), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-09-04T16:00:00+02:00",
+  "end": "2025-09-04T20:00:00+02:00",
+  "expectedAttendance": 18665,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-09-09-norway-moldova-ullevaal",
+  "title": "Norway vs Moldova (World Cup 2026 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-09-09T18:45:00+02:00",
+  "end": "2025-09-09T22:45:00+02:00",
+  "expectedAttendance": 24605,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-10-11-norway-israel-ullevaal",
+  "title": "Norway vs Israel (World Cup 2026 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-10-11T16:00:00+02:00",
+  "end": "2025-10-11T20:00:00+02:00",
+  "expectedAttendance": 19363,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-10-14-norway-new-zealand-ullevaal",
+  "title": "Norway vs New Zealand (friendly), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-10-14T16:00:00+02:00",
+  "end": "2025-10-14T20:00:00+02:00",
+  "expectedAttendance": 17652,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-11-13-norway-estonia-ullevaal",
+  "title": "Norway vs Estonia (World Cup 2026 qualifier), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-11-13T16:00:00+01:00",
+  "end": "2025-11-13T20:00:00+01:00",
+  "expectedAttendance": 25493,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2026-03-31-norway-switzerland-ullevaal",
+  "title": "Norway vs Switzerland (friendly), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2026-03-31T18:45:00+02:00",
+  "end": "2026-03-31T22:45:00+02:00",
+  "expectedAttendance": 23913,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2026-06-01-norway-sweden-ullevaal",
+  "title": "Norway vs Sweden (friendly), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2026-06-01T17:00:00+02:00",
+  "end": "2026-06-01T21:00:00+02:00",
+  "expectedAttendance": 25138,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2026-09-24-norway-denmark-ullevaal",
+  "title": "Norway vs Denmark (Nations League), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2026-09-24T18:45:00+02:00",
+  "end": "2026-09-24T22:45:00+02:00",
+  "expectedAttendance": 25002,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "sports-2026-09-27-norway-portugal-ullevaal",
+  "title": "Norway vs Portugal (Nations League), Ullevaal",
+  "category": "sports",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2026-09-27T18:45:00+02:00",
+  "end": "2026-09-27T22:45:00+02:00",
+  "expectedAttendance": 25953,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Wikipedia: Norway national football team results (2020-present)",
+    "url": "https://en.wikipedia.org/wiki/Norway_national_football_team_results_(2020%E2%80%93present)"
+   }
+  ]
+ },
+ {
+  "id": "concert-2023-06-30-springsteen-voldslokka-d1",
+  "title": "Bruce Springsteen & E Street Band, Voldsløkka (night 1)",
+  "category": "concert",
+  "venue": "Voldsløkka",
+  "lat": 59.9432,
+  "lon": 10.7566,
+  "start": "2023-06-30T18:00:00+02:00",
+  "end": "2023-06-30T23:00:00+02:00",
+  "expectedAttendance": 49975,
+  "attendanceIsEstimate": true,
+  "sources": [
+   {
+    "label": "Wikipedia: Springsteen and E Street Band 2023-2025 Tour (Oslo Voldsløkka 30 Jun + 2 Jul 2023, 99,951 total)",
+    "url": "https://en.wikipedia.org/wiki/Springsteen_and_E_Street_Band_2023%E2%80%932025_Tour"
+   }
+  ]
+ },
+ {
+  "id": "concert-2023-07-02-springsteen-voldslokka-d2",
+  "title": "Bruce Springsteen & E Street Band, Voldsløkka (night 2)",
+  "category": "concert",
+  "venue": "Voldsløkka",
+  "lat": 59.9432,
+  "lon": 10.7566,
+  "start": "2023-07-02T18:00:00+02:00",
+  "end": "2023-07-02T23:00:00+02:00",
+  "expectedAttendance": 49976,
+  "attendanceIsEstimate": true,
+  "sources": [
+   {
+    "label": "Wikipedia: Springsteen and E Street Band 2023-2025 Tour (Oslo Voldsløkka 30 Jun + 2 Jul 2023, 99,951 total)",
+    "url": "https://en.wikipedia.org/wiki/Springsteen_and_E_Street_Band_2023%E2%80%932025_Tour"
+   }
+  ]
+ },
+ {
+  "id": "concert-2025-07-ed-sheeran-ullevaal-d1",
+  "title": "Ed Sheeran, Mathematics Tour, Ullevaal (night 1)",
+  "category": "concert",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-07-26T18:00:00+02:00",
+  "end": "2025-07-26T23:00:00+02:00",
+  "expectedAttendance": 37600,
+  "attendanceIsEstimate": true,
+  "sources": [
+   {
+    "label": "Wikipedia: +-=÷× Tour (Oslo Ullevaal, attendance 75,200)",
+    "url": "https://en.wikipedia.org/wiki/%2B%E2%80%93%3D%C3%B7%C3%97_Tour"
+   },
+   {
+    "label": "Songkick: Ed Sheeran at Ullevaal Stadion, 27 July 2025",
+    "url": "https://www.songkick.com/concerts/42060057-ed-sheeran-at-ullevaal-stadion"
+   },
+   {
+    "label": "Songkick: Ullevaal Stadion past concerts (26 and 27 July 2025)",
+    "url": "https://www.songkick.com/venues/85583-ullevaal-stadion"
+   }
+  ]
+ },
+ {
+  "id": "concert-2025-07-ed-sheeran-ullevaal-d2",
+  "title": "Ed Sheeran, Mathematics Tour, Ullevaal (night 2)",
+  "category": "concert",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-07-27T18:00:00+02:00",
+  "end": "2025-07-27T23:00:00+02:00",
+  "expectedAttendance": 37600,
+  "attendanceIsEstimate": true,
+  "sources": [
+   {
+    "label": "Wikipedia: +-=÷× Tour (Oslo Ullevaal, attendance 75,200)",
+    "url": "https://en.wikipedia.org/wiki/%2B%E2%80%93%3D%C3%B7%C3%97_Tour"
+   },
+   {
+    "label": "Songkick: Ed Sheeran at Ullevaal Stadion, 27 July 2025",
+    "url": "https://www.songkick.com/concerts/42060057-ed-sheeran-at-ullevaal-stadion"
+   },
+   {
+    "label": "Songkick: Ullevaal Stadion past concerts (26 and 27 July 2025)",
+    "url": "https://www.songkick.com/venues/85583-ullevaal-stadion"
+   }
+  ]
+ },
+ {
+  "id": "protest-2023-02-28-fosen-stortinget-slottet",
+  "title": "Fosen reindeer/wind-farm protest march, Stortinget to the Palace",
+  "category": "protest",
+  "venue": "Stortinget / Eidsvolls plass",
+  "lat": 59.91299,
+  "lon": 10.73906,
+  "start": "2023-02-28T10:00:00+01:00",
+  "end": "2023-02-28T15:00:00+01:00",
+  "expectedAttendance": 2000,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Altinget: Tidslinje, dette har skjedd siden Fosen-dommen falt (up to 2,000 outside Stortinget, 28 Feb 2023)",
+    "url": "https://www.altinget.no/klima/artikkel/tidslinje-dette-har-skjedd-siden-fosen-dommen-falt"
+   },
+   {
+    "label": "TU: Fosen activists demonstrating since Thursday 23 February",
+    "url": "https://www.tu.no/artikler/finansdepartementet-blokkeres-av-fosen-aksjonister/527022"
+   }
+  ]
+ },
+ {
+  "id": "protest-2025-10-11-palestine-march-to-ullevaal",
+  "title": "Pro-Palestine march from city centre to Ullevaal before Norway vs Israel",
+  "category": "protest",
+  "venue": "Ullevaal Stadion",
+  "lat": 59.94888,
+  "lon": 10.73404,
+  "start": "2025-10-11T14:00:00+02:00",
+  "end": "2025-10-11T20:00:00+02:00",
+  "expectedAttendance": 1000,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "Dawn/AFP: Pro-Palestinian march at Israel-Norway match (NRK estimate ~1,000)",
+    "url": "https://www.dawn.com/news/1948287"
+   },
+   {
+    "label": "Arab News: Pro-Palestinian march in Oslo ahead of Israel v Norway match",
+    "url": "https://www.arabnews.pk/node/2618546"
+   }
+  ]
+ },
+ {
+  "id": "protest-2024-08-17-gaza-youngstorget",
+  "title": "Gaza demonstration at Youngstorget (Palestinakomiteen), tram delays in centre",
+  "category": "protest",
+  "venue": "Youngstorget",
+  "lat": 59.91494,
+  "lon": 10.74913,
+  "start": "2024-08-17T13:00:00+02:00",
+  "end": "2024-08-17T17:00:00+02:00",
+  "expectedAttendance": 3000,
+  "attendanceIsEstimate": true,
+  "sources": [
+   {
+    "label": "NTB via document.no: Tusener i Gaza-demonstrasjon i Oslo (17.08.2024)",
+    "url": "https://www.document.no/2024/08/17/tusener-i-gaza-demonstrasjon-i-oslo/"
+   },
+   {
+    "label": "NRK: Palestinske Manar talte for tusener på Youngstorget",
+    "url": "https://www.nrk.no/stor-oslo/palestinsk-student-talte-da-flere-tusen-viste-stotte-til-gaza-i-oslo-1.17006660"
+   },
+   {
+    "label": "Aftenposten: Tusener i Gaza-demonstrasjon i Oslo, skaper trikketrøbbel",
+    "url": "https://www.aftenposten.no/norge/i/Xj9BlW/flere-tusen-demonstrerer-for-gaza-paa-youngstorget-i-oslo"
+   }
+  ]
+ },
+ {
+  "id": "protest-2024-01-13-gaza-youngstorget",
+  "title": "Gaza demonstration at Youngstorget, march to Israeli embassy",
+  "category": "protest",
+  "venue": "Youngstorget",
+  "lat": 59.91494,
+  "lon": 10.74913,
+  "start": "2024-01-13T13:00:00+01:00",
+  "end": "2024-01-13T17:00:00+01:00",
+  "expectedAttendance": 3000,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "NRK: 3000 personer deltok i Gaza-demonstrasjon i Oslo (13 Jan 2024, police estimate)",
+    "url": "https://www.nrk.no/nyheter/3000-personer-deltok-i-gaza-demonstrasjon-i-oslo--1.16715101"
+   },
+   {
+    "label": "Oslonytt: Tusenvis demonstrerer for Gaza (Saturday 13 January, Youngstorget)",
+    "url": "https://www.oslonytt.com/demonstrasjoner-gazastripa-israel-palestina-konflikten/tusenvis-demonstrerer-for-gaza/127435"
+   }
+  ]
+ },
+ {
+  "id": "protest-2025-08-30-climate-sta-opp-eidsvolls-plass",
+  "title": "Climate and nature demonstration 'Stå opp', Eidsvolls plass",
+  "category": "protest",
+  "venue": "Stortinget / Eidsvolls plass",
+  "lat": 59.91299,
+  "lon": 10.73906,
+  "start": "2025-08-30T13:00:00+02:00",
+  "end": "2025-08-30T17:00:00+02:00",
+  "expectedAttendance": 4000,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "TV 2: Over 4000 demonstrerte i Oslo og 14 andre steder for klima og natur",
+    "url": "https://www.tv2.no/direkte/jpybz/siste-nytt/68b3300d222a51b4929800a0/over-4000-demonstrerte-i-oslo-og-14-andre-steder-for-klima-og-natur"
+   },
+   {
+    "label": "iNyheter: Over 4000 demonstrerte for klima og natur i Oslo (30.08.2025)",
+    "url": "https://inyheter.no/30/08/2025/over-4000-demonstrerte-for-klima-og-natur-i-oslo/"
+   }
+  ]
+ },
+ {
+  "id": "ceremony-2023-12-10-nobel-torchlight-karl-johan",
+  "title": "Nobel Peace Prize torchlight procession up Karl Johan to Grand Hotel (Narges Mohammadi)",
+  "category": "ceremony",
+  "venue": "Karl Johans gate",
+  "lat": 59.91343,
+  "lon": 10.73861,
+  "start": "2023-12-10T17:30:00+01:00",
+  "end": "2023-12-10T20:00:00+01:00",
+  "expectedAttendance": 1500,
+  "attendanceIsEstimate": false,
+  "recurring": "yearly 10 December",
+  "sources": [
+   {
+    "label": "Aftenposten: Nobel-fakkeltoget lyste opp Karl Johan (police: 1,300-1,500)",
+    "url": "https://www.aftenposten.no/norge/i/onrO4K/nobel-fakkeltoget-lyste-opp-karl-johan"
+   },
+   {
+    "label": "Norges Fredsråd: fakkeltog 10. desember, Jernbanetorget 17:30, Karl Johan to Grand Hotel",
+    "url": "https://www.norgesfredsrad.no/bli-med-pa-arets-fakkeltog/"
+   }
+  ]
+ },
+ {
+  "id": "festival-2023-08-oyafestivalen",
+  "title": "Øyafestivalen 2023, Tøyenparken",
+  "category": "festival",
+  "venue": "Tøyenparken",
+  "lat": 59.91886,
+  "lon": 10.77399,
+  "start": "2023-08-08T12:00:00+02:00",
+  "end": "2023-08-12T23:59:00+02:00",
+  "recurring": "yearly August",
+  "sources": [
+   {
+    "label": "Festivaly: Øyafestivalen 2023 (8-12.8.2023, Tøyenparken)",
+    "url": "https://festivaly.eu/oyafestivalen-2023"
+   }
+  ]
+ },
+ {
+  "id": "festival-2024-08-oyafestivalen",
+  "title": "Øyafestivalen 2024, Tøyenparken",
+  "category": "festival",
+  "venue": "Tøyenparken",
+  "lat": 59.91886,
+  "lon": 10.77399,
+  "start": "2024-08-06T12:00:00+02:00",
+  "end": "2024-08-10T23:59:00+02:00",
+  "recurring": "yearly August",
+  "sources": [
+   {
+    "label": "Last.fm: Øyafestivalen 2024 (6-10 August 2024)",
+    "url": "https://last.fm/festival/4768362+%C3%98yafestivalen+2024"
+   }
+  ]
+ },
+ {
+  "id": "festival-2025-08-oyafestivalen",
+  "title": "Øyafestivalen 2025, Tøyenparken",
+  "category": "festival",
+  "venue": "Tøyenparken",
+  "lat": 59.91886,
+  "lon": 10.77399,
+  "start": "2025-08-06T12:00:00+02:00",
+  "end": "2025-08-09T23:59:00+02:00",
+  "recurring": "yearly August",
+  "sources": [
+   {
+    "label": "See Tickets: Øyafestivalen 2025, Tøyenparken, 6-9 August",
+    "url": "https://purchase.seetickets.com/event/oyafestivalen-2025/toyenparken/3107381"
+   },
+   {
+    "label": "Last.fm: Øyafestivalen 2025",
+    "url": "https://www.last.fm/festival/4847348+%C3%98yafestivalen+2025"
+   }
+  ]
+ },
+ {
+  "id": "festival-2026-08-oyafestivalen",
+  "title": "Øyafestivalen 2026, Tøyenparken",
+  "category": "festival",
+  "venue": "Tøyenparken",
+  "lat": 59.91886,
+  "lon": 10.77399,
+  "start": "2026-08-12T12:00:00+02:00",
+  "end": "2026-08-15T23:59:00+02:00",
+  "recurring": "yearly August",
+  "sources": [
+   {
+    "label": "Knokr: Øya 2026 lineup and dates (12-15 August 2026)",
+    "url": "https://lineups.knokr.com/festivals/oya-2026"
+   },
+   {
+    "label": "Visit Oslo: Øyafestivalen",
+    "url": "https://www.visitoslo.com/de/event/yafestivalen"
+   }
+  ]
+ },
+ {
+  "id": "sports-2024-03-holmenkollen-ski-festival",
+  "title": "Holmenkollen Ski Festival 2024 (World Cup cross-country, combined, Raw Air)",
+  "category": "sports",
+  "venue": "Holmenkollen",
+  "lat": 59.96367,
+  "lon": 10.66749,
+  "start": "2024-03-07T09:00:00+01:00",
+  "end": "2024-03-10T18:00:00+01:00",
+  "recurring": "yearly March",
+  "sources": [
+   {
+    "label": "Hva skjer i Oslo: Holmenkollen Skifestival 2024, 7-10 March",
+    "url": "https://www.hvaskjerioslo.net/hva-skjer-i-oslo-kalender-kulturkalender-arrangementskalender-events-billetter/2024/3/7/holmenkollen-skifestival-2024"
+   },
+   {
+    "label": "FIS: Oslo Cross-Country World Cup 9-10 Mar 2024",
+    "url": "https://www.fis-ski.com/DB/general/event-details.html?sectorcode=CC&eventid=53714&seasoncode=2024"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-03-holmenkollen-ski-festival",
+  "title": "Holmenkollen Ski Festival 2025 (Nordic World Cup)",
+  "category": "sports",
+  "venue": "Holmenkollen",
+  "lat": 59.96367,
+  "lon": 10.66749,
+  "start": "2025-03-13T09:00:00+01:00",
+  "end": "2025-03-16T18:00:00+01:00",
+  "expectedAttendance": 30000,
+  "attendanceIsEstimate": true,
+  "recurring": "yearly March",
+  "sources": [
+   {
+    "label": "Holmenkollen Media Guide Nordic 2025 (13-16 March 2025, spectator capacity 30,000)",
+    "url": "https://holmenkollenskifestival.no/wp-content/uploads/2025/02/Media-Guide-Nordic-Holmenkollen-2025.pdf"
+   }
+  ]
+ },
+ {
+  "id": "protest-2024-03-02-gaza-youngstorget",
+  "title": "Palestine/Gaza demonstration at Youngstorget",
+  "category": "protest",
+  "venue": "Youngstorget",
+  "lat": 59.91494,
+  "lon": 10.74913,
+  "start": "2024-03-02T13:00:00+01:00",
+  "end": "2024-03-02T17:00:00+01:00",
+  "expectedAttendance": 4500,
+  "attendanceIsEstimate": false,
+  "sources": [
+   {
+    "label": "NRK: Flere tusen i Palestina-demonstrasjon i Oslo (2 Mar 2024, organiser count ~4,500)",
+    "url": "https://www.nrk.no/nyheter/flere-tusen-i-palestina-demonstrasjon-i-oslo-1.16787333"
+   }
+  ]
+ },
+ {
+  "id": "festival-2023-07-01-oslo-pride-parade",
+  "title": "Oslo Pride Parade 2023 (record turnout), Grønland through the centre",
+  "category": "festival",
+  "venue": "Karl Johans gate",
+  "lat": 59.91343,
+  "lon": 10.73861,
+  "start": "2023-07-01T12:00:00+02:00",
+  "end": "2023-07-01T18:00:00+02:00",
+  "expectedAttendance": 85000,
+  "attendanceIsEstimate": false,
+  "recurring": "yearly late June / early July (Saturday)",
+  "sources": [
+   {
+    "label": "Aftenposten: Rekordstor fest i Oslos gater under prideparaden (85,000-90,000 in the parade, 1 Jul 2023)",
+    "url": "https://www.aftenposten.no/norge/i/wAk7ad/rekordstor-fest-i-oslos-gater-under-prideparaden"
+   },
+   {
+    "label": "VG: Oslo-politiet anslår at opptil 100 000 deltok i Pride-paraden",
+    "url": "https://www.vg.no/nyheter/i/rPa9Qa/oslo-politiet-anslaar-at-opptil-100-000-deltok-i-pride-paraden-skal-vaere-ny-rekord"
+   }
+  ]
+ },
+ {
+  "id": "festival-2024-06-29-oslo-pride-parade",
+  "title": "Oslo Pride Parade 2024 (50th anniversary year)",
+  "category": "festival",
+  "venue": "Karl Johans gate",
+  "lat": 59.91343,
+  "lon": 10.73861,
+  "start": "2024-06-29T12:00:00+02:00",
+  "end": "2024-06-29T18:00:00+02:00",
+  "recurring": "yearly late June / early July (Saturday)",
+  "sources": [
+   {
+    "label": "The Local: What you need to know about the Oslo Pride Parade 2024 (Saturday 29 June)",
+    "url": "https://www.thelocal.no/20240628/what-you-need-to-know-about-the-oslo-pride-parade-2024"
+   },
+   {
+    "label": "NTB press release: Slik blir årets jubileumspride (Pride Parade Saturday 29 June)",
+    "url": "https://kommunikasjon.ntb.no/pressemelding/18145029/slik-blir-arets-jubileumspride?publisherId=17847803&lang=no"
+   }
+  ]
+ },
+ {
+  "id": "festival-2025-06-28-oslo-pride-parade",
+  "title": "Oslo Pride Parade 2025, Grønland to Pride Park at Kontraskjæret",
+  "category": "festival",
+  "venue": "Karl Johans gate",
+  "lat": 59.91343,
+  "lon": 10.73861,
+  "start": "2025-06-28T12:00:00+02:00",
+  "end": "2025-06-28T18:00:00+02:00",
+  "recurring": "yearly late June / early July (Saturday)",
+  "sources": [
+   {
+    "label": "Oslo Pride: Oslo Pride-paraden 2025 (Saturday 28 June 12:00, Grønland to Kontraskjæret)",
+    "url": "https://www.oslopride.no/events/oslo-pride-paraden-2025"
+   }
+  ]
+ },
+ {
+  "id": "sports-2023-09-16-oslo-marathon",
+  "title": "BMW Oslo Marathon 2023 (all distances, city-centre course)",
+  "category": "sports",
+  "venue": "Oslo city centre (marathon course)",
+  "lat": 59.91123,
+  "lon": 10.73383,
+  "start": "2023-09-16T09:00:00+02:00",
+  "end": "2023-09-16T17:00:00+02:00",
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true,
+  "recurring": "yearly 3rd Saturday of September",
+  "sources": [
+   {
+    "label": "Oslo Maraton: BMW Oslo maraton er i gang (16/09/2023)",
+    "url": "https://oslomaraton.no/en/bmw-oslo-maraton-er-i-gang-2/"
+   },
+   {
+    "label": "World Athletics: Oslo Marathon results 16 Sep 2023",
+    "url": "https://worldathletics.org/competition/calendar-results/results/7193288?eventId=10229634"
+   }
+  ]
+ },
+ {
+  "id": "sports-2024-09-21-oslo-marathon",
+  "title": "BMW Oslo Marathon 2024 (record 23,000 registered, all distances sold out)",
+  "category": "sports",
+  "venue": "Oslo city centre (marathon course)",
+  "lat": 59.91123,
+  "lon": 10.73383,
+  "start": "2024-09-21T09:00:00+02:00",
+  "end": "2024-09-21T17:00:00+02:00",
+  "expectedAttendance": 23000,
+  "attendanceIsEstimate": false,
+  "recurring": "yearly 3rd Saturday of September",
+  "sources": [
+   {
+    "label": "Kondis: Oslo Maraton, rekordstor interesse med 23000 påmeldte (Saturday 21 September)",
+    "url": "https://www.kondis.no/oslo-maraton-rekordstor-interesse-og-23000-deltakere.6688309-127676.html"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-09-20-oslo-marathon",
+  "title": "BMW Oslo Marathon 2025 (incl. Norwegian marathon championship)",
+  "category": "sports",
+  "venue": "Oslo city centre (marathon course)",
+  "lat": 59.91123,
+  "lon": 10.73383,
+  "start": "2025-09-20T09:00:00+02:00",
+  "end": "2025-09-20T17:00:00+02:00",
+  "expectedAttendance": 20000,
+  "attendanceIsEstimate": true,
+  "recurring": "yearly 3rd Saturday of September",
+  "sources": [
+   {
+    "label": "Sportsidioten: Oslo Maraton 2025, NM Maraton (20 September)",
+    "url": "https://www.sportsidioten.no/lop/oslo-maraton-2025/"
+   },
+   {
+    "label": "Racedays: BMW Oslo Marathon 2025 (20 Sep, around 20,000 participants)",
+    "url": "https://www.racedays.run/event/bmw-oslo-marathon-2025"
+   }
+  ]
+ },
+ {
+  "id": "sports-2023-07-norway-cup",
+  "title": "Norway Cup 2023 youth football tournament, Ekebergsletta",
+  "category": "sports",
+  "venue": "Ekebergsletta",
+  "lat": 59.89797,
+  "lon": 10.77519,
+  "start": "2023-07-29T09:00:00+02:00",
+  "end": "2023-08-05T22:00:00+02:00",
+  "recurring": "yearly late July / early August",
+  "sources": [
+   {
+    "label": "Giv Akt: Norway Cup 2023, Saturday 29 July to Saturday 5 August 2023",
+    "url": "https://www.giv-akt.no/next/events/p/1000086534/norway-cup-2023"
+   },
+   {
+    "label": "Wikipedia: Norway Cup",
+    "url": "https://en.wikipedia.org/wiki/Norway_Cup"
+   }
+  ]
+ },
+ {
+  "id": "sports-2025-07-norway-cup",
+  "title": "Norway Cup 2025 youth football tournament, Ekebergsletta",
+  "category": "sports",
+  "venue": "Ekebergsletta",
+  "lat": 59.89797,
+  "lon": 10.77519,
+  "start": "2025-07-26T09:00:00+02:00",
+  "end": "2025-08-02T22:00:00+02:00",
+  "recurring": "yearly late July / early August",
+  "sources": [
+   {
+    "label": "TV 2: Dette må du vite om Norway Cup (Saturday 26 July to 2 August 2025)",
+    "url": "https://www.tv2.no/direkte/0nr51/sportsdognet-live/68809a749e6c9d492ded79a3/dette-ma-du-vite-om-norway-cup-slik-blir-fotballfesten"
+   },
+   {
+    "label": "NFF tournament register: Norway Cup 26.07.2025 - 02.08.2025",
+    "url": "https://www.fotball.no/finn-klubbturneringer/turneringssoknad/?tournamentApplicationId=371842"
+   }
+  ]
+ },
+ {
+  "id": "sports-2023-03-holmenkollen-ski-festival",
+  "title": "Holmenkollen Ski Festival 2023 (Nordic World Cup)",
+  "category": "sports",
+  "venue": "Holmenkollen",
+  "lat": 59.96367,
+  "lon": 10.66749,
+  "start": "2023-03-09T09:00:00+01:00",
+  "end": "2023-03-12T18:00:00+01:00",
+  "expectedAttendance": 30000,
+  "attendanceIsEstimate": true,
+  "recurring": "yearly March",
+  "sources": [
+   {
+    "label": "Holmenkollen Media Guide 2023 (9-12 March 2023, spectator capacity 30,000)",
+    "url": "https://holmenkollenskifestival.no/wp-content/uploads/2023/01/Media-Guide-Holmenkollen-2023-WCN.pdf"
+   }
+  ]
+ }
+]

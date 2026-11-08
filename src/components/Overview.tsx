@@ -59,12 +59,17 @@ export default function Overview() {
         <div className="ak-kpis">
           <div className="ak-kpi">
             <div className="ak-kpi-label">This hour</div>
-            <div className="ak-kpi-value">{cur ? Math.round(cur.p50) : "–"}<small>orders</small></div>
-            <div className="ak-kpi-sub">{cur ? `${Math.round(cur.p10)} to ${Math.round(cur.p90)} likely` : "Waiting for the model"}</div>
+            {cur && !cur.open ? (() => {
+              const nxt = f?.hours.find((h) => h.open && new Date(h.time).getTime() > now.getTime());
+              return <><div className="ak-kpi-value is-na">Closed</div><div className="ak-kpi-sub">{nxt ? `Opens ${hh(nxt.time)}, ${Math.round(nxt.p50)} orders in the first hour` : "Closed"}</div></>;
+            })() : <>
+              <div className="ak-kpi-value">{cur ? Math.round(cur.p50) : "–"}<small>orders</small></div>
+              <div className="ak-kpi-sub">{cur ? `${Math.round(cur.p10)} to ${Math.round(cur.p90)} likely` : "Waiting for the model"}</div>
+            </>}
           </div>
           <div className="ak-kpi">
             <div className="ak-kpi-label">Staff needed now</div>
-            <div className="ak-kpi-value">{staffNow ? staffNow.total : "–"}</div>
+            <div className="ak-kpi-value">{staffNow ? staffNow.total : "–"}{cur && !cur.open && <small>prep</small>}</div>
             <div className="ak-kpi-sub">{staffNow ? `${staffNow.front} front, ${staffNow.kitchen} kitchen, ${(staffNow.serviceLevel * 100).toFixed(0)}% served fast` : "Erlang C on the forecast"}</div>
           </div>
           <div className="ak-kpi">
@@ -102,7 +107,7 @@ export default function Overview() {
               <ChevronRight style={{ width: 14, height: 14, color: "var(--od-faint)" }} />
             </Link>
           ))}
-          {f && <p className="ak-panel-foot">Inputs right now: {f.inputs.events} events, {f.inputs.situations} transit notices, weather from {f.inputs.weatherSource}.</p>}
+          {f && <p className="ak-panel-foot">Inputs right now: {f.inputs.events} events, {f.inputs.situations ? `${f.inputs.situations} transit notices with real delays` : "no real train delays"}, weather from {f.inputs.weatherSource}.</p>}
         </section>
 
         <section className="ak-panel">

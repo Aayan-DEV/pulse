@@ -83,7 +83,11 @@ export type CruiseCall = {
 
 export type LiveSnapshot = {
   fetchedAt: string;
-  weather: { now: WeatherHour | null; next48h: WeatherHour[]; source: Source };
+  weather: {
+    now: WeatherHour | null; next48h: WeatherHour[]; source: Source;
+    // latest official observation (MET Norway Frost, Oslo Blindern SN18700), when available
+    observed?: { time: string; tempC: number | null; precipMm: number | null; windMs: number | null; station: string };
+  };
   transit: { departures: TransitDeparture[]; situations: TransitSituation[]; source: Source };
   cameras: Camera[];
   events: CityEvent[];      // today and the next 7 days
