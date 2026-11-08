@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
+        @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+        #root { position: absolute; inset: 0; overflow: hidden; }
+        .s2-flood { position: absolute; inset: 0; background: #a32d1d; border-radius: 0; }
+        .s2-line { position: absolute; left: 160px; right: 160px; top: 420px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 132px; line-height: 1.05; letter-spacing: -0.01em; color: #fdeae7; }
+        .s2-line .w { display: inline-block; }
+        .s2-old { position: absolute; left: 160px; top: 150px; font-family: "Geist", sans-serif; font-weight: 500; font-size: 40px; color: rgba(253, 234, 231, 0.78); letter-spacing: 0; }
+        .s2-list { position: absolute; left: 160px; top: 270px; display: flex; flex-direction: column; gap: 36px; }
+        .s2-item { display: flex; align-items: center; gap: 40px; font-family: "Perfectly Nineties", serif; font-size: 136px; line-height: 1; color: #fdeae7; }
+        .s2-item svg { width: 104px; height: 104px; flex: none; color: #fdeae7; }
+      </style>
+
+      <div id="root" data-composition-id="s2-tension" data-width="1920" data-height="1080">
+        <div id="s2-flood" class="s2-flood"></div>
+        <h2 id="s2-a" class="s2-line"><span class="w">Days</span> <span class="w">like</span> <span class="w">this</span> <span class="w">break</span> <span class="w">the</span> <span class="w">plan.</span></h2>
+        <div id="s2-old" class="s2-old">The old way</div>
+        <div class="s2-list">
+          <div id="s2-i1" class="s2-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.870"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Emergency calls</span>
+          </div>
+          <div id="s2-i2" class="s2-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg>
+            <span>Empty fryers</span>
+          </div>
+          <div id="s2-i3" class="s2-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.480 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+            <span>A stressed crew</span>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          // The red row from the panel grows into the whole frame.
+          tl.fromTo("#s2-flood", { clipPath: "inset(438px 359px 543px 360px round 8px)" }, { clipPath: "inset(0px 0px 0px 0px round 0px)", duration: 0.7, ease: "expo.inOut" }, 0);
+          tl.fromTo("#s2-a .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 0.6);
+          tl.to("#s2-a", { opacity: 0, y: -40, duration: 0.3, ease: "power3.in" }, 3.4);
+          tl.fromTo("#s2-old", { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.4, ease: "power4.out" }, 3.7);
+          // Hard, stacking cuts: each problem lands on its own beat.
+          [["#s2-i1", 4.0], ["#s2-i2", 4.9], ["#s2-i3", 5.8]].forEach(function (p) {
+            tl.fromTo(p[0], { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.35, ease: "power4.out" }, p[1]);
+          });
+          window.__timelines["s2-tension"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

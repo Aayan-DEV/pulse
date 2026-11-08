@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
+        @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+        #root { position: absolute; inset: 0; overflow: hidden; }
+        .s4-bg { position: absolute; inset: 0; background: #f6f5f2; }
+        .s4-cap { position: absolute; left: 120px; top: 88px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 104px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s4-cap .w { display: inline-block; }
+        .s4-cap .s4-hot { color: #d9622b; }
+        .s4-cam { position: absolute; left: 120px; top: 300px; width: 1680px; height: 443px; transform-origin: 0 0; }
+        .s4-shot { position: absolute; inset: 0; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.1); }
+        .s4-shot img { display: block; width: 100%; height: 100%; }
+        .s4-why { position: absolute; left: 461px; top: 246px; width: 998px; height: 798px; }
+        .s4-ring { position: absolute; left: 14px; top: 126px; width: 970px; height: 106px; border: 4px solid #d9622b; border-radius: 8px; }
+      </style>
+
+      <div id="root" data-composition-id="s4-predict" data-width="1920" data-height="1080">
+        <div id="s4-bg" class="s4-bg"></div>
+        <h2 id="s4-cap1" class="s4-cap"><span class="w">Every</span> <span class="w">hour,</span> <span class="w s4-hot">7 days</span> <span class="w">ahead</span></h2>
+        <h2 id="s4-cap2" class="s4-cap"><span class="w">And</span> <span class="w">it</span> <span class="w">knows</span> <span class="w s4-hot">why</span></h2>
+        <div id="s4-cam" class="s4-cam" data-layout-allow-overflow>
+          <div class="s4-shot"><img src="assets/shots/forecast-days.png" alt="" /></div>
+        </div>
+        <div id="s4-why" class="s4-why">
+          <div class="s4-shot"><img src="assets/shots/forecast-why.png" alt="" /></div>
+          <div id="s4-ring" class="s4-ring"></div>
+        </div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo("#s4-bg", { yPercent: 100 }, { yPercent: 0, duration: 0.6, ease: "power2.inOut" }, 0);
+          tl.fromTo("#s4-cap1 .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 0.5);
+          tl.fromTo("#s4-cam", { y: 120, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 0.8);
+          // Push in on Today.
+          tl.to("#s4-cam", { x: 250, y: -70, scale: 2, duration: 1.1, ease: "power2.inOut" }, 3.0);
+          tl.to("#s4-cap1", { opacity: 0, y: -30, duration: 0.3, ease: "power3.in" }, 4.6);
+          tl.to("#s4-cam", { x: -1400, opacity: 0, duration: 0.6, ease: "power3.in" }, 4.6);
+          tl.fromTo("#s4-why", { x: 900, opacity: 0 }, { x: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 4.9);
+          tl.fromTo("#s4-cap2 .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 5.0);
+          tl.fromTo("#s4-ring", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.4, ease: "power4.out" }, 5.9);
+          window.__timelines["s4-predict"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Perfectly Nineties"; src: url("assets/fonts/PerfectlyNineties.otf") format("opentype"); font-display: block; }
+        @font-face { font-family: "Geist"; src: url("assets/fonts/Geist-Variable.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+        #root { position: absolute; inset: 0; overflow: hidden; }
+        .s6-bg { position: absolute; inset: 0; background: #ffffff; }
+        .s6-big { position: absolute; left: 0; right: 0; top: 460px; text-align: center; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 144px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; }
+        .s6-big .w, .s6-cap .w, .s6-side .w { display: inline-block; }
+        .s6-big .s6-hot { color: #a32d1d; }
+        .s6-cap { position: absolute; left: 120px; top: 88px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 104px; line-height: 1; letter-spacing: -0.01em; color: #0a0a0a; white-space: nowrap; }
+        .s6-cap .s6-hot, .s6-side .s6-hot { color: #d9622b; }
+        .s6-cam { position: absolute; left: 80px; top: 468px; width: 1760px; height: 143px; transform-origin: 0 0; }
+        .s6-alarm { position: absolute; inset: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 18px 40px rgba(163, 45, 29, 0.16); }
+        .s6-alarm img { display: block; width: 100%; height: 100%; }
+        .s6-side { position: absolute; left: 120px; top: 500px; width: 840px; font-family: "Perfectly Nineties", serif; font-weight: 400; font-size: 120px; line-height: 1.02; letter-spacing: -0.01em; color: #0a0a0a; }
+        .s6-stock { position: absolute; left: 1040px; top: 336px; width: 727px; height: 607px; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 18px 40px rgba(20, 19, 16, 0.1); }
+        .s6-stock img { display: block; width: 100%; height: 100%; }
+      </style>
+
+      <div id="root" data-composition-id="s6-live" data-width="1920" data-height="1080">
+        <div class="s6-bg"></div>
+        <h2 id="s6-big" class="s6-big"><span class="w">The</span> <span class="w s6-hot">rush</span> <span class="w">comes</span> <span class="w">anyway</span></h2>
+        <h2 id="s6-cap" class="s6-cap"><span class="w">Caught</span> <span class="w s6-hot">live.</span> <span class="w">Call</span> <span class="w">help</span> <span class="w">early.</span></h2>
+        <div id="s6-cam" class="s6-cam" data-layout-allow-overflow>
+          <div class="s6-alarm"><img src="assets/shots/shift-alarms.png" alt="" /></div>
+        </div>
+        <h2 id="s6-side" class="s6-side"><span class="w">Stock</span> <span class="w s6-hot">follows</span> <span class="w">sales</span></h2>
+        <div id="s6-stock" class="s6-stock"><img src="assets/shots/shift-stock.png" alt="" /></div>
+      </div>
+
+      <script>
+        (function () {
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo("#s6-big .w", { opacity: 0, y: 30, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.4, ease: "expo.out", stagger: 0.09 }, 0.1);
+          tl.to("#s6-big", { opacity: 0, y: -60, duration: 0.3, ease: "power3.in" }, 1.9);
+          // The alarm slams in, with a short shake.
+          tl.fromTo("#s6-cam", { scale: 1.12, x: -105, y: -8, opacity: 0 }, { scale: 1, x: 0, y: 0, opacity: 1, duration: 0.3, ease: "power4.out" }, 2.2);
+          tl.fromTo("#s6-cam", { rotation: 0 }, { keyframes: [{ rotation: -0.6, duration: 0.06 }, { rotation: 0.5, duration: 0.06 }, { rotation: -0.25, duration: 0.06 }, { rotation: 0, duration: 0.06 }], ease: "none" }, 2.45);
+          tl.fromTo("#s6-cap .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 2.7);
+          // Push in on the crew line.
+          tl.to("#s6-cam", { x: 144, y: -76, scale: 1.6, duration: 0.9, ease: "power2.inOut" }, 4.0);
+          // Pull back and park the alarm at the top; stock comes in under it.
+          tl.to("#s6-cap", { opacity: 0, y: -30, duration: 0.3, ease: "power3.in" }, 5.9);
+          tl.to("#s6-cam", { x: 0, y: -348, scale: 1, duration: 0.8, ease: "power2.inOut" }, 6.0);
+          tl.fromTo("#s6-stock", { y: 200, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 6.4);
+          tl.fromTo("#s6-side .w", { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.45, ease: "expo.out", stagger: 0.08 }, 6.6);
+          window.__timelines["s6-live"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>
