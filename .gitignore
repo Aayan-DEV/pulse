@@ -46,3 +46,6 @@ agent-runs/
 # Commercial font (licence not for redistribution); keep local only
 public/fonts/perfectlynineties.otf
 video/assets/fonts/PerfectlyNineties.otf
+
+# Pitch deck PDF (built locally from docs/pitch/deck.html, not part of the product)
+docs/pitch/pulse-pitch.pdf
