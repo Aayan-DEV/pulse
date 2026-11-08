@@ -53,18 +53,76 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
   const wage = wageCost(sched.shifts, roster);
   const nok = (v: number) => `NOK ${Math.round(v).toLocaleString("en").replace(/,/g, " ")}`;
   const eff = sched.cost.requiredPersonHours / Math.max(1, sched.cost.plannedPaidHours);
+  const dayPeak = dayReq.filter((r) => r.phase === "open").sort((x, y) => (y.front + y.kitchen) - (x.front + x.kitchen))[0];
+  const dayUnfilled = dayShifts.filter((s) => !s.employeeName).length;
+  const dayGaps = dayCov.filter((c) => c.crewAssigned < c.crewRequired).length;
+  const problems = [
+    dayUnfilled ? `${dayUnfilled} shift${dayUnfilled > 1 ? "s" : ""} not filled.` : "",
+    dayGaps ? `Short of crew in ${dayGaps} hour${dayGaps > 1 ? "s" : ""}.` : "",
+    sched.violations.length ? `${sched.violations.length} rule problems this week.` : "",
+  ].filter(Boolean);
+  const level = dayUnfilled || sched.violations.length ? "red" : dayGaps ? "yellow" : "green";
   const q = (k: string, v: string) => {
     const p = new URLSearchParams({ q: quantile, m: method, day: day ?? "" }); p.set(k, v); return `/staffing?${p}`;
   };
 
   return (
     <main className="adm-content">
-      <PageHead crumb="People / Staffing" title="Staffing" icon={Users}
-        finding={<>The next 7 days need <b>{Math.round(sched.cost.plannedPaidHours)} paid hours</b> in {sched.cost.shiftCount} shifts for {roster.length} people.
-          {sched.violations.length === 0 ? <> Every shift follows the Working Environment Act.</> : <> <b className="is-bad">{sched.violations.length} rule problems</b> are listed below.</>}
-          {sched.cost.unfilledShifts > 0 && <> {sched.cost.unfilledShifts} shifts have nobody legal to fill them.</>}</>}
+      <PageHead crumb="Plan / Staffing" title="Staffing" icon={Users}
         tools={<Link className="ak-btn" href="/method">How it is calculated</Link>} />
 
+      <section className={`tr-hero tr-hero--${level}`}>
+        <span className={`sh-dot sh-dot--${level}`} aria-hidden />
+        <div><h2>{dayShifts.length} people working {day === dates[0] ? "today" : day ? fmtDay(day) : ""}</h2>
+          <p>{problems.length ? problems.join(" ") : "Every shift is filled and legal."}</p></div>
+      </section>
+
+      <section className="ak-panel" style={{ marginTop: 12 }}>
+        <div className="ak-kpis">
+          <div className="ak-kpi"><div className="ak-kpi-label">Busiest hour</div><div className="ak-kpi-value">{dayPeak ? `${dayPeak.front + dayPeak.kitchen} crew` : "–"}</div><div className="ak-kpi-sub">{dayPeak ? `at ${clock(dayPeak.hour)}` : ""}</div></div>
+          <div className="ak-kpi"><div className="ak-kpi-label">Paid hours, 7 days</div><div className="ak-kpi-value">{Math.round(sched.cost.plannedPaidHours)}</div></div>
+          <div className="ak-kpi"><div className="ak-kpi-label">Wage cost, 7 days</div><div className="ak-kpi-value">{nok(wage.baseNok + wage.extrasNok)}</div></div>
+        </div>
+      </section>
+
+      <div className="ak-bar" style={{ marginTop: 12 }}>
+
+        <span className="ak-bar-label">Day</span>
+        <div className="ak-seg" style={{ flexWrap: "wrap", height: "auto" }}>
+          {dates.map((d) => <Link key={d} href={q("day", d)} aria-current={(d === day) ? "true" : undefined}>{fmtDay(d)}</Link>)}
+        </div>
+      </div>
+
+      <StaffingCharts rows={dayReq.map((r) => {
+        const c = dayCov.find((x) => x.hour === r.hour);
+        return { label: clock(r.hour), orders: Math.round(r.transactions), front: r.front, kitchen: r.kitchen, required: (c?.crewRequired ?? r.front + r.kitchen), planned: c?.crewAssigned ?? 0 };
+      })} />
+
+      <section className="ak-panel" style={{ marginTop: 16 }}>
+        <div className="ak-panel-head"><div><h2 className="ak-h">Who works</h2></div></div>
+        <div style={{ padding: "8px 20px 16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "180px 1fr 70px", gap: 8, fontSize: 12, color: "var(--od-faint)", marginBottom: 6 }}>
+            <span>Person</span>
+            <span style={{ display: "flex", justifyContent: "space-between" }}>{Array.from({ length: span + 1 }, (_, i) => i % 2 === 0 ? <span key={i}>{clock(minH + i)}</span> : null)}</span>
+            <span style={{ textAlign: "right" }}>Paid</span>
+          </div>
+          {dayShifts.map((s) => (
+            <div key={s.id} style={{ display: "grid", gridTemplateColumns: "180px 1fr 70px", gap: 8, alignItems: "center", height: 26 }}>
+              <span style={{ fontSize: 13, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }} className={s.employeeName ? "" : "is-bad"}>
+                {s.employeeName ?? "Not filled"}{s.role === "manager" && <span className="faint"> · mgr</span>}
+              </span>
+              <span style={{ position: "relative", height: 14, background: "var(--od-track)", borderRadius: 3 }}>
+                <span style={{ position: "absolute", top: 0, bottom: 0, left: `${(100 * (s.start - minH)) / span}%`, width: `${(100 * s.length) / span}%`, background: s.role === "manager" ? "var(--od-ink)" : "var(--od-data)", borderRadius: 3 }} />
+                {s.breakHour != null && <span style={{ position: "absolute", top: 0, bottom: 0, left: `${(100 * (s.breakHour - minH)) / span}%`, width: `${50 / span}%`, background: "var(--od-on-ink)", opacity: 0.8 }} />}
+              </span>
+              <span className="num" style={{ textAlign: "right", fontSize: 13 }}>{s.paidHours.toFixed(1)} h</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <details className="ak-details">
+        <summary>Details: method, wage rules, rule checks, hours per person</summary>
       <div className="ak-bar">
         <span className="ak-bar-label">Staff to</span>
         <div className="ak-seg">
@@ -122,41 +180,6 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
         </section>
       )}
 
-      <div className="ak-bar" style={{ marginTop: 16 }}>
-        <span className="ak-bar-label">Day</span>
-        <div className="ak-seg" style={{ flexWrap: "wrap", height: "auto" }}>
-          {dates.map((d) => <Link key={d} href={q("day", d)} aria-current={(d === day) ? "true" : undefined}>{fmtDay(d)}</Link>)}
-        </div>
-      </div>
-
-      <StaffingCharts rows={dayReq.map((r) => {
-        const c = dayCov.find((x) => x.hour === r.hour);
-        return { label: clock(r.hour), orders: Math.round(r.transactions), front: r.front, kitchen: r.kitchen, required: (c?.crewRequired ?? r.front + r.kitchen), planned: c?.crewAssigned ?? 0 };
-      })} />
-
-      <section className="ak-panel" style={{ marginTop: 16 }}>
-        <div className="ak-panel-head"><div><h2 className="ak-h">Shifts on {day ? fmtDay(day) : ""}</h2><p className="ak-note">{dayShifts.length} shifts. The dark notch is the 30 minute break.</p></div></div>
-        <div style={{ padding: "8px 20px 16px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "180px 1fr 70px", gap: 8, fontSize: 12, color: "var(--od-faint)", marginBottom: 6 }}>
-            <span>Person</span>
-            <span style={{ display: "flex", justifyContent: "space-between" }}>{Array.from({ length: span + 1 }, (_, i) => i % 2 === 0 ? <span key={i}>{clock(minH + i)}</span> : null)}</span>
-            <span style={{ textAlign: "right" }}>Paid</span>
-          </div>
-          {dayShifts.map((s) => (
-            <div key={s.id} style={{ display: "grid", gridTemplateColumns: "180px 1fr 70px", gap: 8, alignItems: "center", height: 26 }}>
-              <span style={{ fontSize: 13, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }} className={s.employeeName ? "" : "is-bad"}>
-                {s.employeeName ?? "Not filled"}{s.role === "manager" && <span className="faint"> · mgr</span>}
-              </span>
-              <span style={{ position: "relative", height: 14, background: "var(--od-track)", borderRadius: 3 }}>
-                <span style={{ position: "absolute", top: 0, bottom: 0, left: `${(100 * (s.start - minH)) / span}%`, width: `${(100 * s.length) / span}%`, background: s.role === "manager" ? "var(--od-ink)" : "var(--od-data)", borderRadius: 3 }} />
-                {s.breakHour != null && <span style={{ position: "absolute", top: 0, bottom: 0, left: `${(100 * (s.breakHour - minH)) / span}%`, width: `${50 / span}%`, background: "var(--od-on-ink)", opacity: 0.8 }} />}
-              </span>
-              <span className="num" style={{ textAlign: "right", fontSize: 13 }}>{s.paidHours.toFixed(1)} h</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="ak-panel" style={{ marginTop: 16 }}>
         <div className="ak-panel-head"><div><h2 className="ak-h">Rule checks</h2><p className="ak-note">Checked for every person over the whole week</p></div></div>
         {sched.violations.length === 0 ? <div className="ak-empty">No problems: 11 hours daily rest, 35 hours weekly rest, the 9 hour day, breaks after 5.5 hours and the youth limits all hold.</div> :
@@ -179,6 +202,7 @@ export default async function StaffingPage({ searchParams }: { searchParams: Pro
           </table>
         </div>
       </section>
+      </details>
     </main>
   );
 }

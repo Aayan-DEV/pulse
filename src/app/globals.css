@@ -397,3 +397,11 @@ body { font-size: 16px; line-height: 24px; }
 .tr-hero--yellow { border-color: var(--od-warn); background: var(--od-warn-bg); }
 .tr-hero .sh-dot { margin-top: 7px; }
 .tr-section { margin: 28px 0 10px; font-size: 15px; line-height: 20px; font-weight: 600; color: var(--od-muted); }
+
+/* Closed-by-default details for the method and rule fine print */
+.ak-details { margin-top: 20px; }
+.ak-details > summary { cursor: pointer; list-style: none; padding: 12px 0; font-size: 14px; color: var(--od-muted); }
+.ak-details > summary::-webkit-details-marker { display: none; }
+.ak-details > summary::before { content: "+ "; }
+.ak-details[open] > summary::before { content: "− "; }
+.ak-details > summary:hover { color: var(--od-ink); }
